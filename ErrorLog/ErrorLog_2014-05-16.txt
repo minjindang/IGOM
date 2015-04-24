@@ -1,0 +1,157 @@
+發生時間：2014-05-16 14:39:57.3247
+類別：AppException
+訊息：2014051614395759
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 14:39:57.5418
+類別：AppException
+訊息：2014516143957541
+System.Runtime.Remoting.RemotingException: 物件 '/a1d5b399_f7c6_49cd_8c7f_6843e0605575/jneomew4ffipsqps+ci5kcmy_1876.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 14:49:35.0489
+類別：AppException
+訊息：資料行 'Leave_name' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2123_02.Bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2123_02.aspx.vb: 行 53
+方法：[Void InitControl()] => [Void Bind()] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 15:38:14.9736
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb(105): error BC30616: 變數 'E' 在封閉區塊中隱藏了變數。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 16:43:52.8628
+類別：AppException
+訊息：2014051616435233
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Convert.ToInt32(String value)
+   於 SAL_SAL1_SAL1101_01.AddNewRowToGrid() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 151
+   於 SAL_SAL1_SAL1101_01.InsertBtn_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 45
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 16:57:16.0443
+類別：AppException
+訊息：2014051616571636
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Convert.ToInt32(String value)
+   於 SAL_SAL1_SAL1101_01.AddNewRowToGrid() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 152
+   於 SAL_SAL1_SAL1101_01.InsertBtn_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 46
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 17:07:10.4726
+類別：AppException
+訊息：2014051617071062
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Convert.ToInt32(String value)
+   於 SAL_SAL1_SAL1101_01.AddNewRowToGrid() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 152
+   於 SAL_SAL1_SAL1101_01.InsertBtn_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 46
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 17:09:27.1277
+類別：AppException
+訊息：2014051617092717
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Convert.ToInt32(String value)
+   於 SAL_SAL1_SAL1101_01.AddNewRowToGrid() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 158
+   於 SAL_SAL1_SAL1101_01.InsertBtn_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 52
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 17:59:45.4622
+類別：AppException
+訊息：已發生類型 'System.Web.HttpUnhandledException' 的例外狀況。
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.sal_sal1_sal1101_02_aspx.ProcessRequest(HttpContext context) 於 c:\Users\Kduser\AppData\Local\Temp\Temporary ASP.NET Files\igom\f43a54a3\f7df5849\App_Web_tyccswx_.16.cs: 行 0
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-16 18:19:05.2895
+類別：AppException
+訊息：2014051618190574
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Convert.ToInt32(String value)
+   於 SAL_SAL1_SAL1101_01.AddNewRowToGrid() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 155
+   於 SAL_SAL1_SAL1101_01.InsertBtn_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1101_01.aspx.cs: 行 46
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

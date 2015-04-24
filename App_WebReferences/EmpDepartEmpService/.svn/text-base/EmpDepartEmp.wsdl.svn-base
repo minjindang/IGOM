@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://IGOM.Emp.DepartEmp/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://IGOM.Emp.DepartEmp/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://IGOM.Emp.DepartEmp/">
+      <s:element name="GetDataByIdCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCard" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataByIdCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataByIdCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataByServiceType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataByServiceTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataByServiceTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDataByIdCardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataByIdCard" />
+  </wsdl:message>
+  <wsdl:message name="GetDataByIdCardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataByIdCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataByServiceTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataByServiceType" />
+  </wsdl:message>
+  <wsdl:message name="GetDataByServiceTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataByServiceTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EmpDepartEmpSoap">
+    <wsdl:operation name="GetDataByIdCard">
+      <wsdl:input message="tns:GetDataByIdCardSoapIn" />
+      <wsdl:output message="tns:GetDataByIdCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByServiceType">
+      <wsdl:input message="tns:GetDataByServiceTypeSoapIn" />
+      <wsdl:output message="tns:GetDataByServiceTypeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmpDepartEmpSoap" type="tns:EmpDepartEmpSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataByIdCard">
+      <soap:operation soapAction="http://IGOM.Emp.DepartEmp/GetDataByIdCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByServiceType">
+      <soap:operation soapAction="http://IGOM.Emp.DepartEmp/GetDataByServiceType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmpDepartEmpSoap12" type="tns:EmpDepartEmpSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataByIdCard">
+      <soap12:operation soapAction="http://IGOM.Emp.DepartEmp/GetDataByIdCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByServiceType">
+      <soap12:operation soapAction="http://IGOM.Emp.DepartEmp/GetDataByServiceType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmpDepartEmp">
+    <wsdl:port name="EmpDepartEmpSoap" binding="tns:EmpDepartEmpSoap">
+      <soap:address location="http://localhost:29396/IGOM/WebService/EmpDepartEmp.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmpDepartEmpSoap12" binding="tns:EmpDepartEmpSoap12">
+      <soap12:address location="http://localhost:29396/IGOM/WebService/EmpDepartEmp.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

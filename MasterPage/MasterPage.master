@@ -1,0 +1,490 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage_MasterPage" %>
+<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Src="~/UControl/UcUsePDF.ascx" TagName="UcUsePDF" TagPrefix="uc10" %>
+<%@ Register Src="~/UControl/UcFunctionInfo.ascx" TagName="UcFunc" TagPrefix="uc11" %>
+<%@ Register Src="~/UControl/UcSystemManageInterface.ascx" TagName="UcSys" TagPrefix="uc12" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  id="Head1"  runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>整合性總務作業管理資訊系統</title>
+    <link href="<%= Page.ResolveClientUrl("~/CSS/css.css")%>" rel="stylesheet" type="text/css" /> 
+    <link href="<%= Page.ResolveClientUrl("~/CSS/syntegra3.css")%>" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" media="all" href="<%= Page.ResolveClientUrl("~/css/aqua.css")%>" />     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-1.4.2.min.js") %>"></script>  
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.blockUI.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.maxlength.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-ui-1.8.18.custom.min.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/DgJScript.js")%>"></script>     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/utils.js")%>"></script>        
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/roc.js")%>"></script>          
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/CalendarPopup.js")%>"></script>     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/function.js")%>"></script>     
+    <link type="text/css" href="<%= Page.ResolveClientUrl("~/CSS/smoothness/jquery-ui-1.8.18.custom.css")%>" rel="stylesheet" />   
+    <script type="text/javascript" language="javascript">
+        $().ready(function () {
+            $('input[type=submit]').each(function () {
+                $(this).click(function () {
+                    if ($(this).attr('value') == "查詢" ||
+                    $(this).attr('value') == "送出申請") {
+                        blockUI();
+                    }
+                });
+            });
+            $('input[type=button]').each(function () {
+                if ($(this).attr('value') == "重填") {
+                    $(this).click(function () {
+                        clearForm(this.form);
+                    });
+                }
+            });
+
+            var menu = '<%= Session("Menu") %>';
+            if (menu == 'open') {
+                document.getElementById("menu").style.display = "";
+                document.getElementById("menu").style.width = "197px";
+            }
+            else if (menu == 'close') {
+                document.getElementById("menu").style.display = "none";
+            }
+
+            /**
+            var $sidebar = $('.scrollFollow');
+            if ($sidebar.length > 0) {
+                var $window = $(window);
+                var offset = $sidebar.offset();
+                var topPadding = -20;
+                $window.scroll(function () {
+                    if ($window.scrollTop() > offset.top) {
+                        $sidebar.stop().animate({
+                            marginTop: $window.scrollTop() - offset.top + topPadding
+                        });
+                    } else {
+                        $sidebar.stop().animate({
+                            marginTop: 0
+                        });
+                    }
+                });
+            }
+            **/
+
+        });
+        document.write(getCalendarStyles());
+        var cal1xx = new CalendarPopup("CalendarDiv");
+        cal1xx.showNavigationDropdowns();
+
+        function displayDatePicker(txtid, timeid, target) {
+            cal1xx.select(document.getElementById(txtid), txtid, 'yyy/MM/dd', document.getElementById(timeid), target);
+        }
+
+        function blockUI() {
+            //$.blockUI({ message: '<img src="../images/loading.gif"align="absmiddle" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+            $.blockUI({ message: '<img src="<%= Page.ResolveClientUrl("~/images/loading.gif")%>" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+        }
+        function showMenu() {
+            document.getElementById("menu").style.display = "";
+            document.getElementById("menu").style.width = "197px";
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function clearForm(form) {
+            form.reset();
+            var allTables = $('#content > table');
+
+            allTables.each(function () {
+                var allSelects = $(this).find('select');
+                allSelects.each(function () {
+                    $('#' + this.id).get(0).selectedIndex = 0;
+                });
+                return false;
+            });
+
+            var allInputs = $('#content input[type=text]');
+            allInputs.each(function () {
+                $(this).val('');
+
+            });
+        }
+        function checkEmptyField(idlist, fieldlist) {
+            var checknum = /^[0-9, ]+$/i;
+            var aid = new Array();
+            var afield = new Array();
+            aid = idlist.split(",");
+            afield = fieldlist.split(",");
+
+            for (var i = 0 ; i < aid.length ; i++) {
+                if (document.getElementById(aid[i]).value == '') {
+                    alert("「" + afield[i] + "」欄位為必填。");
+                    document.getElementById(aid[i]).focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+        function chgValue() { }
+        function checkDate(did) {
+            var d = $('#' + did).val();
+            if (d == '')
+                return;
+
+            var err = false;
+
+            regex = /\S{9}/;
+            if (!regex.test(d))
+                err = true;
+
+            regex = /\d{3}\/\d{2}\/\d{2}/;
+            if (!regex.test(d))
+                err = true;
+
+            //        regex = /\d{3}([0][13578][0][1-9]|[0][13578][1-2][0-9]|[0][13578][3][0-1])|([0][469][0][1-9]|[0][469][1-2][0-9]|[0][469][3][0])|([1][11][0][1-9]|[1][11][1-2][0-9]|[1][11][3][0])|([1][12][0][1-9]|[1][12][1-2][0-9]|[1][12][3][0-1])|([0][2][0][1-9]|[0][2][1-2][0-9])/;
+            //        if(!regex.test(d))
+            //            err = true;
+
+            if (err) {
+                alert("日期格式錯誤!");
+                $('#' + did).val("");
+                $('#' + did).focus();
+            }
+
+        }
+
+        function checkTime(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /([0-1][0-9]|[2][0-3])[0-5][0-9]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function checkTime2(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /(([0-1][0-9]|[2][0-3])[0-5][0-9])|[2][4][0][0]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function setAllReadOnly() {
+            var arrObj = document.forms[0].elements;
+            var arrLen = arrObj.length;
+            for (var i = 0; i < arrLen; i++) {
+                var obj = arrObj[i];
+                if ((obj.type == "text") || (obj.type == "textarea") || (obj.type == "password")) {
+                    obj.disabled = true;
+                } else if ((obj.type == "select") || (obj.type == "select-one") || (obj.type == "select-multiple") || (obj.type == "checkbox") || (obj.type == "radio")) {
+                    if (obj.getAttribute("name").indexOf("UcSystemManageInterface") < 0)
+                        obj.disabled = true;
+                } else if ((obj.type == "button") || (obj.type == "submit")) {
+                    if (obj.getAttribute("value") != "回上頁")
+                        obj.style.display = "none";
+                }
+            }
+        }
+
+        function setMenuTable(num) {
+            var per = "<%=tr0000.ClientID.Substring(0, tr0000.ClientID.Length - 4)%>";
+            var id = per + num + "000";
+            var obj = document.getElementById(id);
+            
+            if (obj != null) {
+                if (obj.style.display == "none")
+                    obj.style.display = "";
+                else
+                    obj.style.display = "none";
+            }
+            for (var i = 1; i <= 8; i++) {
+                obj = document.getElementById(per + i + "000");
+                if (obj!=null & i != num)
+                    obj.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body onload="showMsg();">
+<div id="CalendarDiv" style="position:absolute;visibility:hidden;background-color:white;background-color:white;"></div>
+<form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release">
+    </asp:ScriptManager>
+    <input type="hidden" id="alertMsg" />  
+    <input type="hidden" id="callback" /> 
+    <div>
+    <table id="container" cellpadding="0" cellspacing="0" width="99%">
+    <tr>
+        <td colspan="3" id="header" style="background: url('<%= Page.ResolveClientUrl("~/images/master/banner_bg.png")%>'); height: 99px;" valign="top">
+	        <%  
+	            Dim logofile As String = New SYS.Logic.Org().GetColumnValue("Logo_file", LoginManager.OrgCode)
+	            If String.IsNullOrEmpty(logofile) Then
+	                logofile = "logo_01.png"
+	            End If
+	            Dim code As New FSCPLM.Logic.SACode()
+	            Dim manual As String = code.GetCodeDesc("021", "002", "001")
+	            Dim QA As String = code.GetCodeDesc("021", "002", "002")
+	            Dim home As String = code.GetCodeDesc("021", "002", "003")
+	            Dim protal As String = code.GetCodeDesc("021", "002", "004")
+	            Dim www As String = code.GetCodeDesc("021", "002", "005")
+	            Dim maintain As String = code.GetCodeDesc("021", "002", "006")
+            %>     
+            <img src="<%= Page.ResolveClientUrl("~/images/master/banner.png")%>" alt="" style="z-index:1; position:absolute; height: 99px;" />                
+            <img src="<%= Page.ResolveClientUrl("~/images/Logos/" & logofile)%>" alt="" style="z-index:2; position:absolute; float:left;" />
+                        
+            <table border="0" cellpadding="2" width="100%" class="headerTable" >
+                <tr>
+                    <td align="right">
+                        <br />
+                        <span> <%=LoginManager.DepartName%> &nbsp; <%=LoginManager.UserName%></span><br />
+                        <span> <a href="<%=maintain %>" style="color:white; text-decoration: none;">我要報修</a> &nbsp; (02)2311-7722#2333</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <div style="float:left;">
+                            &nbsp;&nbsp;
+                            <span><a href="<%=protal %>" style="color:white; text-decoration: none;" target="_blank">員工入口網</a></span>&nbsp;&nbsp;&nbsp;
+                            <span><a href="<%=www %>" style="color:white; text-decoration: none;" target="_blank">環保署全球資訊網</a></span>
+                        </div>
+                        <div style="float:right">
+                            <span> <asp:HyperLink ID="hl" runat="server" NavigateUrl="~/SYS/SYS2/SYS2108_01.aspx" style="color:white; text-decoration: none;">網站地圖</asp:HyperLink> </span>&nbsp;|&nbsp;                            
+                            <span> <a href="<%=manual%>" style="color:white; text-decoration: none;">操作手冊</a> </span>&nbsp;|&nbsp;
+                            <span> <a href="<%=QA %>" style="color:white; text-decoration: none;">Q & A</a> </span>&nbsp;|&nbsp;
+                            <span> <a href="<%=home%>" style="color:white; text-decoration: none;">回首頁</a> </span><br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="menu" valign="top" align="left">
+
+            <table id="table0000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button0000" runat="server" Width="100%" onClick="setMenuTable(0)" Text="我的最愛" />                        
+                    </td>
+                </tr>
+                <tr id="tr0000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView0000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+            
+            <table id="table1000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button1000" runat="server" Width="100%" onClick="setMenuTable(1)" />                        
+                    </td>
+                </tr>
+                <tr id="tr1000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView1000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table2000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button2000" runat="server" Width="100%" onClick="setMenuTable(2)" />  
+                    </td>
+                </tr>
+                <tr id="tr2000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView2000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table3000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button3000" runat="server" Width="100%" onClick="setMenuTable(3)" />  
+                    </td>
+                </tr>
+                <tr id="tr3000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView3000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table4000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button4000" runat="server" Width="100%" onClick="setMenuTable(4)" />  
+                    </td>
+                </tr>
+                <tr id="tr4000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView4000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table5000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button5000" runat="server" Width="100%" onClick="setMenuTable(5)" />  
+                    </td>
+                </tr>
+                <tr id="tr5000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView5000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table6000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button6000" runat="server" Width="100%" onClick="setMenuTable(6)" />
+                    </td>
+                </tr>
+                <tr id="tr6000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView6000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table7000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button7000" runat="server" Width="100%" onClick="setMenuTable(7)" />
+                    </td>
+                </tr>
+                <tr id="tr7000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView7000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table8000" runat="server" cellpadding="0" cellspacing="0" class="menuTable" visible="false">
+                <tr>
+                    <td class="menuTitle">
+                        <asp:Label ID="button8000" runat="server" Width="100%" onClick="setMenuTable(8)" />
+                    </td>
+                </tr>
+                <tr id="tr8000" runat="server" style="display:none;">
+                    <td class="menuBody">
+                        <asp:TreeView ID="TreeView8000" runat="server" PopulateOnDemand="true" expanddepth="0" NodeWrap="true"  
+                            ImageSet="Custom" 
+                            ExpandImageUrl="~/images/master/tree_ico.png"
+                            CollapseImageUrl="~/images/master/tree_ico.png"
+                            NoExpandImageUrl="~/images/master/menu_line.png">                            
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+
+
+        </td>     
+        <td id="middle" valign="top" align="left">
+            <br />
+            <br />            
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:ImageButton ID="ibOpen" ImageUrl="~/images/open.gif" AlternateText="開啟" runat="server" OnClientClick="showMenu()" OnClick="ibOpen_Click" /><br />
+                    <asp:ImageButton ID="ibClose" ImageUrl="~/images/close.gif" AlternateText="取消" runat="server" OnClientClick="closeMenu()" OnClick="ibClose_Click" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+            &nbsp;
+        </td>
+         <td id="content" valign="top" align="left">
+            <div style="clear: both;">
+                <div style="float:left;">
+                    <uc12:UcSys ID="UcSystemManageInterface" runat="server" />
+                </div>
+                <div style="float:right;">
+                     <uc10:UcUsePDF ID="UcUsePDF" runat="server" Visible="false" />
+                </div>
+            </div>
+
+            <div style="clear: both;"></div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </td>
+    </tr> 
+    <tr>
+        <td id="footer" colspan="3" align="center" >
+            <span style="font-size:small; color:#000000;">整合性總務作業管理資訊系統　版權所有，轉載必究　Copyright 2014       目前版本:V1.0.0.0更版時間:2014.05.30 下午13:00</span><br />
+         </td>
+    </tr>
+    </table>  
+    </div>
+
+
+    </form>
+</body>
+</html>

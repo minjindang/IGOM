@@ -1,0 +1,247 @@
+發生時間：2014-04-25 10:59:20.1939
+類別：AppException
+訊息：DataBinding: 'System.Data.DataRowView' 沒有包含名為 'Depart_id' 的屬性。
+   於 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   於 System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   於 System.Web.UI.DataBinder.Eval(Object container, String expression)
+   於 System.Web.UI.TemplateControl.Eval(String expression)
+   於 ASP.fsc_fsc2_fsc2108_01_aspx.__DataBinding__control39(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2108_01.aspx: 行 135
+   於 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 FSC2108_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2108_01.aspx.vb: 行 92
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 11:42:27.5672
+類別：AppException
+訊息：檔案 '/IGOM/SYS/SYS2104_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 14:56:02.5732
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:03:33.8476
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'String' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   於 ASP.fsc_fsc3_fsc3109_01_aspx.__DataBinding__control46(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx: 行 145
+   於 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 FSC3109_01.bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 84
+方法：[Void btnFind_Click(System.Object, System.EventArgs)] => [Void bind()] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:04:21.5933
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'String' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   於 ASP.fsc_fsc3_fsc3109_01_aspx.__DataBinding__control46(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx: 行 145
+   於 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 FSC3109_01.bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 84
+方法：[Void btnFind_Click(System.Object, System.EventArgs)] => [Void bind()] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:06:23.3424
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void cbCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:06:38.5205
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void cbCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:06:42.5141
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 124
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:06:47.9297
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 124
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:06:53.2563
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 124
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:07:23.7886
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3109_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 170
+   於 FSC3109_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3109_01.aspx.vb: 行 124
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:11:36.7870
+類別：AppException
+訊息：2014042515113615
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 FSC3110_03.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_03.aspx.vb: 行 31
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:11:51.2306
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3110_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 169
+   於 FSC3110_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 118
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:17:00.6856
+類別：AppException
+訊息：2014042515170084
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 FSC3110_03.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_03.aspx.vb: 行 31
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:17:01.3340
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3110_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 169
+   於 FSC3110_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 118
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-04-25 15:17:11.6448
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Date' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(Object Value)
+   於 SYS.Logic.Flow.GetObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonTable\Flow.vb: 行 447
+   於 SYS.Logic.CommonFlow.GetFlowObject(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 272
+   於 SYS.Logic.CommonFlow.RunSelfCancel(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 242
+   於 FSC3110_01.cancelFlow(String orgcode, String flow_id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 169
+   於 FSC3110_01.cbBatchCancel_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3110_01.aspx.vb: 行 118
+方法：[Void OnClick(System.EventArgs)] => [Void cbBatchCancel_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

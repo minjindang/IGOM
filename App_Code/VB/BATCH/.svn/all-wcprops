@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/TCCC/!svn/ver/4563/09_SourceCode/IGOM/App_Code/VB/BATCH
+END
+BatchCntYearDaysBll.vb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/TCCC/!svn/ver/4563/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchCntYearDaysBll.vb
+END
+BatchCntYearDaysJob.vb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/TCCC/!svn/ver/4563/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchCntYearDaysJob.vb
+END
+BatchOvertimeBll.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/TCCC/!svn/ver/3445/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchOvertimeBll.vb
+END
+BatchTransferPHToPKBll.vb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/TCCC/!svn/ver/4563/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchTransferPHToPKBll.vb
+END
+BatchOvertimeJob.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/TCCC/!svn/ver/3445/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchOvertimeJob.vb
+END
+BatchTransferPHToPKJob.vb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/TCCC/!svn/ver/3445/09_SourceCode/IGOM/App_Code/VB/BATCH/BatchTransferPHToPKJob.vb
+END

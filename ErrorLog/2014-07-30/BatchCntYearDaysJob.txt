@@ -1,0 +1,161 @@
+2014-07-30 11:25:00.1159|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:25:03.5378|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:30:00.0006|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:30:00.1327|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:35:00.0008|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:35:00.9594|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:39:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:40:00.1250|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:45:00.0019|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:45:00.1320|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:50:00.0001|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:50:00.1322|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:55:35.8809|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 11:55:39.0510|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 11:59:59.9993|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 12:00:00.1714|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:30:00.0928|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:30:00.2399|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:34:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:35:01.0436|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:40:00.0001|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:40:00.0872|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:45:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:45:00.0873|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:50:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:50:00.9922|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 13:54:59.9998|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 13:55:00.0849|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:00:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:00:01.8564|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:05:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:05:00.0865|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:09:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:10:00.9303|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:15:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:15:01.1017|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:19:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:20:00.9045|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:25:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:25:00.0881|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:30:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:30:00.0852|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:35:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:35:00.9460|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:40:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:40:00.0865|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:44:59.9998|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:45:00.0888|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:49:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:50:00.0870|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 14:55:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 14:55:00.0913|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:00:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:00:00.1115|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:05:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:05:00.0896|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:10:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:10:00.0863|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:15:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:15:00.0895|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:19:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:20:00.0817|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:25:00.0006|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:25:00.0846|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:29:59.9998|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:30:00.1269|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:35:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:35:00.0883|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:39:59.9996|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:40:00.0827|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:44:59.9998|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:45:00.0898|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:50:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:50:00.0831|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 15:55:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 15:55:00.0854|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:00:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:00:00.1096|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:04:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:05:00.0917|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:09:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:10:00.0869|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:15:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:15:00.0881|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:20:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:20:00.0893|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:25:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:25:00.0846|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:29:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:30:00.0988|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:35:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:35:00.0892|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:40:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:40:00.0824|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:45:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:45:00.0865|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:49:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:50:00.0837|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 16:54:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 16:55:00.0828|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:00:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:00:03.0305|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:04:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:05:00.0868|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:09:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:10:00.0828|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:14:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:15:00.0867|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:19:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:20:00.0860|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:25:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:25:00.0841|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:30:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:30:00.0844|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:35:00.0005|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:35:00.1065|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:39:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:40:00.1308|INFO|BatchCntYearDaysJob|Exception Error : 在傳送要求至伺服器時發生傳輸層級的錯誤。 (provider: TCP 提供者, error: 0 - 遠端主機已強制關閉一個現存的連線。)
+2014-07-30 17:40:00.1308|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:45:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:45:14.9730|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 17:45:14.9730|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:50:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:50:14.6399|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 17:50:14.6399|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:55:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 17:55:14.6611|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 17:55:14.6611|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 17:59:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:00:14.6425|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:00:14.6425|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:05:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:05:14.6410|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:05:14.6410|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:09:59.9994|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:10:14.6372|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:10:14.6372|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:15:00.0004|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:15:14.6972|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:15:14.6972|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:19:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:20:14.6557|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:20:14.6557|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:25:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:25:14.6408|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:25:14.6408|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:30:00.0002|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:30:14.6599|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:30:14.6599|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:34:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:35:14.6655|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:35:14.6655|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:39:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:40:14.6547|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:40:14.6557|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:45:00.0006|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:45:14.6493|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:45:14.6493|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-30 18:50:00.0000|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-30 18:50:14.6598|INFO|BatchCntYearDaysJob|Exception Error : 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。 (provider: 具名的管線提供者, error: 40 - 無法開啟至 SQL Server 的連接)
+2014-07-30 18:50:14.6598|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====

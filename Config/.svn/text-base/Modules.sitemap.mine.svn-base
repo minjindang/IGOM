@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap id="FSC0000" moduleName="人事差勤管理系統" description="回到首頁" >
+<siteMapNode id="FSC1000" moduleName="個人差勤作業" description="" url="" >
+<siteMapNode id="FSC1100" moduleName="收件匣" description="" url="../FSC1/FSC11/FSC1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1200" moduleName="個人行事曆" description="" url="../FSC1/FSC12/FSC1208_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1300" moduleName="差假/加班申請" description="" url="" >
+<siteMapNode id="FSC1301" moduleName="一般請假" description="" url="../FSC1/FSC12/FSC1201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1302" moduleName="出國請假" description="" url="../FSC1/FSC12/FSC1202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1303" moduleName="公差/公出" description="" url="../FSC1/FSC12/FSC1203_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1304" moduleName="加班補休/公差補休" description="" url="../FSC1/FSC12/FSC1204_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1305" moduleName="加班/專案加班" description="" url="../FSC1/FSC12/FSC1205_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC1400" moduleName="加班費/差旅費請領" description="" url="" >
+<siteMapNode id="FSC1401" moduleName="加班費請領" description="" url="../FSC1/FSC13/FSC1301_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1402" moduleName="加班費總表" description="" url="../FSC1/FSC13/FSC1304_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1403" moduleName="國內差旅費申請" description="" url="../FSC1/FSC13/FSC1306_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1404" moduleName="未休假加班費申請" description="" url="../FSC1/FSC13/FSC1305_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC1405" moduleName="技工工友加班費申請" description="" url="../FSC1/FSC13/FSC1307_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC1500" moduleName="職務代理人設定" description="" url="../FSC1/FSC15/FSC1502_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC2000" moduleName="差勤查詢作業" description="" url="" >
+<siteMapNode id="FSC2100" moduleName="個人差勤明細查詢" description="" url="" >
+<siteMapNode id="FSC2101" moduleName="請假資料" description="" url="../FSC2/FSC22/FSC2201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2102" moduleName="加班資料" description="" url="../FSC2/FSC22/FSC2202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2103" moduleName="公差資料" description="" url="../FSC2/FSC22/FSC2203_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2104" moduleName="公出資料" description="" url="../FSC2/FSC22/FSC2204_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2105" moduleName="補休資料" description="" url="../FSC2/FSC22/FSC2205_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2106" moduleName="上下班資料" description="" url="../FSC2/FSC22/FSC2206_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2107" moduleName="刷卡資料" description="" url="../FSC2/FSC22/FSC2207_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC2200" moduleName="單位差勤明細查詢" description="" url="" >
+<siteMapNode id="FSC2201" moduleName="不在勤名單查詢" description="" url="../FSC2/FSC22/FSC2210_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2202" moduleName="員工假況統計" description="" url="../FSC2/FSC21/FSC2106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2203" moduleName="職員勤惰記錄卡" description="" url="../FSC2/FSC21/FSC2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2204" moduleName="員工加班單明細" description="" url="../FSC2/FSC22/FSC2214_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2205" moduleName="單位加班統計" description="" url="../FSC2/FSC22/FSC2215_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2206" moduleName="員工加班補休假況統計" description="" url="../FSC2/FSC22/FSC2216_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2207" moduleName="員工出差單明細" description="" url="../FSC2/FSC22/FSC2217_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2208" moduleName="員工出差統計" description="" url="../FSC2/FSC22/FSC2218_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2209" moduleName="單位出差統計" description="" url="../FSC2/FSC22/FSC2219_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC2210" moduleName="行事曆查詢" description="" url="../FSC2/FSC22/FSC2220_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3000" moduleName="人事管理作業" description="" url="" >
+<siteMapNode id="FSC3100" moduleName="表單作業" description="" url="" >
+<siteMapNode id="FSC3101" moduleName="歷史資料結轉" description="" url="../FSC3/FSC31/FSC3109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3102" moduleName="歷史資料查詢" description="" url="../FSC3/FSC31/FSC3110_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3103" moduleName="管理者表單狀態" description="" url="../FSC3/FSC31/FSC3111_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3200" moduleName="基本資料維護作業" description="" url="" >
+<siteMapNode id="FSC3201" moduleName="人員資料設定" description="" url="../FSC3/FSC34/FSC3401_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3204" moduleName="預設代理人資料維護" description="" url="../FSC3/FSC32/FSC3217_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3205" moduleName="代理人查詢" description="" url="../FSC3/FSC32/FSC3218_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3206" moduleName="免簽到(退)人員表" description="" url="../FSC3/FSC32/FSC3219_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3300" moduleName="費用作業" description="" url="" >
+<siteMapNode id="FSC3302" moduleName="加班費印領清冊" description="" url="../FSC3/FSC33/FSC3305_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3303" moduleName="加班費明細" description="" url="../FSC3/FSC33/FSC3306_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3400" moduleName="差勤資料維護" description="" url="" >
+<siteMapNode id="FSC3403" moduleName="刷卡轉出勤" description="" url="../FSC3/FSC33/FSC3301_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3404" moduleName="差勤異常查詢" description="" url="../FSC3/FSC31/FSC3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3405" moduleName="臨時卡資料維護" description="" url="../FSC3/FSC34/FSC3412_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3406" moduleName="請假、加班費、出差等資料轉出" description="" url="../FSC3/FSC34/FSC3413_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3407" moduleName="國旅卡休假查詢" description="" url="../FSC3/FSC31/FSC3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3409" moduleName="員工國內休假補助費" description="" url="../FSC3/FSC34/FSC3416_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3500" moduleName="查詢作業" description="" url="" >
+<siteMapNode id="FSC3501" moduleName="不在勤名單查詢" description="" url="../FSC2/FSC22/FSC2210_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3502" moduleName="員工請假單明細" description="" url="../FSC3/FSC35/FSC3504_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3503" moduleName="單位請假統計" description="" url="../FSC3/FSC35/FSC3505_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3504" moduleName="員工請假統計" description="" url="../FSC3/FSC35/FSC3506_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3505" moduleName="差勤資料明細表" description="" url="../FSC2/FSC22/FSC2211_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3506" moduleName="職員勤惰記錄卡" description="" url="../FSC2/FSC21/FSC2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3507" moduleName="員工加班明細" description="" url="../FSC2/FSC22/FSC2214_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3508" moduleName="單位加班統計" description="" url="../FSC2/FSC22/FSC2215_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3509" moduleName="員工加班補休假況統計" description="" url="../FSC2/FSC22/FSC2216_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3510" moduleName="員工出差單明細" description="" url="../FSC2/FSC22/FSC2217_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3511" moduleName="員工出差統計" description="" url="../FSC2/FSC22/FSC2218_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3512" moduleName="單位出差統計" description="" url="../FSC2/FSC22/FSC2219_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3513" moduleName="員工刷卡記錄" description="" url="../FSC3/FSC35/FSC3515_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3600" moduleName="年度作業" description="" url="" >
+<siteMapNode id="FSC3601" moduleName="行事曆假日設定" description="" url="../FSC3/FSC36/FSC3601_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3603" moduleName="排班資料維護" description="" url="../FSC3/FSC36/FSC3603_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3604" moduleName="年度剩餘休假天數結轉至下年度" description="" url="../FSC3/FSC36/FSC3604_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3700" moduleName="差勤規則設定" description="" url="" >
+<siteMapNode id="FSC3702" moduleName="請假上限維護" description="" url="../FSC3/FSC37/FSC3702_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3703" moduleName="請假規定維護" description="" url="../FSC3/FSC37/FSC3703_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3704" moduleName="差勤設定" description="" url="../FSC3/FSC37/FSC3704_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC3800" moduleName="系統設定" description="" url="" >
+<siteMapNode id="FSC3801" moduleName="E-mail管理員設定" description="" url="../FSC3/FSC34/FSC3402_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3802" moduleName="公用代碼設定" description="" url="../FSC3/FSC34/FSC3403_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3803" moduleName="直屬主管異動" description="" url="../FSC3/FSC34/FSC3408_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3804" moduleName="強制代理設定" description="" url="../FSC3/FSC34/FSC3409_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3805" moduleName="簽核流程查詢/設定" description="" url="../FSC3/FSC35/FSC3501_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC4000" moduleName="系統管理作業" description="" url="" >
+<siteMapNode id="FSC3900" moduleName="管理者報表" description="" url="" >
+<siteMapNode id="FSC3901" moduleName="系統日誌" description="" url="../FSC4/FSC42/FSC4201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3902" moduleName="登入登出記錄查詢" description="" url="../FSC4/FSC42/FSC4203_01.aspx" >
+</siteMapNode>
+<siteMapNode id="FSC3903" moduleName="E-mail寄送失敗記錄" description="" url="../FSC4/FSC42/FSC4204_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="FSC4100" moduleName="角色權限控管" description="" url=" " >
+<siteMapNode id="FSC4101" moduleName="角色與功能維護" description="" url="../FSC4/FSC41/FSC4101_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+</siteMap>

@@ -1,0 +1,624 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/E51A0234/PAY2101_04.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link rel=3DFile-List href=3D"PAY2101_04.files/filelist.xml">
+<style id=3D"PAY2104_01_23936_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1523936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6323936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6423936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6523936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6623936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6723936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6823936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6923936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7023936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7123936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7223936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7323936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7423936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7523936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7623936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:"\#\,\#\#0";
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7723936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7823936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7923936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8023936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8123936
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>&#12288;&#12288;<![endif]-->
+<!--&#19979;&#21015;&#36039;&#35338;&#26159;&#30001; Microsoft Office Excel
+&#32178;&#38913;&#30332;&#20296;&#31934;&#38728;&#25152;&#29986;&#29983;&#1=
+2290;-->
+<!--&#22914;&#26524;&#30001; Excel
+&#37325;&#26032;&#30332;&#20296;&#30456;&#21516;&#30340;&#38917;&#30446;&#2=
+6178;&#65292;&#22312;
+DIV
+&#27161;&#31844;&#38291;&#30340;&#25152;&#26377;&#36039;&#35338;&#23559;&#2=
+6371;&#34987;&#21462;&#20195;&#12290;-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id=3D"PAY2104_01_23936" align=3Dcenter x:publishsource=3D"Excel">
+<PageRepeatArea>
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1049 style=3D'bor=
+der-collapse:
+ collapse;table-layout:fixed;width:787pt'>
+ <col width=3D110 style=3D'mso-width-source:userset;mso-width-alt:3520;widt=
+h:83pt'>
+ <col width=3D95 style=3D'mso-width-source:userset;mso-width-alt:3040;width=
+:71pt'>
+ <col width=3D204 style=3D'mso-width-source:userset;mso-width-alt:6528;widt=
+h:153pt'>
+ <col width=3D99 style=3D'mso-width-source:userset;mso-width-alt:3168;width=
+:74pt'>
+ <col width=3D184 style=3D'mso-width-source:userset;mso-width-alt:5888;widt=
+h:138pt'>
+ <col width=3D147 style=3D'mso-width-source:userset;mso-width-alt:4704;widt=
+h:110pt'>
+ <col width=3D116 style=3D'mso-width-source:userset;mso-width-alt:3712;widt=
+h:87pt'>
+ <col width=3D94 style=3D'mso-width-source:userset;mso-width-alt:3008;width=
+:71pt'>
+ <tr height=3D29 style=3D'mso-height-source:userset;height:21.75pt'>
+  <td rowspan=3D3 height=3D87 class=3Dxl6523936 width=3D110 style=3D'height=
+:65.25pt;
+  width:83pt'>&lt;PAY2101&gt;</td>
+  <td rowspan=3D3 class=3Dxl6523936 width=3D95 style=3D'width:71pt'></td>
+  <td colspan=3D4 rowspan=3D3 class=3Dxl7223936 width=3D634 style=3D'width:=
+475pt'></td>
+  <td colspan=3D2 class=3Dxl6423936 width=3D210 style=3D'width:158pt'>&#350=
+69;&#34920;&#26085;&#26399;&#65306;##P1##</td>
+ </tr>
+ <tr height=3D29 style=3D'mso-height-source:userset;height:21.75pt'>
+  <td colspan=3D2 height=3D29 class=3Dxl6423936 width=3D210 style=3D'height=
+:21.75pt;
+  width:158pt'>&#35069;&#34920;&#20154;&#65306;##P2##</td>
+ </tr>
+ <tr height=3D29 style=3D'mso-height-source:userset;height:21.75pt'>
+  <td colspan=3D2 height=3D29 class=3Dxl6423936 width=3D210 style=3D'height=
+:21.75pt;
+  width:158pt'>&#38913;&#27425;&#65306;##P3##/##P4##</td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:17.1pt'>
+  <td colspan=3D8 height=3D22 class=3Dxl7023936 width=3D1049 style=3D'heigh=
+t:17.1pt;
+  width:787pt'>&#38646; &#29992; &#37329; &#28165; &#21934;</td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:17.1pt'>
+  <td colspan=3D8 height=3D22 class=3Dxl7023936 width=3D1049 style=3D'heigh=
+t:17.1pt;
+  width:787pt'>&lt;&#38646;&#29992;&#37329;&#28165;&#21934;&#32232;&#34399;=
+&gt;</td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D8 height=3D22 class=3Dxl7023936 width=3D1049 style=3D'heigh=
+t:16.5pt;
+  width:787pt'>&#24207;&#34399;&#65306;##P5## &#33267; ##P6##</td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D8 height=3D22 class=3Dxl6823936 style=3D'height:16.5pt'>&#1=
+2288;</td>
+ </tr>
+ <tr height=3D23 style=3D'mso-height-source:userset;height:17.25pt'>
+  <td colspan=3D2 height=3D23 class=3Dxl6723936 style=3D'height:17.25pt'>&#=
+38928;&#31639;&#31185;&#30446;</td>
+  <td class=3Dxl7323936>&#24207;&#34399;/&#35531;&#36092;&#21934;&#34399;</=
+td>
+  <td colspan=3D2 class=3Dxl6623936>&#25688;&#35201;</td>
+  <td class=3Dxl6623936 style=3D'border-top:none'>&#21934;&#25818;&#24373;&=
+#25976;</td>
+  <td class=3Dxl7323936>&#37329;&#38989;</td>
+  <td class=3Dxl7423936>&#20633;&#35387;</td>
+ </tr>
+ <RepeatArea>
+ <tr height=3D105 style=3D'mso-height-source:userset;height:78.75pt'>
+  <td colspan=3D2 height=3D105 class=3Dxl6923936 width=3D205 style=3D'heigh=
+t:78.75pt;
+  width:154pt'>##Col1##</td>
+  <td class=3Dxl7523936 width=3D204 style=3D'width:153pt'>##Col2##</td>
+  <td colspan=3D2 class=3Dxl6923936 width=3D283 style=3D'width:212pt'>##Col3##</td>
+  <td class=3Dxl8023936 style=3D'border-top:none'>##Receipt_cnt##</td>
+  <td class=3Dxl7623936>##PurchaseTotalSIncome##</td>
+  <td class=3Dxl7723936>&#12288;</td>
+ </tr>
+ </RepeatArea>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl7123936 style=3D'height:16.5pt'>&#1=
+2288;</td>
+  <td class=3Dxl7223936></td>
+  <td colspan=3D2 class=3Dxl7123936>&#12288;</td>
+  <td class=3Dxl8123936 style=3D'border-top:none'>&#12288;</td>
+  <td class=3Dxl7823936></td>
+  <td class=3Dxl7923936></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl6323936 style=3D'height:16.5pt'></t=
+d>
+  <td class=3Dxl7223936></td>
+  <td colspan=3D2 class=3Dxl6323936></td>
+  <td class=3Dxl7223936></td>
+  <td class=3Dxl7823936></td>
+  <td class=3Dxl7923936></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl6323936 style=3D'height:16.5pt'></t=
+d>
+  <td class=3Dxl7223936></td>
+  <td colspan=3D2 class=3Dxl6323936></td>
+  <td class=3Dxl7223936></td>
+  <td class=3Dxl7823936></td>
+  <td class=3Dxl7923936></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl6323936 style=3D'height:16.5pt'>&#1=
+9978;&#26399;&#32080;&#23384;&#65306;
+  ##LastBalances##</td>
+  <td class=3Dxl7223936>&#26412;&#26399;&#25910;&#20837;&#65306;##Income_am=
+t##</td>
+  <td colspan=3D2 class=3Dxl7223936>&#26412;&#26399;&#25903;&#20986;&#65306=
+;##PayBalances_amt##</td>
+  <td class=3Dxl7223936></td>
+  <td class=3Dxl7823936>&#32080;&#23384;&#65306;##CurrentBalances_amt##</td>
+  <td class=3Dxl7923936></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl6323936 style=3D'height:16.5pt'></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl6323936 style=3D'height:16.5pt'>&#35069;&#34920=
+;&#65306;</td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936></td>
+  <td class=3Dxl6323936>&#31185;&#38263;&#65306;</td>
+  <td class=3Dxl6323936></td>
+  <td colspan=3D2 class=3Dxl6323936>&#32317;&#21209;&#21934;&#20301;&#20027=
+;&#31649;&#65306;</td>
+  <td class=3Dxl6323936></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D110 style=3D'width:83pt'></td>
+  <td width=3D95 style=3D'width:71pt'></td>
+  <td width=3D204 style=3D'width:153pt'></td>
+  <td width=3D99 style=3D'width:74pt'></td>
+  <td width=3D184 style=3D'width:138pt'></td>
+  <td width=3D147 style=3D'width:110pt'></td>
+  <td width=3D116 style=3D'width:87pt'></td>
+  <td width=3D94 style=3D'width:71pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</PageRepeatArea>
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>

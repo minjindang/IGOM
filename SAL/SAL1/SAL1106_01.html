@@ -1,0 +1,495 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	整合性總務作業管理資訊系統
+</title>
+    <link href="../../CSS/css.css" rel="stylesheet" type="text/css" /> 
+    <link href="../../CSS/syntegra3.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/aqua.css" />     
+    <script type="text/javascript" src="../../js/jquery-1.4.2.min.js"></script>  
+    <script type="text/javascript" src="../../js/jquery.blockUI.js"></script>   
+    <script type="text/javascript" src="../../js/jquery.maxlength.js"></script>   
+    <script type="text/javascript" src="../../js/jquery-ui-1.8.18.custom.min.js"></script>   
+    <script type="text/javascript" src="../../js/DgJScript.js"></script>     
+    <script type="text/javascript" src="../../js/utils.js"></script>        
+    <script type="text/javascript" src="../../js/roc.js"></script>          
+    <script type="text/javascript" src="../../js/CalendarPopup.js"></script>     
+    <script type="text/javascript" src="../../js/function.js"></script>     
+    <link type="text/css" href="../../CSS/smoothness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />   
+
+    <style type="text/css" >
+        
+    </style>    
+    <script type="text/javascript" language="javascript">
+        $().ready(function () {
+            $('input[type=submit]').each(function () {
+                $(this).click(function () {
+                    if ($(this).attr('value') == "查詢" ||
+                    $(this).attr('value') == "送出申請") {
+                        blockUI();
+                    }
+                });
+            });
+            $('input[type=button]').each(function () {
+                if ($(this).attr('value') == "重填") {
+                    $(this).click(function () {
+                        clearForm(this.form);
+                    });
+                }
+            });
+
+            var menu = '';
+            if (menu == 'open') {
+                document.getElementById("menu").style.display = "";
+                document.getElementById("menu").style.width = "197px";
+            }
+            else if (menu == 'close') {
+                document.getElementById("menu").style.display = "none";
+            }
+
+        });
+        document.write(getCalendarStyles());
+        var cal1xx = new CalendarPopup("CalendarDiv");
+        cal1xx.showNavigationDropdowns();
+
+        function displayDatePicker(txtid, timeid, target) {
+            cal1xx.select(document.getElementById(txtid), txtid, 'yyy/MM/dd', document.getElementById(timeid), target);
+        }
+
+        function blockUI() {
+            //$.blockUI({ message: '<img src="../images/loading.gif"align="absmiddle" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+            $.blockUI({ message: '<img src="../../images/loading.gif" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+        }
+        function showMenu() {
+            document.getElementById("menu").style.display = "";
+            document.getElementById("menu").style.width = "197px";
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function clearForm(form) {
+            form.reset();
+            var allTables = $('#content > table');
+
+            allTables.each(function () {
+                var allSelects = $(this).find('select');
+                allSelects.each(function () {
+                    $('#' + this.id).get(0).selectedIndex = 0;
+                });
+                return false;
+            });
+
+            var allInputs = $('#content input[type=text]');
+            allInputs.each(function () {
+                $(this).val('');
+
+            });
+        }
+        function checkEmptyField(idlist, fieldlist) {
+            var checknum = /^[0-9, ]+$/i;
+            var aid = new Array();
+            var afield = new Array();
+            aid = idlist.split(",");
+            afield = fieldlist.split(",");
+
+            for (var i = 0 ; i < aid.length ; i++) {
+                if (document.getElementById(aid[i]).value == '') {
+                    alert("「" + afield[i] + "」欄位為必填。");
+                    document.getElementById(aid[i]).focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+        function chgValue() { }
+        function checkDate(did) {
+            var d = $('#' + did).val();
+            if (d == '')
+                return;
+
+            var err = false;
+
+            regex = /\S{9}/;
+            if (!regex.test(d))
+                err = true;
+
+            regex = /\d{3}\/\d{2}\/\d{2}/;
+            if (!regex.test(d))
+                err = true;
+
+            //        regex = /\d{3}([0][13578][0][1-9]|[0][13578][1-2][0-9]|[0][13578][3][0-1])|([0][469][0][1-9]|[0][469][1-2][0-9]|[0][469][3][0])|([1][11][0][1-9]|[1][11][1-2][0-9]|[1][11][3][0])|([1][12][0][1-9]|[1][12][1-2][0-9]|[1][12][3][0-1])|([0][2][0][1-9]|[0][2][1-2][0-9])/;
+            //        if(!regex.test(d))
+            //            err = true;
+
+            if (err) {
+                alert("日期格式錯誤!");
+                $('#' + did).val("");
+                $('#' + did).focus();
+            }
+
+        }
+
+        function checkTime(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /([0-1][0-9]|[2][0-3])[0-5][0-9]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function checkTime2(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /(([0-1][0-9]|[2][0-3])[0-5][0-9])|[2][4][0][0]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function setAllReadOnly() {
+            var arrObj = document.forms[0].elements;
+            var arrLen = arrObj.length;
+            for (var i = 0; i < arrLen; i++) {
+                var obj = arrObj[i];
+                if ((obj.type == "text") || (obj.type == "textarea") || (obj.type == "password")) {
+                    obj.disabled = true;
+                } else if ((obj.type == "select") || (obj.type == "select-one") || (obj.type == "select-multiple") || (obj.type == "checkbox") || (obj.type == "radio")) {
+                    if (obj.getAttribute("name").indexOf("UcSystemManageInterface") < 0)
+                        obj.disabled = true;
+                } else if ((obj.type == "button") || (obj.type == "submit")) {
+                    if (obj.getAttribute("value") != "回上頁")
+                        obj.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="showMsg();">
+<div id="CalendarDiv" style="position:absolute;visibility:hidden;background-color:white;background-color:white;"></div>
+<form name="aspnetForm" method="post" action="SAL1103_01.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIzNjE0MDgxOA8WBB4HQmFja1VybAUyaHR0cDovLzE3Mi4xNi4zMC4xMzgvaWdvbS9GU0MvRlNDMC9GU0MwMTAxXzAxLmFzcHgeDEN1cnJlbnRUYWJsZTLiGgABAAAA/////wEAAAAAAAAADAIAAABOU3lzdGVtLkRhdGEsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAVU3lzdGVtLkRhdGEuRGF0YVRhYmxlAwAAABlEYXRhVGFibGUuUmVtb3RpbmdWZXJzaW9uCVhtbFNjaGVtYQtYbWxEaWZmR3JhbQMBAQ5TeXN0ZW0uVmVyc2lvbgIAAAAJAwAAAAYEAAAAkRI8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtMTYiPz4NCjx4czpzY2hlbWEgeG1sbnM9IiIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczptc2RhdGE9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLW1zZGF0YSI+DQogIDx4czplbGVtZW50IG5hbWU9IlRhYmxlMSI+DQogICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgPHhzOnNlcXVlbmNlPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJVc2VyX25hbWUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkNoaWxkX25hbWUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkNoaWxkX2lkIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJDaGlsZEJpcnRoX2RhdGUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkFwcGx5X2RhdGUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkFwcGx5X3l5IiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJQZXJpb2RfdHlwZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iU2Nob29sX25hbWUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlNjaG9vbF90eXBlIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJTY2hvb2xfdHlwZV9uYW1lIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJTdHVkeUxpbWl0X25vcyIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iU3R1ZHlfbm9zIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJHdWlkIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJGaWxlX25hbWUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkZpbGVfc2l6ZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRmlsZV90eXBlIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJBcHBseV9hbXQiIHR5cGU9InhzOmludCIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkF0dGFjaF9pZCIgdHlwZT0ieHM6aW50IiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KICA8eHM6ZWxlbWVudCBuYW1lPSJ0bXBEYXRhU2V0IiBtc2RhdGE6SXNEYXRhU2V0PSJ0cnVlIiBtc2RhdGE6TWFpbkRhdGFUYWJsZT0iVGFibGUxIiBtc2RhdGE6VXNlQ3VycmVudExvY2FsZT0idHJ1ZSI+DQogICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgPHhzOmNob2ljZSBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVudD4NCjwveHM6c2NoZW1hPgYFAAAApAY8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIj4NCiAgPHRtcERhdGFTZXQ+DQogICAgPFRhYmxlMSBkaWZmZ3I6aWQ9IlRhYmxlMTEiIG1zZGF0YTpyb3dPcmRlcj0iMCIgZGlmZmdyOmhhc0NoYW5nZXM9Imluc2VydGVkIj4NCiAgICAgIDxVc2VyX25hbWU+576F5ZWf5bu6PC9Vc2VyX25hbWU+DQogICAgICA8Q2hpbGRfbmFtZT7luKXluKXluKU8L0NoaWxkX25hbWU+DQogICAgICA8Q2hpbGRfaWQ+UTEyMzQ1Njc4OTwvQ2hpbGRfaWQ+DQogICAgICA8Q2hpbGRCaXJ0aF9kYXRlPjA4NTA3MDU8L0NoaWxkQmlydGhfZGF0ZT4NCiAgICAgIDxBcHBseV9kYXRlPjEwMzA3MjY8L0FwcGx5X2RhdGU+DQogICAgICA8QXBwbHlfeXk+MTAzPC9BcHBseV95eT4NCiAgICAgIDxQZXJpb2RfdHlwZT4xPC9QZXJpb2RfdHlwZT4NCiAgICAgIDxTY2hvb2xfbmFtZT7lr6bnv5I8L1NjaG9vbF9uYW1lPg0KICAgICAgPFNjaG9vbF90eXBlPjAxNjwvU2Nob29sX3R5cGU+DQogICAgICA8U2Nob29sX3R5cGVfbmFtZT7lnIvkuK0t5YWs56eB56uLPC9TY2hvb2xfdHlwZV9uYW1lPg0KICAgICAgPFN0dWR5TGltaXRfbm9zPjM8L1N0dWR5TGltaXRfbm9zPg0KICAgICAgPFN0dWR5X25vcz4xPC9TdHVkeV9ub3M+DQogICAgICA8QXBwbHlfYW10PjUwMDwvQXBwbHlfYW10Pg0KICAgIDwvVGFibGUxPg0KICA8L3RtcERhdGFTZXQ+DQo8L2RpZmZncjpkaWZmZ3JhbT4EAwAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgCAAAAAAAAAP//////////CxYCZg9kFgICAw9kFhYCAQ8WAh4HVmlzaWJsZWcWBGYPZBYCZg9kFgICAQ8PFgIeBFRleHQFEuWAi+S6uuaVtOWQiOa4heWWrmRkAgEPZBYCZg9kFgICAQ88KwAJAQAPFgYeDFNlbGVjdGVkTm9kZWQeDU5ldmVyRXhwYW5kZWRkHglMYXN0SW5kZXhmZGQCAg8WAh8CZxYEZg9kFgJmD2QWAgIBDw8WAh8DBRLnlLPoq4vnrqHnkIbkvZzmpa1kZAIBD2QWAmYPZBYCAgEPPCsACQEADxYGHwRkHwVkHwZmZGQCAw8WAh8CZxYEZg9kFgJmD2QWAgIBDw8WAh8DBRLosrvnlKjnrqHnkIbkvZzmpa1kZAIBD2QWAmYPZBYCAgEPPCsACQEADxYGHwRkHwVkHwZmZGQCBA8WAh8CZxYEZg9kFgJmD2QWAgIBDw8WAh8DBRjkurrkuovlt67li6TnrqHnkIbkvZzmpa1kZAIBD2QWAmYPZBYCAgEPPCsACQEADxYGHwRkHwVkHwZmZGQCBQ9kFgICAQ9kFgJmD2QWAgIBDzwrAAkBAA8WAh8FZ2RkAgYPZBYCAgEPZBYCZg9kFgICAQ88KwAJAQAPFgIfBWdkZAIHD2QWAgIBD2QWAmYPZBYCAgEPPCsACQEADxYCHwVnZGQCCA9kFgICAQ9kFgJmD2QWAgIBDzwrAAkBAA8WAh8FZ2RkAgoPZBYCZg8WBB4Hb25jbGljawVBd2luZG93Lm9wZW4oJy4uLy4uL3VzZXJfZ3VpZGUuZG9jJywnJywnd2lkdGg9ODAwcHgsaGVpZ2h0PTYwMHB4JykeC29ubW91c2VvdmVyBRh0aGlzLnN0eWxlLmN1cnNvcj0naGFuZCdkAgsPZBYCZg8WAh8CaBYCZg9kFgJmD2QWAgIBD2QWAmYPZBYIAgEPEGRkFgBkAgMPEGRkFgBkAgUPEGRkFgBkAgcPEGRkFgBkAgwPZBYGAgEPZBYKAgUPDxYCHwMFAzEwM2RkAgcPDxYCHwMFATFkZAILD2QWBmYPEA8WBh4NRGF0YVRleHRGaWVsZAUKQ09ERV9ERVNDMR4ORGF0YVZhbHVlRmllbGQFB0NPREVfTk8eC18hRGF0YUJvdW5kZ2QQFREJ6KuL6YG45pOHHOWkp+WtuOWPiueNqOeri+WtuOmZoi3lhaznq4sc5aSn5a245Y+K542o56uL5a246ZmiLeengeeriyLlpKflrbjlj4rnjajnq4vlrbjpmaIt5aSc6ZaT5a245Yi2H+S6lOWwiOW+jOS6jOW5tOWPiuS6jOWwiC3lhaznq4sf5LqU5bCI5b6M5LqM5bm05Y+K5LqM5bCILeengeeriyLkupTlsIjlvozkuozlubTlj4rkuozlsIgt5aSc6ZaT6YOoFuS6lOWwiOWJjeS4ieW5tC3lhaznq4sW5LqU5bCI5YmN5LiJ5bm0Leengeeriw3pq5jkuK0t5YWs56uLDemrmOS4rS3np4Hnq4sN6auY6IG3LeWFrOeriw3pq5jogbct56eB56uLFumrmOiBty3lr6bnlKjmioDog73nj60Q5ZyL5LitLeWFrOengeerixDlnIvlsI8t5YWs56eB56uLE+mrmOiBty3oh6rntaboh6rotrMVEQItMQMwMDMDMDA0AzAwNQMwMDYDMDA3AzAwOAMwMDkDMDEwAzAxMQMwMTIDMDEzAzAxNAMwMTUDMDE2AzAxNwMwMTgUKwMRZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQIOZAICDxAPZBYCHgVzdHlsZQURYm9yZGVyLXdpZHRoOjBweDtkFgBkAgQPEA9kFgIfDAURYm9yZGVyLXdpZHRoOjBweDtkFgBkAhEPZBYEZg8PZBYCHghvbmNoYW5nZQVNY2hlY2tEYXRlKHRoaXMuaWQpOyBpZignZnVuY3Rpb24nID09IHR5cGVvZihjaGdVY0RhdGUpKXtjaGdVY0RhdGUodGhpcy5pZCk7fSBkAgIPFgQfCAUYdGhpcy5zdHlsZS5jdXJzb3I9J2hhbmQnHwcFVWRpc3BsYXlEYXRlUGlja2VyKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3VjQ2hpbGRCaXJ0aF9kYXRlX3RiRGF0ZScpO3JldHVybiBmYWxzZTtkAhkPDxYCHwMFAzUwMGRkAgMPZBYCAgEPPCsADQEADxYEHwtnHgtfIUl0ZW1Db3VudAIBZBYCZg9kFgQCAQ9kFhZmDw8WAh8DBQnnvoXllZ/lu7pkZAIBDw8WAh8DBQnluKXluKXluKVkZAICDw8WAh8DBQcwODUwNzA1ZGQCAw8PFgIfAwUHMTAzMDcyNmRkAgQPDxYCHwMFAzEwM2RkAgUPDxYCHwMFATFkZAIGDw8WAh8DBQblr6bnv5JkZAIHDw8WAh8DBRDlnIvkuK0t5YWs56eB56uLZGQCCA8PFgIfAwUBM2RkAgkPDxYCHwMFATFkZAIKDw8WAh8DBQM1MDBkZAICDw8WAh8CaGRkAgUPZBYCAgEPPCsADQBkGAMFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYGBRJjdGwwMCRUcmVlVmlldzEwMDAFEmN0bDAwJFRyZWVWaWV3MjAwMAUSY3RsMDAkVHJlZVZpZXczMDAwBRJjdGwwMCRUcmVlVmlldzQwMDAFDGN0bDAwJGliT3BlbgUNY3RsMDAkaWJDbG9zZQUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRHcmlkVmlld0IPZ2QFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkR3JpZFZpZXdBDzwrAAoBCAIBZKO7hGJwOpC09VgaapaoKPBjftkP" />
+
+
+<script src="/IGOM/ScriptResource.axd?d=d-dkv7GxF-zmkoDW5Rn4HXbcfmHUeeiIjrMw4RArNxvchvwdYldiGX92bK0rvyZZbo02L3ilY5CVZp2fX_GaeGYyC4dfK0xZU8tV6-zZ-Ab0QBwrMRZcF-FaP6H19nOMqQQdOaXO97c2Wa7uVJdfXFc-N6bmyab4tm2WVypPWMSZMIXk0&amp;t=2e2045e2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWNwKAyf+3DAKKjP6bDwKJjP6bDwKIjP6bDwKPjP6bDwKHlNSFAwLRv/WWCgLZlq/pBwKpzdqwBwLEi+uiBAK8lLzpBgLEkrz9AwKpqN6LDgKOx/igBALz3pq9AgLY9YTKCALtn8QUAtK25qEOApXV074BAvrs/csPAt/7n+AFAsSSuP0DAqmo2osOAo7HxKAEAvPe5r0CAtj1gMoIAu2fwBQCxIWP0gsCu8GT9AUC+4PjmAkCzrfArQ4C/8q5yA4Cy8+fVgKBsPOUBgKDj9fCCwLMk4+9CwLrsJHzAgKlktCsCQLsv5vsAQKu2f6DAgLF6eSmCAKzg+78CwK4xtmVDQKd0ouqCALDuraRCQLa6/O2CQKZkYKpDwL40JWiCgLptfi8DALp2vvZBgLBpPKsBgLxt6sVAoX8yckLAozn7/UDAvf7np8GlZ3H9qORxB+OjGZHDU/W8xv4mQU=" />
+    
+    <input type="hidden" id="alertMsg" />  
+    <input type="hidden" id="callback" /> 
+    <div>
+    <table id="container" cellpadding="0" cellspacing="0" width="99%">
+    <tr>
+        <td colspan="3" id="header" style="background: url('../../images/master/banner_bg.png'); height: 99px;" valign="top">
+	             
+            <img src="../../images/master/banner.png" alt="" style="z-index:1; position:absolute; height: 99px;" />                
+            <img src="../../images/Logos/logo_01.png" alt="" style="z-index:2; position:absolute; float:left;" />
+                        
+            <table border="0" cellpadding="4" width="100%" style="z-index:3; position:absolute; float:right; color:White; font-weight:900; font-size:13px; height: 107px;" class="headerTable" >
+                <tr>
+                    <td align="right">
+                        <span> <a href="" style="color:white; text-decoration: none;">操作手冊</a> </span>|
+                        <span> <a href="" style="color:white; text-decoration: none;">Q & A</a> </span>|
+                        <span> <a href="../../" style="color:white; text-decoration: none;">回首頁</a> </span><br />
+                        <span>監資處第三科 羅啟建 </span><br />
+                        <span>服務電話：(02)2311-7722#2343</span>
+                        <span> <a href="" style="color:white; text-decoration: none;">我要報修</a> </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        &nbsp;&nbsp;
+                        <span><a href="" style="font-size:13px; color:white; text-decoration: none;">員工入口網</a></span>&nbsp;&nbsp;&nbsp;
+                        <span><a href="" style="font-size:13px; color:white; text-decoration: none;">環保署全球資訊網</a></span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="menu" valign="top" align="left">
+            
+            <table id="ctl00_table1000" cellpadding="0" cellspacing="0" class="menuTable">
+	<tr>
+		<td class="menuTitle">
+                        <input type="submit" name="ctl00$button1000" value="個人整合清單" id="ctl00_button1000" />
+                    </td>
+	</tr>
+	<tr>
+		<td class="menuBody">
+                        <a href="#ctl00_TreeView1000_SkipLink"><img alt="略過巡覽連結。" src="/IGOM/WebResource.axd?d=7wDJ__GhB3C8iLYwwTAYCNWFrDa4swPyI3Uf9uvfmAIumjcQPDFiNv-8AJ_HznmnkiaI2OIV7osD7rh8T3B0pZbic401&amp;t=635084321457020723" width="0" height="0" border="0" /></a><div id="ctl00_TreeView1000" PopulateOnDemand="true">
+
+		</div><a id="ctl00_TreeView1000_SkipLink"></a>
+                    </td>
+	</tr>
+</table>
+
+
+            <table id="ctl00_table2000" cellpadding="0" cellspacing="0" class="menuTable">
+	<tr>
+		<td class="menuTitle">
+                        <input type="submit" name="ctl00$button2000" value="申請管理作業" id="ctl00_button2000" />
+                    </td>
+	</tr>
+	<tr>
+		<td class="menuBody">
+                        <a href="#ctl00_TreeView2000_SkipLink"><img alt="略過巡覽連結。" src="/IGOM/WebResource.axd?d=7wDJ__GhB3C8iLYwwTAYCNWFrDa4swPyI3Uf9uvfmAIumjcQPDFiNv-8AJ_HznmnkiaI2OIV7osD7rh8T3B0pZbic401&amp;t=635084321457020723" width="0" height="0" border="0" /></a><div id="ctl00_TreeView2000" PopulateOnDemand="true">
+
+		</div><a id="ctl00_TreeView2000_SkipLink"></a>
+                    </td>
+	</tr>
+</table>
+
+
+            <table id="ctl00_table3000" cellpadding="0" cellspacing="0" class="menuTable">
+	<tr>
+		<td class="menuTitle">
+                        <input type="submit" name="ctl00$button3000" value="費用管理作業" id="ctl00_button3000" />
+                    </td>
+	</tr>
+	<tr>
+		<td class="menuBody">
+                        <a href="#ctl00_TreeView3000_SkipLink"><img alt="略過巡覽連結。" src="/IGOM/WebResource.axd?d=7wDJ__GhB3C8iLYwwTAYCNWFrDa4swPyI3Uf9uvfmAIumjcQPDFiNv-8AJ_HznmnkiaI2OIV7osD7rh8T3B0pZbic401&amp;t=635084321457020723" width="0" height="0" border="0" /></a><div id="ctl00_TreeView3000" PopulateOnDemand="true">
+
+		</div><a id="ctl00_TreeView3000_SkipLink"></a>
+                    </td>
+	</tr>
+</table>
+
+
+            <table id="ctl00_table4000" cellpadding="0" cellspacing="0" class="menuTable">
+	<tr>
+		<td class="menuTitle">
+                        <input type="submit" name="ctl00$button4000" value="人事差勤管理作業" id="ctl00_button4000" />
+                    </td>
+	</tr>
+	<tr>
+		<td class="menuBody">
+                        <a href="#ctl00_TreeView4000_SkipLink"><img alt="略過巡覽連結。" src="/IGOM/WebResource.axd?d=7wDJ__GhB3C8iLYwwTAYCNWFrDa4swPyI3Uf9uvfmAIumjcQPDFiNv-8AJ_HznmnkiaI2OIV7osD7rh8T3B0pZbic401&amp;t=635084321457020723" width="0" height="0" border="0" /></a><div id="ctl00_TreeView4000" PopulateOnDemand="true">
+
+		</div><a id="ctl00_TreeView4000_SkipLink"></a>
+                    </td>
+	</tr>
+</table>
+
+
+            
+
+            
+
+            
+
+            
+
+
+        </td>     
+        <td id="middle" valign="top" align="left">
+            <br />
+            <br />            
+            <div id="ctl00_UpdatePanel1">
+	
+                    <input type="image" name="ctl00$ibOpen" id="ctl00_ibOpen" src="../../images/open.gif" alt="開啟" onclick="showMenu();" border="0" /><br />
+                    <input type="image" name="ctl00$ibClose" id="ctl00_ibClose" src="../../images/close.gif" alt="取消" onclick="closeMenu();" border="0" />
+                
+</div>
+            &nbsp;
+        </td>
+         <td id="content" valign="top" align="left">
+            <div style="clear: both;">
+                <div style="float:right;">
+                     
+                </div>
+                <div style="float:left;">
+                    
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            
+
+    <div id="ctl00_ContentPlaceHolder1_Div_Approve_Query">
+        <table class="tableStyle99" width="100%">
+            <tr>
+                <td class="htmltable_Title" colspan="4">子女教育補助費申請</td>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfFlow_id" id="ctl00_ContentPlaceHolder1_hfFlow_id" value="57073bc2-df95-433e-9e81-8ecdb9132e44" />
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfGuid" id="ctl00_ContentPlaceHolder1_hfGuid" />
+            </tr>
+            <tr>
+                <td class="htmltable_Left" style="width: 100px">申請學年度/學期</td>
+                <td align="left" style="width: 300px">民國<span id="ctl00_ContentPlaceHolder1_lblAcademicYear">103</span>年
+                    第<span id="ctl00_ContentPlaceHolder1_lblSemester">1</span>學期
+                </td>
+                <td class="htmltable_Left" style="width: 100px"><font size="3" color="red">*</font>子女姓名</td>
+                <td style="width: 350px">
+                    <input name="ctl00$ContentPlaceHolder1$txtChild_name" type="text" value="帥帥帥" maxlength="10" id="ctl00_ContentPlaceHolder1_txtChild_name" />
+                </td>
+            </tr>
+            <tr>
+                <td class="htmltable_Left" style="width: 100px"><font size="3" color="red">*</font>子女學歷</td>
+                <td align="left" style="width: 300px">
+                    <select name="ctl00$ContentPlaceHolder1$ucSchool_type$DropDownList_code_no" id="ctl00_ContentPlaceHolder1_ucSchool_type_DropDownList_code_no">
+	<option value="-1">請選擇</option>
+	<option value="003">大學及獨立學院-公立</option>
+	<option value="004">大學及獨立學院-私立</option>
+	<option value="005">大學及獨立學院-夜間學制</option>
+	<option value="006">五專後二年及二專-公立</option>
+	<option value="007">五專後二年及二專-私立</option>
+	<option value="008">五專後二年及二專-夜間部</option>
+	<option value="009">五專前三年-公立</option>
+	<option value="010">五專前三年-私立</option>
+	<option value="011">高中-公立</option>
+	<option value="012">高中-私立</option>
+	<option value="013">高職-公立</option>
+	<option value="014">高職-私立</option>
+	<option value="015">高職-實用技能班</option>
+	<option selected="selected" value="016">國中-公私立</option>
+	<option value="017">國小-公私立</option>
+	<option value="018">高職-自給自足</option>
+
+</select>
+ 
+
+<div id="ctl00_ContentPlaceHolder1_ucSchool_type_info" style="display:none">
+    Mode = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_mode" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_mode" /><br />
+    Orgid = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_orgid" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_orgid" /><br />
+    Code_Sys =
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_code_sys" type="text" value="006" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_code_sys" /><br />
+    Code_Kind=
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_code_kind" type="text" value="P" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_code_kind" /><br />
+    Code_Type =
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_code_type" type="text" value="011" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_code_type" /><br />
+    Selected = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_selected" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_selected" /><br />
+    CommandArgument = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_CommandArgument" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_CommandArgument" /><br />
+    controltype=
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_controltype" type="text" value="2" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_controltype" /><br />
+    TempValue = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$_TempValue" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type__TempValue" /><br />
+    ShowCode = 
+    <input name="ctl00$ContentPlaceHolder1$ucSchool_type$TextBox_ShowCode" type="text" id="ctl00_ContentPlaceHolder1_ucSchool_type_TextBox_ShowCode" /><br />
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$ucSchool_type$hfShowMulti" id="ctl00_ContentPlaceHolder1_ucSchool_type_hfShowMulti" />
+</div>
+
+                    
+                </td>
+
+                <td class="htmltable_Left"><font size="3" color="red">*</font>身分證字號</td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtChild_id" type="text" value="Q123456815" maxlength="10" id="ctl00_ContentPlaceHolder1_txtChild_id" />
+                </td>
+            </tr>
+            <tr>
+                <td class="htmltable_Left" style="width: 100px"><font size="3" color="red">*</font>子女出生日期</td>
+                <td align="left" style="width: 300px">
+                    <input name="ctl00$ContentPlaceHolder1$ucChildBirth_date$tbDate" type="text" value="085/07/05" maxlength="9" id="ctl00_ContentPlaceHolder1_ucChildBirth_date_tbDate" onchange="checkDate(this.id); if('function' == typeof(chgUcDate)){chgUcDate(this.id);} " />
+<img src="../../images/midea/calendar.gif" id="ctl00_ContentPlaceHolder1_ucChildBirth_date_imgDate" alt="選擇日期" onmouseover="this.style.cursor='hand'" onclick="displayDatePicker('ctl00_ContentPlaceHolder1_ucChildBirth_date_tbDate');return false;" />
+
+                </td>
+
+                <td class="htmltable_Left"><font size="3" color="red">*</font>學校名稱科系</td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtSchool_name" type="text" value="實習" maxlength="20" id="ctl00_ContentPlaceHolder1_txtSchool_name" />
+                </td>
+            </tr>
+            <tr>
+                <td class="htmltable_Left"><font size="3" color="red">*</font>修業年限</td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtStudyLimit_nos" type="text" value="3" maxlength="3" id="ctl00_ContentPlaceHolder1_txtStudyLimit_nos" />年
+                </td>
+
+                <td class="htmltable_Left"><font size="3" color="red">*</font>就讀年級</td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtStudy_nos" type="text" value="1" maxlength="1" id="ctl00_ContentPlaceHolder1_txtStudy_nos" />年級
+                </td>
+            </tr>
+            <tr>
+                <td class="htmltable_Left">申請金額</td>
+                <td colspan="3">
+                    <input name="ctl00$ContentPlaceHolder1$txtApply_amt" type="text" value="500" id="ctl00_ContentPlaceHolder1_txtApply_amt" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td class="htmltable_Bottom" colspan="4" style="border-top: none;">
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnAdd" value="新增" id="ctl00_ContentPlaceHolder1_btnAdd" />
+                    <input type="hidden" name="ctl00$ContentPlaceHolder1$hfModifyIndex" id="ctl00_ContentPlaceHolder1_hfModifyIndex" />
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnLast" value="帶入上期申請資料" id="ctl00_ContentPlaceHolder1_btnLast" />
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="送出申請" id="ctl00_ContentPlaceHolder1_btnSubmit" />
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ctl00_ContentPlaceHolder1_div1">
+        <div>
+	<table cellspacing="1" cellpadding="1" rules="all" border="0" id="ctl00_ContentPlaceHolder1_GridViewA" width="100%">
+		<tr class="Grid">
+			<th scope="col">申請人姓名</th><th scope="col">子女姓名</th><th scope="col">子女生日</th><th scope="col">申請日期</th><th scope="col">學年度</th><th scope="col">學期</th><th scope="col">學校名稱科系</th><th scope="col">學歷</th><th scope="col">修業年限</th><th scope="col">就讀年級</th><th scope="col">申請金額</th><th class="item_col" align="center" scope="col">維護</th>
+		</tr><tr class="Row">
+			<td>羅啟建</td><td>帥帥帥</td><td>0850705</td><td>1030726</td><td>103</td><td>1</td><td>實習</td><td>國中-公私立</td><td>3</td><td>1</td><td>500</td><td class="col_1">
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$hfGuid" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_hfGuid" /> 
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$hfFile_name" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_hfFile_name" />                        
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$hfFile_size" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_hfFile_size" />
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$hfFile_type" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_hfFile_type" />     
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$hfAttach_id" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_hfAttach_id" />      
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$btnMain" value="維護" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_btnMain" />
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$GridViewA$ctl02$btnDelete" value="刪除" onclick="return confirm('是否確定要刪除?');" id="ctl00_ContentPlaceHolder1_GridViewA_ctl02_btnDelete" />
+                    </td>
+		</tr>
+	</table>
+</div>
+    </div>
+     
+
+        </td>
+    </tr> 
+    <tr>
+        <td id="footer" colspan="3" align="center" >
+            <span style="font-size:small; color:#000000;">整合性總務作業管理資訊系統　版權所有，轉載必究　Copyright 2014       目前版本:V1.0.0.0更版時間:2014.05.30 下午13:00</span><br />
+         </td>
+    </tr>  
+</table>
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$.unblockUI();
+if(window.setMsg) { setMsg("申請子女姓名Q123456789，本學期已申請過，不可重覆申請!\n", "");} else {alert('申請子女姓名Q123456789，本學期已申請過，不可重覆申請!\n'); }
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>

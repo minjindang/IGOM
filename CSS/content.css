@@ -1,0 +1,240 @@
+﻿/* ----- generic HTML tags ----- */
+body {
+	margin:0px;
+	font-family:Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size:12px;
+	letter-spacing:1px;
+	background-color: #FFFFFF;
+}
+
+.formtable {
+	font-family: Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size: 12px;
+	line-height: 22px;
+	border: 1px solid #669999;
+	width : 98%;
+}
+
+.item{
+	background-color: #CBDCED;
+	padding-left: 3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.field{
+	background-color: #ECF2F9;
+	padding-left: 3px;
+	font-size: 13px;
+}
+
+.must
+{
+	background-color: #FFFFFF;
+	border: 1px solid #FF0000;
+}
+
+.formtable tr{
+	background-color: #F0F5FF;
+}
+
+.formtable td{
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.formcss {
+	font-family: Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size: 12px;
+	color: #333333;
+	background-color: #EEF1FD;
+	border: 1px solid #6589CD;
+	height: 14px;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.button {
+	font-family: Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size: 12px;
+	height: 20px;
+	border: 1px solid #6699CC;
+	color: #003333;
+	padding-top: 2px;
+}
+
+table.list {	
+	width:98%;
+	border:1px solid #aeccff;
+	margin:0px; 
+	padding:0px;
+}
+
+table.list caption
+{
+	font-size: 14px;
+	border: 1px solid #6699CC;
+	background-color: #CBDCED;
+	font-weight: bold;
+}
+
+table.list thead tr th
+{
+	background-color:#CBDCED;
+}
+
+table.list tr.total
+{
+	background-color:#FFFF93;
+}
+
+table.list tfoot tr td
+{
+	background-color:#CBDCED;
+}
+
+table.list th {
+	background-color:#CBDCED;
+}
+
+table.list tr {
+	background-color:expression(
+		(this.sectionRowIndex%2==0)?"white":"#ECF2F9")
+}
+
+table.list tr.odd {
+	test : expression(onmouseover=function()
+		{this.style.backgroundColor="#98BFDC"},
+	onmouseout=function()
+           	{this.style.backgroundColor="white"})
+}
+
+table.list tr.even {
+	test : expression(onmouseover=function()
+		{this.style.backgroundColor="#98BFDC"},
+	onmouseout=function()
+		{this.style.backgroundColor="#ECF2F9"})
+}
+
+table.list thead tr th.sorted a
+{
+	background-position: right;
+	display: block;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+table.list thead tr th.sortable a
+{
+	background-position: right;
+	display: block;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url('../images/arrow_off.png');
+}
+
+table.list thead tr th.order1 a
+{
+	background-image: url('../images/arrow_up.png');
+}
+
+table.list thead tr th.order2 a
+{
+	background-image: url('../images/arrow_down.png');
+}
+
+/* specific divs */
+div#header {
+	font-family: Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url("../images/header/header.jpg");
+	background-repeat: no-repeat;
+	text-align: right;
+	height: 80px;
+}
+
+div#header img {
+  	margin-top: 80px;
+}
+
+div#body {
+	background-color:white;
+}
+
+/* ----- menu ----- */
+div#menu {
+	float: left;
+	border: 0px solid #ffffff;
+	padding:10px;
+	width: 190px;
+	background-color: #ffffff;
+	line-height: 17px;
+	display:block;
+}
+
+/* ----- permissionsMenu ----- */
+div#permissionsMenu {
+	padding-top:30px;
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid #c0c0c0;
+	line-height: 17px;
+}
+
+/* ----- main ----- */
+div#main {
+	float: right;
+}
+
+/* ----- link ----- */
+div#link {
+	margin:0px; padding:0px;
+	background-color: #fff4ff;
+	height: 10px; 
+}
+
+div#link p.path {
+	margin:0px; padding:0px 0px 0px 10px;
+	float:left;
+	text-align:left;
+	white-space:nowrap;
+}
+
+div#link p.path a {
+	font-family: Verdana, "微軟正黑體,Microsoft JhengHei";
+	font-size: 12px;
+	text-decoration:none;
+}
+
+/* ----- title ----- */
+div#defaultTitle
+{
+	text-align: center;
+	background-color: #f9f9f9;
+	font-weight:bold;
+	font-size:24px;
+	width: 100%;
+}
+
+/* ----- body ----- */
+div#bodyTable
+{
+	width: 98%;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+/* ----- program ----- */
+div#program {
+}
+
+/* ----- footer ----- */
+div#footer {
+	text-align: center;
+	background-color:#CCCCCC;
+	width: 100%;
+}

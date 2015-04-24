@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="WSMOB001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_Type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB002">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AD_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_Type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB002Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB002Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB003">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AD_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_Type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB003Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB003Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB004">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isUpdate" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Requestfid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLeaveType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeputyDepartid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeputyIdcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterIdcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterPosid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OccurDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Place" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RetainFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChinaFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InterTravelFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_time" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB004Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSMOB004Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB005">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isUpdate" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Requestfid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLeaveType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transport" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeputyDepartid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeputyIdcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterIdcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WriterPosid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Place" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HStart_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HEnd_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HStart_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HEnd_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PlaceCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TransportDesc" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hcbx" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB005Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB005Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB006">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB006Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB006Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB008">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_idcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Quit_job_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PESEX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Employee_type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB008Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB008Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB010">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="User_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_card_q" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Title_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Quit_job_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PESEX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Leave_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Employee_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Case_status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB010Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB010Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB012">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRCARD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRADDD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRADDE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Case_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB012Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB012Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB014">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_idcard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="End_date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Leave_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB014Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB014Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB016">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB016Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB016Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB017">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeptID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_Card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Auth_Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB017Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB017Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB018">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB018Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB018Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB019">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Apply_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Leave_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Start_date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB019Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB019Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB020">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB020Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB020Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB021">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB021Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB021Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB024">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Leave_type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB024Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB024Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB025">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAcc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB025Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB025Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB027">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MetadbID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB027Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB027Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB029">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ym" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ymd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB029Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB029Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB030">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fee_ym" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB030Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB030Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB031">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Orgcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Depart_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ym" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRADDD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRSTIME" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB031Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB031Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB032">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB032Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB032Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSMOB033">
+        <s:complexType />
+      </s:element>
+      <s:element name="WSMOB033Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSMOB033Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WSMOB001SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB001" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB001SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB001Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB002SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB002" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB002SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB002Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB003SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB003" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB003SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB003Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB004SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB004" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB004SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB004Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB005SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB005" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB005SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB005Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB006SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB006" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB006SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB006Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB008SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB008" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB008SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB008Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB010SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB010" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB010SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB010Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB012SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB012" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB012SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB012Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB014SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB014" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB014SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB014Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB016SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB016" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB016SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB016Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB017SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB017" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB017SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB017Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB018SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB018" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB018SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB018Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB019SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB019" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB019SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB019Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB020SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB020" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB020SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB020Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB021SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB021" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB021SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB021Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB024SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB024" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB024SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB024Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB025SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB025" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB025SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB025Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB027SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB027" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB027SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB027Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB029SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB029" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB029SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB029Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB030SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB030" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB030SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB030Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB031SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB031" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB031SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB031Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB032SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB032" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB032SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB032Response" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB033SoapIn">
+    <wsdl:part name="parameters" element="tns:WSMOB033" />
+  </wsdl:message>
+  <wsdl:message name="WSMOB033SoapOut">
+    <wsdl:part name="parameters" element="tns:WSMOB033Response" />
+  </wsdl:message>
+  <wsdl:portType name="MOBServicesSoap">
+    <wsdl:operation name="WSMOB001">
+      <wsdl:input message="tns:WSMOB001SoapIn" />
+      <wsdl:output message="tns:WSMOB001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB002">
+      <wsdl:input message="tns:WSMOB002SoapIn" />
+      <wsdl:output message="tns:WSMOB002SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB003">
+      <wsdl:input message="tns:WSMOB003SoapIn" />
+      <wsdl:output message="tns:WSMOB003SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB004">
+      <wsdl:input message="tns:WSMOB004SoapIn" />
+      <wsdl:output message="tns:WSMOB004SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB005">
+      <wsdl:input message="tns:WSMOB005SoapIn" />
+      <wsdl:output message="tns:WSMOB005SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB006">
+      <wsdl:input message="tns:WSMOB006SoapIn" />
+      <wsdl:output message="tns:WSMOB006SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB008">
+      <wsdl:input message="tns:WSMOB008SoapIn" />
+      <wsdl:output message="tns:WSMOB008SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB010">
+      <wsdl:input message="tns:WSMOB010SoapIn" />
+      <wsdl:output message="tns:WSMOB010SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB012">
+      <wsdl:input message="tns:WSMOB012SoapIn" />
+      <wsdl:output message="tns:WSMOB012SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB014">
+      <wsdl:input message="tns:WSMOB014SoapIn" />
+      <wsdl:output message="tns:WSMOB014SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB016">
+      <wsdl:input message="tns:WSMOB016SoapIn" />
+      <wsdl:output message="tns:WSMOB016SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB017">
+      <wsdl:input message="tns:WSMOB017SoapIn" />
+      <wsdl:output message="tns:WSMOB017SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB018">
+      <wsdl:input message="tns:WSMOB018SoapIn" />
+      <wsdl:output message="tns:WSMOB018SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB019">
+      <wsdl:input message="tns:WSMOB019SoapIn" />
+      <wsdl:output message="tns:WSMOB019SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB020">
+      <wsdl:input message="tns:WSMOB020SoapIn" />
+      <wsdl:output message="tns:WSMOB020SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB021">
+      <wsdl:input message="tns:WSMOB021SoapIn" />
+      <wsdl:output message="tns:WSMOB021SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB024">
+      <wsdl:input message="tns:WSMOB024SoapIn" />
+      <wsdl:output message="tns:WSMOB024SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB025">
+      <wsdl:input message="tns:WSMOB025SoapIn" />
+      <wsdl:output message="tns:WSMOB025SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB027">
+      <wsdl:input message="tns:WSMOB027SoapIn" />
+      <wsdl:output message="tns:WSMOB027SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB029">
+      <wsdl:input message="tns:WSMOB029SoapIn" />
+      <wsdl:output message="tns:WSMOB029SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB030">
+      <wsdl:input message="tns:WSMOB030SoapIn" />
+      <wsdl:output message="tns:WSMOB030SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB031">
+      <wsdl:input message="tns:WSMOB031SoapIn" />
+      <wsdl:output message="tns:WSMOB031SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB032">
+      <wsdl:input message="tns:WSMOB032SoapIn" />
+      <wsdl:output message="tns:WSMOB032SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB033">
+      <wsdl:input message="tns:WSMOB033SoapIn" />
+      <wsdl:output message="tns:WSMOB033SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MOBServicesSoap" type="tns:MOBServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WSMOB001">
+      <soap:operation soapAction="http://tempuri.org/WSMOB001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB002">
+      <soap:operation soapAction="http://tempuri.org/WSMOB002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB003">
+      <soap:operation soapAction="http://tempuri.org/WSMOB003" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB004">
+      <soap:operation soapAction="http://tempuri.org/WSMOB004" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB005">
+      <soap:operation soapAction="http://tempuri.org/WSMOB005" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB006">
+      <soap:operation soapAction="http://tempuri.org/WSMOB006" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB008">
+      <soap:operation soapAction="http://tempuri.org/WSMOB008" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB010">
+      <soap:operation soapAction="http://tempuri.org/WSMOB010" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB012">
+      <soap:operation soapAction="http://tempuri.org/WSMOB012" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB014">
+      <soap:operation soapAction="http://tempuri.org/WSMOB014" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB016">
+      <soap:operation soapAction="http://tempuri.org/WSMOB016" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB017">
+      <soap:operation soapAction="http://tempuri.org/WSMOB017" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB018">
+      <soap:operation soapAction="http://tempuri.org/WSMOB018" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB019">
+      <soap:operation soapAction="http://tempuri.org/WSMOB019" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB020">
+      <soap:operation soapAction="http://tempuri.org/WSMOB020" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB021">
+      <soap:operation soapAction="http://tempuri.org/WSMOB021" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB024">
+      <soap:operation soapAction="http://tempuri.org/WSMOB024" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB025">
+      <soap:operation soapAction="http://tempuri.org/WSMOB025" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB027">
+      <soap:operation soapAction="http://tempuri.org/WSMOB027" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB029">
+      <soap:operation soapAction="http://tempuri.org/WSMOB029" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB030">
+      <soap:operation soapAction="http://tempuri.org/WSMOB030" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB031">
+      <soap:operation soapAction="http://tempuri.org/WSMOB031" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB032">
+      <soap:operation soapAction="http://tempuri.org/WSMOB032" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB033">
+      <soap:operation soapAction="http://tempuri.org/WSMOB033" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MOBServicesSoap12" type="tns:MOBServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WSMOB001">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB002">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB002" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB003">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB003" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB004">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB004" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB005">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB005" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB006">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB006" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB008">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB008" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB010">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB010" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB012">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB012" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB014">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB014" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB016">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB016" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB017">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB017" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB018">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB018" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB019">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB019" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB020">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB020" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB021">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB021" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB024">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB024" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB025">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB025" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB027">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB027" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB029">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB029" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB030">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB030" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB031">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB031" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB032">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB032" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSMOB033">
+      <soap12:operation soapAction="http://tempuri.org/WSMOB033" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MOBServices">
+    <wsdl:port name="MOBServicesSoap" binding="tns:MOBServicesSoap">
+      <soap:address location="http://localhost/IGOM/WebService/Mobile/MOBServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MOBServicesSoap12" binding="tns:MOBServicesSoap12">
+      <soap12:address location="http://localhost/IGOM/WebService/Mobile/MOBServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

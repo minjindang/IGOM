@@ -1,0 +1,547 @@
+發生時間：2014-06-13 09:25:07.0241
+類別：AppException
+訊息：無效的資料行名稱 'LEVCOM_ORG_L3'。
+無效的資料行名稱 'LEVCOM_ORG_L1'。
+無效的資料行名稱 'LEVCOM_PTB'。
+無效的資料行名稱 'LEVCOM_ORG_L2'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4104DAO.Update(String Jobtype, String Leveltype, String L3, String L1, String securityid, String date1) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4104DAO.vb: 行 96
+   於 SAL.Logic.SAL4104.Update(String Jobtype, String Leveltype, String L3, String L1, String securityid, String date1) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4104.vb: 行 37
+   於 SAL4104_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4104_03.aspx.vb: 行 42
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 09:44:00.6468
+類別：AppException
+訊息：在此內容中無法使用要求
+   於 System.Web.UI.Page.get_Request()
+   於 SAL4104_03..ctor() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4104_03.aspx.vb: 行 14
+   於 ASP.sal_sal4_sal4104_03_aspx..ctor() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4104_03.aspx.vb: 行 912304
+   於 __ASP.FastObjectFactory_app_web_6dy6dtij.Create_ASP_sal_sal4_sal4104_03_aspx()
+   於 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 09:46:45.0128
+類別：AppException
+訊息：在此內容中無法使用要求
+   於 System.Web.UI.Page.get_Request()
+   於 SAL4104_03..ctor() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4104_03.aspx.vb: 行 14
+   於 ASP.sal_sal4_sal4104_03_aspx..ctor() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4104_03.aspx.vb: 行 912304
+   於 __ASP.FastObjectFactory_app_web_jzs7es83.Create_ASP_sal_sal4_sal4104_03_aspx()
+   於 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:35:50.5390
+類別：AppException
+訊息：2014061310355008
+   於 SAL_SAL1_SAL1104_01.btn_new_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 180
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:36:19.6415
+類別：AppException
+訊息：2014061310361933
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:39:43.2754
+類別：AppException
+訊息：2014061310394374
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:40:19.1924
+類別：AppException
+訊息：2014061310401991
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:46:16.8596
+類別：AppException
+訊息：2014061310461620
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:46:27.8280
+類別：AppException
+訊息：d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs(331): error CS1526: 新的運算式在型別後需要有 ()、[] 或 {}
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:46:28.1142
+類別：AppException
+訊息：d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs(331): error CS1526: 新的運算式在型別後需要有 ()、[] 或 {}
+   於 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:47:51.5798
+類別：AppException
+訊息：2014061310475160
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 333
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:49:21.5189
+類別：AppException
+訊息：2014061310492146
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 333
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:51:34.7741
+類別：AppException
+訊息：2014061310513429
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:53:19.3921
+類別：AppException
+訊息：2014061310531873
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:56:46.2034
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 10:59:07.1917
+類別：AppException
+訊息：2014061310590754
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 11:00:49.8134
+類別：AppException
+訊息：2014061311004904
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 11:01:45.2395
+類別：AppException
+訊息：2014061311014537
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 11:11:29.2181
+類別：AppException
+訊息：2014061311112994
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 332
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 11:13:26.1102
+類別：AppException
+訊息：2014061311132617
+   於 SAL_SAL1_SAL1104_01.btn_new_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 180
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:11:14.0648
+類別：AppException
+訊息：2014061313111457
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:11:14.4341
+類別：AppException
+訊息：2014613131114434
+System.Runtime.Remoting.RemotingException: 物件 '/a7592d25_02b7_46f2_9229_b1728698e594/mqiamydvvo0xqkfoktryrhrt_202.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 118
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:45:27.5745
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:56:22.9487
+類別：AppException
+訊息：2014061313562210
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:56:23.1928
+類別：AppException
+訊息：2014613135623192
+System.Runtime.Remoting.RemotingException: 物件 '/78de558f_d8cf_4a9f_b15b_141efeee8e50/kiwpfqqkuqimpiwllwjc3zxq_52.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 118
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 13:56:23.3779
+類別：AppException
+訊息：值不能為 null。
+參數名稱: exception
+   於 System.Web.UI.AsyncPostBackErrorEventArgs..ctor(Exception exception)
+   於 System.Web.UI.PageRequestManager.OnPageError(Object sender, EventArgs e)
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.TemplateControl.OnError(EventArgs e)
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.sal_sal3_sal3104_01_aspx.ProcessRequest(HttpContext context) 於 c:\Users\Kduser\AppData\Local\Temp\Temporary ASP.NET Files\igom\f43a54a3\f7df5849\App_Web_kuchnjsp.0.cs: 行 0
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:00:03.5445
+類別：AppException
+訊息：字串或二進位資料會被截斷。
+陳述式已經結束。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 BaseDAO.UpdateByExample(String table_name, Dictionary`2 values, Dictionary`2 condition) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 143
+   於 FSC.Logic.LeaveSetting.Update() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\LeaveSetting.vb: 行 277
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 149
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:03:13.2624
+類別：AppException
+訊息：字串或二進位資料會被截斷。
+陳述式已經結束。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 BaseDAO.UpdateByExample(String table_name, Dictionary`2 values, Dictionary`2 condition) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 143
+   於 FSC.Logic.LeaveSetting.Update() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\LeaveSetting.vb: 行 277
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 149
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:05:46.4028
+類別：AppException
+訊息：字串或二進位資料會被截斷。
+陳述式已經結束。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 BaseDAO.UpdateByExample(String table_name, Dictionary`2 values, Dictionary`2 condition) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 143
+   於 FSC.Logic.LeaveSetting.Update() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\LeaveSetting.vb: 行 277
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 149
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:09:35.3620
+類別：AppException
+訊息：字串或二進位資料會被截斷。
+陳述式已經結束。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 BaseDAO.UpdateByExample(String table_name, Dictionary`2 values, Dictionary`2 condition) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 143
+   於 FSC.Logic.LeaveSetting.Update() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\LeaveSetting.vb: 行 277
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 149
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:09:46.4724
+類別：AppException
+訊息：字串或二進位資料會被截斷。
+陳述式已經結束。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 BaseDAO.UpdateByExample(String table_name, Dictionary`2 values, Dictionary`2 condition) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 143
+   於 FSC.Logic.LeaveSetting.Update() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\LeaveSetting.vb: 行 277
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 149
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:29:16.3152
+類別：AppException
+訊息：交易已中止。
+   於 System.Transactions.TransactionStateAborted.BeginCommit(InternalTransaction tx, Boolean asyncCommit, AsyncCallback asyncCallback, Object asyncState)
+   於 System.Transactions.CommittableTransaction.Commit()
+   於 System.Transactions.TransactionScope.InternalDispose()
+   於 System.Transactions.TransactionScope.Dispose()
+   於 FSC4108_02.cbConfirm_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC4\FSC4108_02.aspx.vb: 行 167
+方法：[Void OnClick(System.EventArgs)] => [Void cbConfirm_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:29:17.3359
+類別：AppException
+訊息：2014061314291735
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 14:29:17.4579
+類別：AppException
+訊息：2014613142917457
+System.Runtime.Remoting.RemotingException: 物件 '/78de558f_d8cf_4a9f_b15b_141efeee8e50/zc6u7us3qnhb5c4ffkj6q6e5_325.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 118
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-13 15:33:57.7168
+類別：AppException
+訊息：2014061315335773
+   於 FSC1101_01.Submit() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC1\FSC1101_01.aspx.vb: 行 787
+   於 FSC1101_01.cbSubmit_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC1\FSC1101_01.aspx.vb: 行 676
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

@@ -1,0 +1,334 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/6E1A4AB4/FSC1304_RPT4.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"FSC1304_RPT4.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"FSC1304_RPT4.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"FSC1304_RPT4.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Yu</o:Author>
+  <o:LastAuthor>Yu</o:LastAuthor>
+  <o:LastPrinted>2009-05-25T12:58:53Z</o:LastPrinted>
+  <o:Created>1997-01-14T01:50:29Z</o:Created>
+  <o:LastSaved>2009-10-23T09:02:58Z</o:LastSaved>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{mso-header-data:"&R&\0022\6A19\6977\9AD4\,\6A19\6E96\0022\000A\000A\000A\=
+000A\000A\000A\7B2C&P\9801   \5171&N\9801    &1\.&12\3000\3000\3000\3000\30=
+00\3000\3000";
+	margin:.98in .86in .67in .31in;
+	mso-header-margin:.10in;
+	mso-footer-margin:.5in;
+	mso-horizontal-page-align:center;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\4E00\822C;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;}
+.xl25
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:center;}
+.xl26
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:right;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl29
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:right;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl30
+	{mso-style-parent:style0;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl31
+	{mso-style-parent:style0;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl32
+	{mso-style-parent:style0;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:DFKai-SB, cursive;
+	mso-font-charset:136;
+	text-align:center;}
+.xl34
+	{mso-style-parent:style0;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>&#21152;&#29677;&#36027;&#21360;&#38936;&#28165;&#21934;</x:Nam=
+e>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>330</x:DefaultRowHeight>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>4</x:ActiveRow>
+       <x:ActiveCol>8</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>4530</x:WindowHeight>
+  <x:WindowWidth>8505</x:WindowWidth>
+  <x:WindowTopX>450</x:WindowTopX>
+  <x:WindowTopY>90</x:WindowTopY>
+  <x:AcceptLabelsInFormulas/>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+  <x:DisplayInkNotes>False</x:DisplayInkNotes>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>Print_Titles</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3D&#21152;&#29677;&#36027;&#21360;&#38936;&#28165;&#21934;!$1:$6</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+<PageRepeatArea>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D686 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:516pt'>
+ <col width=3D68 style=3D'mso-width-source:userset;mso-width-alt:2176;width=
+:51pt'>
+ <col width=3D105 style=3D'mso-width-source:userset;mso-width-alt:3360;widt=
+h:79pt'>
+ <col width=3D93 span=3D3 style=3D'mso-width-source:userset;mso-width-alt:2=
+976;
+ width:70pt'>
+ <col width=3D117 span=3D2 style=3D'mso-width-source:userset;mso-width-alt:=
+3744;
+ width:88pt'>
+ <tr height=3D26 style=3D'height:19.5pt'>
+  <td colspan=3D7 height=3D26 class=3Dxl33 width=3D686 style=3D'height:19.5=
+pt;width:516pt'>&#37329;&#34701;&#30435;&#30563;&#3=
+1649;&#29702;&#22996;&#21729;&#26371;##P1####P2####P3##&#24180;##P4##&#2637=
+6;&#21152;&#29677;&#36027;&#21360;&#38936;&#32317;&#34920;</td>
+ </tr>
+ <tr height=3D26 style=3D'height:19.5pt'>
+  <td colspan=3D7 height=3D26 class=3Dxl33 style=3D'height:19.5pt'>##P5##</=
+td>
+ </tr>
+<tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D5 class=3Dxl66 style=3D'height:16.5pt;mso-ignor=
+e:colspan'></td>
+  <td colspan=3D2 class=3Dxl65></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D5 class=3Dxl25 style=3D'height:16.5pt;mso-ignor=
+e:colspan'></td>
+  <td class=3Dxl24 colspan=3D2 style=3D'mso-ignore:colspan'>&#21015;&#21360=
+;&#20154;&#21729;&#65306;##P6##</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D5 style=3D'height:16.5pt;mso-ignore:colspan'></=
+td>
+  <td class=3Dxl24 colspan=3D2 style=3D'mso-ignore:colspan'>&#21015;&#21360=
+;&#26178;&#38291;&#65306;##P7##</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl26 width=3D68 style=3D'height:16.5pt;width:51pt=
+'>&#38917;&#27425;</td>
+  <td class=3Dxl27 width=3D105 style=3D'width:79pt'>&#22995;&#21517;</td>
+  <td class=3Dxl27 width=3D93 style=3D'width:70pt'>&#32887;&#31281;</td>
+  <td class=3Dxl27 width=3D93 style=3D'width:70pt'>&#21152;&#29677;&#26178;=
+&#25976;</td>
+  <td class=3Dxl27 width=3D93 style=3D'width:70pt'>&#27599;&#26376;&#34218;=
+&#20472;</td>
+  <td class=3Dxl27 width=3D117 style=3D'width:88pt'>&#27599;&#23567;&#26178=
+;&#21152;&#29677;&#36027;</td>
+  <td class=3Dxl27 width=3D117 style=3D'width:88pt'>&#21152;&#29677;&#36027=
+;&#32317;&#38989;</td>
+ </tr>
+ <RepeatArea>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl30 style=3D'height:16.5pt'>##No##</td>
+  <td class=3Dxl31>##User_name##</td>
+  <td class=3Dxl31>##Title_name##</td>
+  <td class=3Dxl32>##Total_hour##</td>
+  <td class=3Dxl32>##Monthly_Pay##</td>
+  <td class=3Dxl32>##Hour_Pay##</td>
+  <td class=3Dxl32>##Total_pay##</td>
+ </tr>
+ </RepeatArea>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D6 height=3D22 class=3Dxl28 style=3D'height:16.5pt'>&#21512;=
+&#35336;</td>
+  <td class=3Dxl34 style=3D'border-top:none'>##P8##</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl24 colspan=3D3 style=3D'height:16.5pt;mso-ignor=
+e:colspan'>&#21934;&#20301;&#20027;&#31649;&#65306;<span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>&#20027;&#36774;&#20154;&#20107;&#20154;&#21729;&#65306;</td>
+  </PageRepeatArea>
+  <td class=3Dxl24></td>
+  <td class=3Dxl24 colspan=3D3 style=3D'mso-ignore:colspan'>&#20027;&#36774=
+;&#26371;&#35336;&#20154;&#21729;&#65306;<span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>&#27231;&#38364;&#39318;&#38263;&#65306;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D68 style=3D'width:51pt'></td>
+  <td width=3D105 style=3D'width:79pt'></td>
+  <td width=3D93 style=3D'width:70pt'></td>
+  <td width=3D93 style=3D'width:70pt'></td>
+  <td width=3D93 style=3D'width:70pt'></td>
+  <td width=3D117 style=3D'width:88pt'></td>
+  <td width=3D117 style=3D'width:88pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</PageRepeatArea>
+</body>
+
+</html>

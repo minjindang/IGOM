@@ -1,0 +1,2 @@
+2014-06-24 23:45:00.4218|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-06-24 23:50:00.0127|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====

@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap id="IGSS0000" moduleName="整合性總務管理資訊系統" description="回到首頁" >
+<siteMapNode id="IGSS1000" moduleName="個人整合清單" description="" url="" >
+<siteMapNode id="IGSS1100" moduleName="待批/辦清單" description="" url="~/FSC/FSC0/FSC0101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS1200" moduleName="案件查詢" description="" url="" >
+<siteMapNode id="IGSS1201" moduleName="申請案件查詢" description="" url="~/FSC/FSC0/FSC0102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS1202" moduleName="已批案件查詢" description="" url="~/FSC/FSC0/FSC0103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS1203" moduleName="被代批案件查詢" description="" url="~/FSC/FSC0/FSC0104_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS1300" moduleName="我的最愛" description="" url="~/SYS/SYS3/SYS3120_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS2000" moduleName="申請管理作業" description="" url="" >
+<siteMapNode id="IGSS2100" moduleName="費用類申請" description="" url="" >
+<siteMapNode id="IGSS2101" moduleName="加班費請領" description="" url="~/SAL/SAL1/SAL1111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2102" moduleName="加班費請領(適用勞基法)" description="" url="~/SAL/SAL1/SAL1112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2103" moduleName="差旅費申請" description="" url="~/SAL/SAL1/sal1113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2104" moduleName="未休假加班費" description="" url="~/SAL/SAL1/SAL1106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2105" moduleName="子女教育補助津貼" description="" url="~/SAL/SAL1/SAL1103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2106" moduleName="結婚生育及喪葬補助費" description="" url="~/SAL/SAL1/SAL1109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2107" moduleName="健檢補助費申請" description="" url="~/SAL/SAL1/SAL1105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2108" moduleName="替代役交通費" description="" url="~/SAL/SAL1/SAL1107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2109" moduleName="短程車費" description="" url="~/SAL/SAL1/SAL1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2110" moduleName="環保志工服務費" description="" url="~/SAL/SAL1/SAL1108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2111" moduleName="評審委員出席審查費、講師鐘點費申請作業" description="" url="~/SAL/SAL1/SAL1104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2112" moduleName="值班費請領" description="" url="~/SAL/SAL1/SAL1102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2114" moduleName="勞/健、公/健保繳納證明申請" description="" url="~/SAL/SAL1/SAL1110_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS2200" moduleName="人事類申請" description="" url="" >
+<siteMapNode id="IGSS2201" moduleName="請假申請" description="" url="~/FSC/FSC1/FSC1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2202" moduleName="公差申請" description="" url="~/FSC/FSC1/FSC1102_02.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2203" moduleName="專簽加班簽核申請" description="" url="~/FSC/FSC1/FSC1105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2204" moduleName="加班/專案加班申請" description="" url="~/FSC/FSC1/FSC1103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2205" moduleName="刷卡補登申請" description="" url="~/FSC/FSC1/FSC1104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2206" moduleName="敘獎申請" description="" url="~/FSC/FSC1/FSC1108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2207" moduleName="值日(夜)代(換)值申請" description="" url="~/FSC/FSC1/FSC1106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2208" moduleName="在職(服務)中文證明申請" description="" url="~/FSC/FSC1/FSC1107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2210" moduleName="自訂表單申請作業" description="" url="~/FSC/FSC1/FSC1110_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS2300" moduleName="庶務類申請" description="" url="" >
+<siteMapNode id="IGSS2301" moduleName="個人領物申請" description="" url="~/MAT/MAT1/MAT1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2302" moduleName="單位領物申請" description="" url="~/MAT/MAT1/MAT1102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2303" moduleName="請購申請" description="" url="~/PAY/PAY1/PAY1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2304" moduleName="派車申請" description="" url="~/CAR/CAR1/CAR1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2305" moduleName="報修申請" description="" url="~/MAI/MAI1/MAI1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2306" moduleName="廣播申請" description="" url="~/OTH/OTH1/OTH1101_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS2400" moduleName="財產類申請" description="" url="" >
+<siteMapNode id="IGSS2401" moduleName="財產移轉申請" description="" url="~/PRO/PRO1/PRO1101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2402" moduleName="財產報廢申請" description="" url="~/PRO/PRO1/PRO1102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2403" moduleName="軟體登記申請" description="" url="~/PRO/PRO1/PRO1103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2404" moduleName="財產保管查詢" description="" url="~/PRO/PRO2/PRO2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2405" moduleName="財產報廢列印" description="" url="~/PRO/PRO2/PRO2102_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS2600" moduleName="紙本表單類申請" description="" url="" >
+<siteMapNode id="IGSS2601" moduleName="線上下載紙本表單" description="" url="~/FSC/FSC1/FSC1111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS2602" moduleName="紙本表單線上申請" description="" url="~/FSC/FSC1/FSC1112_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS3000" moduleName="費用管理作業" description="" url="" >
+<siteMapNode id="IGSS3100" moduleName="基本資料管理" description="" url="" >
+<siteMapNode id="IGSS3130" moduleName="薪資異動通知作業" description="" url="~/SAL/SAL3/SAL3130_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3131" moduleName="評審出席費、講師費申請資料釐正" description="" url="~/SAL/SAL3/SAL3131_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3101" moduleName="員工薪資基本資料維護" description="" url="~/SAL/SAL3/SAL3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3102" moduleName="非員工薪資基本資料維護" description="" url="~/SAL/SAL3/SAL3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3103" moduleName="自訂薪資項目維護" description="" url="~/SAL/SAL3/SAL3103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3104" moduleName="各類補發代扣資料維護" description="" url="~/SAL/SAL3/SAL3104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3105" moduleName="考績獎金資料維護" description="" url="~/SAL/SAL3/SAL3105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3106" moduleName="晉級補發維護" description="" url="~/SAL/SAL3/SAL3106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3107" moduleName="年終獎金主管加給維護" description="" url="~/SAL/SAL3/SAL3107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3108" moduleName="年終獎金專業加給維護" description="" url="~/SAL/SAL3/SAL3108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3111" moduleName="薪資計算" description="" url="~/SAL/SAL3/SAL3111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3112" moduleName="薪資計算結果查詢與維護" description="" url="~/SAL/SAL3/SAL3112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3114" moduleName="基本薪資發放轉帳" description="" url="~/SAL/SAL3/SAL3114_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3115" moduleName="轉帳服務查詢" description="" url="~/SAL/SAL3/SAL3115_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3116" moduleName="銀行帳號與轉帳項目對照檔維護" description="" url="~/SAL/SAL3/SAL3116_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3117" moduleName="薪資計算鎖定作業" description="" url="~/SAL/SAL3/SAL3117_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3118" moduleName="員工所得扣繳資料檔維護" description="" url="~/SAL/SAL3/SAL3118_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3119" moduleName="產生所得稅申報資料檔" description="" url="~/SAL/SAL3/SAL3119_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3121" moduleName="產生媒體申報檔" description="" url="~/SAL/SAL3/SAL3121_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3122" moduleName="人事行政總處待遇資料上傳" description="" url="~/SAL/SAL3/SAL3122_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3123" moduleName="匯入健保局繳費資料" description="" url="~/SAL/SAL3/SAL3123_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3124" moduleName="補充保費申報媒體檔作業" description="" url="~/SAL/SAL3/SAL3124_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3125" moduleName="勞健保投保金額調整申報作業" description="" url="~/SAL/SAL3/SAL3125_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3127" moduleName="外部資料轉入" description="" url="~/SAL/SAL3/SAL3127_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL3128" moduleName="非員工所得扣繳資料檔維護" description="" url="~/SAL/SAL3/SAL3128_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS3200" moduleName="參數設定" description="" url="" >
+<siteMapNode id="IGSS3207" moduleName="批次計算查詢" description="" url="~/SAL/SAL4/SAL4107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3208" moduleName="薪俸對照表" description="" url="~/SAL/SAL4/SAL4108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3209" moduleName="加給對照表" description="" url="~/SAL/SAL4/SAL4109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3212" moduleName="薪資所得扣繳對照表" description="" url="~/SAL/SAL4/SAL4112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3213" moduleName="薪資計算參數維護" description="" url="~/SAL/SAL4/SAL4113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS3214" moduleName="機關基本資料維護" description="" url="~/SAL/SAL4/SAL4114_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL4101" moduleName="勞保事故保險金額分級表" description="" url="~/SAL/SAL4/SAL4101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL4102" moduleName="銀行轉帳格式檔設定" description="" url="~/SAL/SAL4/SAL4102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL4103" moduleName="所得申報格式檔設定" description="" url="~/SAL/SAL4/SAL4103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL4104" moduleName="職等俸點年功對照表" description="" url="~/SAL/SAL4/SAL4104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL4106" moduleName="申請區間設定" description="" url="~/SAL/SAL4/SAL4106_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS3300" moduleName="查詢及列印" description="" url="" >
+<siteMapNode id="SAL2101" moduleName="薪餉單查詢" description="" url="~/SAL/SAL2/SAL2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2102" moduleName="公/健、勞健保繳納證明列印" description="" url="~/SAL/SAL2/SAL2102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2103" moduleName="國民旅遊補助費用發放清冊" description="" url="~/SAL/SAL2/SAL2103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2104" moduleName="薪資鎖定記錄查詢" description="" url="~/SAL/SAL2/SAL2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2105" moduleName="薪給發放清冊" description="" url="~/SAL/SAL2/SAL2105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2106" moduleName="加值匯出員工薪資資料" description="" url="~/SAL/SAL2/SAL2106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2107" moduleName="考績獎金發放清冊" description="" url="~/SAL/SAL2/SAL2107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2108" moduleName="年終工作獎金發放清冊" description="" url="~/SAL/SAL2/SAL2108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2109" moduleName="晉級補發發放清冊" description="" url="~/SAL/SAL2/SAL2109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2110" moduleName="各項調整薪差發放清冊" description="" url="~/SAL/SAL2/SAL2110_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2111" moduleName="與上月薪資發放比較表" description="" url="~/SAL/SAL2/SAL2111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2112" moduleName="年度發放獎金累計查詢" description="" url="~/SAL/SAL2/SAL2112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2113" moduleName="補充保費繳費單" description="" url="~/SAL/SAL2/SAL2113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2114" moduleName="所得額統計表" description="" url="~/SAL/SAL2/SAL2114_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2115" moduleName="年度所得清冊" description="" url="~/SAL/SAL2/SAL2115_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2116" moduleName="每月所得統計表" description="" url="~/SAL/SAL2/SAL2116_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2117" moduleName="技工工友調整工餉發放清冊" description="" url="~/SAL/SAL2/SAL2117_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2118" moduleName="員工所得扣繳資料查詢" description="" url="~/SAL/SAL2/SAL2118_01.aspx" >
+</siteMapNode>
+<siteMapNode id="SAL2120" moduleName="補充保費扣繳證明書列印" description="" url="~/SAL/SAL2/SAL2120_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS4000" moduleName="人事差勤管理作業" description="" url="" >
+<siteMapNode id="IGSS4100" moduleName="基本資料管理" description="" url="" >
+<siteMapNode id="IGSS4102" moduleName="預設代理人資料維護" description="" url="~/FSC/FSC3/FSC3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4103" moduleName="直屬主管異動" description="" url="~/FSC/FSC3/FSC3103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4107" moduleName="年度結轉作業" description="" url="~/FSC/FSC3/FSC3107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4108" moduleName="刷卡記錄更新維護" description="" url="~/FSC/FSC3/FSC3108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4109" moduleName="大批請假" description="" url="~/FSC/FSC3/FSC3109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4110" moduleName="大批加班" description="" url="~/FSC/FSC3/FSC3110_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4111" moduleName="班別資料維護 " description="" url="~/FSC/FSC3/FSC3111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4112" moduleName="排班資料維護 " description="" url="~/FSC/FSC3/FSC3112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4113" moduleName="刷卡資料匯入作業" description="" url="~/FSC/FSC3/FSC3113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4114" moduleName="線上刷卡作業" description="" url="~/FSC/FSC3/FSC3114_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4115" moduleName="人事資料結轉作業" description="" url="~/FSC/FSC3/FSC3201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4116" moduleName="員工/非員工基本資料維護" description="" url="~/EMP/EMP3/EMP3105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4117" moduleName="人事資料同步作業" description="" url="../FSC/FSC3/FSC3115_01.ASPX" >
+</siteMapNode>
+<siteMapNode id="IGSS4118" moduleName="刷卡轉出勤作業" description="" url="~/FSC/FSC4/FSC4202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4119" moduleName="差假資料維護作業" description="" url="~/FSC/FSC3/FSC3116_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4120" moduleName="出勤資料維護作業" description="" url="~/FSC/FSC3/FSC3117_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4121" moduleName="出勤異常註銷作業" description="" url="~/FSC/FSC3/FSC3118_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4122" moduleName="獎懲令發佈作業" description="" url="~/FSC/FSC3/FSC3119_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4123" moduleName="員工個人資料" description="" url="~/EMP/EMP3/EMP3106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4124" moduleName="休假補助費作業" description="" url="~/FSC/FSC3/FSC3121_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS4200" moduleName="參數設定" description="" url="" >
+<siteMapNode id="IGSS4201" moduleName="勤惰資料上傳p2k" description="" url="~/FSC/FSC4/FSC4101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4202" moduleName="E-mail管理員設定" description="" url="~/FSC/FSC4/FSC4102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4203" moduleName="刷卡補登次數設定" description="" url="~/FSC/FSC4/FSC4103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4204" moduleName="年度行事曆設定" description="" url="~/FSC/FSC4/FSC4104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4205" moduleName="個人秘書設定" description="" url="~/FSC/FSC4/FSC4105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4207" moduleName="差勤參數設定" description="" url="~/FSC/FSC4/FSC4107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4208" moduleName="請假規定維護" description="" url="~/FSC/FSC4/FSC4108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4209" moduleName="請假上限維護" description="" url="~/FSC/FSC4/FSC4109_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS4300" moduleName="查詢及列印" description="" url="" >
+<siteMapNode id="IGSS4302" moduleName="出勤(異常)紀錄查詢" description="" url="~/FSC/FSC2/FSC2102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4303" moduleName="請假紀錄查詢" description="" url="~/FSC/FSC2/FSC2103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4304" moduleName="公差紀錄查詢" description="" url="~/FSC/FSC2/FSC2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4305" moduleName="加班紀錄查詢" description="" url="~/FSC/FSC2/FSC2105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4306" moduleName="單位差假現況" description="" url="~/FSC/FSC2/FSC2106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4307" moduleName="刷卡補登查詢" description="" url="~/FSC/FSC2/FSC2107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4308" moduleName="值班紀錄查詢" description="" url="~/FSC/FSC2/FSC2108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4309" moduleName="署內值日表" description="" url="~/FSC/FSC2/FSC2109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4310" moduleName="查詢代理資料" description="" url="~/FSC/FSC2/FSC2110_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4311" moduleName="主管差假查詢" description="" url="~/FSC/FSC2/FSC2111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4312" moduleName="替代役出勤查詢" description="" url="~/FSC/FSC2/FSC2112_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4313" moduleName="年度資料查詢作業" description="" url="~/FSC/FSC2/FSC2113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4315" moduleName="監資處值日表" description="" url="~/FSC/FSC2/FSC2115_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4316" moduleName="國民旅遊卡申報作業" description="" url="~/FSC/FSC2/FSC2116_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4317" moduleName="悠遊卡刷卡紀錄查詢" description="" url="~/FSC/FSC2/FSC2117_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4318" moduleName="敍獎紀錄查詢" description="" url="~/FSC/FSC2/FSC2118_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4319" moduleName="敍獎統計表" description="" url="~/FSC/FSC2/FSC2119_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4320" moduleName="慶生人員名冊" description="" url="~/FSC/FSC2/FSC2120_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4322" moduleName="線上刷卡紀錄查詢" description="" url="~/FSC/FSC2/FSC2122_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4323" moduleName="10天(含以上)未刷卡查詢" description="" url="~/FSC/FSC2/FSC2126_01" >
+</siteMapNode>
+<siteMapNode id="IGSS4324" moduleName="各單位查勤表" description="" url="~/FSC/FSC2/FSC2123_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4325" moduleName="出勤異常註銷查詢" description="" url="~/FSC/FSC2/FSC2124_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4326" moduleName="每月加班費請領統計" description="" url="~/FSC/FSC2/FSC2125_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4327" moduleName="刷卡資料查詢" description="" url="~/FSC/FSC2/FSC2127_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS4328" moduleName="員工差假統計查詢" description="" url="~/FSC/FSC2/FSC2128_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS4400" moduleName="歷史資料管理" description="" url="" >
+<siteMapNode id="IGSS4401" moduleName="人事資料結轉作業" description="" url="~/FSC/FSC3/FSC3201_01.ASPX" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS5000" moduleName="庶務管理作業" description="" url="" >
+<siteMapNode id="IGSS5100" moduleName="派車管理" description="" url="" >
+<siteMapNode id="IGSS5101" moduleName="車輛管理" description="" url="~/CAR/CAR3/CAR3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS5102" moduleName="車輛使用狀況維護" description="" url="~/CAR/CAR3/CAR3102_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS5200" moduleName="派車查詢統計" description="" url="" >
+<siteMapNode id="IGSS5201" moduleName="派車使用狀況" description="" url="~/CAR/CAR2/CAR2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS5202" moduleName="派車統計報表" description="" url="~/CAR/CAR2/CAR2102_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS5300" moduleName="報修查詢統計" description="" url="" >
+<siteMapNode id="IGSS5301" moduleName="報修紀錄查詢" description="" url="~/MAI/MAI3/MAI3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS5302" moduleName="水電報修紀錄查詢" description="" url="~/MAI/MAI2/MAI2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS5303" moduleName="水電報修統計" description="" url="~/MAI/MAI2/MAI2201_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS5700" moduleName="軟體保管管理" description="" url="~/PRO/PRO3/PRO3101_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS6000" moduleName="領物管理作業" description="" url="" >
+<siteMapNode id="IGSS6100" moduleName="基本資料設定" description="" url="" >
+<siteMapNode id="IGSS6101" moduleName="物料基本資料維護" description="" url="~/MAT/MAT4/MAT4101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6102" moduleName="分類號維護" description="" url="~/MAT/MAT4/MAT4102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6103" moduleName="物料編號調整作業" description="" url="~/MAT/MAT4/MAT4103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6104" moduleName="物品代碼、名稱對照表列印" description="" url="~/MAT/MAT4/MAT4104_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS6200" moduleName="物品管理作業" description="" url="" >
+<siteMapNode id="IGSS6201" moduleName="領物核准清單列印" description="" url="~/MAT/MAT2/MAT2109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6202" moduleName="物品入庫維護" description="" url="~/MAT/MAT3/MAT3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6203" moduleName="雜項領物維護" description="" url="~/MAT/MAT3/MAT3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6204" moduleName="月底結算" description="" url="~/MAT/MAT2/MAT2110_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS6300" moduleName="盤點作業" description="" url="" >
+<siteMapNode id="IGSS6301" moduleName="執行盤點註記" description="" url="~/MAT/MAT3/MAT3201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6302" moduleName="物品盤點報表" description="" url="~/MAT/MAT2/MAT2201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6303" moduleName="盤點調整" description="" url="~/MAT/MAT3/MAT3202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6304" moduleName="物品盤點後調整報表" description="" url="~/MAT/MAT2/MAT2202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6305" moduleName="完成盤點註記" description="" url="~/MAT/MAT3/MAT3203_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS6400" moduleName="查詢作業" description="" url="" >
+<siteMapNode id="IGSS6401" moduleName="領用物品查詢" description="" url="~/MAT/MAT2/MAT2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6402" moduleName="領用量查詢" description="" url="~/MAT/MAT2/MAT2102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6403" moduleName="物品庫存量查詢" description="" url="~/MAT/MAT2/MAT2103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6404" moduleName="入庫資料查詢" description="" url="~/MAT/MAT2/MAT2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6405" moduleName="低於安全庫存量物品報表" description="" url="~/MAT/MAT2/MAT2105_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS6500" moduleName="報表作業" description="" url="" >
+<siteMapNode id="IGSS6501" moduleName="領用物品明細表" description="" url="~/MAT/MAT2/MAT2106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6502" moduleName="單項物品領用明細表" description="" url="~/MAT/MAT2/MAT2107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS6503" moduleName="單項物品領用統計年報表" description="" url="~/MAT/MAT2/MAT2108_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS7000" moduleName="出納管理作業" description="" url="" >
+<siteMapNode id="IGSS7100" moduleName="零用金管理" description="" url="" >
+<siteMapNode id="IGSS7101" moduleName="非預借零用金維護" description="" url="~/PAY/PAY3/PAY3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7102" moduleName="預借零用金維護" description="" url="~/PAY/PAY3/PAY3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7103" moduleName="零用金清單維護" description="" url="~/PAY/PAY3/PAY3103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7104" moduleName="零用金清單/備查簿列印" description="" url="~/PAY/PAY2/PAY2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7105" moduleName="零用金列印" description="" url="~/PAY/PAY2/PAY2102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7106" moduleName="受款人明細表" description="" url="~/PAY/PAY2/PAY2103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7107" moduleName="受款人帳號維護" description="" url="~/PAY/PAY3/PAY3105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7108" moduleName="銀行基本資料維護" description="" url="~/PAY/PAY3/PAY3106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7109" moduleName="發e-mail通知零用金發放" description="" url="~/PAY/PAY3/PAY3104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7110" moduleName="零用金撥入作業" description="" url="~/PAY/PAY3/PAY3107_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7111" moduleName="零用金墊付明細表" description="" url="~/PAY/PAY2/PAY2104_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS7200" moduleName="審查收入管理" description="" url="" >
+<siteMapNode id="IGSS7201" moduleName="審查收入維護作業" description="" url="~/PAY/PAY3/PAY3201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7202" moduleName="審查收入列印" description="" url="~/PAY/PAY2/PAY2202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7203" moduleName="歲入彙計表" description="" url="~/PAY/PAY2/PAY2201_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7204" moduleName="審查收入付款人資料維護" description="" url="~/PAY/PAY3/PAY3202_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS7205" moduleName="審查收入類別設定" description="" url="~/PAY/PAY4/PAY4101_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS8000" moduleName="系統管理作業" description="" url="" >
+<siteMapNode id="IGSS8100" moduleName="基本資料管理" description="" url="" >
+<siteMapNode id="IGSS8101" moduleName="功能選單資料維護" description="" url="~/SYS/SYS3/SYS3105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8102" moduleName="機關單位資料維護" description="" url="~/SYS/SYS3/SYS3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8103" moduleName="共用代碼資料維護" description="" url="~/SYS/SYS3/SYS3103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8106" moduleName="表單流程設定" description="" url="~/SYS/SYS3/SYS3108_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8110" moduleName="自訂表單管理" description="" url="../SYS/SYS3/SYS3110_01.ASPX" >
+</siteMapNode>
+<siteMapNode id="IGSS8111" moduleName="人員角色設定" description="" url="~/SYS/SYS3/SYS3111_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8114" moduleName="常用片語維護" description="" url="../SYS/SYS3/SYS3114_01.ASPX" >
+</siteMapNode>
+<siteMapNode id="IGSS8115" moduleName="表單移轉作業" description="" url="~/SYS/SYS3/SYS3115_01.ASPX" >
+</siteMapNode>
+<siteMapNode id="IGSS8116" moduleName="表單規則設定" description="" url="~/SYS/SYS3/SYS3116_01.ASPX" >
+</siteMapNode>
+<siteMapNode id="IGSS8120" moduleName="紙本表單維護" description="" url="~/SYS/SYS3/SYS3118_01.ASPX" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS8200" moduleName="權限管理" description="" url="" >
+<siteMapNode id="IGSS8201" moduleName="角色與功能設定" description="" url="~/SYS/SYS3/SYS3106_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8202" moduleName="申請功能鎖定作業" description="" url="~/SYS/SYS3/SYS3113_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8203" moduleName="應用系統清單維護" description="" url="~/EMP/EMP3/EMP3101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8204" moduleName="應用系統權限設定－依人員類別" description="" url="~/EMP/EMP3/EMP3102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8205" moduleName="應用系統權限設定－依員工編號" description="" url="~/EMP/EMP3/EMP3103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8207" moduleName="行動裝置掛失停用作業" description="" url="~/EMP/EMP3/EMP3109_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8208" moduleName="WEBSERVER的權限設定作業" description="" url="~/EMP/EMP3/EMP3110_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+<siteMapNode id="IGSS8300" moduleName="查詢及列印" description="" url="" >
+<siteMapNode id="IGSS8301" moduleName="各類表單查詢" description="" url="~/SYS/SYS2/SYS2101_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8302" moduleName="各類表單使用件數統計表" description="" url="~/SYS/SYS2/SYS2102_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8303" moduleName="使用紀錄查詢" description="" url="~/SYS/SYS2/SYS2103_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8304" moduleName="登入登出紀錄查詢" description="" url="~/SYS/SYS2/SYS2104_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8305" moduleName="E-mail寄送失敗紀錄" description="" url="~/SYS/SYS2/SYS2105_01.aspx" >
+</siteMapNode>
+<siteMapNode id="IGSS8306" moduleName="系統錯誤訊息查詢" description="" url="~/SYS/SYS2/SYS2106_01.aspx" >
+</siteMapNode>
+</siteMapNode>
+</siteMapNode>
+</siteMap>

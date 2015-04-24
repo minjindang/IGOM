@@ -1,0 +1,38 @@
+發生時間：2014-07-14 15:02:46.1564
+類別：AppException
+訊息：2014071415024647
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   於 System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   於 System.Web.HttpResponse.WriteFile(String filename)
+   於 SAL_SAL2_SAL2115.ExportReport() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL2\SAL2115_01.aspx.cs: 行 585
+   於 SAL_SAL2_SAL2115.Button_report_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL2\SAL2115_01.aspx.cs: 行 43
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-07-14 15:07:30.6294
+類別：AppException
+訊息：2014071415073049
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   於 System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   於 System.Web.HttpResponse.WriteFile(String filename)
+   於 SAL_SAL2_SAL2115.ExportReport() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL2\SAL2115_01.aspx.cs: 行 585
+   於 SAL_SAL2_SAL2115.Button_report_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL2\SAL2115_01.aspx.cs: 行 43
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

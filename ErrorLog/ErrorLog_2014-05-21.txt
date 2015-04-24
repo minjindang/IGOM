@@ -1,0 +1,1029 @@
+發生時間：2014-05-21 09:45:04.4885
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:47:30.2187
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:48:04.5015
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:48:22.4014
+類別：AppException
+訊息：2014052109482294
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 100
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:50:55.5746
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:53:47.8645
+類別：AppException
+訊息：2014052109534759
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 100
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 09:59:05.8445
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 10:00:58.9647
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 10:01:57.2075
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb(36): error BC30451: 名稱 'Apply_type' 未宣告。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 10:24:55.6010
+類別：AppException
+訊息：DataBinding: 'System.Data.DataRowView' 沒有包含名為 'id' 的屬性。
+   於 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   於 System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   於 System.Web.UI.DataBinder.Eval(Object container, String expression)
+   於 System.Web.UI.TemplateControl.Eval(String expression)
+   於 ASP.sal_sal4_sal4106_01_aspx.__DataBinding__control21(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx: 行 72
+   於 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.Control.DataBindChildren()
+   於 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   於 System.Web.UI.Control.DataBind()
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:22:19.3178
+類別：AppException
+訊息：2014052111221997
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 104
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:26:14.1654
+類別：AppException
+訊息：2014052111261458
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 104
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:27:53.3515
+類別：AppException
+訊息：2014052111275344
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 104
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:30:11.7708
+類別：AppException
+訊息：2014052111301126
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 104
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:33:23.1424
+類別：AppException
+訊息：2014052111332333
+   於 SAL4106_01.btnModify_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 96
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:34:40.2729
+類別：AppException
+訊息：2014052111344064
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 SAL4106_03.InitControl() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 28
+   於 SAL4106_03.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 17
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 11:35:28.9283
+類別：AppException
+訊息：2014052111352822
+   於 Microsoft.VisualBasic.CompilerServices.Symbols.Container.GetMembers(String& MemberName, Boolean ReportErrors)
+   於 Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   於 SAL4106_03.InitControl() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 28
+   於 SAL4106_03.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 17
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 12:03:21.2455
+類別：AppException
+訊息：2014052112032076
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 SAL.Logic.SAL4106DAO.getQueryDataByID(String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 54
+   於 SAL.Logic.SAL4106.getQueryDataByID(String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 21
+   於 SAL4106_03.InitControl() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 26
+   於 SAL4106_03.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 17
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:19:43.7396
+類別：AppException
+訊息：檔案 '/IGOM/SAL/SAL4/SAL.4106_03.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:20:13.7956
+類別：AppException
+訊息：檔案 '/IGOM/SAL/SAL4/SAL.4106_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:20:23.3260
+類別：AppException
+訊息：檔案 '/IGOM/SAL/SAL4/SAL.4106_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:23:41.9003
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:30:39.8747
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:30:54.0122
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 14:35:00.5985
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 15:54:27.4687
+類別：AppException
+訊息：已發生類型 'System.Web.HttpUnhandledException' 的例外狀況。
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.login_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 15:57:28.1382
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 15:59:34.8476
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:06:50.6312
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:07:40.6204
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:10:44.5092
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:14:01.6496
+類別：AppException
+訊息：檔案 '/IGOM/FSC/SAL/SAL4/SAL4106_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:14:10.0642
+類別：AppException
+訊息：檔案 '/IGOM/FSC/SAL/SAL4/SAL4106_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:14:53.0559
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:16:51.1782
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:27:32.8851
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:27:33.1193
+類別：AppException
+訊息：2014052116273315
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:27:33.1883
+類別：AppException
+訊息：2014521162733188
+System.Runtime.Remoting.RemotingException: 物件 '/caba9265_a68a_43ec_835a_74658d955e66/pyfk3hckqyx9skk1n4pqnyeo_892.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:33:16.4922
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:38:16.6273
+類別：AppException
+訊息：執行緒已經中止。
+   於 System.Threading.Thread.AbortInternal()
+   於 System.Threading.Thread.Abort(Object stateInfo)
+   於 System.Web.HttpResponse.End()
+   於 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   於 System.Web.HttpResponse.Redirect(String url)
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 81
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:41:43.0359
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 DBUtil.SetParamsNull(SqlParameter[]& params) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DBUtil.vb: 行 21
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 SAL.Logic.SAL4106DAO.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106DAO.vb: 行 132
+   於 SAL.Logic.SAL4106.getUpdateData(String AcademicYear, String Semester, String Apply_sDate, String Apply_sTime, String Apply_eDate, String Apply_eTime, String Status, String ModUser_id, String orgcode, String id) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL4\SAL4106.vb: 行 47
+   於 SAL4106_03.btnOK_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_03.aspx.vb: 行 77
+方法：[Void OnClick(System.EventArgs)] => [Void btnOK_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:57:12.0542
+類別：AppException
+訊息：伺服器標記語法不正確。
+   於 System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   於 System.Web.UI.TemplateParser.ParseReader(StreamReader reader, VirtualPath virtualPath)
+   於 System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   於 System.Web.UI.TemplateParser.ParseInternal()
+   於 System.Web.UI.TemplateParser.Parse()
+   於 System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   於 System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   於 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   於 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   於 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 16:58:33.0212
+類別：AppException
+訊息：伺服器標記語法不正確。
+   於 System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   於 System.Web.UI.TemplateParser.ParseReader(StreamReader reader, VirtualPath virtualPath)
+   於 System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   於 System.Web.UI.TemplateParser.ParseInternal()
+   於 System.Web.UI.TemplateParser.Parse()
+   於 System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   於 System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   於 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   於 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   於 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:04:12.4823
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx(137): error BC30456: 'btnDelete_Click' 不是 'ASP.sal_sal4_sal4106_01_aspx' 的成員。
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:06:45.6124
+類別：AppException
+訊息：位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 114
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:07:02.5677
+類別：AppException
+訊息：位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 114
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:09:26.5987
+類別：AppException
+訊息：位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 114
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:15:25.1916
+類別：AppException
+訊息：位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 114
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:29:11.4204
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:31:33.8453
+類別：AppException
+訊息：引數 'Start' 必須大於零。
+   於 Microsoft.VisualBasic.Strings.Mid(String str, Int32 Start, Int32 Length)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:31:56.2983
+類別：AppException
+訊息：引數 'Start' 必須大於零。
+   於 Microsoft.VisualBasic.Strings.Mid(String str, Int32 Start, Int32 Length)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:32:35.9437
+類別：AppException
+訊息：引數 'Start' 必須大於零。
+   於 Microsoft.VisualBasic.Strings.Mid(String str, Int32 Start, Int32 Length)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:38:22.9290
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:39:12.6382
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:40:39.5447
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:40:46.7465
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:41:45.6878
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:42:21.1134
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:43:29.1848
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:44:10.9386
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:45:01.6774
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:51:11.1801
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\sal\sal4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\sal\sal4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-21 18:51:44.7996
+類別：AppException
+訊息：從字串 "if(!confirm('刪除後，開放申請時間會變為\n103/" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 SAL4106_01.gvlist_RowDataBound(Object sender, GridViewRowEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\sal\sal4\SAL4106_01.aspx.vb: 行 122
+   於 System.Web.UI.WebControls.GridView.OnRowDataBound(GridViewRowEventArgs e)
+   於 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   於 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   於 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   於 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   於 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   於 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   於 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   於 System.Web.UI.WebControls.GridView.DataBind()
+   於 SAL4106_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\sal\sal4\SAL4106_01.aspx.vb: 行 66
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

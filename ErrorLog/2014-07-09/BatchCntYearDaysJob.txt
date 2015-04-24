@@ -1,0 +1,5 @@
+2014-07-09 09:00:54.6930|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-09 09:00:54.9962|INFO|BatchCntYearDaysJob|Exception Error : 在傳送要求至伺服器時發生傳輸層級的錯誤。 (provider: TCP 提供者, error: 0 - 遠端主機已強制關閉一個現存的連線。)
+2014-07-09 09:00:54.9962|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-09 09:05:00.0003|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-09 09:05:00.0393|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====

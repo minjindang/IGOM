@@ -1,0 +1,301 @@
+發生時間：2014-06-16 09:40:33.1623
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 10:20:37.1527
+類別：AppException
+訊息：2014061610203724
+   於 System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   於 System.Net.WebClient.DownloadData(Uri address)
+   於 System.Net.WebClient.DownloadData(String address)
+   於 UControl_UcAttach.gvAtt_RowCommand(Object sender, GridViewCommandEventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\SYS\UcAttach.ascx.vb: 行 46
+   於 System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   於 System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   於 System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   於 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   於 System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   於 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   於 System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   於 System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 15:31:32.7330
+類別：AppException
+訊息：2014061615313229
+   於 System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   於 System.Web.UI.ViewStateException.ThrowViewStateError(Exception inner, String persistedState)
+   於 System.Web.UI.HiddenFieldPageStatePersister.Load()
+   於 System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   於 System.Web.UI.Page.LoadAllState()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:25:07.0336
+類別：AppException
+訊息：沒有對應的關卡檔!請通知人事管理員或系統管理員設定相關流程!
+   於 SYS.Logic.Outpost.GetFlowOutpost(String orgcode, String departId, String idCard, String formId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Outpost.vb: 行 357
+   於 SYS.Logic.Process.InitFlow(Flow flow, FlowNext flowNext) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Process.vb: 行 30
+   於 SYS.Logic.Process.InitFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Process.vb: 行 15
+   於 SYS.Logic.CommonFlow.AddFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 16
+   於 SAL.Logic.SAL1104.Apply(DataTable dtDetail, String flow_id) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\SAL\SAL1\SAL1104.cs: 行 84
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 353
+方法：[Void OnClick(System.EventArgs)] => [Void btn_submit_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:27:14.2957
+類別：AppException
+訊息：沒有對應的關卡檔!請通知人事管理員或系統管理員設定相關流程!
+   於 SYS.Logic.Outpost.GetFlowOutpost(String orgcode, String departId, String idCard, String formId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Outpost.vb: 行 357
+   於 SYS.Logic.Process.InitFlow(Flow flow, FlowNext flowNext) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Process.vb: 行 30
+   於 SYS.Logic.Process.InitFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\Process.vb: 行 15
+   於 SYS.Logic.CommonFlow.AddFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 16
+   於 SAL.Logic.SAL1104.Apply(DataTable dtDetail, String flow_id) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\SAL\SAL1\SAL1104.cs: 行 84
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 353
+方法：[Void OnClick(System.EventArgs)] => [Void btn_submit_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:32:32.7240
+類別：AppException
+訊息：交易已中止。
+   於 System.Transactions.TransactionStateAborted.BeginCommit(InternalTransaction tx, Boolean asyncCommit, AsyncCallback asyncCallback, Object asyncState)
+   於 System.Transactions.CommittableTransaction.Commit()
+   於 System.Transactions.TransactionScope.InternalDispose()
+   於 System.Transactions.TransactionScope.Dispose()
+   於 SAL.Logic.SAL1104.Apply(DataTable dtDetail, String flow_id) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\SAL\SAL1\SAL1104.cs: 行 139
+   於 SAL_SAL1_SAL1104_01.btn_submit_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 353
+方法：[Void OnClick(System.EventArgs)] => [Void btn_submit_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:43:19.0337
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:43:38.6748
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:45:54.9980
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:46:07.8006
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:52:36.5561
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:54:52.3799
+類別：AppException
+訊息：2014061616545270
+   於 System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   於 SAL_SAL1_SAL1104_01.txtBASE_IDNO_TextChanged(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 73
+   於 System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   於 System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 16:58:44.0954
+類別：AppException
+訊息：2014061616584487
+   於 System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   於 SAL_SAL1_SAL1104_01.txtBASE_IDNO_TextChanged(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 73
+   於 System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   於 System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:00:36.4312
+類別：AppException
+訊息：2014061617003695
+   於 System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   於 SAL_SAL1_SAL1104_01.txtBASE_IDNO_TextChanged(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_01.aspx.cs: 行 73
+   於 System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   於 System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:03:12.7278
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:03:20.9403
+類別：AppException
+訊息：並未將物件參考設定為物件的執行個體
+   於 SYS.Logic.ProcessSAL.RunLastApply(Flow flow, Boolean isPlus) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 180
+   於 SYS.Logic.ProcessSAL.RunAgreeFlow(Flow flow) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\ProcessSAL.vb: 行 11
+   於 SYS.Logic.CommonFlow.RunFlow(FlowDetail flowDetail) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SYS\Common\CommonLib\CommonFlow.vb: 行 106
+   於 FSC0101_02.RunFlow(Int32 agreeFlag) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_02.aspx.vb: 行 133
+方法：[Void cbAgree_Click(System.Object, System.EventArgs)] => [Void RunFlow(Int32)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:22:58.9410
+類別：AppException
+訊息：2014061617225877
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding)
+   於 CommonLib.DTReport.ConsistHTMLCode() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 402
+   於 CommonLib.DTReport.ExportToFile(ExportFileType theFileType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1316
+   於 CommonLib.DTReport.ExportToWord() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1281
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 61
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:23:34.3087
+類別：AppException
+訊息：2014061617233406
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding)
+   於 CommonLib.DTReport.ConsistHTMLCode() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 402
+   於 CommonLib.DTReport.ExportToFile(ExportFileType theFileType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1316
+   於 CommonLib.DTReport.ExportToWord() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1281
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 39
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:38:26.6415
+類別：AppException
+訊息：2014061617382629
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding)
+   於 CommonLib.DTReport.ConsistHTMLCode() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 402
+   於 CommonLib.DTReport.ExportToFile(ExportFileType theFileType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1316
+   於 CommonLib.DTReport.ExportToWord() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 1281
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 67
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:38:27.0097
+類別：AppException
+訊息：20146161738279
+System.Runtime.Remoting.RemotingException: 物件 '/12897fdb_9087_4f43_ad8c_5671694b9d9d/b1iycy_vu_mjtp3qaqfmer86_2776.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 118
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:45:48.8293
+類別：AppException
+訊息：2014061617454890
+   於 CommonLib.DTReport.set_PageGroupColumns(String[] Value) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 194
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 61
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:49:26.3705
+類別：AppException
+訊息：2014061617492668
+   於 CommonLib.DTReport.set_PageGroupColumns(String[] Value) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 194
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 61
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-06-16 17:54:53.6515
+類別：AppException
+訊息：2014061617545348
+   於 CommonLib.DTReport.set_PageGroupColumns(String[] Value) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\DTReport.vb: 行 194
+   於 SAL1104_02a.printing(String Type, String printType) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 61
+   於 SAL1104_02a.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\SAL\SAL1\SAL1104_02a.aspx.vb: 行 19
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

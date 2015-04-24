@@ -1,0 +1,4 @@
+2014-06-11 08:46:40.6912|INFO|BatchTransferPHToPKJob|===== Start BatchTransferPHToPKJob =====
+2014-06-11 08:46:47.6699|INFO|BatchTransferPHToPKJob|Exception Error:索引和長度必須參考字串中的位置。
+參數名稱: length
+2014-06-11 08:46:47.6699|INFO|BatchTransferPHToPKJob|=====  End BatchTransferPHToPKJob  =====

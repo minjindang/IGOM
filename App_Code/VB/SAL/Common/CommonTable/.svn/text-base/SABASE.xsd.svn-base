@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SABASE" targetNamespace="http://tempuri.org/SABASE.xsd" xmlns:mstns="http://tempuri.org/SABASE.xsd" xmlns="http://tempuri.org/SABASE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="salaryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="salaryConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.salaryConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SAL_SABASETableAdapter" GeneratorDataComponentClassName="SAL_SABASETableAdapter" Name="SAL_SABASE" UserDataComponentName="SAL_SABASETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="salaryConnectionString (Web.config)" DbObjectName="IGOMDBT.dbo.SAL_SABASE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [SAL_SABASE] ([BASE_SEQNO], [BASE_IDNO], [BASE_STATUS], [BASE_TYPE], [BASE_ORGID], [BASE_NAME], [BASE_SEX], [BASE_JOB_DATE], [BASE_DEP], [BASE_BDATE], [BASE_EDATE], [BASE_JOB], [BASE_DCODE], [BASE_ORG_L1], [BASE_ORG_L2], [BASE_ORG_L3], [BASE_AGEN], [BASE_IN_L1], [BASE_IN_L3], [BASE_PTB], [BASE_PROV], [BASE_ADDR], [BASE_QUIT_DATE], [BASE_QUIT_REZN], [BASE_ERMK], [BASE_PRONO], [BASE_KDB], [BASE_KDC], [BASE_KDP], [BASE_KDO], [BASE_POL], [BASE_HOUS], [BASE_WELG], [BASE_WELO], [BASE_PRE], [BASE_OTHER_SAL], [BASE_PRED], [BASE_PRIZ], [BASE_TAX], [BASE_FINS_KIND], [BASE_PN_Y30], [BASE_FINS_NOQ], [BASE_FINS_NOH], [BASE_FINS_NOF], [BASE_FINS_NOL], [BASE_FINS_SELF], [BASE_FINS_NO], [BASE_DAY_SAL], [BASE_HOUR_SAL], [BASE_DCT_A], [BASE_DCT_B], [BASE_DCT_C], [BASE_COUNT_REMARK], [BASE_MEMO], [BASE_MUSER], [BASE_MDATE], [BASE_KDC_SERIES], [BASE_KDP_SERIES], [BASE_LABOR_SERIES], [BASE_PRTS], [BASE_FIN_AMT], [BASE_TAX_DCT], [BASE_LABOR_STATUS], [BASE_SENTMAIL], [BASE_EMAIL], [BASE_FIN_SUP_AMT], [BASE_REPLACE_AMT], [BASE_GOVADOF], [BASE_LAB_JIF], [base_fins_noq_nol], [base_fins_noh_nol], [BASE_FINS_Y65], [BASE_FINS_SERIES], [Base_IsMarked], [BASE_PEN_RATE], [BASE_PEN_TYPE], [BASE_PROF], [BASE_PEN_SERIES], [BASE_NUMERATOR], [BASE_DENOMINATOR], [BASE_PTB_TYPE], [BASE_ALT_AMT], [BASE_MEMO1], [BASE_MEMO2], [BASE_MEMO3], [BASE_DCODE_NAME], [BASE_SENTMSG], [BASE_FINS_HEALTH_SELF], [BASE_PROJ_BDATE], [BASE_PROJ_EDATE], [BASE_LAB1], [BASE_LAB2], [BASE_LAB3], [BASE_PARTTIME], [BASE_FINS_SELF_DESC], [BASE_FINS_PAR_DESC], [BASE_SERVICE_PLACE_DESC]) VALUES (@BASE_SEQNO, @BASE_IDNO, @BASE_STATUS, @BASE_TYPE, @BASE_ORGID, @BASE_NAME, @BASE_SEX, @BASE_JOB_DATE, @BASE_DEP, @BASE_BDATE, @BASE_EDATE, @BASE_JOB, @BASE_DCODE, @BASE_ORG_L1, @BASE_ORG_L2, @BASE_ORG_L3, @BASE_AGEN, @BASE_IN_L1, @BASE_IN_L3, @BASE_PTB, @BASE_PROV, @BASE_ADDR, @BASE_QUIT_DATE, @BASE_QUIT_REZN, @BASE_ERMK, @BASE_PRONO, @BASE_KDB, @BASE_KDC, @BASE_KDP, @BASE_KDO, @BASE_POL, @BASE_HOUS, @BASE_WELG, @BASE_WELO, @BASE_PRE, @BASE_OTHER_SAL, @BASE_PRED, @BASE_PRIZ, @BASE_TAX, @BASE_FINS_KIND, @BASE_PN_Y30, @BASE_FINS_NOQ, @BASE_FINS_NOH, @BASE_FINS_NOF, @BASE_FINS_NOL, @BASE_FINS_SELF, @BASE_FINS_NO, @BASE_DAY_SAL, @BASE_HOUR_SAL, @BASE_DCT_A, @BASE_DCT_B, @BASE_DCT_C, @BASE_COUNT_REMARK, @BASE_MEMO, @BASE_MUSER, @BASE_MDATE, @BASE_KDC_SERIES, @BASE_KDP_SERIES, @BASE_LABOR_SERIES, @BASE_PRTS, @BASE_FIN_AMT, @BASE_TAX_DCT, @BASE_LABOR_STATUS, @BASE_SENTMAIL, @BASE_EMAIL, @BASE_FIN_SUP_AMT, @BASE_REPLACE_AMT, @BASE_GOVADOF, @BASE_LAB_JIF, @base_fins_noq_nol, @base_fins_noh_nol, @BASE_FINS_Y65, @BASE_FINS_SERIES, @Base_IsMarked, @BASE_PEN_RATE, @BASE_PEN_TYPE, @BASE_PROF, @BASE_PEN_SERIES, @BASE_NUMERATOR, @BASE_DENOMINATOR, @BASE_PTB_TYPE, @BASE_ALT_AMT, @BASE_MEMO1, @BASE_MEMO2, @BASE_MEMO3, @BASE_DCODE_NAME, @BASE_SENTMSG, @BASE_FINS_HEALTH_SELF, @BASE_PROJ_BDATE, @BASE_PROJ_EDATE, @BASE_LAB1, @BASE_LAB2, @BASE_LAB3, @BASE_PARTTIME, @BASE_FINS_SELF_DESC, @BASE_FINS_PAR_DESC, @BASE_SERVICE_PLACE_DESC)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SEQNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_SEQNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IDNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_IDNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORGID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ORGID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SEX" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_SEX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_JOB_DATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_JOB_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_DEP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_DEP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_BDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_BDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_EDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_JOB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_JOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_DCODE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_DCODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORG_L1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ORG_L1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORG_L2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ORG_L2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORG_L3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ORG_L3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_AGEN" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_AGEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IN_L1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_IN_L1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IN_L3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_IN_L3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PTB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PTB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PROV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PROV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ADDR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ADDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_QUIT_DATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_QUIT_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_QUIT_REZN" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_QUIT_REZN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ERMK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_ERMK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PRONO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PRONO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_POL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_POL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_HOUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_HOUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_WELG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_WELG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_WELO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_WELO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PRE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PRE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_OTHER_SAL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_OTHER_SAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PRED" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PRED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PRIZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PRIZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_TAX" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_TAX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_FINS_KIND" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_FINS_KIND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PN_Y30" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PN_Y30" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_NOQ" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FINS_NOQ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_NOH" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FINS_NOH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_NOF" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FINS_NOF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_NOL" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FINS_NOL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_SELF" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="BASE_FINS_SELF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_NO" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FINS_NO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_DAY_SAL" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_DAY_SAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_HOUR_SAL" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_HOUR_SAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_DCT_A" Precision="2" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_DCT_A" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_DCT_B" Precision="2" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_DCT_B" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_DCT_C" Precision="2" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_DCT_C" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_COUNT_REMARK" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_COUNT_REMARK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MEMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MEMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MUSER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MUSER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDC_SERIES" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDC_SERIES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_KDP_SERIES" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_KDP_SERIES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LABOR_SERIES" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LABOR_SERIES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_PRTS" Precision="18" ProviderType="Decimal" Scale="1" Size="0" SourceColumn="BASE_PRTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FIN_AMT" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FIN_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_TAX_DCT" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_TAX_DCT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LABOR_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LABOR_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SENTMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_SENTMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_EMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FIN_SUP_AMT" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_FIN_SUP_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_REPLACE_AMT" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_REPLACE_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_GOVADOF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_GOVADOF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LAB_JIF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LAB_JIF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@base_fins_noq_nol" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="base_fins_noq_nol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@base_fins_noh_nol" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="base_fins_noh_nol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_Y65" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="BASE_FINS_Y65" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_FINS_SERIES" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_FINS_SERIES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Base_IsMarked" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Base_IsMarked" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_PEN_RATE" Precision="3" ProviderType="Decimal" Scale="1" Size="0" SourceColumn="BASE_PEN_RATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PEN_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PEN_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PROF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PROF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PEN_SERIES" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PEN_SERIES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_NUMERATOR" Precision="3" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_NUMERATOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_DENOMINATOR" Precision="3" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_DENOMINATOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PTB_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PTB_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_ALT_AMT" Precision="6" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BASE_ALT_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MEMO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MEMO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MEMO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MEMO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_MEMO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_MEMO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_DCODE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_DCODE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SENTMSG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_SENTMSG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BASE_FINS_HEALTH_SELF" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="BASE_FINS_HEALTH_SELF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PROJ_BDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PROJ_BDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PROJ_EDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PROJ_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LAB1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LAB1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LAB2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LAB2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_LAB3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_LAB3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BASE_PARTTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BASE_PARTTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_FINS_SELF_DESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_FINS_SELF_DESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_FINS_PAR_DESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_FINS_PAR_DESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_SERVICE_PLACE_DESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_SERVICE_PLACE_DESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          BASE_SEQNO, BASE_IDNO, BASE_STATUS, BASE_TYPE, BASE_ORGID, BASE_NAME, BASE_SEX, BASE_JOB_DATE, 
+                            BASE_DEP, BASE_BDATE, BASE_EDATE, BASE_JOB, BASE_DCODE, BASE_ORG_L1, BASE_ORG_L2, 
+                            BASE_ORG_L3, BASE_AGEN, BASE_IN_L1, BASE_IN_L3, BASE_PTB, BASE_PROV, BASE_ADDR, BASE_QUIT_DATE, 
+                            BASE_QUIT_REZN, BASE_ERMK, BASE_PRONO, BASE_KDB, BASE_KDC, BASE_KDP, BASE_KDO, BASE_POL, 
+                            BASE_HOUS, BASE_WELG, BASE_WELO, BASE_PRE, BASE_OTHER_SAL, BASE_PRED, BASE_PRIZ, BASE_TAX, 
+                            BASE_FINS_KIND, BASE_PN_Y30, BASE_FINS_NOQ, BASE_FINS_NOH, BASE_FINS_NOF, BASE_FINS_NOL, 
+                            BASE_FINS_SELF, BASE_FINS_NO, BASE_DAY_SAL, BASE_HOUR_SAL, BASE_DCT_A, BASE_DCT_B, BASE_DCT_C, 
+                            BASE_COUNT_REMARK, BASE_MEMO, BASE_MUSER, BASE_MDATE, BASE_KDC_SERIES, BASE_KDP_SERIES, 
+                            BASE_LABOR_SERIES, BASE_PRTS, BASE_FIN_AMT, BASE_TAX_DCT, BASE_LABOR_STATUS, BASE_SENTMAIL, 
+                            BASE_EMAIL, BASE_FIN_SUP_AMT, BASE_REPLACE_AMT, BASE_GOVADOF, BASE_LAB_JIF, base_fins_noq_nol, 
+                            base_fins_noh_nol, BASE_FINS_Y65, BASE_FINS_SERIES, Base_IsMarked, BASE_PEN_RATE, BASE_PEN_TYPE, 
+                            BASE_PROF, BASE_PEN_SERIES, BASE_NUMERATOR, BASE_DENOMINATOR, BASE_PTB_TYPE, BASE_ALT_AMT, 
+                            BASE_MEMO1, BASE_MEMO2, BASE_MEMO3, BASE_DCODE_NAME, BASE_SENTMSG, BASE_FINS_HEALTH_SELF, 
+                            BASE_PROJ_BDATE, BASE_PROJ_EDATE, BASE_LAB1, BASE_LAB2, BASE_LAB3, BASE_PARTTIME, 
+                            BASE_FINS_SELF_DESC, BASE_FINS_PAR_DESC, BASE_SERVICE_PLACE_DESC
+FROM              SAL_SABASE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BASE_SEQNO" DataSetColumn="BASE_SEQNO" />
+              <Mapping SourceColumn="BASE_IDNO" DataSetColumn="BASE_IDNO" />
+              <Mapping SourceColumn="BASE_STATUS" DataSetColumn="BASE_STATUS" />
+              <Mapping SourceColumn="BASE_TYPE" DataSetColumn="BASE_TYPE" />
+              <Mapping SourceColumn="BASE_ORGID" DataSetColumn="BASE_ORGID" />
+              <Mapping SourceColumn="BASE_NAME" DataSetColumn="BASE_NAME" />
+              <Mapping SourceColumn="BASE_SEX" DataSetColumn="BASE_SEX" />
+              <Mapping SourceColumn="BASE_JOB_DATE" DataSetColumn="BASE_JOB_DATE" />
+              <Mapping SourceColumn="BASE_DEP" DataSetColumn="BASE_DEP" />
+              <Mapping SourceColumn="BASE_BDATE" DataSetColumn="BASE_BDATE" />
+              <Mapping SourceColumn="BASE_EDATE" DataSetColumn="BASE_EDATE" />
+              <Mapping SourceColumn="BASE_JOB" DataSetColumn="BASE_JOB" />
+              <Mapping SourceColumn="BASE_DCODE" DataSetColumn="BASE_DCODE" />
+              <Mapping SourceColumn="BASE_ORG_L1" DataSetColumn="BASE_ORG_L1" />
+              <Mapping SourceColumn="BASE_ORG_L2" DataSetColumn="BASE_ORG_L2" />
+              <Mapping SourceColumn="BASE_ORG_L3" DataSetColumn="BASE_ORG_L3" />
+              <Mapping SourceColumn="BASE_AGEN" DataSetColumn="BASE_AGEN" />
+              <Mapping SourceColumn="BASE_IN_L1" DataSetColumn="BASE_IN_L1" />
+              <Mapping SourceColumn="BASE_IN_L3" DataSetColumn="BASE_IN_L3" />
+              <Mapping SourceColumn="BASE_PTB" DataSetColumn="BASE_PTB" />
+              <Mapping SourceColumn="BASE_PROV" DataSetColumn="BASE_PROV" />
+              <Mapping SourceColumn="BASE_ADDR" DataSetColumn="BASE_ADDR" />
+              <Mapping SourceColumn="BASE_QUIT_DATE" DataSetColumn="BASE_QUIT_DATE" />
+              <Mapping SourceColumn="BASE_QUIT_REZN" DataSetColumn="BASE_QUIT_REZN" />
+              <Mapping SourceColumn="BASE_ERMK" DataSetColumn="BASE_ERMK" />
+              <Mapping SourceColumn="BASE_PRONO" DataSetColumn="BASE_PRONO" />
+              <Mapping SourceColumn="BASE_KDB" DataSetColumn="BASE_KDB" />
+              <Mapping SourceColumn="BASE_KDC" DataSetColumn="BASE_KDC" />
+              <Mapping SourceColumn="BASE_KDP" DataSetColumn="BASE_KDP" />
+              <Mapping SourceColumn="BASE_KDO" DataSetColumn="BASE_KDO" />
+              <Mapping SourceColumn="BASE_POL" DataSetColumn="BASE_POL" />
+              <Mapping SourceColumn="BASE_HOUS" DataSetColumn="BASE_HOUS" />
+              <Mapping SourceColumn="BASE_WELG" DataSetColumn="BASE_WELG" />
+              <Mapping SourceColumn="BASE_WELO" DataSetColumn="BASE_WELO" />
+              <Mapping SourceColumn="BASE_PRE" DataSetColumn="BASE_PRE" />
+              <Mapping SourceColumn="BASE_OTHER_SAL" DataSetColumn="BASE_OTHER_SAL" />
+              <Mapping SourceColumn="BASE_PRED" DataSetColumn="BASE_PRED" />
+              <Mapping SourceColumn="BASE_PRIZ" DataSetColumn="BASE_PRIZ" />
+              <Mapping SourceColumn="BASE_TAX" DataSetColumn="BASE_TAX" />
+              <Mapping SourceColumn="BASE_FINS_KIND" DataSetColumn="BASE_FINS_KIND" />
+              <Mapping SourceColumn="BASE_PN_Y30" DataSetColumn="BASE_PN_Y30" />
+              <Mapping SourceColumn="BASE_FINS_NOQ" DataSetColumn="BASE_FINS_NOQ" />
+              <Mapping SourceColumn="BASE_FINS_NOH" DataSetColumn="BASE_FINS_NOH" />
+              <Mapping SourceColumn="BASE_FINS_NOF" DataSetColumn="BASE_FINS_NOF" />
+              <Mapping SourceColumn="BASE_FINS_NOL" DataSetColumn="BASE_FINS_NOL" />
+              <Mapping SourceColumn="BASE_FINS_SELF" DataSetColumn="BASE_FINS_SELF" />
+              <Mapping SourceColumn="BASE_FINS_NO" DataSetColumn="BASE_FINS_NO" />
+              <Mapping SourceColumn="BASE_DAY_SAL" DataSetColumn="BASE_DAY_SAL" />
+              <Mapping SourceColumn="BASE_HOUR_SAL" DataSetColumn="BASE_HOUR_SAL" />
+              <Mapping SourceColumn="BASE_DCT_A" DataSetColumn="BASE_DCT_A" />
+              <Mapping SourceColumn="BASE_DCT_B" DataSetColumn="BASE_DCT_B" />
+              <Mapping SourceColumn="BASE_DCT_C" DataSetColumn="BASE_DCT_C" />
+              <Mapping SourceColumn="BASE_COUNT_REMARK" DataSetColumn="BASE_COUNT_REMARK" />
+              <Mapping SourceColumn="BASE_MEMO" DataSetColumn="BASE_MEMO" />
+              <Mapping SourceColumn="BASE_MUSER" DataSetColumn="BASE_MUSER" />
+              <Mapping SourceColumn="BASE_MDATE" DataSetColumn="BASE_MDATE" />
+              <Mapping SourceColumn="BASE_KDC_SERIES" DataSetColumn="BASE_KDC_SERIES" />
+              <Mapping SourceColumn="BASE_KDP_SERIES" DataSetColumn="BASE_KDP_SERIES" />
+              <Mapping SourceColumn="BASE_LABOR_SERIES" DataSetColumn="BASE_LABOR_SERIES" />
+              <Mapping SourceColumn="BASE_PRTS" DataSetColumn="BASE_PRTS" />
+              <Mapping SourceColumn="BASE_FIN_AMT" DataSetColumn="BASE_FIN_AMT" />
+              <Mapping SourceColumn="BASE_TAX_DCT" DataSetColumn="BASE_TAX_DCT" />
+              <Mapping SourceColumn="BASE_LABOR_STATUS" DataSetColumn="BASE_LABOR_STATUS" />
+              <Mapping SourceColumn="BASE_SENTMAIL" DataSetColumn="BASE_SENTMAIL" />
+              <Mapping SourceColumn="BASE_EMAIL" DataSetColumn="BASE_EMAIL" />
+              <Mapping SourceColumn="BASE_FIN_SUP_AMT" DataSetColumn="BASE_FIN_SUP_AMT" />
+              <Mapping SourceColumn="BASE_REPLACE_AMT" DataSetColumn="BASE_REPLACE_AMT" />
+              <Mapping SourceColumn="BASE_GOVADOF" DataSetColumn="BASE_GOVADOF" />
+              <Mapping SourceColumn="BASE_LAB_JIF" DataSetColumn="BASE_LAB_JIF" />
+              <Mapping SourceColumn="base_fins_noq_nol" DataSetColumn="base_fins_noq_nol" />
+              <Mapping SourceColumn="base_fins_noh_nol" DataSetColumn="base_fins_noh_nol" />
+              <Mapping SourceColumn="BASE_FINS_Y65" DataSetColumn="BASE_FINS_Y65" />
+              <Mapping SourceColumn="BASE_FINS_SERIES" DataSetColumn="BASE_FINS_SERIES" />
+              <Mapping SourceColumn="Base_IsMarked" DataSetColumn="Base_IsMarked" />
+              <Mapping SourceColumn="BASE_PEN_RATE" DataSetColumn="BASE_PEN_RATE" />
+              <Mapping SourceColumn="BASE_PEN_TYPE" DataSetColumn="BASE_PEN_TYPE" />
+              <Mapping SourceColumn="BASE_PROF" DataSetColumn="BASE_PROF" />
+              <Mapping SourceColumn="BASE_PEN_SERIES" DataSetColumn="BASE_PEN_SERIES" />
+              <Mapping SourceColumn="BASE_NUMERATOR" DataSetColumn="BASE_NUMERATOR" />
+              <Mapping SourceColumn="BASE_DENOMINATOR" DataSetColumn="BASE_DENOMINATOR" />
+              <Mapping SourceColumn="BASE_PTB_TYPE" DataSetColumn="BASE_PTB_TYPE" />
+              <Mapping SourceColumn="BASE_ALT_AMT" DataSetColumn="BASE_ALT_AMT" />
+              <Mapping SourceColumn="BASE_MEMO1" DataSetColumn="BASE_MEMO1" />
+              <Mapping SourceColumn="BASE_MEMO2" DataSetColumn="BASE_MEMO2" />
+              <Mapping SourceColumn="BASE_MEMO3" DataSetColumn="BASE_MEMO3" />
+              <Mapping SourceColumn="BASE_DCODE_NAME" DataSetColumn="BASE_DCODE_NAME" />
+              <Mapping SourceColumn="BASE_SENTMSG" DataSetColumn="BASE_SENTMSG" />
+              <Mapping SourceColumn="BASE_FINS_HEALTH_SELF" DataSetColumn="BASE_FINS_HEALTH_SELF" />
+              <Mapping SourceColumn="BASE_PROJ_BDATE" DataSetColumn="BASE_PROJ_BDATE" />
+              <Mapping SourceColumn="BASE_PROJ_EDATE" DataSetColumn="BASE_PROJ_EDATE" />
+              <Mapping SourceColumn="BASE_LAB1" DataSetColumn="BASE_LAB1" />
+              <Mapping SourceColumn="BASE_LAB2" DataSetColumn="BASE_LAB2" />
+              <Mapping SourceColumn="BASE_LAB3" DataSetColumn="BASE_LAB3" />
+              <Mapping SourceColumn="BASE_PARTTIME" DataSetColumn="BASE_PARTTIME" />
+              <Mapping SourceColumn="BASE_FINS_SELF_DESC" DataSetColumn="BASE_FINS_SELF_DESC" />
+              <Mapping SourceColumn="BASE_FINS_PAR_DESC" DataSetColumn="BASE_FINS_PAR_DESC" />
+              <Mapping SourceColumn="BASE_SERVICE_PLACE_DESC" DataSetColumn="BASE_SERVICE_PLACE_DESC" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="salaryConnectionString (Web.config)" DbObjectName="IGOMDBT.dbo.SAL_SABASE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBASE_SEQNO" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataByBASE_SEQNO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBASE_SEQNO" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT    SAL_SABASE.*
+FROM              SAL_SABASE
+WHERE BASE_SEQNO=@BASE_SEQNO</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_SEQNO" ColumnName="BASE_SEQNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SEQNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_SEQNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="salaryConnectionString (Web.config)" DbObjectName="IGOMDBT.dbo.SAL_SABASE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByIDNO" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByIDNO" GeneratorSourceName="FillByIDNO" GetMethodModifier="Public" GetMethodName="GetDataByIDNO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByIDNO" UserSourceName="FillByIDNO">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          TOP (1) BASE_SEQNO
+FROM              SAL_SABASE
+WHERE          (BASE_IDNO = @BASE_IDNO)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_IDNO" ColumnName="BASE_IDNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IDNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_IDNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="salaryConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByNewSEQNO" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByNewSEQNO" GeneratorSourceName="FillByNewSEQNO" GetMethodModifier="Public" GetMethodName="GetDataByNewSEQNO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByNewSEQNO" UserSourceName="FillByNewSEQNO">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          ISNULL
+                                ((SELECT          TOP (1) BASE_SEQNO
+                                    FROM              SAL_SABASE
+                                    WHERE          (BASE_SEQNO LIKE '#%')
+                                    ORDER BY   BASE_SEQNO DESC), '') AS BASE_SEQNO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="salaryConnectionString (Web.config)" DbObjectName="IGOMDBT.dbo.SAL_SABASE" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="InsertQueryByExamine" Modifier="Public" Name="InsertQueryByExamine" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQueryByExamine">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO SAL_SABASE
+                            (BASE_SEQNO, BASE_IDNO, BASE_STATUS, BASE_TYPE, BASE_ORGID, BASE_NAME, BASE_JOB, BASE_ADDR, 
+                            BASE_DCODE_NAME, BASE_SERVICE_PLACE_DESC, ModUser_id, Mod_date)
+VALUES          (@BASE_SEQNO,@BASE_IDNO,@BASE_STATUS,@BASE_TYPE,@BASE_ORGID,@BASE_NAME,@BASE_JOB,@BASE_ADDR,@BASE_DCODE_NAME,@BASE_SERVICE_PLACE_DESC,@ModUser_id,@Mod_date)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_SEQNO" ColumnName="BASE_SEQNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SEQNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_SEQNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_IDNO" ColumnName="BASE_IDNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IDNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_IDNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_STATUS" ColumnName="BASE_STATUS" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(3)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="3" SourceColumn="BASE_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_TYPE" ColumnName="BASE_TYPE" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(1)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="1" SourceColumn="BASE_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_ORGID" ColumnName="BASE_ORGID" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORGID" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="BASE_ORGID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_NAME" ColumnName="BASE_NAME" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="BASE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_JOB" ColumnName="BASE_JOB" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(3)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_JOB" Precision="0" ProviderType="VarChar" Scale="0" Size="3" SourceColumn="BASE_JOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_ADDR" ColumnName="BASE_ADDR" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(60)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ADDR" Precision="0" ProviderType="VarChar" Scale="0" Size="60" SourceColumn="BASE_ADDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_DCODE_NAME" ColumnName="BASE_DCODE_NAME" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_DCODE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="BASE_DCODE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_SERVICE_PLACE_DESC" ColumnName="BASE_SERVICE_PLACE_DESC" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@BASE_SERVICE_PLACE_DESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="BASE_SERVICE_PLACE_DESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ModUser_id" ColumnName="ModUser_id" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@ModUser_id" Precision="0" Scale="0" Size="1024" SourceColumn="ModUser_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Mod_date" ColumnName="Mod_date" DataSourceName="" DataTypeServer="unknown" DbType="Object" Direction="Input" ParameterName="@Mod_date" Precision="0" Scale="0" Size="1024" SourceColumn="Mod_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO SAL_SABASE
+                            (BASE_SEQNO, BASE_IDNO, BASE_STATUS, BASE_TYPE, BASE_ORGID, BASE_NAME, BASE_JOB, BASE_ADDR, 
+                            BASE_DCODE_NAME, BASE_SERVICE_PLACE_DESC, BASE_MUSER, BASE_MDATE)
+VALUES          (@BASE_SEQNO,@BASE_IDNO,@BASE_STATUS,@BASE_TYPE,@BASE_ORGID,@BASE_NAME,@BASE_JOB,@BASE_ADDR,@BASE_DCODE_NAME,@BASE_SERVICE_PLACE_DESC,@ModUser_id,@Mod_date)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_SEQNO" ColumnName="BASE_SEQNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_SEQNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_SEQNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_IDNO" ColumnName="BASE_IDNO" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_IDNO" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="BASE_IDNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_STATUS" ColumnName="BASE_STATUS" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(3)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="3" SourceColumn="BASE_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_TYPE" ColumnName="BASE_TYPE" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(1)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="1" SourceColumn="BASE_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_ORGID" ColumnName="BASE_ORGID" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ORGID" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="BASE_ORGID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_NAME" ColumnName="BASE_NAME" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="BASE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_JOB" ColumnName="BASE_JOB" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(3)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_JOB" Precision="0" ProviderType="VarChar" Scale="0" Size="3" SourceColumn="BASE_JOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_ADDR" ColumnName="BASE_ADDR" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(60)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_ADDR" Precision="0" ProviderType="VarChar" Scale="0" Size="60" SourceColumn="BASE_ADDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_DCODE_NAME" ColumnName="BASE_DCODE_NAME" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@BASE_DCODE_NAME" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="BASE_DCODE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BASE_SERVICE_PLACE_DESC" ColumnName="BASE_SERVICE_PLACE_DESC" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@BASE_SERVICE_PLACE_DESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="BASE_SERVICE_PLACE_DESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ModUser_id" ColumnName="BASE_MUSER" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@ModUser_id" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="BASE_MUSER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Mod_date" ColumnName="BASE_MDATE" DataSourceName="IGOMDBT.dbo.SAL_SABASE" DataTypeServer="varchar(16)" DbType="AnsiString" Direction="Input" ParameterName="@Mod_date" Precision="0" ProviderType="VarChar" Scale="0" Size="16" SourceColumn="BASE_MDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SABASE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_DataSetName="SABASE" msprop:Generator_UserDSName="SABASE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SAL_SABASE" msprop:Generator_TableClassName="SAL_SABASEDataTable" msprop:Generator_TableVarName="tableSAL_SABASE" msprop:Generator_RowChangedName="SAL_SABASERowChanged" msprop:Generator_TablePropName="SAL_SABASE" msprop:Generator_RowDeletingName="SAL_SABASERowDeleting" msprop:Generator_RowChangingName="SAL_SABASERowChanging" msprop:Generator_RowEvHandlerName="SAL_SABASERowChangeEventHandler" msprop:Generator_RowDeletedName="SAL_SABASERowDeleted" msprop:Generator_RowClassName="SAL_SABASERow" msprop:Generator_UserTableName="SAL_SABASE" msprop:Generator_RowEvArgName="SAL_SABASERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BASE_SEQNO" msprop:Generator_ColumnVarNameInTable="columnBASE_SEQNO" msprop:Generator_ColumnPropNameInRow="BASE_SEQNO" msprop:Generator_ColumnPropNameInTable="BASE_SEQNOColumn" msprop:Generator_UserColumnName="BASE_SEQNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_IDNO" msprop:Generator_ColumnVarNameInTable="columnBASE_IDNO" msprop:Generator_ColumnPropNameInRow="BASE_IDNO" msprop:Generator_ColumnPropNameInTable="BASE_IDNOColumn" msprop:Generator_UserColumnName="BASE_IDNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_STATUS" msprop:Generator_ColumnVarNameInTable="columnBASE_STATUS" msprop:Generator_ColumnPropNameInRow="BASE_STATUS" msprop:Generator_ColumnPropNameInTable="BASE_STATUSColumn" msprop:Generator_UserColumnName="BASE_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_TYPE" msprop:Generator_ColumnVarNameInTable="columnBASE_TYPE" msprop:Generator_ColumnPropNameInRow="BASE_TYPE" msprop:Generator_ColumnPropNameInTable="BASE_TYPEColumn" msprop:Generator_UserColumnName="BASE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ORGID" msprop:Generator_ColumnVarNameInTable="columnBASE_ORGID" msprop:Generator_ColumnPropNameInRow="BASE_ORGID" msprop:Generator_ColumnPropNameInTable="BASE_ORGIDColumn" msprop:Generator_UserColumnName="BASE_ORGID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_NAME" msprop:Generator_ColumnVarNameInTable="columnBASE_NAME" msprop:Generator_ColumnPropNameInRow="BASE_NAME" msprop:Generator_ColumnPropNameInTable="BASE_NAMEColumn" msprop:Generator_UserColumnName="BASE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_SEX" msprop:Generator_ColumnVarNameInTable="columnBASE_SEX" msprop:Generator_ColumnPropNameInRow="BASE_SEX" msprop:Generator_ColumnPropNameInTable="BASE_SEXColumn" msprop:Generator_UserColumnName="BASE_SEX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_JOB_DATE" msprop:Generator_ColumnVarNameInTable="columnBASE_JOB_DATE" msprop:Generator_ColumnPropNameInRow="BASE_JOB_DATE" msprop:Generator_ColumnPropNameInTable="BASE_JOB_DATEColumn" msprop:Generator_UserColumnName="BASE_JOB_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_DEP" msprop:Generator_ColumnVarNameInTable="columnBASE_DEP" msprop:Generator_ColumnPropNameInRow="BASE_DEP" msprop:Generator_ColumnPropNameInTable="BASE_DEPColumn" msprop:Generator_UserColumnName="BASE_DEP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_BDATE" msprop:Generator_ColumnVarNameInTable="columnBASE_BDATE" msprop:Generator_ColumnPropNameInRow="BASE_BDATE" msprop:Generator_ColumnPropNameInTable="BASE_BDATEColumn" msprop:Generator_UserColumnName="BASE_BDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_EDATE" msprop:Generator_ColumnVarNameInTable="columnBASE_EDATE" msprop:Generator_ColumnPropNameInRow="BASE_EDATE" msprop:Generator_ColumnPropNameInTable="BASE_EDATEColumn" msprop:Generator_UserColumnName="BASE_EDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_JOB" msprop:Generator_ColumnVarNameInTable="columnBASE_JOB" msprop:Generator_ColumnPropNameInRow="BASE_JOB" msprop:Generator_ColumnPropNameInTable="BASE_JOBColumn" msprop:Generator_UserColumnName="BASE_JOB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_DCODE" msprop:Generator_ColumnVarNameInTable="columnBASE_DCODE" msprop:Generator_ColumnPropNameInRow="BASE_DCODE" msprop:Generator_ColumnPropNameInTable="BASE_DCODEColumn" msprop:Generator_UserColumnName="BASE_DCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ORG_L1" msprop:Generator_ColumnVarNameInTable="columnBASE_ORG_L1" msprop:Generator_ColumnPropNameInRow="BASE_ORG_L1" msprop:Generator_ColumnPropNameInTable="BASE_ORG_L1Column" msprop:Generator_UserColumnName="BASE_ORG_L1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ORG_L2" msprop:Generator_ColumnVarNameInTable="columnBASE_ORG_L2" msprop:Generator_ColumnPropNameInRow="BASE_ORG_L2" msprop:Generator_ColumnPropNameInTable="BASE_ORG_L2Column" msprop:Generator_UserColumnName="BASE_ORG_L2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ORG_L3" msprop:Generator_ColumnVarNameInTable="columnBASE_ORG_L3" msprop:Generator_ColumnPropNameInRow="BASE_ORG_L3" msprop:Generator_ColumnPropNameInTable="BASE_ORG_L3Column" msprop:Generator_UserColumnName="BASE_ORG_L3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_AGEN" msprop:Generator_ColumnVarNameInTable="columnBASE_AGEN" msprop:Generator_ColumnPropNameInRow="BASE_AGEN" msprop:Generator_ColumnPropNameInTable="BASE_AGENColumn" msprop:Generator_UserColumnName="BASE_AGEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_IN_L1" msprop:Generator_ColumnVarNameInTable="columnBASE_IN_L1" msprop:Generator_ColumnPropNameInRow="BASE_IN_L1" msprop:Generator_ColumnPropNameInTable="BASE_IN_L1Column" msprop:Generator_UserColumnName="BASE_IN_L1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_IN_L3" msprop:Generator_ColumnVarNameInTable="columnBASE_IN_L3" msprop:Generator_ColumnPropNameInRow="BASE_IN_L3" msprop:Generator_ColumnPropNameInTable="BASE_IN_L3Column" msprop:Generator_UserColumnName="BASE_IN_L3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PTB" msprop:Generator_ColumnVarNameInTable="columnBASE_PTB" msprop:Generator_ColumnPropNameInRow="BASE_PTB" msprop:Generator_ColumnPropNameInTable="BASE_PTBColumn" msprop:Generator_UserColumnName="BASE_PTB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PROV" msprop:Generator_ColumnVarNameInTable="columnBASE_PROV" msprop:Generator_ColumnPropNameInRow="BASE_PROV" msprop:Generator_ColumnPropNameInTable="BASE_PROVColumn" msprop:Generator_UserColumnName="BASE_PROV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ADDR" msprop:Generator_ColumnVarNameInTable="columnBASE_ADDR" msprop:Generator_ColumnPropNameInRow="BASE_ADDR" msprop:Generator_ColumnPropNameInTable="BASE_ADDRColumn" msprop:Generator_UserColumnName="BASE_ADDR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_QUIT_DATE" msprop:Generator_ColumnVarNameInTable="columnBASE_QUIT_DATE" msprop:Generator_ColumnPropNameInRow="BASE_QUIT_DATE" msprop:Generator_ColumnPropNameInTable="BASE_QUIT_DATEColumn" msprop:Generator_UserColumnName="BASE_QUIT_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_QUIT_REZN" msprop:Generator_ColumnVarNameInTable="columnBASE_QUIT_REZN" msprop:Generator_ColumnPropNameInRow="BASE_QUIT_REZN" msprop:Generator_ColumnPropNameInTable="BASE_QUIT_REZNColumn" msprop:Generator_UserColumnName="BASE_QUIT_REZN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ERMK" msprop:Generator_ColumnVarNameInTable="columnBASE_ERMK" msprop:Generator_ColumnPropNameInRow="BASE_ERMK" msprop:Generator_ColumnPropNameInTable="BASE_ERMKColumn" msprop:Generator_UserColumnName="BASE_ERMK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PRONO" msprop:Generator_ColumnVarNameInTable="columnBASE_PRONO" msprop:Generator_ColumnPropNameInRow="BASE_PRONO" msprop:Generator_ColumnPropNameInTable="BASE_PRONOColumn" msprop:Generator_UserColumnName="BASE_PRONO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDB" msprop:Generator_ColumnVarNameInTable="columnBASE_KDB" msprop:Generator_ColumnPropNameInRow="BASE_KDB" msprop:Generator_ColumnPropNameInTable="BASE_KDBColumn" msprop:Generator_UserColumnName="BASE_KDB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDC" msprop:Generator_ColumnVarNameInTable="columnBASE_KDC" msprop:Generator_ColumnPropNameInRow="BASE_KDC" msprop:Generator_ColumnPropNameInTable="BASE_KDCColumn" msprop:Generator_UserColumnName="BASE_KDC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDP" msprop:Generator_ColumnVarNameInTable="columnBASE_KDP" msprop:Generator_ColumnPropNameInRow="BASE_KDP" msprop:Generator_ColumnPropNameInTable="BASE_KDPColumn" msprop:Generator_UserColumnName="BASE_KDP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDO" msprop:Generator_ColumnVarNameInTable="columnBASE_KDO" msprop:Generator_ColumnPropNameInRow="BASE_KDO" msprop:Generator_ColumnPropNameInTable="BASE_KDOColumn" msprop:Generator_UserColumnName="BASE_KDO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_POL" msprop:Generator_ColumnVarNameInTable="columnBASE_POL" msprop:Generator_ColumnPropNameInRow="BASE_POL" msprop:Generator_ColumnPropNameInTable="BASE_POLColumn" msprop:Generator_UserColumnName="BASE_POL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_HOUS" msprop:Generator_ColumnVarNameInTable="columnBASE_HOUS" msprop:Generator_ColumnPropNameInRow="BASE_HOUS" msprop:Generator_ColumnPropNameInTable="BASE_HOUSColumn" msprop:Generator_UserColumnName="BASE_HOUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_WELG" msprop:Generator_ColumnVarNameInTable="columnBASE_WELG" msprop:Generator_ColumnPropNameInRow="BASE_WELG" msprop:Generator_ColumnPropNameInTable="BASE_WELGColumn" msprop:Generator_UserColumnName="BASE_WELG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_WELO" msprop:Generator_ColumnVarNameInTable="columnBASE_WELO" msprop:Generator_ColumnPropNameInRow="BASE_WELO" msprop:Generator_ColumnPropNameInTable="BASE_WELOColumn" msprop:Generator_UserColumnName="BASE_WELO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PRE" msprop:Generator_ColumnVarNameInTable="columnBASE_PRE" msprop:Generator_ColumnPropNameInRow="BASE_PRE" msprop:Generator_ColumnPropNameInTable="BASE_PREColumn" msprop:Generator_UserColumnName="BASE_PRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_OTHER_SAL" msprop:Generator_ColumnVarNameInTable="columnBASE_OTHER_SAL" msprop:Generator_ColumnPropNameInRow="BASE_OTHER_SAL" msprop:Generator_ColumnPropNameInTable="BASE_OTHER_SALColumn" msprop:Generator_UserColumnName="BASE_OTHER_SAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PRED" msprop:Generator_ColumnVarNameInTable="columnBASE_PRED" msprop:Generator_ColumnPropNameInRow="BASE_PRED" msprop:Generator_ColumnPropNameInTable="BASE_PREDColumn" msprop:Generator_UserColumnName="BASE_PRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PRIZ" msprop:Generator_ColumnVarNameInTable="columnBASE_PRIZ" msprop:Generator_ColumnPropNameInRow="BASE_PRIZ" msprop:Generator_ColumnPropNameInTable="BASE_PRIZColumn" msprop:Generator_UserColumnName="BASE_PRIZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_TAX" msprop:Generator_ColumnVarNameInTable="columnBASE_TAX" msprop:Generator_ColumnPropNameInRow="BASE_TAX" msprop:Generator_ColumnPropNameInTable="BASE_TAXColumn" msprop:Generator_UserColumnName="BASE_TAX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FINS_KIND" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_KIND" msprop:Generator_ColumnPropNameInRow="BASE_FINS_KIND" msprop:Generator_ColumnPropNameInTable="BASE_FINS_KINDColumn" msprop:Generator_UserColumnName="BASE_FINS_KIND" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PN_Y30" msprop:Generator_ColumnVarNameInTable="columnBASE_PN_Y30" msprop:Generator_ColumnPropNameInRow="BASE_PN_Y30" msprop:Generator_ColumnPropNameInTable="BASE_PN_Y30Column" msprop:Generator_UserColumnName="BASE_PN_Y30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FINS_NOQ" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_NOQ" msprop:Generator_ColumnPropNameInRow="BASE_FINS_NOQ" msprop:Generator_ColumnPropNameInTable="BASE_FINS_NOQColumn" msprop:Generator_UserColumnName="BASE_FINS_NOQ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_NOH" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_NOH" msprop:Generator_ColumnPropNameInRow="BASE_FINS_NOH" msprop:Generator_ColumnPropNameInTable="BASE_FINS_NOHColumn" msprop:Generator_UserColumnName="BASE_FINS_NOH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_NOF" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_NOF" msprop:Generator_ColumnPropNameInRow="BASE_FINS_NOF" msprop:Generator_ColumnPropNameInTable="BASE_FINS_NOFColumn" msprop:Generator_UserColumnName="BASE_FINS_NOF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_NOL" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_NOL" msprop:Generator_ColumnPropNameInRow="BASE_FINS_NOL" msprop:Generator_ColumnPropNameInTable="BASE_FINS_NOLColumn" msprop:Generator_UserColumnName="BASE_FINS_NOL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_SELF" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_SELF" msprop:Generator_ColumnPropNameInRow="BASE_FINS_SELF" msprop:Generator_ColumnPropNameInTable="BASE_FINS_SELFColumn" msprop:Generator_UserColumnName="BASE_FINS_SELF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_NO" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_NO" msprop:Generator_ColumnPropNameInRow="BASE_FINS_NO" msprop:Generator_ColumnPropNameInTable="BASE_FINS_NOColumn" msprop:Generator_UserColumnName="BASE_FINS_NO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_DAY_SAL" msprop:Generator_ColumnVarNameInTable="columnBASE_DAY_SAL" msprop:Generator_ColumnPropNameInRow="BASE_DAY_SAL" msprop:Generator_ColumnPropNameInTable="BASE_DAY_SALColumn" msprop:Generator_UserColumnName="BASE_DAY_SAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_HOUR_SAL" msprop:Generator_ColumnVarNameInTable="columnBASE_HOUR_SAL" msprop:Generator_ColumnPropNameInRow="BASE_HOUR_SAL" msprop:Generator_ColumnPropNameInTable="BASE_HOUR_SALColumn" msprop:Generator_UserColumnName="BASE_HOUR_SAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_DCT_A" msprop:Generator_ColumnVarNameInTable="columnBASE_DCT_A" msprop:Generator_ColumnPropNameInRow="BASE_DCT_A" msprop:Generator_ColumnPropNameInTable="BASE_DCT_AColumn" msprop:Generator_UserColumnName="BASE_DCT_A" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_DCT_B" msprop:Generator_ColumnVarNameInTable="columnBASE_DCT_B" msprop:Generator_ColumnPropNameInRow="BASE_DCT_B" msprop:Generator_ColumnPropNameInTable="BASE_DCT_BColumn" msprop:Generator_UserColumnName="BASE_DCT_B" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_DCT_C" msprop:Generator_ColumnVarNameInTable="columnBASE_DCT_C" msprop:Generator_ColumnPropNameInRow="BASE_DCT_C" msprop:Generator_ColumnPropNameInTable="BASE_DCT_CColumn" msprop:Generator_UserColumnName="BASE_DCT_C" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_COUNT_REMARK" msprop:Generator_ColumnVarNameInTable="columnBASE_COUNT_REMARK" msprop:Generator_ColumnPropNameInRow="BASE_COUNT_REMARK" msprop:Generator_ColumnPropNameInTable="BASE_COUNT_REMARKColumn" msprop:Generator_UserColumnName="BASE_COUNT_REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MEMO" msprop:Generator_ColumnVarNameInTable="columnBASE_MEMO" msprop:Generator_ColumnPropNameInRow="BASE_MEMO" msprop:Generator_ColumnPropNameInTable="BASE_MEMOColumn" msprop:Generator_UserColumnName="BASE_MEMO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MUSER" msprop:Generator_ColumnVarNameInTable="columnBASE_MUSER" msprop:Generator_ColumnPropNameInRow="BASE_MUSER" msprop:Generator_ColumnPropNameInTable="BASE_MUSERColumn" msprop:Generator_UserColumnName="BASE_MUSER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MDATE" msprop:Generator_ColumnVarNameInTable="columnBASE_MDATE" msprop:Generator_ColumnPropNameInRow="BASE_MDATE" msprop:Generator_ColumnPropNameInTable="BASE_MDATEColumn" msprop:Generator_UserColumnName="BASE_MDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDC_SERIES" msprop:Generator_ColumnVarNameInTable="columnBASE_KDC_SERIES" msprop:Generator_ColumnPropNameInRow="BASE_KDC_SERIES" msprop:Generator_ColumnPropNameInTable="BASE_KDC_SERIESColumn" msprop:Generator_UserColumnName="BASE_KDC_SERIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_KDP_SERIES" msprop:Generator_ColumnVarNameInTable="columnBASE_KDP_SERIES" msprop:Generator_ColumnPropNameInRow="BASE_KDP_SERIES" msprop:Generator_ColumnPropNameInTable="BASE_KDP_SERIESColumn" msprop:Generator_UserColumnName="BASE_KDP_SERIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_LABOR_SERIES" msprop:Generator_ColumnVarNameInTable="columnBASE_LABOR_SERIES" msprop:Generator_ColumnPropNameInRow="BASE_LABOR_SERIES" msprop:Generator_ColumnPropNameInTable="BASE_LABOR_SERIESColumn" msprop:Generator_UserColumnName="BASE_LABOR_SERIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PRTS" msprop:Generator_ColumnVarNameInTable="columnBASE_PRTS" msprop:Generator_ColumnPropNameInRow="BASE_PRTS" msprop:Generator_ColumnPropNameInTable="BASE_PRTSColumn" msprop:Generator_UserColumnName="BASE_PRTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FIN_AMT" msprop:Generator_ColumnVarNameInTable="columnBASE_FIN_AMT" msprop:Generator_ColumnPropNameInRow="BASE_FIN_AMT" msprop:Generator_ColumnPropNameInTable="BASE_FIN_AMTColumn" msprop:Generator_UserColumnName="BASE_FIN_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_TAX_DCT" msprop:Generator_ColumnVarNameInTable="columnBASE_TAX_DCT" msprop:Generator_ColumnPropNameInRow="BASE_TAX_DCT" msprop:Generator_ColumnPropNameInTable="BASE_TAX_DCTColumn" msprop:Generator_UserColumnName="BASE_TAX_DCT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_LABOR_STATUS" msprop:Generator_ColumnVarNameInTable="columnBASE_LABOR_STATUS" msprop:Generator_ColumnPropNameInRow="BASE_LABOR_STATUS" msprop:Generator_ColumnPropNameInTable="BASE_LABOR_STATUSColumn" msprop:Generator_UserColumnName="BASE_LABOR_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_SENTMAIL" msprop:Generator_ColumnVarNameInTable="columnBASE_SENTMAIL" msprop:Generator_ColumnPropNameInRow="BASE_SENTMAIL" msprop:Generator_ColumnPropNameInTable="BASE_SENTMAILColumn" msprop:Generator_UserColumnName="BASE_SENTMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_EMAIL" msprop:Generator_ColumnVarNameInTable="columnBASE_EMAIL" msprop:Generator_ColumnPropNameInRow="BASE_EMAIL" msprop:Generator_ColumnPropNameInTable="BASE_EMAILColumn" msprop:Generator_UserColumnName="BASE_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FIN_SUP_AMT" msprop:Generator_ColumnVarNameInTable="columnBASE_FIN_SUP_AMT" msprop:Generator_ColumnPropNameInRow="BASE_FIN_SUP_AMT" msprop:Generator_ColumnPropNameInTable="BASE_FIN_SUP_AMTColumn" msprop:Generator_UserColumnName="BASE_FIN_SUP_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_REPLACE_AMT" msprop:Generator_ColumnVarNameInTable="columnBASE_REPLACE_AMT" msprop:Generator_ColumnPropNameInRow="BASE_REPLACE_AMT" msprop:Generator_ColumnPropNameInTable="BASE_REPLACE_AMTColumn" msprop:Generator_UserColumnName="BASE_REPLACE_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_GOVADOF" msprop:Generator_ColumnVarNameInTable="columnBASE_GOVADOF" msprop:Generator_ColumnPropNameInRow="BASE_GOVADOF" msprop:Generator_ColumnPropNameInTable="BASE_GOVADOFColumn" msprop:Generator_UserColumnName="BASE_GOVADOF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_LAB_JIF" msprop:Generator_ColumnVarNameInTable="columnBASE_LAB_JIF" msprop:Generator_ColumnPropNameInRow="BASE_LAB_JIF" msprop:Generator_ColumnPropNameInTable="BASE_LAB_JIFColumn" msprop:Generator_UserColumnName="BASE_LAB_JIF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="base_fins_noq_nol" msprop:Generator_ColumnVarNameInTable="columnbase_fins_noq_nol" msprop:Generator_ColumnPropNameInRow="base_fins_noq_nol" msprop:Generator_ColumnPropNameInTable="base_fins_noq_nolColumn" msprop:Generator_UserColumnName="base_fins_noq_nol" type="xs:decimal" minOccurs="0" />
+              <xs:element name="base_fins_noh_nol" msprop:Generator_ColumnVarNameInTable="columnbase_fins_noh_nol" msprop:Generator_ColumnPropNameInRow="base_fins_noh_nol" msprop:Generator_ColumnPropNameInTable="base_fins_noh_nolColumn" msprop:Generator_UserColumnName="base_fins_noh_nol" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_Y65" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_Y65" msprop:Generator_ColumnPropNameInRow="BASE_FINS_Y65" msprop:Generator_ColumnPropNameInTable="BASE_FINS_Y65Column" msprop:Generator_UserColumnName="BASE_FINS_Y65" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_FINS_SERIES" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_SERIES" msprop:Generator_ColumnPropNameInRow="BASE_FINS_SERIES" msprop:Generator_ColumnPropNameInTable="BASE_FINS_SERIESColumn" msprop:Generator_UserColumnName="BASE_FINS_SERIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Base_IsMarked" msprop:Generator_ColumnVarNameInTable="columnBase_IsMarked" msprop:Generator_ColumnPropNameInRow="Base_IsMarked" msprop:Generator_ColumnPropNameInTable="Base_IsMarkedColumn" msprop:Generator_UserColumnName="Base_IsMarked" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PEN_RATE" msprop:Generator_ColumnVarNameInTable="columnBASE_PEN_RATE" msprop:Generator_ColumnPropNameInRow="BASE_PEN_RATE" msprop:Generator_ColumnPropNameInTable="BASE_PEN_RATEColumn" msprop:Generator_UserColumnName="BASE_PEN_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_PEN_TYPE" msprop:Generator_ColumnVarNameInTable="columnBASE_PEN_TYPE" msprop:Generator_ColumnPropNameInRow="BASE_PEN_TYPE" msprop:Generator_ColumnPropNameInTable="BASE_PEN_TYPEColumn" msprop:Generator_UserColumnName="BASE_PEN_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PROF" msprop:Generator_ColumnVarNameInTable="columnBASE_PROF" msprop:Generator_ColumnPropNameInRow="BASE_PROF" msprop:Generator_ColumnPropNameInTable="BASE_PROFColumn" msprop:Generator_UserColumnName="BASE_PROF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PEN_SERIES" msprop:Generator_ColumnVarNameInTable="columnBASE_PEN_SERIES" msprop:Generator_ColumnPropNameInRow="BASE_PEN_SERIES" msprop:Generator_ColumnPropNameInTable="BASE_PEN_SERIESColumn" msprop:Generator_UserColumnName="BASE_PEN_SERIES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_NUMERATOR" msprop:Generator_ColumnVarNameInTable="columnBASE_NUMERATOR" msprop:Generator_ColumnPropNameInRow="BASE_NUMERATOR" msprop:Generator_ColumnPropNameInTable="BASE_NUMERATORColumn" msprop:Generator_UserColumnName="BASE_NUMERATOR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_DENOMINATOR" msprop:Generator_ColumnVarNameInTable="columnBASE_DENOMINATOR" msprop:Generator_ColumnPropNameInRow="BASE_DENOMINATOR" msprop:Generator_ColumnPropNameInTable="BASE_DENOMINATORColumn" msprop:Generator_UserColumnName="BASE_DENOMINATOR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_PTB_TYPE" msprop:Generator_ColumnVarNameInTable="columnBASE_PTB_TYPE" msprop:Generator_ColumnPropNameInRow="BASE_PTB_TYPE" msprop:Generator_ColumnPropNameInTable="BASE_PTB_TYPEColumn" msprop:Generator_UserColumnName="BASE_PTB_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_ALT_AMT" msprop:Generator_ColumnVarNameInTable="columnBASE_ALT_AMT" msprop:Generator_ColumnPropNameInRow="BASE_ALT_AMT" msprop:Generator_ColumnPropNameInTable="BASE_ALT_AMTColumn" msprop:Generator_UserColumnName="BASE_ALT_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_MEMO1" msprop:Generator_ColumnVarNameInTable="columnBASE_MEMO1" msprop:Generator_ColumnPropNameInRow="BASE_MEMO1" msprop:Generator_ColumnPropNameInTable="BASE_MEMO1Column" msprop:Generator_UserColumnName="BASE_MEMO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MEMO2" msprop:Generator_ColumnVarNameInTable="columnBASE_MEMO2" msprop:Generator_ColumnPropNameInRow="BASE_MEMO2" msprop:Generator_ColumnPropNameInTable="BASE_MEMO2Column" msprop:Generator_UserColumnName="BASE_MEMO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MEMO3" msprop:Generator_ColumnVarNameInTable="columnBASE_MEMO3" msprop:Generator_ColumnPropNameInRow="BASE_MEMO3" msprop:Generator_ColumnPropNameInTable="BASE_MEMO3Column" msprop:Generator_UserColumnName="BASE_MEMO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_DCODE_NAME" msprop:Generator_ColumnVarNameInTable="columnBASE_DCODE_NAME" msprop:Generator_ColumnPropNameInRow="BASE_DCODE_NAME" msprop:Generator_ColumnPropNameInTable="BASE_DCODE_NAMEColumn" msprop:Generator_UserColumnName="BASE_DCODE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_SENTMSG" msprop:Generator_ColumnVarNameInTable="columnBASE_SENTMSG" msprop:Generator_ColumnPropNameInRow="BASE_SENTMSG" msprop:Generator_ColumnPropNameInTable="BASE_SENTMSGColumn" msprop:Generator_UserColumnName="BASE_SENTMSG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FINS_HEALTH_SELF" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_HEALTH_SELF" msprop:Generator_ColumnPropNameInRow="BASE_FINS_HEALTH_SELF" msprop:Generator_ColumnPropNameInTable="BASE_FINS_HEALTH_SELFColumn" msprop:Generator_UserColumnName="BASE_FINS_HEALTH_SELF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BASE_PROJ_BDATE" msprop:Generator_ColumnVarNameInTable="columnBASE_PROJ_BDATE" msprop:Generator_ColumnPropNameInRow="BASE_PROJ_BDATE" msprop:Generator_ColumnPropNameInTable="BASE_PROJ_BDATEColumn" msprop:Generator_UserColumnName="BASE_PROJ_BDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PROJ_EDATE" msprop:Generator_ColumnVarNameInTable="columnBASE_PROJ_EDATE" msprop:Generator_ColumnPropNameInRow="BASE_PROJ_EDATE" msprop:Generator_ColumnPropNameInTable="BASE_PROJ_EDATEColumn" msprop:Generator_UserColumnName="BASE_PROJ_EDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_LAB1" msprop:Generator_ColumnVarNameInTable="columnBASE_LAB1" msprop:Generator_ColumnPropNameInRow="BASE_LAB1" msprop:Generator_ColumnPropNameInTable="BASE_LAB1Column" msprop:Generator_UserColumnName="BASE_LAB1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_LAB2" msprop:Generator_ColumnVarNameInTable="columnBASE_LAB2" msprop:Generator_ColumnPropNameInRow="BASE_LAB2" msprop:Generator_ColumnPropNameInTable="BASE_LAB2Column" msprop:Generator_UserColumnName="BASE_LAB2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_LAB3" msprop:Generator_ColumnVarNameInTable="columnBASE_LAB3" msprop:Generator_ColumnPropNameInRow="BASE_LAB3" msprop:Generator_ColumnPropNameInTable="BASE_LAB3Column" msprop:Generator_UserColumnName="BASE_LAB3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_PARTTIME" msprop:Generator_ColumnVarNameInTable="columnBASE_PARTTIME" msprop:Generator_ColumnPropNameInRow="BASE_PARTTIME" msprop:Generator_ColumnPropNameInTable="BASE_PARTTIMEColumn" msprop:Generator_UserColumnName="BASE_PARTTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FINS_SELF_DESC" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_SELF_DESC" msprop:Generator_ColumnPropNameInRow="BASE_FINS_SELF_DESC" msprop:Generator_ColumnPropNameInTable="BASE_FINS_SELF_DESCColumn" msprop:Generator_UserColumnName="BASE_FINS_SELF_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_FINS_PAR_DESC" msprop:Generator_ColumnVarNameInTable="columnBASE_FINS_PAR_DESC" msprop:Generator_ColumnPropNameInRow="BASE_FINS_PAR_DESC" msprop:Generator_ColumnPropNameInTable="BASE_FINS_PAR_DESCColumn" msprop:Generator_UserColumnName="BASE_FINS_PAR_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_SERVICE_PLACE_DESC" msprop:Generator_ColumnVarNameInTable="columnBASE_SERVICE_PLACE_DESC" msprop:Generator_ColumnPropNameInRow="BASE_SERVICE_PLACE_DESC" msprop:Generator_ColumnPropNameInTable="BASE_SERVICE_PLACE_DESCColumn" msprop:Generator_UserColumnName="BASE_SERVICE_PLACE_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

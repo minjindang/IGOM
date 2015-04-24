@@ -1,0 +1,453 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/65296653/MAT111813.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link rel=3DFile-List href=3D"MAT111813.files/filelist.xml">
+<style id=3D"MAT111812_4372_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl154372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl634372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl644372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl654372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl664372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl674372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl684372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl694372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl704372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl714372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl724372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl734372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl744372
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>&#12288;&#12288;<![endif]-->
+<!--&#19979;&#21015;&#36039;&#35338;&#26159;&#30001; Microsoft Office Excel
+&#32178;&#38913;&#30332;&#20296;&#31934;&#38728;&#25152;&#29986;&#29983;&#1=
+2290;-->
+<!--&#22914;&#26524;&#30001; Excel
+&#37325;&#26032;&#30332;&#20296;&#30456;&#21516;&#30340;&#38917;&#30446;&#2=
+6178;&#65292;&#22312;
+DIV
+&#27161;&#31844;&#38291;&#30340;&#25152;&#26377;&#36039;&#35338;&#23559;&#2=
+6371;&#34987;&#21462;&#20195;&#12290;-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id=3D"MAT111812_4372" align=3Dcenter x:publishsource=3D"Excel"><!--&#1=
+9979;&#21015;&#36039;&#35338;&#26159;&#30001; Microsoft Office Excel
+&#32178;&#38913;&#30332;&#20296;&#31934;&#38728;&#25152;&#29986;&#29983;&#1=
+2290;--><!--&#22914;&#26524;&#30001; Excel
+&#37325;&#26032;&#30332;&#20296;&#30456;&#21516;&#30340;&#38917;&#30446;&#2=
+6178;&#65292;&#22312;
+DIV
+&#27161;&#31844;&#38291;&#30340;&#25152;&#26377;&#36039;&#35338;&#23559;&#2=
+6371;&#34987;&#21462;&#20195;&#12290;--><!-----------------------------><!-=
+-START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD --><!---------------=
+-------------->
+<PageRepeatArea>
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D753 style=3D'bord=
+er-collapse:
+ collapse;table-layout:fixed;width:566pt'>
+ <col width=3D72 span=3D5 style=3D'mso-width-source:userset;mso-width-alt:2=
+304;
+ width:54pt'>
+ <col width=3D88 style=3D'mso-width-source:userset;mso-width-alt:2816;width=
+:66pt'>
+ <col width=3D61 style=3D'mso-width-source:userset;mso-width-alt:1952;width=
+:46pt'>
+ <col width=3D66 style=3D'mso-width-source:userset;mso-width-alt:2112;width=
+:50pt'>
+ <col width=3D106 style=3D'mso-width-source:userset;mso-width-alt:3392;widt=
+h:80pt'>
+ <col width=3D72 style=3D'width:54pt'>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D2 rowspan=3D3 height=3D66 class=3Dxl664372 width=3D144 styl=
+e=3D'height:
+  49.5pt;width:108pt'><!--&#19979;&#21015;&#36039;&#35338;&#26159;&#30001; =
+Microsoft Office Excel
+&#32178;&#38913;&#30332;&#20296;&#31934;&#38728;&#25152;&#29986;&#29983;&#1=
+2290;--><!--&#22914;&#26524;&#30001; Excel
+&#37325;&#26032;&#30332;&#20296;&#30456;&#21516;&#30340;&#38917;&#30446;&#2=
+6178;&#65292;&#22312;
+DIV
+&#27161;&#31844;&#38291;&#30340;&#25152;&#26377;&#36039;&#35338;&#23559;&#2=
+6371;&#34987;&#21462;&#20195;&#12290;--><!-----------------------------><!-=
+-START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD --><!---------------=
+-------------->&lt;MAT1118&gt;</td>
+  <td rowspan=3D3 class=3Dxl634372 width=3D72 style=3D'width:54pt'></td>
+  <td rowspan=3D3 class=3Dxl634372 width=3D72 style=3D'width:54pt'></td>
+  <td rowspan=3D3 class=3Dxl634372 width=3D72 style=3D'width:54pt'></td>
+  <td rowspan=3D3 class=3Dxl634372 width=3D88 style=3D'width:66pt'></td>
+  <td colspan=3D2 class=3Dxl674372 width=3D127 style=3D'width:96pt'>&#35069=
+;&#34920;&#26085;&#26399;&#65306;</td>
+  <td class=3Dxl644372 width=3D106 style=3D'width:80pt'>##P1##</td>
+  <td class=3Dxl154372 width=3D72 style=3D'width:54pt'></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl684372 style=3D'height:16.5pt'>&#35=
+069;&#34920;&#20154;&#65306;</td>
+  <td class=3Dxl634372>##P2##</td>
+  <td class=3Dxl634372></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl684372 style=3D'height:16.5pt'>&#38=
+913;&#27425;&#65306;</td>
+  <td class=3Dxl634372>##P3##/##P4##</td>
+  <td class=3Dxl634372></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D9 height=3D22 class=3Dxl694372 style=3D'height:16.5pt'>&#20=
+491;&#20154;&#38936;&#29992;&#29289;&#21697;</td>
+  <td class=3Dxl154372></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl704372 style=3D'height:16.5pt'>&#26=
+680;&#20934;&#26085;&#26399;&#32113;&#35336;&#21312;&#38291;</td>
+  <td colspan=3D3 class=3Dxl714372>##P5##</td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl154372></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td height=3D22 class=3Dxl634372 style=3D'height:16.5pt'>&#29289;&#26009;=
+&#32232;&#34399;<span
+  style=3D'display:none'>&#65306;</span></td>
+  <td colspan=3D2 class=3Dxl634372>##P6##</td>
+  <td class=3Dxl634372>&#29289;&#26009;&#21517;&#31281;<span style=3D'displ=
+ay:none'>&#65306;</span></td>
+  <td colspan=3D2 class=3Dxl634372>##P7##</td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372>&#21934;&#20301;&#65306;</td>
+  <td class=3Dxl634372>##P8##</td>
+  <td class=3Dxl154372></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td height=3D22 class=3Dxl654372 style=3D'height:16.5pt'>&#24207;&#34399;=
+</td>
+  <td colspan=3D2 class=3Dxl724372>&#21934;&#20301;&#21029;</td>
+  <td class=3Dxl654372>&#21729;&#24037;&#32232;&#34399;</td>
+  <td colspan=3D2 class=3Dxl724372>&#22995;&#21517;</td>
+  <td colspan=3D2 class=3Dxl724372>&#30003;&#35531;&#32317;&#25976;&#37327;=
+</td>
+  <td class=3Dxl654372>&#38936;&#29992;&#32317;&#25976;&#37327;</td>
+  <td class=3Dxl154372></td>
+ </tr>
+ <RepeatArea>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td height=3D22 class=3Dxl654372 style=3D'height:16.5pt'>##P4##+##Material_id##</td>
+  <td colspan=3D2 class=3Dxl734372>##Unit_Code##</td>
+  <td class=3Dxl654372>##User_id##</td>
+  <td colspan=3D2 class=3Dxl734372>##User_name##</td>
+  <td colspan=3D2 class=3Dxl734372>##Apply_cnt##</td>
+  <td class=3Dxl654372>##Out_cnt##</td>
+  <td class=3Dxl154372></td>
+ </tr>
+ </RepeatArea>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td height=3D22 class=3Dxl634372 style=3D'height:16.5pt'>&#25215;&#36774;=
+&#20154;&#65306;</td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372>&#31185;&#38263;&#65306;</td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td class=3Dxl634372></td>
+  <td colspan=3D2 class=3Dxl744372>&#21934;&#20301;&#20027;&#31649;&#65306;=
+<!-----------------------------><!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB=
+ PAGE WIZARD--><!-----------------------------><!--------------------------=
+---><!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD--><!-----------=
+------------------></td>
+  <td class=3Dxl154372></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D88 style=3D'width:66pt'></td>
+  <td width=3D61 style=3D'width:46pt'></td>
+  <td width=3D66 style=3D'width:50pt'></td>
+  <td width=3D106 style=3D'width:80pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</PageRepeatArea>
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>

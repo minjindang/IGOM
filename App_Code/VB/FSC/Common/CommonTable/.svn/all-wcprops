@@ -1,0 +1,521 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/TCCC/!svn/ver/5467/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable
+END
+ProjectOvertimeRule.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/5279/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ProjectOvertimeRule.vb
+END
+WorkserviceProof.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/3111/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/WorkserviceProof.vb
+END
+LeaveNGroupDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/2591/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveNGroupDAO.vb
+END
+LeaveMainMapping.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMainMapping.vb
+END
+TemporarilyTransfeDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/TCCC/!svn/ver/4946/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/TemporarilyTransfeDAO.vb
+END
+UnusualCorrect.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/3565/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/UnusualCorrect.vb
+END
+VacationAllowanceDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TCCC/!svn/ver/5269/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/VacationAllowanceDAO.vb
+END
+PaperFormDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/4103/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/PaperFormDAO.vb
+END
+DutyChangeDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/5392/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DutyChangeDAO.vb
+END
+CPAPYYYS.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5086/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPYYYS.vb
+END
+SettlementAnnual.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/5307/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/SettlementAnnual.vb
+END
+LeaveNGroup.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/3497/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveNGroup.vb
+END
+PersonnelDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5391/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/PersonnelDAO.vb
+END
+PaperForm.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/4103/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/PaperForm.vb
+END
+DutyChange.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/3155/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DutyChange.vb
+END
+NoticePersonDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/2926/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/NoticePersonDAO.vb
+END
+HistoricalDataLog.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/2926/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/HistoricalDataLog.vb
+END
+LeaveMain.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5316/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMain.vb
+END
+LeaveSettingDetailDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/TCCC/!svn/ver/2800/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveSettingDetailDAO.vb
+END
+UnusualCorrectDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/3565/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/UnusualCorrectDAO.vb
+END
+DepartEmpDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5377/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DepartEmpDAO.vb
+END
+CPAPO15MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPO15MDAO.vb
+END
+CPAPKYYMM.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/3239/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPKYYMM.vb
+END
+CPAPP16MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5421/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPP16MDAO.vb
+END
+LeaveYear.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5173/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveYear.vb
+END
+CPAPR18MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPR18MDAO.vb
+END
+CPAPS19MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPS19MDAO.vb
+END
+CPAPP16M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPP16M.vb
+END
+MemberDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/2601/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/MemberDAO.vb
+END
+CPAPR18M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5218/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPR18M.vb
+END
+ProjectOvertimeRuleDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/TCCC/!svn/ver/5279/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ProjectOvertimeRuleDAO.vb
+END
+WorkserviceProofDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/3111/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/WorkserviceProofDAO.vb
+END
+CPAPKYYMMDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/3239/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPKYYMMDAO.vb
+END
+LeaveMainMappingDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMainMappingDAO.vb
+END
+DeputyVacancyDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/5055/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DeputyVacancyDAO.vb
+END
+CPAPYYYSDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2773/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPYYYSDAO.vb
+END
+CPAPC03M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5048/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPC03M.vb
+END
+Member.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/3193/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/Member.vb
+END
+LeaveMainDetailDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/5103/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMainDetailDAO.vb
+END
+NoticePerson.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/2926/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/NoticePerson.vb
+END
+DeputyVacancy.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/5055/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DeputyVacancy.vb
+END
+PersonnelBossDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/3285/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/PersonnelBossDAO.vb
+END
+ScheduleDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/3113/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ScheduleDAO.vb
+END
+HistoricalDataLogDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TCCC/!svn/ver/2926/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/HistoricalDataLogDAO.vb
+END
+ForgotClockApply.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ForgotClockApply.vb
+END
+LeaveMainDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5279/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMainDAO.vb
+END
+CPAPT20M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/2709/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPT20M.vb
+END
+CPAPB02MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2773/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPB02MDAO.vb
+END
+LeaveSetting.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveSetting.vb
+END
+CPAPC03MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5048/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPC03MDAO.vb
+END
+ScheduleSetting.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/4971/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ScheduleSetting.vb
+END
+RewordMainDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/RewordMainDAO.vb
+END
+DeputyDetDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DeputyDetDAO.vb
+END
+CPAPD04MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPD04MDAO.vb
+END
+StaffRegisterDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/3087/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/StaffRegisterDAO.vb
+END
+CPAPX24M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPX24M.vb
+END
+LeaveYearDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveYearDAO.vb
+END
+Personnel.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5467/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/Personnel.vb
+END
+ForgotClockApplyDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/4890/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ForgotClockApplyDAO.vb
+END
+RewordMain.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/RewordMain.vb
+END
+DeputyDet.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/4828/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DeputyDet.vb
+END
+CPAPT20MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/3345/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPT20MDAO.vb
+END
+OrgDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/5450/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/OrgDAO.vb
+END
+ScheduleBaseDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/3166/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ScheduleBaseDAO.vb
+END
+LeaveSettingDetail.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/2800/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveSettingDetail.vb
+END
+ScheduleSettingDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/4971/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ScheduleSettingDAO.vb
+END
+LeaveSettingDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/4065/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveSettingDAO.vb
+END
+DepartEmp.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5391/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/DepartEmp.vb
+END
+CPAPX24MDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2966/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPX24MDAO.vb
+END
+RewordDetDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/RewordDetDAO.vb
+END
+LeaveMainDetail.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/5300/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/LeaveMainDetail.vb
+END
+CPAPO15M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPO15M.vb
+END
+ScheduleBase.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/3166/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/ScheduleBase.vb
+END
+Org.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/TCCC/!svn/ver/5367/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/Org.vb
+END
+TemporarilyTransfe.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/4946/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/TemporarilyTransfe.vb
+END
+VacationAllowance.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/5269/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/VacationAllowance.vb
+END
+CPAPHYYMMDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5316/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPHYYMMDAO.vb
+END
+Schedule.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/4672/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/Schedule.vb
+END
+PersonnelBoss.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/2839/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/PersonnelBoss.vb
+END
+CPAPS19M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/3345/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPS19M.vb
+END
+RewordDet.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/RewordDet.vb
+END
+CPAPB02M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/3206/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPB02M.vb
+END
+CPAPHYYMM.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPHYYMM.vb
+END
+SettlementAnnualDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/4606/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/SettlementAnnualDAO.vb
+END
+CPAPD04M.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/CPAPD04M.vb
+END
+StaffRegister.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/3165/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonTable/StaffRegister.vb
+END

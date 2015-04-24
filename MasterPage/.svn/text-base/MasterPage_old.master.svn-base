@@ -1,0 +1,526 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage_old.master.vb" Inherits="MasterPage_MasterPage_old" %>
+<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Src="~/UControl/UcUsePDF.ascx" TagName="UcUsePDF" TagPrefix="uc10" %>
+<%@ Register Src="~/UControl/UcFunctionInfo.ascx" TagName="UcFunc" TagPrefix="uc11" %>
+<%@ Register Src="~/UControl/UcSystemManageInterface.ascx" TagName="UcSys" TagPrefix="uc12" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  id="Head1"  runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>整合性總務作業管理資訊系統</title>
+    <link href="<%= Page.ResolveClientUrl("~/CSS/css.css")%>" rel="stylesheet" type="text/css" /> 
+    <link href="<%= Page.ResolveClientUrl("~/CSS/syntegra3.css")%>" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" media="all" href="<%= Page.ResolveClientUrl("~/css/aqua.css")%>" />     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-1.4.2.min.js") %>"></script>  
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.blockUI.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.maxlength.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-ui-1.8.18.custom.min.js")%>"></script>   
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/DgJScript.js")%>"></script>     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/utils.js")%>"></script>        
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/roc.js")%>"></script>          
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/CalendarPopup.js")%>"></script>     
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/function.js")%>"></script>     
+    <link type="text/css" href="<%= Page.ResolveClientUrl("~/CSS/smoothness/jquery-ui-1.8.18.custom.css")%>" rel="stylesheet" />   
+
+    <style type="text/css" >
+        .tdMenuBody
+        { 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu_body.png")%>') repeat-y;
+        }
+        .tdMenuHeader
+        {
+            text-align:center;color:White; font-size:16px; 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu.gif")%>') no-repeat ; height:26px; 
+        }
+        .tdMenuFooter
+        {
+            text-align:center;color:White; 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu.gif")%>') no-repeat 0 -61px; height:18px;
+        }
+    </style>    
+    <script type="text/javascript" language="javascript">
+        $().ready(function () {
+            $('input[type=submit]').each(function () {
+                $(this).click(function () {
+                    if ($(this).attr('value') == "查詢" ||
+                    $(this).attr('value') == "送出申請") {
+                        blockUI();
+                    }
+                });
+            });
+            $('input[type=button]').each(function () {
+                if ($(this).attr('value') == "重填") {
+                    $(this).click(function () {
+                        clearForm(this.form);
+                    });
+                }
+            });
+
+            var menu = '<%= Session("Menu") %>';
+            if (menu == 'open') {
+                document.getElementById("menu").style.display = "";
+                document.getElementById("menu").style.width = "197px";
+            }
+            else if (menu == 'close') {
+                document.getElementById("menu").style.display = "none";
+            }
+
+        });
+        document.write(getCalendarStyles());
+        var cal1xx = new CalendarPopup("CalendarDiv");
+        cal1xx.showNavigationDropdowns();
+
+        function displayDatePicker(txtid, timeid, target) {
+            cal1xx.select(document.getElementById(txtid), txtid, 'yyy/MM/dd', document.getElementById(timeid), target);
+        }
+
+        function blockUI() {
+            //$.blockUI({ message: '<img src="../images/loading.gif"align="absmiddle" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+            $.blockUI({ message: '<img src="<%= Page.ResolveClientUrl("~/images/loading.gif")%>" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+        }
+        function showMenu() {
+            document.getElementById("menu").style.display = "";
+            document.getElementById("menu").style.width = "197px";
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function clearForm(form) {
+            form.reset();
+            var allTables = $('#content > table');
+
+            allTables.each(function () {
+                var allSelects = $(this).find('select');
+                allSelects.each(function () {
+                    $('#' + this.id).get(0).selectedIndex = 0;
+                });
+                return false;
+            });
+
+            var allInputs = $('#content input[type=text]');
+            allInputs.each(function () {
+                $(this).val('');
+
+            });
+        }
+        function checkEmptyField(idlist, fieldlist) {
+            var checknum = /^[0-9, ]+$/i;
+            var aid = new Array();
+            var afield = new Array();
+            aid = idlist.split(",");
+            afield = fieldlist.split(",");
+
+            for (var i = 0 ; i < aid.length ; i++) {
+                if (document.getElementById(aid[i]).value == '') {
+                    alert("「" + afield[i] + "」欄位為必填。");
+                    document.getElementById(aid[i]).focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+        function chgValue() { }
+        function checkDate(did) {
+            var d = $('#' + did).val();
+            if (d == '')
+                return;
+
+            var err = false;
+
+            regex = /\S{9}/;
+            if (!regex.test(d))
+                err = true;
+
+            regex = /\d{3}\/\d{2}\/\d{2}/;
+            if (!regex.test(d))
+                err = true;
+
+            //        regex = /\d{3}([0][13578][0][1-9]|[0][13578][1-2][0-9]|[0][13578][3][0-1])|([0][469][0][1-9]|[0][469][1-2][0-9]|[0][469][3][0])|([1][11][0][1-9]|[1][11][1-2][0-9]|[1][11][3][0])|([1][12][0][1-9]|[1][12][1-2][0-9]|[1][12][3][0-1])|([0][2][0][1-9]|[0][2][1-2][0-9])/;
+            //        if(!regex.test(d))
+            //            err = true;
+
+            if (err) {
+                alert("日期格式錯誤!");
+                $('#' + did).val("");
+                $('#' + did).focus();
+            }
+
+        }
+
+        function checkTime(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /([0-1][0-9]|[2][0-3])[0-5][0-9]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function checkTime2(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /(([0-1][0-9]|[2][0-3])[0-5][0-9])|[2][4][0][0]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function setAllReadOnly() {
+            var arrObj = document.forms[0].elements;
+            var arrLen = arrObj.length;
+            for (var i = 0; i < arrLen; i++) {
+                var obj = arrObj[i];
+                if ((obj.type == "text") || (obj.type == "textarea") || (obj.type == "password")) {
+                    obj.disabled = true;
+                } else if ((obj.type == "select") || (obj.type == "select-one") || (obj.type == "select-multiple") || (obj.type == "checkbox") || (obj.type == "radio")) {
+                    if (obj.getAttribute("name").indexOf("UcSystemManageInterface") < 0)
+                        obj.disabled = true;
+                } else if ((obj.type == "button") || (obj.type == "submit")) {
+                    if (obj.getAttribute("value") != "回上頁")
+                        obj.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="showMsg();">
+<div id="CalendarDiv" style="position:absolute;visibility:hidden;background-color:white;background-color:white;"></div>
+<form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <input type="hidden" id="alertMsg" />  
+    <input type="hidden" id="callback" /> 
+    <div>
+    <table id="container" cellpadding="0" cellspacing="0" width="99%">
+    <tr>
+        <td colspan="3" id="header" style="background: url('<%= Page.ResolveClientUrl("~/images/bk.png")%>'); height: 99px;" valign="top">
+	        <img src="<%= Page.ResolveClientUrl("~/images/blue_banner.png")%>" alt="" style="margin-top:0px; z-index:1; position:absolute; height: 99px;" />                
+            
+            <%                        
+            Dim logofile As String = New SYS.Logic.Org().GetColumnValue("Logo_file", LoginManager.OrgCode)
+            If String.IsNullOrEmpty(logofile) Then
+                    logofile = "logo_01.png"
+            End If
+            %>
+            <img src="<%= Page.ResolveClientUrl("~/images/Logos/" & logofile)%>" alt="" style="z-index:2; position:absolute; float:left;" />
+            
+            <table border="0" cellpadding="4" style="z-index:3; position:absolute; width:100%; float:right; height: 99px; color:White; font-weight:900; font-size:13px;">
+                <tr>
+                    <td align="right">
+                        <span><%=LoginManager.GetTicketUserData(LoginManager.LoginUserData.DepartName)%> <%=LoginManager.UserName%> </span><br />
+                        <span id="Clock"></span>
+                    </td>
+                    <td align="right">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="menu" valign="top" align="left">
+            
+            <table id="Menu1_table" runat="server" cellpadding="0" cellspacing="0" style="width: 150px">
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">個人整合清單</td>
+                </tr>
+                <tr>
+                    <td style="background: Url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu1" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+            <table id="Menu2_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">申請管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu2" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+            <table id="Menu3_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">費用管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu3" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+            <table id="Menu4_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">人事差勤管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu4" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+
+
+            <table id="Menu5_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; width: 150px; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">庶務管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu7" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+            <table id="Menu6_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; width: 150px; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">領物管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu8" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+            <table id="Menu7_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; color: White; width: 150px; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">出納管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu9" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+            <table id="Menu8_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; color: White; width: 150px; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">系統管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu10" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>
+
+            <!--
+            
+            <%--<table id="Menu9_table" runat="server" cellpadding="0" cellspacing="0">
+	            <tr>
+                    <td style="text-align:center;color:White; width:150px; font-size:16px; background: url('../../images/menu.gif') no-repeat ; height:26px;">
+			            人事查詢作業
+		            </td>
+                </tr>
+	            <tr>
+		            <td style="background: url('../../images/menu_body.png') repeat-y;">
+			            <asp:Menu ID="Menu5" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+				            width="100%">
+				            <StaticMenuStyle CssClass="menuTable1" />
+				            <StaticMenuItemStyle CssClass="divLayer" />
+				            <DynamicMenuStyle CssClass="menuTable2" />
+				            <DynamicMenuItemStyle CssClass="divLayer" />
+			            </asp:Menu>
+		            </td>
+	            </tr>
+	            <tr>
+                    <td style="text-align:center;color:White; background: url('../../images/menu.gif') no-repeat 0 -61px; height:18px;"></td>
+	            </tr>
+            </table>--%>
+            
+            <%--<table id="Menu10_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 150px; text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">表單管理作業
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu6" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>--%>
+
+            <%--<table id="Menu11_table" runat="server" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; color: White; width: 150px; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">系統管理(舊)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <asp:Menu ID="Menu11" runat="server" MaximumDynamicDisplayLevels="9" StaticSubMenuIndent="0px"
+                            Width="100%">
+                            <StaticMenuStyle CssClass="menuTable1" />
+                            <StaticMenuItemStyle CssClass="divLayer" />
+                            <DynamicMenuStyle CssClass="menuTable2" />
+                            <DynamicMenuItemStyle CssClass="divLayer" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+                </tr>
+            </table>--%>
+            -->
+
+            <br />
+        </td>     
+        <td id="middle" valign="top" align="left">
+            <br />
+            <br />            
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:ImageButton ID="ibOpen" ImageUrl="~/images/open.gif" AlternateText="開啟" runat="server" OnClientClick="showMenu()" OnClick="ibOpen_Click" /><br />
+                    <asp:ImageButton ID="ibClose" ImageUrl="~/images/close.gif" AlternateText="取消" runat="server" OnClientClick="closeMenu()" OnClick="ibClose_Click" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+            &nbsp;
+        </td>
+         <td id="content" valign="top" align="left">
+            <div style="clear: both;">
+                <div style="float:right;">
+                     <uc10:UcUsePDF ID="UcUsePDF" runat="server" Visible="false" />
+                </div>
+                <div style="float:left;">
+                    <uc12:UcSys ID="UcSystemManageInterface" runat="server" />
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr> 
+    <tr>
+        <td id="footer" colspan="3" align="center" >
+            <span style="font-size:small; color:#000000;">整合性總務作業管理資訊系統　版權所有，轉載必究　Copyright 2014       目前版本:V1.0.0.0更版時間:2014.05.30 下午13:00</span><br />
+            <!--span style="font-size:small; color:#000000;">最佳瀏覽器模式：解析度1024*768或以上，96dpi；瀏覽器建議使用 IE6.0 以上版本</span-->       
+         </td>
+    </tr>  
+</table>
+    </div>
+        <script type="text/javascript" language="javascript">
+            function tick() {
+                var today;
+                today = new Date();
+                Clock.innerHTML = today.toLocaleString();
+                window.setTimeout("tick()", 1000);
+            }
+            tick();
+</script>
+    </form>
+</body>
+</html>

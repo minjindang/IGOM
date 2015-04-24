@@ -1,0 +1,401 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/TCCC/!svn/ver/5467/09_SourceCode/IGOM/UControl
+END
+UcShowLeaveDate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcShowLeaveDate.ascx
+END
+UcDDLMember.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/3503/09_SourceCode/IGOM/UControl/UcDDLMember.ascx
+END
+UcDateTime.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/4183/09_SourceCode/IGOM/UControl/UcDateTime.ascx
+END
+UcReason.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcReason.ascx.vb
+END
+UcShowDayHours.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcShowDayHours.ascx
+END
+UCTabButton.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCTabButton.ascx
+END
+UcDateTime.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/4545/09_SourceCode/IGOM/UControl/UcDateTime.ascx.vb
+END
+UcPager.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/5385/09_SourceCode/IGOM/UControl/UcPager.ascx.vb
+END
+UcLeaveType.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1591/09_SourceCode/IGOM/UControl/UcLeaveType.ascx.vb
+END
+UcDDLDepart02.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/3015/09_SourceCode/IGOM/UControl/UcDDLDepart02.ascx
+END
+UCaddress2.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCaddress2.ascx
+END
+UcDDLDepart.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/4344/09_SourceCode/IGOM/UControl/UcDDLDepart.ascx.vb
+END
+UcPayer.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/TCCC/!svn/ver/5017/09_SourceCode/IGOM/UControl/UcPayer.ascx
+END
+UcExport.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcExport.ascx
+END
+UcBank.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TCCC/!svn/ver/2239/09_SourceCode/IGOM/UControl/UcBank.ascx.vb
+END
+UcDate.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TCCC/!svn/ver/3012/09_SourceCode/IGOM/UControl/UcDate.ascx.vb
+END
+UcSystemManageInterface.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/TCCC/!svn/ver/5367/09_SourceCode/IGOM/UControl/UcSystemManageInterface.ascx.vb
+END
+UcPayer.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/5017/09_SourceCode/IGOM/UControl/UcPayer.ascx.vb
+END
+UcUsePDF.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcUsePDF.ascx
+END
+UcLeaveDate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/2932/09_SourceCode/IGOM/UControl/UcLeaveDate.ascx
+END
+UcShowLeaveDate.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/TCCC/!svn/ver/3220/09_SourceCode/IGOM/UControl/UcShowLeaveDate.ascx.vb
+END
+UcDDLMember.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/5324/09_SourceCode/IGOM/UControl/UcDDLMember.ascx.vb
+END
+UcTextBox.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/TCCC/!svn/ver/3027/09_SourceCode/IGOM/UControl/UcTextBox.ascx.vb
+END
+UcShowDayHours.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/TCCC/!svn/ver/3220/09_SourceCode/IGOM/UControl/UcShowDayHours.ascx.vb
+END
+UcOldMember.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcOldMember.ascx
+END
+UcMember.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcMember.ascx
+END
+UcFunctionInfo.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/TCCC/!svn/ver/3317/09_SourceCode/IGOM/UControl/UcFunctionInfo.ascx.vb
+END
+UCaddress2.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCaddress2.ascx.vb
+END
+UcDate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/TCCC/!svn/ver/3027/09_SourceCode/IGOM/UControl/UcDate.ascx
+END
+UcAnnex.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcAnnex.ascx.vb
+END
+UcROCYearMonth.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/TCCC/!svn/ver/4328/09_SourceCode/IGOM/UControl/UcROCYearMonth.ascx.vb
+END
+UcBeneficiary.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/5120/09_SourceCode/IGOM/UControl/UcBeneficiary.ascx
+END
+UcShowDate.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/3554/09_SourceCode/IGOM/UControl/UcShowDate.ascx.vb
+END
+UcBeneficiary.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/TCCC/!svn/ver/5005/09_SourceCode/IGOM/UControl/UcBeneficiary.ascx.vb
+END
+UcInformation.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcInformation.ascx.vb
+END
+UCaddress.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCaddress.ascx.vb
+END
+UcTextBox.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcTextBox.ascx
+END
+UcPager.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/TCCC/!svn/ver/4023/09_SourceCode/IGOM/UControl/UcPager.ascx
+END
+UcLeaveType.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcLeaveType.ascx
+END
+UcROCMonth.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/3911/09_SourceCode/IGOM/UControl/UcROCMonth.ascx.vb
+END
+UcShowTime.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcShowTime.ascx
+END
+UcFunctionInfo.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1136/09_SourceCode/IGOM/UControl/UcFunctionInfo.ascx
+END
+UCTabButton.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCTabButton.ascx.vb
+END
+UcAnnex.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcAnnex.ascx
+END
+UcMember.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcMember.ascx.vb
+END
+UcSystemManageInterface.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/TCCC/!svn/ver/5359/09_SourceCode/IGOM/UControl/UcSystemManageInterface.ascx
+END
+UcInformation.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcInformation.ascx
+END
+UCaddress.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UCaddress.ascx
+END
+UcReason.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcReason.ascx
+END
+UcROCMonth.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/3911/09_SourceCode/IGOM/UControl/UcROCMonth.ascx
+END
+UcUsePDF.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcUsePDF.ascx.vb
+END
+UcLeaveDate.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/5081/09_SourceCode/IGOM/UControl/UcLeaveDate.ascx.vb
+END
+UcDDLDepart.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/2300/09_SourceCode/IGOM/UControl/UcDDLDepart.ascx
+END
+UcROCYear.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TCCC/!svn/ver/4336/09_SourceCode/IGOM/UControl/UcROCYear.ascx
+END
+UcShowTime.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcShowTime.ascx.vb
+END
+UcROCYear.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/TCCC/!svn/ver/4898/09_SourceCode/IGOM/UControl/UcROCYear.ascx.vb
+END
+UcROCYearMonth.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/3893/09_SourceCode/IGOM/UControl/UcROCYearMonth.ascx
+END
+UcDDLDepart02.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/TCCC/!svn/ver/3015/09_SourceCode/IGOM/UControl/UcDDLDepart02.ascx.vb
+END
+UcBank.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/TCCC/!svn/ver/3750/09_SourceCode/IGOM/UControl/UcBank.ascx
+END
+UcLeaveDate2.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/TCCC/!svn/ver/5103/09_SourceCode/IGOM/UControl/UcLeaveDate2.ascx
+END
+UcOldMember.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcOldMember.ascx.vb
+END
+UcShowDate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/UcShowDate.ascx
+END
+utl_FileUpload.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/utl_FileUpload.ascx
+END
+UcLeaveDate2.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/TCCC/!svn/ver/5393/09_SourceCode/IGOM/UControl/UcLeaveDate2.ascx.vb
+END
+utl_FileUpload.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/TCCC/!svn/ver/1095/09_SourceCode/IGOM/UControl/utl_FileUpload.ascx.vb
+END
+UcExport.ascx.vb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/5385/09_SourceCode/IGOM/UControl/UcExport.ascx.vb
+END

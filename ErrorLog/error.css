@@ -1,0 +1,22 @@
+BODY {
+	font-size: 10pt;
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: #ffffff;
+}
+
+.Error {
+	color: red;
+}
+
+pre
+{
+    font-family: 'verdana, arial';
+    font-size: 10pt;
+    background-color: #eeeeee;
+    border: #d6be5a 1px solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+

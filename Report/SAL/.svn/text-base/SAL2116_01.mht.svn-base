@@ -1,0 +1,554 @@
+﻿MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/46D9CA56/SAL2116.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="big5"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dbig5">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link rel=3DFile-List href=3D"SAL2116.files/filelist.xml">
+<style id=3D"SAL2116_4654_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font54654
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;}
+.xl154654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl634654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl644654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl654654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl664654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl674654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl684654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl694654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl704654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl714654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl724654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl734654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl744654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl754654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl764654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl774654
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:20.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:標楷體, cursive;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-char-type:none;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>　　<![endif]-->
+<!--下列資訊是由 Microsoft Office Excel 網頁發佈精靈所產生。-->
+<!--如果由 Excel 重新發佈相同的項目時，在 DIV 標籤間的所有資訊將會被取代。-=
+->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id=3D"SAL2116_4654" align=3Dcenter x:publishsource=3D"Excel">
+<PageRepeatArea>
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D677 style=3D'bord=
+er-collapse:
+ collapse;table-layout:fixed;width:509pt'>
+ <col width=3D121 style=3D'mso-width-source:userset;mso-width-alt:3872;widt=
+h:91pt'>
+ <col width=3D133 style=3D'mso-width-source:userset;mso-width-alt:4256;widt=
+h:100pt'>
+ <col width=3D48 style=3D'mso-width-source:userset;mso-width-alt:1536;width=
+:36pt'>
+ <col width=3D125 span=3D3 style=3D'mso-width-source:userset;mso-width-alt:=
+4000;
+ width:94pt'>
+ <tr height=3D49 style=3D'mso-height-source:userset;height:36.75pt'>
+  <td colspan=3D6 height=3D49 class=3Dxl774654 width=3D677 style=3D'height:=
+36.75pt;
+  width:509pt'>所得統計表</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D6 height=3D22 class=3Dxl634654 style=3D'height:16.5pt'>##P1##</td>
+ </tr>
+ <tr height=3D7 style=3D'mso-height-source:userset;height:5.25pt'>
+  <td height=3D7 class=3Dxl634654 style=3D'height:5.25pt'></td>
+  <td class=3Dxl634654></td>
+  <td class=3Dxl634654></td>
+  <td class=3Dxl634654></td>
+  <td class=3Dxl634654></td>
+  <td class=3Dxl634654></td>
+ </tr>
+ <tr height=3D9 style=3D'mso-height-source:userset;height:6.75pt'>
+  <td height=3D9 class=3Dxl694654 style=3D'height:6.75pt'>　</td>
+  <td class=3Dxl704654>　</td>
+  <td class=3Dxl704654>　</td>
+  <td class=3Dxl704654>　</td>
+  <td class=3Dxl704654>　</td>
+  <td class=3Dxl714654>　</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl724654 style=3D'height:16.5pt'>薪資發放種類：</=
+td>
+  <td class=3Dxl154654>##P2##</td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl734654>　</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl724654 style=3D'height:16.5pt'>薪資所屬年月：</=
+td>
+  <td class=3Dxl154654>##P3##</td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl734654>　</td>
+ </tr>
+ <tr height=3D25 style=3D'mso-height-source:userset;height:18.75pt'>
+  <td height=3D25 class=3Dxl724654 style=3D'height:18.75pt'>所得給付日期：<=
+/td>
+  <td class=3Dxl154654>##P4##</td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl154654></td>
+  <td class=3Dxl734654>　</td>
+ </tr>
+ <tr height=3D12 style=3D'mso-height-source:userset;height:9.0pt'>
+  <td height=3D12 class=3Dxl744654 style=3D'height:9.0pt'>　</td>
+  <td class=3Dxl754654>　</td>
+  <td class=3Dxl754654>　</td>
+  <td class=3Dxl754654>　</td>
+  <td class=3Dxl754654>　</td>
+  <td class=3Dxl764654>　</td>
+ </tr>
+ <tr height=3D45 style=3D'mso-height-source:userset;height:33.75pt'>
+  <td colspan=3D2 height=3D45 class=3Dxl674654 style=3D'border-right:.5pt s=
+olid black;
+  height:33.75pt'>扣繳率</td>
+  <td class=3Dxl654654 style=3D'border-top:none;border-left:none'>人數</td>
+  <td class=3Dxl654654 style=3D'border-top:none;border-left:none'>給付所得?
+`額</td>
+  <td class=3Dxl654654 style=3D'border-top:none;border-left:none'>申報所得?
+`額</td>
+  <td class=3Dxl654654 style=3D'border-top:none;border-left:none'>應扣總稅?
+?/td>
+ </tr>
+ <tr height=3D80 style=3D'mso-height-source:userset;height:60.0pt'>
+  <td colspan=3D2 height=3D80 class=3Dxl664654 width=3D254 style=3D'height:=
+60.0pt;
+  width:191pt'>(1)每月給付支薪資：選擇按扣繳稅額表扣繳</td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P5##</t=
+d>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P6##</t=
+d>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P7##</t=
+d>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P8##</t=
+d>
+ </tr>
+ <tr height=3D110 style=3D'mso-height-source:userset;height:82.5pt'>
+  <td colspan=3D2 height=3D110 class=3Dxl664654 width=3D254 style=3D'height=
+:82.5pt;
+  width:191pt'>(2)每月給付之支薪資：選擇按5%扣繳</td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P9##</t=
+d>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P10##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P11##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P12##</=
+td>
+ </tr>
+ <tr height=3D176 style=3D'mso-height-source:userset;height:132.0pt'>
+  <td colspan=3D2 height=3D176 class=3Dxl664654 width=3D254 style=3D'height=
+:132.0pt;
+  width:191pt'>(3)獎金、津貼、補助費等非每月給付支薪資及兼職所得：按5%扣繳<=
+/td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P13##<span
+  style=3D'display:none'>##</span></td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P14##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P15##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P16##</=
+td>
+ </tr>
+ <tr height=3D44 style=3D'mso-height-source:userset;height:33.0pt'>
+  <td colspan=3D2 height=3D44 class=3Dxl664654 width=3D254 style=3D'height:=
+33.0pt;
+  width:191pt'>(4)未預扣繳</td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P17##<span
+  style=3D'display:none'>##</span></td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P18##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P19##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>　</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td colspan=3D2 height=3D22 class=3Dxl644654 style=3D'height:16.5pt'>合計=
+</td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P20##<span
+  style=3D'display:none'>##</span></td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P21##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P22##</=
+td>
+  <td class=3Dxl644654 style=3D'border-top:none;border-left:none'>##P23##</=
+td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D121 style=3D'width:91pt'></td>
+  <td width=3D133 style=3D'width:100pt'></td>
+  <td width=3D48 style=3D'width:36pt'></td>
+  <td width=3D125 style=3D'width:94pt'></td>
+  <td width=3D125 style=3D'width:94pt'></td>
+  <td width=3D125 style=3D'width:94pt'></td>
+ </tr>
+ <![endif]>
+</table>
+<RepeatArea>
+</RepeatArea>
+</PageRepeatArea>
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>

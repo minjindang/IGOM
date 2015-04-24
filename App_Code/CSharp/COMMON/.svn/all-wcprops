@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TCCC/!svn/ver/5104/09_SourceCode/IGOM/App_Code/CSharp/COMMON
+END
+WsLeaveFlow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/TCCC/!svn/ver/3483/09_SourceCode/IGOM/App_Code/CSharp/COMMON/WsLeaveFlow.cs
+END
+WsMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/TCCC/!svn/ver/3441/09_SourceCode/IGOM/App_Code/CSharp/COMMON/WsMessage.cs
+END
+WsFlow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/TCCC/!svn/ver/3483/09_SourceCode/IGOM/App_Code/CSharp/COMMON/WsFlow.cs
+END
+EMPMobiDevReg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/TCCC/!svn/ver/5104/09_SourceCode/IGOM/App_Code/CSharp/COMMON/EMPMobiDevReg.cs
+END
+EMPMobiDevRegDAO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/5104/09_SourceCode/IGOM/App_Code/CSharp/COMMON/EMPMobiDevRegDAO.cs
+END

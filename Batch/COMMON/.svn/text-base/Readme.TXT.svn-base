@@ -1,0 +1,2 @@
+臨時人員、約用、約雇人員、定雇人員的年資計算作業排程為cntYearDays.vbs
+執行程式:BatchCntYearDays

@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/TCCC/!svn/ver/5441/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable
+END
+CustomLeaveSettingDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CustomLeaveSettingDAO.vb
+END
+LeaveNGroupDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/2891/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveNGroupDAO.vb
+END
+FlowOutpostFormDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/4970/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostFormDAO.vb
+END
+FuncDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TCCC/!svn/ver/5441/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FuncDAO.vb
+END
+Favorite.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5162/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Favorite.vb
+END
+FreezeFuncDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/5367/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FreezeFuncDAO.vb
+END
+MailErrorDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/3345/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/MailErrorDAO.vb
+END
+FlowOutpostMaster.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/3640/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostMaster.vb
+END
+RoleDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TCCC/!svn/ver/5358/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/RoleDAO.vb
+END
+CustomLeaveSetting.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CustomLeaveSetting.vb
+END
+FormSettingDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/3545/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FormSettingDAO.vb
+END
+LeaveNGroup.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/2891/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveNGroup.vb
+END
+FlowOutpostForm.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/2374/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostForm.vb
+END
+FlowDetail.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowDetail.vb
+END
+FlowNextDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5054/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowNextDAO.vb
+END
+Func.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/5330/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Func.vb
+END
+RoleCustomLeaveDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/RoleCustomLeaveDAO.vb
+END
+LeaveGroupDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveGroupDAO.vb
+END
+CustomForm.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CustomForm.vb
+END
+LeaveType.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5199/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveType.vb
+END
+FormSetting.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/3545/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FormSetting.vb
+END
+Role.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/4671/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Role.vb
+END
+LeaveKind.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveKind.vb
+END
+FormControl.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5159/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FormControl.vb
+END
+RoleCustomLeave.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/RoleCustomLeave.vb
+END
+LeaveGroup.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/2300/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveGroup.vb
+END
+CODE.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/3254/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CODE.vb
+END
+OrgDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/5104/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/OrgDAO.vb
+END
+FlowOutpostTarget.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostTarget.vb
+END
+FlowDetailDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowDetailDAO.vb
+END
+CommonPhrases.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/3236/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CommonPhrases.vb
+END
+ErrorLogDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/3542/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/ErrorLogDAO.vb
+END
+AttachementDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/4764/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/AttachementDAO.vb
+END
+LeaveTypeDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5199/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveTypeDAO.vb
+END
+FlowOutpostLeave.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/2251/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostLeave.vb
+END
+CustomFormDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/3448/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CustomFormDAO.vb
+END
+FlowId.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/4112/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowId.vb
+END
+LeaveKindDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/LeaveKindDAO.vb
+END
+Org.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/TCCC/!svn/ver/5104/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Org.vb
+END
+FormControlDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/5159/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FormControlDAO.vb
+END
+FlowDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TCCC/!svn/ver/5029/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowDAO.vb
+END
+ErrorLog.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/3542/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/ErrorLog.vb
+END
+PaperFileDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/4136/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/PaperFileDAO.vb
+END
+FreezeFunc.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/3236/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FreezeFunc.vb
+END
+MailError.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/3345/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/MailError.vb
+END
+Attachement.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/4833/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Attachement.vb
+END
+CODEDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TCCC/!svn/ver/3254/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CODEDAO.vb
+END
+FlowOutpostTargetDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TCCC/!svn/ver/4913/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostTargetDAO.vb
+END
+CommonPhrasesDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/3236/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/CommonPhrasesDAO.vb
+END
+FavoriteDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/5162/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FavoriteDAO.vb
+END
+FlowOutpostMasterDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TCCC/!svn/ver/3640/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostMasterDAO.vb
+END
+FlowOutpostLeaveDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/2251/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowOutpostLeaveDAO.vb
+END
+FlowNext.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/5162/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowNext.vb
+END
+Flow.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/4990/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/Flow.vb
+END
+PaperFile.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/4103/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/PaperFile.vb
+END
+FlowIdDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/2606/09_SourceCode/IGOM/App_Code/VB/SYS/Common/CommonTable/FlowIdDAO.vb
+END

@@ -1,0 +1,1339 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	整合性總務作業管理資訊系統
+</title>
+    <link href="../../CSS/css.css" rel="stylesheet" type="text/css" /> 
+    <link href="../../CSS/syntegra3.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/aqua.css" />     
+    <script type="text/javascript" src="../../js/jquery-1.4.2.min.js"></script>  
+    <script type="text/javascript" src="../../js/jquery.blockUI.js"></script>   
+    <script type="text/javascript" src="../../js/jquery.maxlength.js"></script>   
+    <script type="text/javascript" src="../../js/jquery-ui-1.8.18.custom.min.js"></script>   
+    <script type="text/javascript" src="../../js/DgJScript.js"></script>     
+    <script type="text/javascript" src="../../js/utils.js"></script>        
+    <script type="text/javascript" src="../../js/roc.js"></script>          
+    <script type="text/javascript" src="../../js/CalendarPopup.js"></script>     
+    <script type="text/javascript" src="../../js/function.js"></script>     
+    <link type="text/css" href="../../CSS/smoothness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />   
+
+    <style type="text/css" >
+        .tdMenuBody
+        { 
+            background: url('../../images/menu_body.png') repeat-y;
+        }
+        .tdMenuHeader
+        {
+            text-align:center;color:White; font-size:16px; 
+            background: url('../../images/menu.gif') no-repeat ; height:26px; 
+        }
+        .tdMenuFooter
+        {
+            text-align:center;color:White; 
+            background: url('../../images/menu.gif') no-repeat 0 -61px; height:18px;
+        }
+    </style>    
+    <script type="text/javascript" language="javascript">
+        $().ready(function () {
+            $('input[type=submit]').each(function () {
+                $(this).click(function () {
+                    if ($(this).attr('value') == "查詢" ||
+                    $(this).attr('value') == "送出申請") {
+                        blockUI();
+                    }
+                });
+            });
+            $('input[type=button]').each(function () {
+                if ($(this).attr('value') == "重填") {
+                    $(this).click(function () {
+                        clearForm(this.form);
+                    });
+                }
+            });
+
+            var menu = '';
+            if (menu == 'open') {
+                document.getElementById("menu").style.display = "";
+                document.getElementById("menu").style.width = "197px";
+            }
+            else if (menu == 'close') {
+                document.getElementById("menu").style.display = "none";
+            }
+
+        });
+        document.write(getCalendarStyles());
+        var cal1xx = new CalendarPopup("CalendarDiv");
+        cal1xx.showNavigationDropdowns();
+
+        function displayDatePicker(txtid, timeid, target) {
+            cal1xx.select(document.getElementById(txtid), txtid, 'yyy/MM/dd', document.getElementById(timeid), target);
+        }
+
+        function blockUI() {
+            //$.blockUI({ message: '<img src="../images/loading.gif"align="absmiddle" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+            $.blockUI({ message: '<img src="../../images/loading.gif" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+        }
+        function showMenu() {
+            document.getElementById("menu").style.display = "";
+            document.getElementById("menu").style.width = "197px";
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function clearForm(form) {
+            form.reset();
+            var allTables = $('#content > table');
+
+            allTables.each(function () {
+                var allSelects = $(this).find('select');
+                allSelects.each(function () {
+                    $('#' + this.id).get(0).selectedIndex = 0;
+                });
+                return false;
+            });
+
+            var allInputs = $('#content input[type=text]');
+            allInputs.each(function () {
+                $(this).val('');
+
+            });
+        }
+        function checkEmptyField(idlist, fieldlist) {
+            var checknum = /^[0-9, ]+$/i;
+            var aid = new Array();
+            var afield = new Array();
+            aid = idlist.split(",");
+            afield = fieldlist.split(",");
+
+            for (var i = 0 ; i < aid.length ; i++) {
+                if (document.getElementById(aid[i]).value == '') {
+                    alert("「" + afield[i] + "」欄位為必填。");
+                    document.getElementById(aid[i]).focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+        function chgValue() { }
+        function checkDate(did) {
+            var d = $('#' + did).val();
+            if (d == '')
+                return;
+
+            var err = false;
+
+            regex = /\S{9}/;
+            if (!regex.test(d))
+                err = true;
+
+            regex = /\d{3}\/\d{2}\/\d{2}/;
+            if (!regex.test(d))
+                err = true;
+
+            //        regex = /\d{3}([0][13578][0][1-9]|[0][13578][1-2][0-9]|[0][13578][3][0-1])|([0][469][0][1-9]|[0][469][1-2][0-9]|[0][469][3][0])|([1][11][0][1-9]|[1][11][1-2][0-9]|[1][11][3][0])|([1][12][0][1-9]|[1][12][1-2][0-9]|[1][12][3][0-1])|([0][2][0][1-9]|[0][2][1-2][0-9])/;
+            //        if(!regex.test(d))
+            //            err = true;
+
+            if (err) {
+                alert("日期格式錯誤!");
+                $('#' + did).val("");
+                $('#' + did).focus();
+            }
+
+        }
+
+        function checkTime(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /([0-1][0-9]|[2][0-3])[0-5][0-9]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function checkTime2(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /(([0-1][0-9]|[2][0-3])[0-5][0-9])|[2][4][0][0]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function setAllReadOnly() {
+            var arrObj = document.forms[0].elements;
+            var arrLen = arrObj.length;
+            for (var i = 0; i < arrLen; i++) {
+                var obj = arrObj[i];
+                if ((obj.type == "text") || (obj.type == "textarea") || (obj.type == "password")) {
+                    obj.disabled = true;
+                } else if ((obj.type == "select") || (obj.type == "select-one") || (obj.type == "select-multiple") || (obj.type == "checkbox") || (obj.type == "radio")) {
+                    if (obj.getAttribute("name").indexOf("UcSystemManageInterface") < 0)
+                        obj.disabled = true;
+                } else if ((obj.type == "button") || (obj.type == "submit")) {
+                    if (obj.getAttribute("value") != "回上頁")
+                        obj.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="showMsg();">
+<div id="CalendarDiv" style="position:absolute;visibility:hidden;background-color:white;background-color:white;"></div>
+<form name="aspnetForm" method="post" action="FSC1101_01.aspx" id="aspnetForm" enctype="multipart/form-data">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTQ4NTI3MDIzMg8WAh4CZHQy/AwAAQAAAP////8BAAAAAAAAAAwCAAAATlN5c3RlbS5EYXRhLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAFVN5c3RlbS5EYXRhLkRhdGFUYWJsZQMAAAAZRGF0YVRhYmxlLlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEOU3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAAKgHPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+DQo8eHM6c2NoZW1hIHhtbG5zPSIiIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1tc2RhdGEiPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJUYWJsZTEiPg0KICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iU3RhcnRfZGF0ZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iU3RhcnRfVGltZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRW5kX2RhdGUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkVuZF9UaW1lIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQogIDx4czplbGVtZW50IG5hbWU9InRtcERhdGFTZXQiIG1zZGF0YTpJc0RhdGFTZXQ9InRydWUiIG1zZGF0YTpNYWluRGF0YVRhYmxlPSJUYWJsZTEiIG1zZGF0YTpVc2VDdXJyZW50TG9jYWxlPSJ0cnVlIj4NCiAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICA8eHM6Y2hvaWNlIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KPC94czpzY2hlbWE+BgUAAACnAzxkaWZmZ3I6ZGlmZmdyYW0geG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1tc2RhdGEiIHhtbG5zOmRpZmZncj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtZGlmZmdyYW0tdjEiPg0KICA8dG1wRGF0YVNldD4NCiAgICA8VGFibGUxIGRpZmZncjppZD0iVGFibGUxMSIgbXNkYXRhOnJvd09yZGVyPSIwIiBkaWZmZ3I6aGFzQ2hhbmdlcz0iaW5zZXJ0ZWQiPg0KICAgICAgPFN0YXJ0X2RhdGU+MTAzMDcxODwvU3RhcnRfZGF0ZT4NCiAgICAgIDxTdGFydF9UaW1lPjA4MzA8L1N0YXJ0X1RpbWU+DQogICAgICA8RW5kX2RhdGU+MTAzMDcxODwvRW5kX2RhdGU+DQogICAgICA8RW5kX1RpbWU+MTczMDwvRW5kX1RpbWU+DQogICAgPC9UYWJsZTE+DQogIDwvdG1wRGF0YVNldD4NCjwvZGlmZmdyOmRpZmZncmFtPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFqb3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8LFgJmD2QWAgIDDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhFhYCAQ9kFgICAQ9kFgJmD2QWAgIBDzwrAA0BDBQrAAMFBzA6MCwwOjEUKwACFgYeBFRleHQFEOW+heaJuS/ovqbmuIXllq4e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biBmYWxzZTtkAgUPDxYCHwJlZGQCEw9kFgICAQ9kFgICAQ8QDxYGHwoFCkNPREVfREVTQzEfCwUHQ09ERV9OTx8IZ2QQFQMV5oe35a2V5pyq5ru/5LiJ5YCL5pyIJOaHt+WtleS4ieWAi+aciOS7peS4iuacqua7v+S6lOWAi+aciBjmh7flrZXmu7/kupTlgIvmnIjku6XkuIoVAwIwMQIwMgIwMxQrAwNnZ2cWAWZkAhUPZBYCAgEPZBYGAgEPZBYCZg9kFgICAQ9kFgxmDw9kFgIfDQV0Y2hlY2tEYXRlKHRoaXMuaWQpO2NoZ1ZhbHVlKCcnLCdkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9VY0xlYXZlRGF0ZV90YlN0YXJ0X3RpbWUiKScsJ1MnKTtkAgIPFgQfBwUYdGhpcy5zdHlsZS5jdXJzb3I9J2hhbmQnHwYFkAFkaXNwbGF5RGF0ZVBpY2tlcignY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9VY0xlYXZlRGF0ZV90YlN0YXJ0X2RhdGUnLCAnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9VY0xlYXZlRGF0ZV90YlN0YXJ0X3RpbWUnLCAnUycpO3JldHVybiBmYWxzZTtkAgQPD2QWAh8NBXRjaGVja1RpbWUodGhpcy5pZCk7Y2hnVmFsdWUoJycsJ2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1VjTGVhdmVEYXRlX3RiU3RhcnRfdGltZSIpJywnUycpO2QCBg8PZBYCHw0FdGNoZWNrRGF0ZSh0aGlzLmlkKTtjaGdWYWx1ZSgnJywnZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfVWNMZWF2ZURhdGVfdGJTdGFydF90aW1lIiknLCdFJyk7ZAIIDxYEHwcFGHRoaXMuc3R5bGUuY3Vyc29yPSdoYW5kJx8GBYwBZGlzcGxheURhdGVQaWNrZXIoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfVWNMZWF2ZURhdGVfdGJFbmRfZGF0ZScsICdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1VjTGVhdmVEYXRlX3RiRW5kX3RpbWUnLCAnRScpO3JldHVybiBmYWxzZTtkAgoPD2QWAh8NBXRjaGVja1RpbWUodGhpcy5pZCk7Y2hnVmFsdWUoJycsJ2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1VjTGVhdmVEYXRlX3RiU3RhcnRfdGltZSIpJywnRScpO2QCAw8PFgIfBWhkZAIFDw8WAh8CZWRkAhkPZBYCZg9kFgICAQ9kFgJmD2QWAgIBDzwrAA0BAA8WBB8IZx4LXyFJdGVtQ291bnQCAWQWAmYPZBYGZg8PFgIfBWhkZAIBD2QWBGYPZBYCAgEPDxYCHwIFATFkZAIBD2QWAgIBD2QWDGYPDxYCHwIFCTEwMy8wNy8xOBYCHw0FiQFjaGVja0RhdGUodGhpcy5pZCk7Y2hnVmFsdWUoJzEwMy8wNy8xOCcsJ2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d2X2N0bDAyX2d2X1VjTGVhdmVEYXRlX3RiU3RhcnRfdGltZSIpJywnUycpO2QCAg8WBB8HBRh0aGlzLnN0eWxlLmN1cnNvcj0naGFuZCcfBgWoAWRpc3BsYXlEYXRlUGlja2VyKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d2X2N0bDAyX2d2X1VjTGVhdmVEYXRlX3RiU3RhcnRfZGF0ZScsICdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d2X2N0bDAyX2d2X1VjTGVhdmVEYXRlX3RiU3RhcnRfdGltZScsICdTJyk7cmV0dXJuIGZhbHNlO2QCBA8PFgIfAgUEMDgzMBYCHw0FiQFjaGVja1RpbWUodGhpcy5pZCk7Y2hnVmFsdWUoJzEwMy8wNy8xOCcsJ2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d2X2N0bDAyX2d2X1VjTGVhdmVEYXRlX3RiU3RhcnRfdGltZSIpJywnUycpO2QCBg8PFgIfAgUJMTAzLzA3LzE4FgIfDQWJAWNoZWNrRGF0ZSh0aGlzLmlkKTtjaGdWYWx1ZSgnMTAzLzA3LzE4JywnZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfZ3ZfY3RsMDJfZ3ZfVWNMZWF2ZURhdGVfdGJTdGFydF90aW1lIiknLCdFJyk7ZAIIDxYEHwcFGHRoaXMuc3R5bGUuY3Vyc29yPSdoYW5kJx8GBaQBZGlzcGxheURhdGVQaWNrZXIoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfZ3ZfY3RsMDJfZ3ZfVWNMZWF2ZURhdGVfdGJFbmRfZGF0ZScsICdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d2X2N0bDAyX2d2X1VjTGVhdmVEYXRlX3RiRW5kX3RpbWUnLCAnRScpO3JldHVybiBmYWxzZTtkAgoPDxYCHwIFBDE3MzAWAh8NBYkBY2hlY2tUaW1lKHRoaXMuaWQpO2NoZ1ZhbHVlKCcxMDMvMDcvMTgnLCdkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9ndl9jdGwwMl9ndl9VY0xlYXZlRGF0ZV90YlN0YXJ0X3RpbWUiKScsJ0UnKTtkAgIPDxYCHwVoZGQCHw8PFgIfADKoCAABAAAA/////wEAAAAAAAAADAIAAABOU3lzdGVtLkRhdGEsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAVU3lzdGVtLkRhdGEuRGF0YVRhYmxlAwAAABlEYXRhVGFibGUuUmVtb3RpbmdWZXJzaW9uCVhtbFNjaGVtYQtYbWxEaWZmR3JhbQMBAQ5TeXN0ZW0uVmVyc2lvbgIAAAAJAwAAAAYEAAAA+wQ8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtMTYiPz4NCjx4czpzY2hlbWEgeG1sbnM9IiIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczptc2RhdGE9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLW1zZGF0YSI+DQogIDx4czplbGVtZW50IG5hbWU9IlRhYmxlMSI+DQogICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgPHhzOnNlcXVlbmNlPg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJpZCIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KICA8eHM6ZWxlbWVudCBuYW1lPSJ0bXBEYXRhU2V0IiBtc2RhdGE6SXNEYXRhU2V0PSJ0cnVlIiBtc2RhdGE6TWFpbkRhdGFUYWJsZT0iVGFibGUxIiBtc2RhdGE6VXNlQ3VycmVudExvY2FsZT0idHJ1ZSI+DQogICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgPHhzOmNob2ljZSBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVudD4NCjwveHM6c2NoZW1hPgYFAAAAgAE8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIiAvPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFqb3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8LZBYCZg9kFgICAw9kFgICAQ88KwANAGQCIQ9kFgJmD2QWAgIBDw8WAh8CZWRkAiMPZBYCZg9kFgICAQ8PFgIfAmVkZAInD2QWAmYPZBYCAgEPZBYCZg9kFgICAQ88KwANAGQCKw9kFgJmD2QWAgIBD2QWAmYPZBYCAgEPPCsADQBkAi8PZBYCZg9kFgICAQ9kFgJmD2QWAgIBDzwrAA0AZBgGBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2T3ZlcnRpbWUPZ2QFLGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkVWNBdHRhY2htZW50JGd2QXR0D2dkBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2QnVzaW5lc3MPZ2QFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYDBQxjdGwwMCRpYk9wZW4FDWN0bDAwJGliQ2xvc2UFK2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkVWNMZWF2ZURlcHV0eSRyYjIFHGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3YPPCsACgEIAgFkBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2U2NoZWR1bGUPZ2SNmNHB+PEH2tK44t1hMp5gSonGKA==" />
+
+
+<script src="/IGOM/WebResource.axd?d=-gLO-41T7Tmm3q9koRmPCLKn-zhjiRZy2029vMBf9KWjAGKloEPh8y6SYiJxLEh7mDvFuo-Aui0tIa_3HRH0iOgbKiY1&amp;t=635195849620019999" type="text/javascript"></script>
+<script src="/IGOM/ScriptResource.axd?d=CW5fih6NwxOEfDKvjQ9g6LDZ0TYaMU_ZacKfwWMS5fwQBKQC7FiXLnngUVIGaKp1zGz_qpPdENQ18_8l2UE28Xu6sVGym_gU4hXoNE54Y2-kZy1yBfMErizMnNZLmkQknenmeGXfXgROTG5Gaup5CQnY2jkbJKhxnDJxMS416gv7GDNb0&amp;t=fffffffff98cfb72" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWewKrs+bWDwKJtvHLBgLV+rSLBQLV+oiLBQLV+oyLBQLV+oCLBQLV+piLBQKFxPjlCQKFxMDlCQKHlNSFAwLRv/WWCgKGkaDLBAKW/samCAKW/sKmCAKW/v6mCAKW/vqmCAKW/vKmCAKW/qqlCAKW/qalCAKJ/sqmCAKJ/qqlCAKI/sqmCAKI/sKmCAKI/v6mCAKI/vamCAKL/sKmCAKL/vqmCALs7MurBQK9kJCzAgKikJCzAgKt/7rdDgLAxMC+CQLXj9KaBwLdkviZCAKar/UJAtGP6vkBAtGPzp4JAu6B6eoLAvzlmroJAtaPyosOAu6BtbMEAtGPxp4JApSvgYUOAvOWv9QNAu6B9aAJAtvMjLwEAp+9psoLAtGP2vkBAtGPtp0JAoevpKAIAumT0fUFArKiovYKAp3n4awOAomE1JkCAumW8JcFAq7V3cEGApax6kgCq922zQQClPXS0A8ClPXW0w8ClPXq1g8C1vre7Q8Ct/re7Q8CkPrS0A8C8fvW0w8C0vvS0A8C0vvW0w8CqvTe7Q8Cu/De7Q8C5fHe7Q8Cxvbe7Q8Cp/He7Q8CgPbS0A8C4fbe7Q8CwvfS0A8C0/Pe7Q8C9bLcoAgC8LLcoAgC8bLcoAgC8rLcoAgC8rLUoAgCw7LcoAgCzbLcoAgCzbLQoAgCzrLcoAgCz7LcoAgCyLLcoAgCybLcoAgCyrLQoAgCyrLUoAgCyrLooAgCxLLcoAgCwLLcoAgCwrLcoAgC3bLcoAgC5/eGvQsC493uHQLj3dL4CQLj3cbXAgLj3aqyCgLj3Z6JAwLfnI/6AQL7wMDmDgKeztr8CgKU0/D/BQLT7v3vDQKYzuKfDAKYzsb4BAKnwOGMBgK1pJLcBALw39KKBQKz+ezwAQLY6dyhDQLA89T1AgL57KvhDgLQ2e7mAQL8yYTgAwKvkI7zAQLpyoaWDwKguLKSAQKewtSLBAKE74u4CQLR8YnFBbmkXdl9d+HR//CUTEST9k3Y2HCI" />
+    
+    <input type="hidden" id="alertMsg" />  
+    <input type="hidden" id="callback" /> 
+    <div>
+    <table id="container" cellpadding="0" cellspacing="0" width="99%">
+    <tr>
+        <td colspan="3" id="header" style="background: url('../../images/bk.png'); height: 99px;" valign="top">
+	        <img src="../../images/blue_banner.png" alt="" style="margin-top:0px; z-index:1; position:absolute; height: 99px;" />                
+            
+            
+            <img src="../../images/Logos/logo_01.png" alt="" style="z-index:2; position:absolute; float:left;" />
+            
+            <table border="0" cellpadding="4" style="z-index:3; position:absolute; width:100%; float:right; height: 99px; color:White; font-weight:900; font-size:13px;">
+                <tr>
+                    <td align="right">
+                        <span>監資處第三科 羅啟建 </span><br />
+                        <span id="Clock"></span>
+                    </td>
+                    <td align="right">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="menu" valign="top" align="left">
+            
+            <table id="ctl00_Menu1_table" cellpadding="0" cellspacing="0" style="width: 150px">
+	<tr>
+		<td style="width: 150px; text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">個人整合清單</td>
+	</tr>
+	<tr>
+		<td style="background: Url('../../images/menu_body.png') repeat-y;">
+                        <a href="#ctl00_Menu1_SkipLink"><img alt="略過巡覽連結" src="/IGOM/WebResource.axd?d=GVOD6hxa6vfI728v4oKq7DNrl_QstZZXVCDWVQB9p3_2zRolOKxH5Y3tBP3sr6_eAMSKj-SgwNwmKoeabrp0n5RuXRg1&amp;t=635195849620019999" width="0" height="0" border="0" /></a><table id="ctl00_Menu1" class="menuTable1" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC0/FSC0101_01.aspx">待批/辦清單</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu1','IGSS1200')">案件查詢</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 案件查詢" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div id="ctl00_Menu1n1Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC0/FSC0102_01.aspx">申請案件查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC0/FSC0103_01.aspx">已批案件查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC0/FSC0104_01.aspx">被代批案件查詢</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><a id="ctl00_Menu1_SkipLink"></a>
+                    </td>
+	</tr>
+	<tr>
+		<td style="width: 150px; text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+	</tr>
+</table>
+
+
+            <table id="ctl00_Menu2_table" cellpadding="0" cellspacing="0">
+	<tr>
+		<td style="text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">申請管理作業
+                    </td>
+	</tr>
+	<tr>
+		<td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <a href="#ctl00_Menu2_SkipLink"><img alt="略過巡覽連結" src="/IGOM/WebResource.axd?d=GVOD6hxa6vfI728v4oKq7DNrl_QstZZXVCDWVQB9p3_2zRolOKxH5Y3tBP3sr6_eAMSKj-SgwNwmKoeabrp0n5RuXRg1&amp;t=635195849620019999" width="0" height="0" border="0" /></a><table id="ctl00_Menu2" class="menuTable1" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n0">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu2','IGSS2100')">費用類申請</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 費用類申請" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n1">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu2','IGSS2200')">人事類申請</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 人事類申請" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n2">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu2','IGSS2300')">庶務類申請</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 庶務類申請" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n3">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu2','IGSS2400')">財產類申請</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 財產類申請" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n4">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu2','IGSS2600')">紙本表單類申請</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 紙本表單類申請" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div id="ctl00_Menu2n0Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n5">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1111_01.aspx">加班費請領(適用公務人員)</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n6">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1112_01.aspx">加班費請領(適用勞基法)</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n7">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/sal1113_01.aspx">差旅費申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n8">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1106_01.aspx">未休假加班費</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n9">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1103_01.aspx">子女教育補助津貼</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n10">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1109_01.aspx">結婚生育及喪葬補助費</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n11">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1105_01.aspx">健檢補助費申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n12">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1107_01.aspx">替代役交通費</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n13">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1101_01.aspx">短程車費</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n14">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1108_01.aspx">環保志工服務費</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n15">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1104_01.aspx">評審委員出席審查費、講師鐘點費申請作業</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n16">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1102_01.aspx">值班費請領</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n17">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../SAL/SAL1/SAL1110_01.aspx">勞/健、公/健保繳納證明申請</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu2n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu2n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><div id="ctl00_Menu2n1Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n18">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1101_01.aspx">請假申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n19">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1102_02.aspx">出差申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n20">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1105_01.aspx">專簽加班簽核申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n21">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1103_01.aspx">加班/專案加班申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n22">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1104_01.aspx">刷卡補登申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n23">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1108_01.aspx">敘獎申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n24">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1106_01.aspx">值日(夜)代(換)值申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n25">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1107_01.aspx">在職(服務)中文證明申請</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu2n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu2n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><div id="ctl00_Menu2n2Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n26">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../MAT/MAT1/MAT1101_01.aspx">個人領物申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n27">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../MAT/MAT1/MAT1102_01.aspx">單位領物申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n28">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../PAY/PAY1/PAY1101_01.aspx">請購申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n29">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../CAR/CAR1/CAR1101_01.aspx">派車申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n30">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../MAI/MAI1/MAI1101_01.aspx">報修申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n31">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../MAI/MAI1/MAI1101_01.aspx">廣播申請</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu2n2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu2n2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><div id="ctl00_Menu2n3Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n32">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../PRO/PRO1/PRO1101_01.aspx">財產移轉申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n33">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../PRO/PRO1/PRO1102_01.aspx">財產報廢申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n34">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../PRO/PRO1/PRO1103_01.aspx">軟體登記申請</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n35">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../PRO/PRO2/PRO2101_01.aspx">財產保管查詢</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu2n3ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu2n3ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><div id="ctl00_Menu2n4Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n36">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1111_01.aspx">線上下載紙本表單</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu2n37">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="FSC1112_01.aspx">紙本表單線上申請</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu2n4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu2n4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><a id="ctl00_Menu2_SkipLink"></a>
+                    </td>
+	</tr>
+	<tr>
+		<td style="width: 150px; text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+	</tr>
+</table>
+
+
+            
+
+            <table id="ctl00_Menu4_table" cellpadding="0" cellspacing="0">
+	<tr>
+		<td style="width: 150px; text-align: center; color: White; font-size: 16px; background: url('../../images/menu.gif') no-repeat; height: 26px;">人事差勤管理作業
+                    </td>
+	</tr>
+	<tr>
+		<td style="background: url('../../images/menu_body.png') repeat-y;">
+                        <a href="#ctl00_Menu4_SkipLink"><img alt="略過巡覽連結" src="/IGOM/WebResource.axd?d=GVOD6hxa6vfI728v4oKq7DNrl_QstZZXVCDWVQB9p3_2zRolOKxH5Y3tBP3sr6_eAMSKj-SgwNwmKoeabrp0n5RuXRg1&amp;t=635195849620019999" width="0" height="0" border="0" /></a><table id="ctl00_Menu4" class="menuTable1" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n0">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu4','IGSS4100')">基本資料管理</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 基本資料管理" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n1">
+				<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td nowrap="nowrap" width="100%"><a class="divLayer" href="javascript:__doPostBack('ctl00$Menu4','IGSS4300')">查詢及列印</a></td><td width="0"><img src="/IGOM/WebResource.axd?d=PP7QfMNSHBltrnN3mF9_yaEt1TUeT9zr389zAuRu-uGfU598NTHAy6Sxsv60uRnzLFR6pkO0uvmYOm4cEXjovxRjjRo1&amp;t=635195849620019999" alt="展開 查詢及列印" valign="middle" /></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div id="ctl00_Menu4n0Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n2">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC3/FSC3102_01.aspx">預設代理人資料維護</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n3">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../../EMP/EMP3/EMP3106_01.aspx">員工個人資料</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu4n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu4n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><div id="ctl00_Menu4n1Items" class="menuTable2" style="display:none;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n4">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2102_01.aspx">出勤(異常)紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n5">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2103_01.aspx">請假紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n6">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2104_01.aspx">公差紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n7">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2105_01.aspx">加班紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n8">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2107_01.aspx">刷卡補登查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n9">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2108_01.aspx">值班紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n10">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2110_01.aspx">查詢代理資料</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n11">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2118_01.aspx">?獎紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n12">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2122_01.aspx">線上刷卡紀錄查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n13">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2127_01.aspx">刷卡資料查詢</a></td>
+						</tr>
+					</table></td>
+				</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu4n14">
+					<td><table class="divLayer" cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td nowrap="nowrap" width="100%"><a class="divLayer" href="../FSC2/FSC2128_01.aspx">員工差假統計查詢</a></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table><div class="divLayer" id="ctl00_Menu4n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=8i4gWFfhAtHq5ufhFMR45-bUtpzlJUEUTIf5GXibP4is8dVqbEvfylH51X7GztLdPXmksqfPao6i9EVxjn9X7nkdpLY1&amp;t=635195849620019999" alt="向上捲動" />
+			</div><div class="divLayer" id="ctl00_Menu4n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+				<img src="/IGOM/WebResource.axd?d=ZpCtwjWhoO_9CVYZ0Ba0liC5A3f6kWoR_LOVYj2_w1d_CZnULStWjUe0j-bOweD1huXLF3ZhsZBPp7QOMF_9MED3I8Y1&amp;t=635195849620019999" alt="向下捲動" />
+			</div>
+		</div><a id="ctl00_Menu4_SkipLink"></a>
+                    </td>
+	</tr>
+	<tr>
+		<td style="text-align: center; color: White; background: url('../../images/menu.gif') no-repeat 0 -61px; height: 18px;"></td>
+	</tr>
+</table>
+
+
+
+
+            
+
+            
+            
+            
+
+            <!--
+            
+            
+            
+            
+
+            
+            -->
+
+            <br />
+        </td>     
+        <td id="middle" valign="top" align="left">
+            <br />
+            <br />            
+            <div id="ctl00_UpdatePanel1">
+	
+                    <input type="image" name="ctl00$ibOpen" id="ctl00_ibOpen" src="../../images/open.gif" alt="開啟" onclick="showMenu();" border="0" /><br />
+                    <input type="image" name="ctl00$ibClose" id="ctl00_ibClose" src="../../images/close.gif" alt="取消" onclick="closeMenu();" border="0" />
+                
+</div>
+            &nbsp;
+        </td>
+         <td id="content" valign="top" align="left">
+            <div style="clear: both;">
+                <div style="float:right;">
+                     
+                </div>
+                <div style="float:left;">
+                    
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            
+    <script type="text/javascript">
+        //$().ready(function () {
+            //chgTableMode($('#ctl00_ContentPlaceHolder1_ddlLeave_type option:selected').val());
+            //showCbToChina();
+            //chgDateTable();
+        //});
+        function showCbToChina() {
+            var locations = document.getElementsByName('ctl00$ContentPlaceHolder1$rblLocationFlag');
+            var s = document.getElementById('sp1');
+            var Travel = document.getElementById('Travel');
+            var retainFlag = document.getElementsByName('ctl00$ContentPlaceHolder1$rblretainFlag');
+            var ddlLeave_type = document.getElementById('ctl00_ContentPlaceHolder1_ddlLeave_type');
+
+            if (locations[0].checked) {
+                s.style.visibility = "hidden";
+                if (retainFlag[1].checked && ddlLeave_type.value == "03") {
+                    Travel.style.display = "";
+                }
+            }
+            if (locations[1].checked) {
+                Travel.style.display = "none";
+                s.style.visibility = "visible";
+            }
+        }
+        function chgDateTable() {
+            var ngroup = document.getElementsByName('ctl00$ContentPlaceHolder1$rblLeave_ngroup')
+            
+            if (ngroup.length>1 && ngroup[1].checked) {
+                $('#multiDateTr1').show();
+                $('#multiDateTr2').show();
+                $('#sigleDateTr').hide();
+            } else {
+                $('#multiDateTr1').hide();
+                $('#multiDateTr2').hide();
+                $('#sigleDateTr').show();
+            }
+        }
+        function chgTableMode(leave_type) {
+            $('#tr8').hide();
+            $('#tr2').hide();
+            //$('#tr3').hide();
+            //$('#tr4').hide();
+            $('#Travel').hide();
+            $('#overtimeTr1').hide()
+            $('#overtimeTr2').hide()
+            $('#businessTr1').hide()
+            $('#businessTr2').hide()
+            $('#scheduleTr1').hide()
+            $('#scheduleTr2').hide()
+            $('#sp1LocationFlag1').hide();
+            $('#sp1LocationFlag2').show();
+            $('#spplace1').hide();
+            $('#spplace2').show();
+
+            if (leave_type == '10') {
+                $('#tr6').show();
+                $('#tr7').show();
+            } else if (leave_type == '08' || leave_type == '09' || leave_type == '13' || leave_type == '22') {
+                $('#tr6').hide();
+                $('#tr7').show();
+                if (leave_type == '13') {
+                    $('#tr8').show();
+                }
+            } else if (leave_type == "03") {
+                $('#tr2').show();
+                $('#tr3').show();
+                $('#tr4').show();
+                $('#Travel').show();
+                $('#sp1LocationFlag2').hide();
+                $('#sp1LocationFlag1').show();
+                $('#spplace2').hide();
+                $('#spplace1').show();
+            } else if (leave_type == "04") {                   
+                $('#overtimeTr1').show()
+                $('#overtimeTr2').show()
+            } else if (leave_type == "20") {
+                $('#businessTr1').show()
+                $('#businessTr2').show()
+                $('#tr7').hide();
+            } else if (leave_type == "32") {
+                $('#scheduleTr1').show()
+                $('#scheduleTr2').show()
+            } else {
+                $('#tr6').hide();
+                $('#tr7').hide();
+            }
+
+
+            var employeeType = document.getElementById('ctl00_ContentPlaceHolder1_hfApplyEmployeeType').value;
+            
+            if (employeeType == "13") {
+                $('#tr1').hide();
+                $('#tr2').hide();
+                $('#tr3').hide();
+                $('#tr4').hide();
+                $('#ctl00_ContentPlaceHolder1_trDeputy').hide();
+            } else {
+                $('#tr1').show();
+                $('#ctl00_ContentPlaceHolder1_trDeputy').show();
+            }
+        }
+        function chgValue(curdate, timeobj, target) {
+            if (typeof curdate == 'undefined' || curdate == null) return;
+            if (typeof timeobj == 'undefined' || timeobj == null) return;
+            var idcard = "4586";
+            $.ajax({
+                url: '../../ajax/getWorkTime.ashx',
+                type: 'GET',
+                data: {
+                    curdate: curdate, idcard: idcard
+                },
+                error: function (xhr) {
+                    alert(xhr.responseText.text());
+                    alert('Ajax request 發生錯誤');
+                },
+                success: function (response) {
+                    var arrtimes = response.split(",");
+                    if (target == "S") 
+                        timeobj.value = arrtimes[0];
+                    else
+                        timeobj.value = arrtimes[1];
+                }
+            });
+        }
+        function chgUcDate() {
+            __doPostBack('OccurDate', '');
+        }
+
+        function changeBreakh(praddh, prpayh, prmnyh, breakh) {
+            var left = $('#' + praddh).html() - $('#' + prpayh).html() - $('#' + prmnyh).html();
+            if ($('#' + breakh).val() > left) {
+                alert('欲補休時數不可大於加班時數減去已休已領時數!');
+                $('#' + breakh).val('');
+            }
+        }
+
+        function checkConfirm() {
+            var ddlLeave_type = document.getElementById('ctl00_ContentPlaceHolder1_ddlLeave_type');
+            var locations = document.getElementsByName('ctl00$ContentPlaceHolder1$rblLocationFlag');
+            var retainFlag = document.getElementsByName('ctl00$ContentPlaceHolder1$rblretainFlag');
+            var cbl = document.getElementById('ctl00_ContentPlaceHolder1_hfcbl');
+
+            //if (locations[0].checked && retainFlag[1].checked && ddlLeave_type.value == "03" && cbl.value == "0")
+            //    if (!confirm('您申請的是國內休假，是否要勾選國民旅遊卡？'))
+            //        return false;
+
+            var hfConfrimMsg = document.getElementById('ctl00_ContentPlaceHolder1_hfConfrimMsg');
+            if (hfConfrimMsg.value != "")
+                if (!confirm(hfConfrimMsg.value))
+                    return false;
+
+            return true;
+        }
+    </script>
+    <div id="ctl00_ContentPlaceHolder1_UpdatePanel4">
+	
+    <table id="tb" border="1" cellpadding="0" cellspacing="0" width="100%" class="tableStyle99">
+        <tr>
+            <td class="htmltable_Title" colspan="2">申請一般請假</td>
+        </tr>
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>假別</td>
+            <td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+		
+                        <div style="float: left">
+                            <select name="ctl00$ContentPlaceHolder1$ddlLeave_type" id="ctl00_ContentPlaceHolder1_ddlLeave_type">
+			<option selected="selected" value="">請選擇</option>
+			<option value="01">事假</option>
+			<option value="02">病假</option>
+			<option value="03">休假</option>
+			<option value="04">加班補休</option>
+			<option value="06">公假</option>
+			<option value="08">婚假</option>
+			<option value="09">分娩假</option>
+			<option value="10">喪假</option>
+			<option value="18">防災假</option>
+			<option value="20">出差補休</option>
+			<option value="22">陪產假</option>
+			<option value="23">器官/骨髓捐贈假</option>
+			<option value="25">家庭照顧假</option>
+			<option value="32">值日補休</option>
+			<option value="34">五一勞動節</option>
+
+		</select>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hfConfrimMsg" id="ctl00_ContentPlaceHolder1_hfConfrimMsg" />
+                        </div>
+                        <div style="float: left; margin-left: 10px;">
+                            
+                            
+                        </div>
+                    
+	</div>
+            </td>
+        </tr>
+        <tr id="ctl00_ContentPlaceHolder1_tr1">
+		<td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>一般請假類別</td>
+		<td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel11">
+			
+                        
+                        
+                    
+		</div>
+            </td>
+	</tr>
+	
+        
+        <tr id="ctl00_ContentPlaceHolder1_tr3">
+		<td class="htmltable_Left">
+                <span style="color: #ff0000">*</span><span id="ctl00_ContentPlaceHolder1_sp1LocationFlag2">種類</span>
+            </td>
+		<td class="htmltable_Right">
+                <span id="ctl00_ContentPlaceHolder1_rblLocationFlag"><input id="ctl00_ContentPlaceHolder1_rblLocationFlag_0" type="radio" name="ctl00$ContentPlaceHolder1$rblLocationFlag" value="0" checked="checked" /><label for="ctl00_ContentPlaceHolder1_rblLocationFlag_0">國內</label><input id="ctl00_ContentPlaceHolder1_rblLocationFlag_1" type="radio" name="ctl00$ContentPlaceHolder1$rblLocationFlag" value="1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$rblLocationFlag$1\',\'\')', 0)" /><label for="ctl00_ContentPlaceHolder1_rblLocationFlag_1">國外</label></span>
+            </td>
+	</tr>
+	
+        <tr id="ctl00_ContentPlaceHolder1_tr4">
+		<td class="htmltable_Left"><span id="ctl00_ContentPlaceHolder1_spplace2">地點</span>
+            </td>
+		<td class="htmltable_Right">
+                <div style="float: left"><input name="ctl00$ContentPlaceHolder1$tbplace" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_tbplace" /></div>
+                <div style="float: left; margin-left: 10px;">
+                    
+                </div>
+            </td>
+	</tr>
+	
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>請假申請人</td>
+            <td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel3">
+		
+                        <select name="ctl00$ContentPlaceHolder1$UcLeaveMember$ddlMemberName" id="ctl00_ContentPlaceHolder1_UcLeaveMember_ddlMemberName">
+			<option value="2479">科長/蔡正雄</option>
+			<option value="050019">科員/igss_test</option>
+			<option value="2107">設計師/魏文娟</option>
+			<option value="4176">設計師/賴祐淞</option>
+			<option value="4377">設計師/楊毅得</option>
+			<option value="4125">管理師/陳信德</option>
+			<option selected="selected" value="4586">管理師/羅啟建</option>
+			<option value="3873">駐署人員/張修偉</option>
+			<option value="4027">駐署人員/梁景揚</option>
+			<option value="4177">駐署人員/陳俊華</option>
+			<option value="4409">駐署人員/陳家芳</option>
+			<option value="4415">駐署人員/高祺幃</option>
+			<option value="4423">駐署人員/蔡侑達</option>
+			<option value="4492">駐署人員/姚世山</option>
+			<option value="4558">駐署人員/葉青霖</option>
+			<option value="4576">駐署人員/高睿勝</option>
+			<option value="4577">駐署人員/陳宏銘</option>
+			<option value="Z00011">駐署人員/康大廠商</option>
+
+		</select>
+
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveMember$hfApply_name" id="ctl00_ContentPlaceHolder1_UcLeaveMember_hfApply_name" value="羅啟建" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveMember$hfApply_id" id="ctl00_ContentPlaceHolder1_UcLeaveMember_hfApply_id" value="4586" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveMember$hfApply_posid" id="ctl00_ContentPlaceHolder1_UcLeaveMember_hfApply_posid" value="1865" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveMember$hfApply_stype" id="ctl00_ContentPlaceHolder1_UcLeaveMember_hfApply_stype" value="0" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveMember$hfDepart_id" id="ctl00_ContentPlaceHolder1_UcLeaveMember_hfDepart_id" value="L00300" />
+
+
+
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$hfApplyEmployeeType" id="ctl00_ContentPlaceHolder1_hfApplyEmployeeType" value="1" />
+                    
+	</div>
+            </td>
+        </tr>
+        <tr id="ctl00_ContentPlaceHolder1_trDeputy">
+		<td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>職務代理人</td>
+		<td class="htmltable_Right">
+                
+<table style="width:auto">
+    <tr>
+        <td>
+            <div id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UpdatePanel1">
+			
+                    
+                
+		</div>
+        </td>
+        <td colspan="2">
+            <div id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UpdatePanel2">
+			
+                    
+                
+		</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UpdatePanel3">
+			
+                    <input id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_rb2" type="radio" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$Deputy" value="rb2" checked="checked" />
+                
+		</div>
+        </td>
+        <td>
+            <div id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UcDDLDeputyDepart_UpdatePanel1">
+			
+    <select name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$UcDDLDeputyDepart$ddlDepart" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UcDDLDeputyDepart_ddlDepart">
+				<option value="">請選擇</option>
+				<option value="A10000">署長室</option>
+				<option value="A20000">政務副署長室</option>
+				<option value="A30000">常務副署長室</option>
+				<option value="C00000">法規會</option>
+				<option value="D00000">訴願會</option>
+				<option value="E10000">大陸事務辦公室</option>
+				<option value="F20000">溫減管理室</option>
+				<option value="G10000">土污基管會</option>
+				<option value="G20000">生態室綜合規劃組室本部</option>
+				<option value="O00000">環境督察總隊</option>
+				<option value="P00000">政風室</option>
+				<option value="R00000">統計室</option>
+				<option value="S00000">環檢所</option>
+				<option value="T00000">環訓所</option>
+				<option value="U10000">行政院國家永續發展委員會</option>
+				<option value="V00000">裁決會</option>
+				<option value="W10000">參事室</option>
+				<option value="X00000">回收基管會</option>
+				<option value="B0">主秘室</option>
+				<option value="E0">綜計處</option>
+				<option value="F0">空保處</option>
+				<option value="G0">水保處</option>
+				<option value="G2">生態方案室</option>
+				<option value="H0">廢管處</option>
+				<option value="J0">毒管處</option>
+				<option value="J1">整潔方案室</option>
+				<option value="K0">管考處</option>
+				<option selected="selected" value="L0">監資處</option>
+				<option value="M0">秘書室</option>
+				<option value="N0">人事室</option>
+				<option value="O1">北區督察大隊</option>
+				<option value="O2">中區督察大隊</option>
+				<option value="O3">南區督察大隊</option>
+				<option value="Q0">會計室</option>
+				<option value="U0">永續發展室</option>
+				<option value="W0">署長辦公室</option>
+				<option value="Z0">環保警察隊</option>
+
+			</select>
+    <select name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$UcDDLDeputyDepart$ddlSubDepart" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UcDDLDeputyDepart_ddlSubDepart">
+				<option value="">請選擇</option>
+				<option value="L00000">監資處處本部</option>
+				<option value="L00100">監資處第一科</option>
+				<option value="L00200">監資處第二科</option>
+				<option selected="selected" value="L00300">監資處第三科</option>
+				<option value="L00400">監資處第四科</option>
+
+			</select>
+
+		</div>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$UcDDLDeputyDepart$hfOrgcode" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UcDDLDeputyDepart_hfOrgcode" value="355000000I" />
+
+        </td>
+        <td>
+            <div id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_UpdatePanel4">
+			            
+                    <select name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$ddlDeputy" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_ddlDeputy">
+				<option selected="selected" value="">請選擇</option>
+				<option value="2479">蔡正雄</option>
+				<option value="050019">igss_test</option>
+				<option value="2107">魏文娟</option>
+				<option value="4176">賴祐淞</option>
+				<option value="4377">楊毅得</option>
+				<option value="4125">陳信德</option>
+				<option value="4586">羅啟建</option>
+
+			</select>
+                
+		</div>
+        </td>
+    </tr>
+</table>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$hfOrgcode" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_hfOrgcode" value="355000000I" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$hfDepartId" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_hfDepartId" value="L00300" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$hfDeputyPosid" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_hfDeputyPosid" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcLeaveDeputy$hfApplyIdcard" id="ctl00_ContentPlaceHolder1_UcLeaveDeputy_hfApplyIdcard" value="4586" />
+            </td>
+	</tr>
+	
+        
+        
+        
+        <tr id="ctl00_ContentPlaceHolder1_sigleDateTr">
+		<td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>請假日期</td>
+		<td class="htmltable_Right" valign="top">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel13">
+			
+                        <input name="ctl00$ContentPlaceHolder1$UcLeaveDate$tbStart_date" type="text" maxlength="9" id="ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_date" onchange="checkDate(this.id);chgValue('','document.getElementById(&quot;ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time&quot;)','S');" />
+<img src="../../images/midea/calendar.gif" id="ctl00_ContentPlaceHolder1_UcLeaveDate_imgDateS" alt="選擇日期" onmouseover="this.style.cursor='hand'" onclick="displayDatePicker('ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_date', 'ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time', 'S');return false;" />
+時間
+<input name="ctl00$ContentPlaceHolder1$UcLeaveDate$tbStart_time" type="text" maxlength="4" id="ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time" onchange="checkTime(this.id);chgValue('','document.getElementById(&quot;ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time&quot;)','S');" style="height: 19px" />
+至<br />
+<input name="ctl00$ContentPlaceHolder1$UcLeaveDate$tbEnd_date" type="text" maxlength="9" id="ctl00_ContentPlaceHolder1_UcLeaveDate_tbEnd_date" onchange="checkDate(this.id);chgValue('','document.getElementById(&quot;ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time&quot;)','E');" />
+<img src="../../images/midea/calendar.gif" id="ctl00_ContentPlaceHolder1_UcLeaveDate_ImgDateE" alt="選擇日期" onmouseover="this.style.cursor='hand'" onclick="displayDatePicker('ctl00_ContentPlaceHolder1_UcLeaveDate_tbEnd_date', 'ctl00_ContentPlaceHolder1_UcLeaveDate_tbEnd_time', 'E');return false;" />
+時間
+<input name="ctl00$ContentPlaceHolder1$UcLeaveDate$tbEnd_time" type="text" maxlength="4" id="ctl00_ContentPlaceHolder1_UcLeaveDate_tbEnd_time" onchange="checkTime(this.id);chgValue('','document.getElementById(&quot;ctl00_ContentPlaceHolder1_UcLeaveDate_tbStart_time&quot;)','E');" />
+止
+                    
+		</div>
+                
+                &nbsp;<span id="ctl00_ContentPlaceHolder1_lbLimit2"><font color="Red"></font></span>
+                <span id="ctl00_ContentPlaceHolder1_Label2"><font color="Blue">※日期填寫範例:101/01/01、時間為24小時制</font></span>
+            </td>
+	</tr>
+	
+        
+        
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">
+                <span style="color: #ff0000">*</span>事由</td>
+            <td class="htmltable_Right">
+                <span id="ctl00_ContentPlaceHolder1_lbTip1"><font color="Blue">※輸入事由請勿超出30字</font></span><br />
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel14">
+		
+                        
+<script type="text/javascript">
+/*
+function doKeypress(control){
+    maxLength = control.attributes["maxLength"].value;
+    value = control.value;
+     if(maxLength && value.length > maxLength-1){
+          event.returnValue = false;
+          maxLength = parseInt(maxLength);
+     }
+}
+// Cancel default behavior
+
+function doBeforePaste(control){
+    maxLength = control.attributes["maxLength"].value;
+     if(maxLength)
+     {
+          event.returnValue = false;
+     }
+}
+// Cancel default behavior and create a new paste routine
+
+function doPaste(control){
+    maxLength = control.attributes["maxLength"].value;
+    value = control.value;
+     if(maxLength){
+          event.returnValue = false;
+          maxLength = parseInt(maxLength);
+          var oTR = control.document.selection.createRange();
+          var iInsertLength = maxLength - value.length + oTR.text.length;
+          var sData = window.clipboardData.getData("Text").substr(0,iInsertLength);
+          oTR.text = sData;
+     }
+}
+*/
+    $().ready(function () {
+        document.getElementById("ctl00_ContentPlaceHolder1_tbReason_tb").onchange = function () {
+            var value = document.getElementById("ctl00_ContentPlaceHolder1_tbReason_tb").value;
+            var maxLength = parseInt("30");
+            if ("" != value && value.length > maxLength) {
+                value = value.substring(0, maxLength);
+                document.getElementById("ctl00_ContentPlaceHolder1_tbReason_tb").value = value;
+            }
+        }
+        /**$('#ctl00_ContentPlaceHolder1_tbReason_tb').maxlength({ 
+        maxCharacters: 30,
+        status: false
+        });**/
+    });    
+</script>
+<textarea name="ctl00$ContentPlaceHolder1$tbReason$tb" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_tbReason_tb"></textarea>
+                    
+	</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">附件</td>
+            <td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UcAttachment_div1">           
+    <div id="ctl00_ContentPlaceHolder1_UcAttachment_div11">
+        <div id="ctl00_ContentPlaceHolder1_UcAttachment_UpdatePanel1">
+		
+                <input type="file" name="ctl00$ContentPlaceHolder1$UcAttachment$fuFile1" id="ctl00_ContentPlaceHolder1_UcAttachment_fuFile1" />
+                <input type="submit" name="ctl00$ContentPlaceHolder1$UcAttachment$btnUpload" value="上傳" id="ctl00_ContentPlaceHolder1_UcAttachment_btnUpload" />
+            
+	</div>
+    </div>        
+    <div id="ctl00_ContentPlaceHolder1_UcAttachment_div12">
+        
+    </div>
+</div> 
+<div id="ctl00_ContentPlaceHolder1_UcAttachment_div2">
+    
+    <span id="ctl00_ContentPlaceHolder1_UcAttachment_lblMeMo"><font color="Blue">※	每個檔案大小上限為2MB(2048kbytes)。<br>※	副檔名為doc、xls、ppt、docx、xlsx、pptsx、txt、pdf、zip、rar、jpg、png、bmp。</font></span>
+</div>
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcAttachment$hfOrgcode" id="ctl00_ContentPlaceHolder1_UcAttachment_hfOrgcode" />
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UcAttachment$hfFlowId" id="ctl00_ContentPlaceHolder1_UcAttachment_hfFlowId" />
+
+            </td>
+        </tr>
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">假別說明</td>
+            <td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel7">
+		
+                        <span id="ctl00_ContentPlaceHolder1_lbDesc"></span>
+                    
+	</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="htmltable_Left" style="width: 120px">備註</td>
+            <td class="htmltable_Right">
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel8">
+		
+                        <span id="ctl00_ContentPlaceHolder1_lbMemo"></span>
+                    
+	</div>
+            </td>
+        </tr>        
+        
+                
+        
+        
+
+          
+        
+        
+    </table>
+            
+</div>
+    
+    <table id="Table1" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td class="htmltable_Bottom" style="border-top: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolder1$cbSubmit" value=" 送出申請 " onclick="if(!checkConfirm()) return false;blockUI();" id="ctl00_ContentPlaceHolder1_cbSubmit" />
+                <input id="cbReset" type="button" value="重填" onclick="clearForm(this.form)" />
+                
+            </td>
+        </tr>
+    </table>
+
+        </td>
+    </tr> 
+    <tr>
+        <td id="footer" colspan="3" align="center" >
+            <span style="font-size:small; color:#000000;">整合性總務作業管理資訊系統　版權所有，轉載必究　Copyright 2014       目前版本:V1.0.0.0更版時間:2014.05.30 下午13:00</span><br />
+            <!--span style="font-size:small; color:#000000;">最佳瀏覽器模式：解析度1024*768或以上，96dpi；瀏覽器建議使用 IE6.0 以上版本</span-->       
+         </td>
+    </tr>  
+</table>
+    </div>
+        <script type="text/javascript" language="javascript">
+            function tick() {
+                var today;
+                today = new Date();
+                Clock.innerHTML = today.toLocaleString();
+                window.setTimeout("tick()", 1000);
+            }
+            tick();
+</script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$.unblockUI();var ctl00_Menu1_Data = new Object();
+ctl00_Menu1_Data.disappearAfter = 500;
+ctl00_Menu1_Data.horizontalOffset = 0;
+ctl00_Menu1_Data.verticalOffset = 0;
+var ctl00_Menu2_Data = new Object();
+ctl00_Menu2_Data.disappearAfter = 500;
+ctl00_Menu2_Data.horizontalOffset = 0;
+ctl00_Menu2_Data.verticalOffset = 0;
+var ctl00_Menu4_Data = new Object();
+ctl00_Menu4_Data.disappearAfter = 500;
+ctl00_Menu4_Data.horizontalOffset = 0;
+ctl00_Menu4_Data.verticalOffset = 0;
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>

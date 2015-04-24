@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+  <schedule>
+    <job>
+      <name>BatchTransferPHToPKJob</name>
+      <group>group1</group>
+      <description>
+      </description>
+      <job-type>FSC.Logic.BatchTransferPHToPKJob, App_SubCode_VB.itaziksz</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>BatchTransferPHToPKTrigger</name>
+        <group>group1</group>
+        <description>
+        </description>
+        <job-name>BatchTransferPHToPKJob</job-name>
+        <job-group>group1</job-group>
+        <cron-expression>0 0 1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <job>
+      <name>BatchCntYearDaysJob</name>
+      <group>group1</group>
+      <description>
+      </description>
+      <job-type>FSC.Logic.BatchCntYearDaysJob, App_SubCode_VB.itaziksz</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>BatchCntYearDaysTrigger</name>
+        <group>group1</group>
+        <description>
+        </description>
+        <job-name>BatchCntYearDaysJob</job-name>
+        <job-group>group1</job-group>
+        <cron-expression>0 0/5 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </schedule>
+</job-scheduling-data>

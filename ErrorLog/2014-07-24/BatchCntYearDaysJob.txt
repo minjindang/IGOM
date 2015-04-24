@@ -1,0 +1,10 @@
+2014-07-24 09:21:49.9683|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-24 09:22:05.0605|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-24 09:24:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-24 09:25:00.0917|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-24 09:29:59.9997|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-24 09:30:01.3036|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-24 09:34:59.9999|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-24 09:35:00.0960|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====
+2014-07-24 09:39:59.9995|INFO|BatchCntYearDaysJob|===== Start Execute BatchCntYearDaysJob =====
+2014-07-24 09:40:00.0936|INFO|BatchCntYearDaysJob|=====  End Execute BatchCntYearDaysJob  =====

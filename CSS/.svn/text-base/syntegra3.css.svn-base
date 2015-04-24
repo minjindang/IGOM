@@ -1,0 +1,350 @@
+UNKNOWN {
+	BACKGROUND-IMAGE: url(../intra_image/chinese/image_style1/share/bg.gif); WIDTH: 777px
+}
+.top_font1 {
+	FONT-SIZE: 9pt; COLOR: #ffffff
+}
+.top_font2 {
+	FONT-SIZE: 9pt; CURSOR: hand; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.top_font2:hover {
+	FONT-SIZE: 9pt; CURSOR: hand; COLOR: #ffcc00; TEXT-DECORATION: none
+}
+.marquee_font {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ff6600; TEXT-DECORATION: none
+}
+.marquee_font:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #6633cc; TEXT-DECORATION: none
+}
+.left_day1 {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.left_day1:hover {
+	COLOR: #99ffff; TEXT-DECORATION: none
+}
+.left_day2 {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.left_day2:hover {
+	COLOR: #99ffff; TEXT-DECORATION: none
+}
+.week_bg {
+	BACKGROUND-COLOR: #95db02
+}
+.week_day1 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.week_day2 {
+	FONT-SIZE: 12px; COLOR: #006600; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.item {
+	BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px outset; WIDTH: 150px; COLOR: #006600; PADDING-TOP: 2px; BORDER-BOTTOM: 1px outset; FONT-FAMILY: "Verdana"; HEIGHT: 26px; BACKGROUND-COLOR: #e7f3bf; TEXT-DECORATION: none
+}
+.item:hover {
+	BORDER-RIGHT: 1px inset; BORDER-TOP: 1px inset; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px inset; WIDTH: 150px; COLOR: #ff6600; PADDING-TOP: 2px; BORDER-BOTTOM: 1px inset; FONT-FAMILY: "Verdana"; HEIGHT: 26px; BACKGROUND-COLOR: #f4fae2; TEXT-DECORATION: none
+}
+.item_gray {
+	BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px outset; WIDTH: 150px; COLOR: #660066; PADDING-TOP: 2px; BORDER-BOTTOM: 1px outset; FONT-FAMILY: "Verdana"; HEIGHT: 26px; BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+.item_gray:hover {
+	BORDER-RIGHT: 1px inset; BORDER-TOP: 1px inset; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px inset; WIDTH: 150px; COLOR: #ff6600; PADDING-TOP: 2px; BORDER-BOTTOM: 1px inset; FONT-FAMILY: "Verdana"; HEIGHT: 26px; BACKGROUND-COLOR: #f2e6f2; TEXT-DECORATION: none
+}
+.item_img {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: 1px solid
+}
+.item_img:hover {
+	BORDER-RIGHT: 1px outset; PADDING-RIGHT: 8px; BORDER-TOP: 1px outset; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px outset; PADDING-TOP: 2px; BORDER-BOTTOM: 1px outset
+}
+.message_title1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #999999; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #cfeb70; TEXT-DECORATION: none
+}
+.message_title2 {
+	BACKGROUND-COLOR: #def19a
+}
+.message_title3 {
+	BACKGROUND-COLOR: #eaf7bd
+}
+.message_title4 {
+	BACKGROUND-COLOR: #f3fbdb
+}
+.www {
+	FONT-WEIGHT: bold; COLOR: #990099; TEXT-DECORATION: none; family-name: Helvetica
+}
+.www:hover {
+	FONT-WEIGHT: bold; COLOR: #ff33ff; FONT-STYLE: italic; TEXT-DECORATION: none; family-name: Helvetica
+}
+.table_1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; WIDTH: 93%; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #dddddd
+}
+.table_2 {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; FONT-SIZE: 12px; BORDER-LEFT: 1px; WIDTH: 100%; BORDER-BOTTOM: 1px; BACKGROUND-COLOR: #ffffff; border-style: solid
+}
+.table_3 {
+	FONT-SIZE: 12px; WIDTH: 93%; BACKGROUND-COLOR: #ffffff
+}
+.table_4 {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; WIDTH: 93%; BORDER-BOTTOM: 1px solid; BACKGROUND-COLOR: #dddddd
+}
+.table_5 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #dddddd
+}
+.table_form {
+	BORDER-RIGHT: #dddddd 1px dashed; PADDING-RIGHT: 2px; BORDER-TOP: #dddddd 1px dashed; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: #dddddd 1px dashed; WIDTH: 93%; PADDING-TOP: 2px; BORDER-BOTTOM: #dddddd 1px dashed; FONT-FAMILY: "Verdana"
+}
+.table_form2 {
+	
+}
+.border_line {
+	BACKGROUND-COLOR: #5bb700
+}
+.form_item {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #333333; LINE-HEIGHT: 180%; PADDING-TOP: 5px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.form_col {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: 1px; COLOR: #333333; LINE-HEIGHT: 180%; PADDING-TOP: 5px; BORDER-BOTTOM: 1px; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.bodycss {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; BACKGROUND-COLOR: #ffffff
+}
+.function_link1 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_link1:hover {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss {
+	FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss:hover {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss2 {
+	FONT-SIZE: 10px; CURSOR: hand; COLOR: #333333; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.dark_textcss2:hover {
+	FONT-SIZE: 10px; CURSOR: hand; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.light_textcss {
+	FONT-SIZE: 12px; COLOR: #eeeeee; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"
+}
+.light_textcss1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.light_textcss1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #6633cc; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.forum_text {
+	FONT-SIZE: 12px; COLOR: #006600; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"
+}
+.forum_text:hover {
+	FONT-SIZE: 12px; CURSOR: hand; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.formcss {
+	FONT-SIZE: 12px; COLOR: #333333; BORDER-TOP-STYLE: groove; FONT-FAMILY: "Verdana"; BORDER-RIGHT-STYLE: groove; WHITE-SPACE: pre; BORDER-LEFT-STYLE: groove; BORDER-BOTTOM-STYLE: groove
+}
+.formcss_button {
+	FONT-SIZE: 12px; CURSOR: hand; COLOR: #333333; BORDER-TOP-STYLE: groove; FONT-FAMILY: "Verdana"; BORDER-RIGHT-STYLE: groove; WHITE-SPACE: pre; BORDER-LEFT-STYLE: groove; BORDER-BOTTOM-STYLE: groove
+}
+.formcss_other {
+	BORDER-RIGHT: #fff0f5 1px outset; BORDER-TOP: #fff0f5 1px outset; FONT-SIZE: 11px; BORDER-LEFT: #fff0f5 1px outset; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #fff0f5 1px outset; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #f0ffe1; TEXT-ALIGN: center
+}
+.formcss_note {
+	BORDER-RIGHT: #fff0f5 1px outset; BORDER-TOP: #fff0f5 1px outset; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fff0f5 1px outset; CURSOR: hand; COLOR: #cc3300; PADDING-TOP: 2px; BORDER-BOTTOM: #fff0f5 1px outset; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #ffe377; TEXT-ALIGN: center
+}
+.formcss1 {
+	FONT-SIZE: 12px; COLOR: #333333; BORDER-TOP-STYLE: groove; FONT-FAMILY: "Verdana"; BORDER-RIGHT-STYLE: groove; BORDER-LEFT-STYLE: groove; BACKGROUND-COLOR: #e1c7e2; BORDER-BOTTOM-STYLE: groove
+}
+.general_text {
+	FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.general_text:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.general_text1 {
+	FONT-SIZE: 12px; COLOR: #999999; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.general_text2 {
+	FONT-SIZE: 12px; COLOR: #990099; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.general_text2:hover {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.specially {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff9900; LINE-HEIGHT: 20px; FONT-FAMILY: "Verdana"
+}
+.head {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.mail_head {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.sysmm_table {
+	WIDTH: 93%
+}
+.loc {
+	FONT-SIZE: 12px; COLOR: #cc3300; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.loc:hover {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.loc1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #cc3300; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.icon_text {
+	FONT-SIZE: 12px; COLOR: #ff9900; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.icon_text:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.icon_text1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff9900; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.icon_text1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.list_tr {
+	BACKGROUND-COLOR: #ffffff
+}
+.list_tr1 {
+	BACKGROUND-COLOR: #eeeeee
+}
+.function_title1 {
+	FONT-SIZE: 12px; COLOR: #cc3300; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_title1:hover {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #cc3300; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_title3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006600; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_title3:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+.function_title4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 120%; PADDING-TOP: 0px; FONT-FAMILY: "Verdana"
+}
+.schem_col {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: 1px; LINE-HEIGHT: 180%; PADDING-TOP: 5px; BORDER-BOTTOM: 1px; FONT-FAMILY: "Verdana"; WHITE-SPACE: pre; BACKGROUND-COLOR: #ffffcc
+}
+.schem_time {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #000000; LINE-HEIGHT: 180%; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.schem_time2 {
+	FONT-SIZE: 10px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 180%; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.schem_time3 {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: red; LINE-HEIGHT: 150%; PADDING-TOP: 5px; BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+.note1 {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"
+}
+.note2 {
+	FONT-SIZE: 10px; COLOR: red; FONT-FAMILY: "Verdana"
+}
+.note3 {
+	FONT-SIZE: 12pt; COLOR: red; LINE-HEIGHT: 180%; TEXT-ALIGN: center
+}
+.note5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-ALIGN: center
+}
+.note6 {
+	FONT-SIZE: 10px; FONT-FAMILY: "Verdana"
+}
+.manifesto {
+	BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; FONT-WEIGHT: bolder; FONT-SIZE: 12px; BORDER-LEFT: 1px dotted; WIDTH: 100%; COLOR: red; LINE-HEIGHT: 300%; BORDER-BOTTOM: 1px dotted; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.manifesto1 {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; WIDTH: 100%; LINE-HEIGHT: 250%; BACKGROUND-COLOR: #ffffd9; TEXT-ALIGN: center
+}
+.button_image {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent
+}
+.item_search {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; CURSOR: hand; COLOR: #666666; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: transparent
+}
+.item_search:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; CURSOR: hand; COLOR: #666666; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: transparent
+}
+.item_col {
+	BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; FONT-SIZE: 12px; BORDER-LEFT: 1px outset; COLOR: #666666; LINE-HEIGHT: 180%; BORDER-BOTTOM: 1px outset; FONT-FAMILY: "Verdana"; TEXT-ALIGN: center
+}
+.item_col2 {
+	BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; PADDING-LEFT: 8px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: 1px outset; COLOR: #666666; LINE-HEIGHT: 180%; PADDING-TOP: 5px; BORDER-BOTTOM: 1px outset; FONT-FAMILY: "Verdana"
+}
+.col_1 {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: 1px; PADDING-TOP: 5px; BORDER-BOTTOM: 1px; FONT-FAMILY: "Verdana"
+}
+.col_2 {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #ffffff
+}
+.col_3 {
+	FONT-SIZE: 12pt; PADDING-BOTTOM: 5px; LINE-HEIGHT: 180%; PADDING-TOP: 5px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #ffffff
+}
+.col_4 {
+	BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px dotted; PADDING-TOP: 2px; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"
+}
+.col_5 {
+	BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px dotted; PADDING-TOP: 2px; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #eeeeee
+}
+.col_6 {
+	BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; BORDER-LEFT: 1px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"
+}
+.col_7 {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px dotted; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; BORDER-LEFT: 1px dotted; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"
+}
+.col_8 {
+	BORDER-TOP: 1px dotted; BORDER-BOTTOM: 1px dotted
+}
+.col_9 {
+	BORDER-RIGHT: 1px dotted; PADDING-RIGHT: 5px; BORDER-TOP: 1px dotted; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; BORDER-LEFT: 1px dotted; PADDING-TOP: 3px; BORDER-BOTTOM: 1px; FONT-FAMILY: "Verdana"
+}
+.col_10 {
+	BORDER-RIGHT: 1px; PADDING-RIGHT: 5px; BORDER-TOP: 1px; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; BORDER-LEFT: 1px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"
+}
+.col_11 {
+	BORDER-RIGHT: 1px dotted; PADDING-LEFT: 7px; FONT-SIZE: 12px; PADDING-BOTTOM: 7px; BORDER-LEFT: 1px dotted; BORDER-BOTTOM: 1px dotted; FONT-FAMILY: "Verdana"
+}
+.col_12 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px; BORDER-LEFT-COLOR: #b1dc1f; PADDING-BOTTOM: 3px; BORDER-TOP-COLOR: #b1dc1f; PADDING-TOP: 3px; BORDER-BOTTOM: #b1dc1f 1px dotted; FONT-FAMILY: "Verdana"; BORDER-RIGHT-COLOR: #b1dc1f
+}
+.col_13 {
+	BORDER-RIGHT: #b1dc1f 1px dotted; PADDING-LEFT: 7px; FONT-SIZE: 12px; PADDING-BOTTOM: 7px; BORDER-LEFT: #b1dc1f 1px dotted; BORDER-TOP-COLOR: #b1dc1f; BORDER-BOTTOM: #b1dc1f 1px dotted; FONT-FAMILY: "Verdana"
+}
+.mail_col {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 180%; PADDING-TOP: 5px; FONT-FAMILY: "Verdana"; WHITE-SPACE: pre; BACKGROUND-COLOR: #ffffff
+}
+.page_botton {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: 900; FONT-SIZE: 12px; BORDER-LEFT: 0px; CURSOR: hand; COLOR: #333333; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: transparent
+}
+.table_width1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; WIDTH: 97%; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px
+}
+.table_width2 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; WIDTH: 100%; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px
+}
+.table_width3 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 10px; BORDER-LEFT: 0px; WIDTH: 100%; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px
+}
+.table_width4 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 10px; BORDER-LEFT: 0px; WIDTH: 80%; LINE-HEIGHT: 180%; BORDER-BOTTOM: 0px
+}
+.tr_bottom_border_1 td {
+	border-bottom: 1px dotted #A6A224; 
+}
+.tr_border_1 td {
+	border: 1px dotted #A6A224; 
+	padding: 2px 0px 0px 8px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #555555;
+	line-height: 18px;
+	background-color: #FFFFFF;
+}

@@ -1,0 +1,803 @@
+發生時間：2014-05-08 10:28:31.6786
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 10:41:58.9925
+類別：AppException
+訊息：接近 '.' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.FSC2116DAO.getQueryData(String orgcode, String Depart_id, String Start_date, String End_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2116DAO.vb: 行 63
+   於 FSC.Logic.FSC2116.getQueryData(String orgcode, String Depart_id, String Start_date, String End_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2116.vb: 行 18
+   於 FSC2116_01.ShowList() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2116_01.aspx.vb: 行 46
+方法：[Void btnQuery_Click(System.Object, System.EventArgs)] => [Void ShowList()] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 10:42:03.6747
+類別：AppException
+訊息：接近 '.' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.FSC2116DAO.getQueryData(String orgcode, String Depart_id, String Start_date, String End_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2116DAO.vb: 行 63
+   於 FSC.Logic.FSC2116.getQueryData(String orgcode, String Depart_id, String Start_date, String End_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2116.vb: 行 18
+   於 FSC2116_01.ShowList() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2116_01.aspx.vb: 行 46
+方法：[Void btnQuery_Click(System.Object, System.EventArgs)] => [Void ShowList()] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 11:45:55.2660
+類別：AppException
+訊息：2014050811455425
+   於 System.DateTime.AddTicks(Int64 value)
+   於 System.DateTime.Add(Double value, Int32 scale)
+   於 System.DateTime.AddDays(Double value)
+   於 ASP.fsc_fsc3_fsc3112_04_aspx.__Renderform1(HtmlTextWriter __w, Control parameterContainer) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3112_04.aspx: 行 102
+   於 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   於 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   於 System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   於 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   於 System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   於 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   於 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   於 System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   於 ASP.fsc_fsc3_fsc3112_04_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3112_04.aspx: 行 196
+   於 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   於 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   於 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   於 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   於 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   於 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 12:03:07.0795
+類別：AppException
+訊息：2014050812030738
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.ScheduleSettingDAO.GetMaxDataByScheId(String orgcode, String yymm, String scheduleId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\ScheduleSettingDAO.vb: 行 27
+   於 FSC.Logic.ScheduleSetting.GetMaxDataByScheId(String orgcode, String yymm, String scheduleId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\ScheduleSetting.vb: 行 200
+   於 FSC3112_03.BindMemList() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3112_03.aspx.vb: 行 139
+   於 FSC3112_03.rblSchedule_SelectedIndexChanged(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC3\FSC3112_03.aspx.vb: 行 101
+   於 System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(EventArgs e)
+   於 System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.RadioButtonList.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 12:03:07.1575
+類別：AppException
+訊息：值不能為 null。
+參數名稱: exception
+   於 System.Web.UI.AsyncPostBackErrorEventArgs..ctor(Exception exception)
+   於 System.Web.UI.PageRequestManager.OnPageError(Object sender, EventArgs e)
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.TemplateControl.OnError(EventArgs e)
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.fsc_fsc3_fsc3112_03_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:13:26.1772
+類別：AppException
+訊息：接近 'Id_card' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.FSC2102DAO.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102DAO.vb: 行 126
+   於 FSC.Logic.FSC2102.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102.vb: 行 28
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 102
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:15:05.4704
+類別：AppException
+訊息：接近 'Id_card' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.FSC2102DAO.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102DAO.vb: 行 126
+   於 FSC.Logic.FSC2102.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102.vb: 行 28
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 102
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:16:40.2086
+類別：AppException
+訊息：接近 'Id_card' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.FSC2102DAO.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102DAO.vb: 行 126
+   於 FSC.Logic.FSC2102.getQueryData2(String Apply_idcard, String PKWDATE) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\FSC2\FSC2102.vb: 行 28
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 102
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:22:14.0994
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:29:27.1755
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:33:19.8718
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:35:32.6669
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:35:42.0512
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:37:25.8735
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:39:49.2581
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 108
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:41:53.2739
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 107
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:44:31.5445
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 107
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 13:44:39.5608
+類別：AppException
+訊息：資料行 'Process' 不屬於資料表 Table。
+   於 System.Data.DataRow.GetDataColumn(String columnName)
+   於 System.Data.DataRow.get_Item(String columnName)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 107
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 14:04:28.7521
+類別：AppException
+訊息：2014050814042844
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   於 System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   於 System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   於 System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.OrgDAO.GetData(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\OrgDAO.vb: 行 100
+   於 FSC.Logic.Org.GetOrgcodeName(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\Org.vb: 行 180
+   於 FunctionInfo.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\UcFunctionInfo.ascx.vb: 行 16
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 14:04:28.8602
+類別：AppException
+訊息：值不能為 null。
+參數名稱: exception
+   於 System.Web.UI.AsyncPostBackErrorEventArgs..ctor(Exception exception)
+   於 System.Web.UI.PageRequestManager.OnPageError(Object sender, EventArgs e)
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.TemplateControl.OnError(EventArgs e)
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.fsc_fsc0_fsc0101_01_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 14:09:55.9295
+類別：AppException
+訊息：檔案不存在。
+   於 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   於 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   於 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 14:38:35.9083
+類別：AppException
+訊息：2014050814383594
+   於 System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   於 System.Web.UI.ViewStateException.ThrowViewStateError(Exception inner, String persistedState)
+   於 System.Web.UI.HiddenFieldPageStatePersister.Load()
+   於 System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   於 System.Web.UI.Page.LoadAllState()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 14:58:00.8052
+類別：AppException
+訊息：2014050814580005
+   於 System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   於 System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   於 System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   於 System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter.Deserialize(String serializedState)
+   於 System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   於 System.Web.UI.HiddenFieldPageStatePersister.Load()
+   於 System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   於 System.Web.UI.Page.LoadAllState()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 15:08:59.5409
+類別：AppException
+訊息：2014050815085912
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   於 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   於 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   於 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.OrgDAO.GetData(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\OrgDAO.vb: 行 100
+   於 FSC.Logic.Org.GetOrgcodeName(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\Org.vb: 行 180
+   於 FunctionInfo.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\UcFunctionInfo.ascx.vb: 行 16
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 15:08:59.6289
+類別：AppException
+訊息：值不能為 null。
+參數名稱: exception
+   於 System.Web.UI.AsyncPostBackErrorEventArgs..ctor(Exception exception)
+   於 System.Web.UI.PageRequestManager.OnPageError(Object sender, EventArgs e)
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.TemplateControl.OnError(EventArgs e)
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.fsc_fsc2_fsc2102_01_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 15:19:54.8295
+類別：AppException
+訊息：2014050815195420
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   於 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   於 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   於 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.OrgDAO.GetDataByPdid(String orgcode, String parentDepartId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\OrgDAO.vb: 行 88
+   於 FSC.Logic.Org.GetDataByParentDepartid(String orgcode, String parentDepartId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\Org.vb: 行 173
+   於 UControl_UcDDLDepart.BindDepart() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\UcDDLDepart.ascx.vb: 行 77
+   於 UControl_UcDDLDepart.set_Orgcode(String value) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\UcDDLDepart.ascx.vb: 行 14
+   於 FSC2102_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 17
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 15:44:29.9961
+類別：AppException
+訊息：2014050815442921
+   於 System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   於 System.Web.UI.ViewStateException.ThrowViewStateError(Exception inner, String persistedState)
+   於 System.Web.UI.HiddenFieldPageStatePersister.Load()
+   於 System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   於 System.Web.UI.Page.LoadAllState()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 15:44:30.1102
+類別：AppException
+訊息：值不能為 null。
+參數名稱: exception
+   於 System.Web.UI.AsyncPostBackErrorEventArgs..ctor(Exception exception)
+   於 System.Web.UI.PageRequestManager.OnPageError(Object sender, EventArgs e)
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.TemplateControl.OnError(EventArgs e)
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.fsc_fsc2_fsc2102_01_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 16:01:46.3661
+類別：AppException
+訊息：從字串 "<br />" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 16:05:13.5723
+類別：AppException
+訊息：從字串 "<br />" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:08:13.5570
+類別：AppException
+訊息：從字串 "" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 117
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:08:58.8669
+類別：AppException
+訊息：型別 'DBNull' 和 型別 'Integer' 的運算子 '+' 未定義。
+   於 Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 117
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:09:14.1721
+類別：AppException
+訊息：型別 'DBNull' 和 型別 'Integer' 的運算子 '+' 未定義。
+   於 Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 117
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:27:57.3056
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(Object Left, Object Right)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 138
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:28:52.8547
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(Object Left, Object Right)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 138
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:29:31.8977
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 138
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:31:14.2421
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 138
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:35:31.4537
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 138
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:38:57.7214
+類別：AppException
+訊息：從字串 "" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 139
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:46:15.6816
+類別：AppException
+訊息：從字串 "" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 140
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:47:08.9962
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'String' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:49:19.2701
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:50:43.2681
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'String' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 107
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:51:49.7975
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:53:42.9000
+類別：AppException
+訊息：從字串 "" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 140
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:55:11.6932
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 140
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:57:23.1599
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 140
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:58:30.7850
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 140
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 17:59:52.6577
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 142
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:02:15.6271
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 142
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:04:18.2469
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 142
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:05:02.3873
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:07:43.2817
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:08:54.4552
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:11:07.5820
+類別：AppException
+訊息：從型別 'DBNull' 至型別 'String' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 112
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:15:38.4047
+類別：AppException
+訊息：從字串 "3<br />5" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 143
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:41:29.6161
+類別：AppException
+訊息：從字串 "已處理" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 142
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 18:46:34.4865
+類別：AppException
+訊息：從字串 "已處理" 至型別 'Double' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.CompareObject2(Object Left, Object Right, Boolean TextCompare)
+   於 Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 142
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-08 19:10:43.6725
+類別：AppException
+訊息：從字串 "" 至型別 'Integer' 的轉換是無效的。
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   於 FSC2102_01.btnQuery_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC2\FSC2102_01.aspx.vb: 行 158
+方法：[Void OnClick(System.EventArgs)] => [Void btnQuery_Click(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

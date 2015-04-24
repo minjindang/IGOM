@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib
+END
+Content.vb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/Content.vb
+END
+Report.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TCCC/!svn/ver/3265/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/Report.vb
+END
+TransferNormal.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/TransferNormal.vb
+END
+ReportDetail.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/4577/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/ReportDetail.vb
+END
+TransferFlexible.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/TransferFlexible.vb
+END
+Istransfer.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/4913/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/Istransfer.vb
+END
+CntLeave.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/CntLeave.vb
+END
+TransferShift.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/4731/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/TransferShift.vb
+END
+DateTimeInfo.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/5386/09_SourceCode/IGOM/App_Code/VB/FSC/Common/CommonLib/DateTimeInfo.vb
+END

@@ -1,0 +1,60 @@
+發生時間：2014-08-05 09:14:38.3141
+類別：AppException
+訊息：2014080509143882
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL.Logic.SAL1111.GetDataByOrgFid(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL1\SAL1111.vb: 行 40
+   於 FSC0101_29.Bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 24
+   於 FSC0101_29.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 13
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-08-05 09:20:08.7098
+類別：AppException
+訊息：2014080509200897
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL.Logic.SAL1111.GetDataByOrgFid(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL1\SAL1111.vb: 行 40
+   於 FSC0101_29.Bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 24
+   於 FSC0101_29.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 13
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-08-05 09:20:08.8479
+類別：AppException
+訊息：2014859208847
+System.Runtime.Remoting.RemotingException: 物件 '/552c2280_c5ac_42e6_b5de_01ab0ebcee3b/jmpsjizsb+6ryvu22g1kxd3s_85.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 122
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-08-05 09:22:21.4593
+類別：AppException
+訊息：2014080509222150
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.RBTree`1.get_Item(Int32 index)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 SAL.Logic.SAL1111.GetDataByOrgFid(String orgcode, String flowId) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\SAL\SAL1\SAL1111.vb: 行 40
+   於 FSC0101_29.Bind() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 24
+   於 FSC0101_29.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\FSC\FSC0\FSC0101_29.aspx.vb: 行 13
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

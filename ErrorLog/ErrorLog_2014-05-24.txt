@@ -1,0 +1,789 @@
+發生時間：2014-05-24 10:40:49.5108
+類別：AppException
+訊息：2014052410404989
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 MAT3202_03.txtInvAfter_cnt_TextChanged(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT3\MAT3202_03.aspx.vb: 行 69
+   於 System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   於 System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 10:40:49.8520
+類別：AppException
+訊息：2014524104049852
+System.Runtime.Remoting.RemotingException: 物件 '/ee04ec08_85eb_43e9_b5c0_0922ce97251d/zr1blqioasbep0xgohjdghyt_55.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 10:52:40.6150
+類別：AppException
+訊息：2014052410524009
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   於 MAT3202_03.txtInvAfter_cnt_TextChanged(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT3\MAT3202_03.aspx.vb: 行 69
+   於 System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   於 System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent()
+   於 System.Web.UI.WebControls.TextBox.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   於 System.Web.UI.Page.RaiseChangedEvents()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 11:16:09.8359
+類別：AppException
+訊息：已發生類型 'System.Web.HttpUnhandledException' 的例外狀況。
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.mat_mat2_mat2202_02_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 11:19:31.1005
+類別：AppException
+訊息：2014052411193191
+   於 MAT2201_02.PrintBtn_Click(String Material_idS, String Material_idE, Int32 pagerowcnt) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT2\MAT2201_02.aspx.vb: 行 39
+   於 MAT2201_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT2\MAT2201_02.aspx.vb: 行 24
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 11:35:33.2962
+類別：AppException
+訊息：檔案 '/IGOM/PRO/PRO1/PRO2101_01.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:07:49.8054
+類別：AppException
+訊息：2014052412074947
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 14
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:08:17.8050
+類別：AppException
+訊息：2014052412081700
+   於 MAT4104_02.print(String id1, String id2, Int32 pagerowcnt) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 40
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 22
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:12:34.0890
+類別：AppException
+訊息：2014052412123479
+   於 MAT4104_02.print(String id1, String id2, Int32 pagerowcnt) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 40
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 22
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:12:53.0297
+類別：AppException
+訊息：2014052412125313
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 14
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:14:48.7289
+類別：AppException
+訊息：2014052412144825
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 14
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:22:25.8507
+類別：AppException
+訊息：2014052412222549
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 MAT4104_02.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb: 行 14
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:22:26.0988
+類別：AppException
+訊息：201452412222698
+System.Runtime.Remoting.RemotingException: 物件 '/ee04ec08_85eb_43e9_b5c0_0922ce97251d/85czhqh5vv5ge7nnlv8saeff_1609.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:22:29.1539
+類別：AppException
+訊息：2014052412222952
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   於 System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e)
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Control.PreRenderRecursiveInternal()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:22:29.2089
+類別：AppException
+訊息：2014524122229208
+System.Runtime.Remoting.RemotingException: 物件 '/ee04ec08_85eb_43e9_b5c0_0922ce97251d/g70nhxuwqpiyqlfyu67voxwt_1612.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 12:22:31.8136
+類別：AppException
+訊息：D:\康大專案\TCCC\09_SourceCode\IGOM\MAT\MAT4\MAT4104_02.aspx.vb(14): error BC30311: 型別 '1-維陣列屬於 String' 的值無法轉換成 'String'。
+   於 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 13:24:45.5409
+類別：AppException
+訊息：2014052413244594
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   於 System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   於 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   於 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 PRO.Logic.PRO3101DAO.SelectAll(String OrgCode, String OfficialNumber_id, String Software_id, DateTime Last_dateS, DateTime Last_dateE, String SoftwareUnit_name, String Unit_code, String User_id, String Software_name, String Fee_amtS, String Fee_amtE, String Fee_amtL, String Fee_amtM, String Orderby) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\PRO\PRO3\PRO3101DAO.cs: 行 108
+   於 PRO.Logic.PRO3101.GetAll(String OfficialNumber_id, String Software_id, DateTime Last_dateS, DateTime Last_dateE, String SoftwareUnit_name, String Unit_code, String User_id, String Software_name, String Fee_amtS, String Fee_amtE, String Fee_amtL, String Fee_amtM, String Orderby) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\PRO\PRO3\PRO3101.cs: 行 31
+   於 PRO_PRO3_PRO3101_01.Bind() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO3\PRO3101_01.aspx.cs: 行 102
+   於 PRO_PRO3_PRO3101_01.btnQry_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO3\PRO3101_01.aspx.cs: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 13:26:17.9036
+類別：AppException
+訊息：2014052413261701
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   於 System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   於 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   於 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 PRO.Logic.PRO3101DAO.SelectAll(String OrgCode, String OfficialNumber_id, String Software_id, DateTime Last_dateS, DateTime Last_dateE, String SoftwareUnit_name, String Unit_code, String User_id, String Software_name, String Fee_amtS, String Fee_amtE, String Fee_amtL, String Fee_amtM, String Orderby) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\PRO\PRO3\PRO3101DAO.cs: 行 108
+   於 PRO.Logic.PRO3101.GetAll(String OfficialNumber_id, String Software_id, DateTime Last_dateS, DateTime Last_dateE, String SoftwareUnit_name, String Unit_code, String User_id, String Software_name, String Fee_amtS, String Fee_amtE, String Fee_amtL, String Fee_amtM, String Orderby) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\CSharp\PRO\PRO3\PRO3101.cs: 行 31
+   於 PRO_PRO3_PRO3101_01.Bind() 於 d:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO3\PRO3101_01.aspx.cs: 行 102
+   於 PRO_PRO3_PRO3101_01.btnQry_Click(Object sender, EventArgs e) 於 d:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO3\PRO3101_01.aspx.cs: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 13:27:21.9097
+類別：AppException
+訊息：d:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO3\PRO3101_01.aspx.cs(79): error CS0139: 沒有可中斷或繼續的封閉式迴圈
+   於 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 13:34:03.8769
+類別：AppException
+訊息：2014052413340368
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   於 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   於 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   於 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 498
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 441
+   於 BaseDAO.Query(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 262
+   於 FSC.Logic.OrgDAO.GetData(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\OrgDAO.vb: 行 100
+   於 FSC.Logic.Org.GetOrgcodeName(String orgcode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\FSC\Common\CommonTable\Org.vb: 行 180
+   於 FunctionInfo.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\UControl\UcFunctionInfo.ascx.vb: 行 16
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 13:38:43.7236
+類別：AppException
+訊息：已發生類型 'System.Web.HttpUnhandledException' 的例外狀況。
+   於 System.Web.UI.Page.HandleError(Exception e)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   於 System.Web.UI.Page.ProcessRequest()
+   於 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   於 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   於 ASP.mat_mat2_mat2102_02_aspx.ProcessRequest(HttpContext context)
+   於 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 14:25:13.9803
+類別：AppException
+訊息：檔案 '/IGOM/PRO/PRO1/PRO1101_03.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 14:26:05.9560
+類別：AppException
+訊息：檔案 '/IGOM/PRO/PRO1/PRO1103_03.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 15:48:31.1212
+類別：AppException
+訊息：2014052415483186
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 15:54:29.2034
+類別：AppException
+訊息：2014052415542930
+   於 System.Transactions.TransactionState.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction)
+   於 System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   於 System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   於 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   於 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   於 System.Data.SqlClient.SqlConnection.Open()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 294
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 15:58:26.9202
+類別：AppException
+訊息：2014052415582617
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 15:58:55.7154
+類別：AppException
+訊息：2014052415585512
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:01:39.8649
+類別：AppException
+訊息：2014052416013934
+   於 System.Transactions.TransactionState.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction)
+   於 System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   於 System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   於 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   於 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   於 System.Data.SqlClient.SqlConnection.Open()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 294
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:19:57.7798
+類別：AppException
+訊息：2014052416195776
+   於 System.Transactions.TransactionState.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction)
+   於 System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   於 System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   於 System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   於 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   於 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   於 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   於 System.Data.SqlClient.SqlConnection.Open()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 294
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:19:57.9939
+類別：AppException
+訊息：2014524161957993
+System.Runtime.Remoting.RemotingException: 物件 '/ee04ec08_85eb_43e9_b5c0_0922ce97251d/dc2yljk+einw9ue66lr4oxkm_2278.rem' 已中斷連接或不存在於伺服器。
+   於 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   於 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   於 Microsoft.VisualStudio.WebHost.Request.GetServerName()
+   於 System.Web.HttpRequest.get_Url()
+   於 BaseWebForm.ShowError(Exception currentError, String ErrorCode) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\BaseWebForm.vb: 行 136
+方法：[Void Page_Error(System.Object, System.EventArgs)] => [Void ShowError(System.Exception, System.String)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:25:46.5675
+類別：AppException
+訊息：2014052416254662
+   於 Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(String Value)
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:27:25.3414
+類別：AppException
+訊息：2014052416272535
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:27:46.6496
+類別：AppException
+訊息：2014052416274647
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 344
+   於 Pemis2009.SQLAdapter.SqlAccessHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\SQLAdapter.vb: 行 297
+   於 BaseDAO.Execute(String sSQL, SqlParameter[] parms) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonLib\BaseDAO.vb: 行 288
+   於 FSCPLM.Logic.PRO_SwRegister_mainDAO.Insert(SqlParameter[] ps) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_mainDAO.vb: 行 42
+   於 FSCPLM.Logic.PRO_SwRegister_main.Add(String OrgCode, String Flow_id, String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, Int32 NetPLimit_cnt, Int32 Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, Int32 StorageMedia_cnt, String RelatedPapers_name, Double LifeTime, Double Fee_amt, Double MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\Common\CommonTable\PRO_SwRegister_main.vb: 行 183
+   於 FSCPLM.Logic.PRO1103.Done(String OfficialNumber_id, String Software_id, String Software_type, String Software_name, String Version, String KeyNumber_nos, String SoftwareKind_type, String NetPLimit_cnt, String Sofeware_cnt, String Obtain_type, String ObtainOt_desc, String SoftwareUnit_name, String StorageMedia_type, String StorageMediaOt_desc, String StorageMedia_cnt, String RelatedPapers_name, String LifeTime, String Fee_amt, String MRent_amt, String Start_date, String Unit_code, String User_id, String Register_date, String Memo, String ModUser_id, DateTime Mod_date) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\App_Code\VB\PRO\Common\PRO1\PRO1103.vb: 行 65
+   於 PRO_PRO1_PRO1103_01.DonBtn_Click(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\PRO\PRO1\PRO1103_01.aspx.vb: 行 22
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   於 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:50:26.9748
+類別：AppException
+訊息：2014052416502645
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 129
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:50:45.5142
+類別：AppException
+訊息：檔案 '/IGOM/CAR/CAR1/CAR1101_02.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:51:03.0419
+類別：AppException
+訊息：2014052416510340
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 129
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:53:01.9893
+類別：AppException
+訊息：檔案 '/IGOM/CAR/CAR1/CAR1101_02.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:54:13.6231
+類別：AppException
+訊息：2014052416541318
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 119
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:54:22.2088
+類別：AppException
+訊息：檔案 '/IGOM/CAR/CAR1/CAR1101_02.aspx' 不存在。
+   於 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   於 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   於 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   於 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   於 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+方法：[Void Invoke(System.Object, System.EventArgs)] => [Void Application_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:57:10.0618
+類別：AppException
+訊息：2014052416571060
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 119
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:57:17.0444
+類別：AppException
+訊息：2014052416571743
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 119
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 16:57:21.8787
+類別：AppException
+訊息：2014052416572177
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 119
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================
+發生時間：2014-05-24 17:22:18.6820
+類別：AppException
+訊息：2014052417221855
+   於 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   於 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   於 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   於 CAR1101_01.BindDispatchInfo() 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 118
+   於 CAR1101_01.Page_Load(Object sender, EventArgs e) 於 D:\康大專案\TCCC\09_SourceCode\IGOM\CAR\CAR1\CAR1101_01.aspx.vb: 行 77
+   於 System.EventHandler.Invoke(Object sender, EventArgs e)
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+方法：[Void OnError(System.EventArgs)] => [Void Page_Error(System.Object, System.EventArgs)] => [Void WriteErrorLog(System.String, System.String)]
+例外堆疊：
+=============================================================

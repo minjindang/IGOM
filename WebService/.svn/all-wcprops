@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/TCCC/!svn/ver/4850/09_SourceCode/IGOM/WebService
+END
+EmpMember.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/2365/09_SourceCode/IGOM/WebService/EmpMember.asmx
+END
+FscPHToPKWS.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/4605/09_SourceCode/IGOM/WebService/FscPHToPKWS.asmx
+END
+SysProfWs.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/3573/09_SourceCode/IGOM/WebService/SysProfWs.asmx
+END
+SysFlowWs.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/TCCC/!svn/ver/3483/09_SourceCode/IGOM/WebService/SysFlowWs.asmx
+END
+EmpDepartEmp.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/TCCC/!svn/ver/2365/09_SourceCode/IGOM/WebService/EmpDepartEmp.asmx
+END
+EmpMemberWs.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TCCC/!svn/ver/3139/09_SourceCode/IGOM/WebService/EmpMemberWs.asmx
+END

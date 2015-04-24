@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Mobile.master.cs" Inherits="Mobile_MasterPage_Mobile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="<%= Page.ResolveClientUrl("~/CSS/css.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%= Page.ResolveClientUrl("~/CSS/syntegra3.css")%>" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<%= Page.ResolveClientUrl("~/css/aqua.css")%>" />
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-1.4.2.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.blockUI.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery.maxlength.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-ui-1.8.18.custom.min.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/DgJScript.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/utils.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/roc.js")%>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/CalendarPopup.js")%>"></script>
+    <link type="text/css" href="<%= Page.ResolveClientUrl("~/CSS/smoothness/jquery-ui-1.8.18.custom.css")%>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%= Page.ResolveClientUrl("~/Mobile/scripts/jquery.mobile-1.3.2.css")%>">
+    <script src="<%= Page.ResolveClientUrl("~/Mobile/scripts/jquery-1.9.1.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/Mobile/scripts/jquery.mobile-1.3.2.min.js")%>"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        .tdMenuBody
+        { 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu_body.png")%>') repeat-y;
+        }
+        .tdMenuHeader
+        {
+            text-align:center;color:White; font-size:16px; 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu.gif")%>') no-repeat ; height:26px; 
+        }
+        .tdMenuFooter
+        {
+            text-align:center;color:White; 
+            background: url('<%= Page.ResolveClientUrl("~/images/menu.gif")%>') no-repeat 0 -61px; height:18px;
+        }
+    </style>
+
+    <script type="text/javascript" language="javascript">
+        $().ready(function () {
+            $('input[type=submit]').each(function () {
+                $(this).click(function () {
+                    if ($(this).attr('value') == "查詢" ||
+                    $(this).attr('value') == "送出申請") {
+                        blockUI();
+                    }
+                });
+            });
+            $('input[type=button]').each(function () {
+                if ($(this).attr('value') == "重填") {
+                    $(this).click(function () {
+                        clearForm(this.form);
+                    });
+                }
+            });
+        });
+        document.write(getCalendarStyles());
+        var cal1xx = new CalendarPopup("CalendarDiv");
+        cal1xx.showNavigationDropdowns();
+
+        function displayDatePicker(txtid, timeid, target) {
+            cal1xx.select(document.getElementById(txtid), txtid, 'yyy/MM/dd', document.getElementById(timeid), target);
+        }
+
+        function blockUI() {
+            //$.blockUI({ message: '<img src="../images/loading.gif"align="absmiddle" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+            $.blockUI({ message: '<img src="<%= Page.ResolveClientUrl("~/images/loading.gif")%>" />&nbsp;&nbsp;<span style="font-size:13px">資料載入中，請稍候...</span>' });
+        }
+
+        window.onload = function () {
+            var menu = '<%= Session["Menu"] %>';
+            if (menu == 'open') {
+                document.getElementById("menu").style.display = "";
+                document.getElementById("menu").style.width = "197px";
+            }
+            else if (menu == 'close') {
+                document.getElementById("menu").style.display = "none";
+            }
+        }
+        function showMenu() {
+            document.getElementById("menu").style.display = "";
+            document.getElementById("menu").style.width = "197px";
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function clearForm(form) {
+            form.reset();
+            var allTables = $('#content > table');
+
+            allTables.each(function () {
+                var allSelects = $(this).find('select');
+                allSelects.each(function () {
+                    $('#' + this.id).get(0).selectedIndex = 0;
+                });
+                return false;
+            });
+
+            var allInputs = $('#content input[type=text]');
+            allInputs.each(function () {
+                $(this).val('');
+
+            });
+        }
+        function checkEmptyField(idlist, fieldlist) {
+            var checknum = /^[0-9, ]+$/i;
+            var aid = new Array();
+            var afield = new Array();
+            aid = idlist.split(",");
+            afield = fieldlist.split(",");
+
+            for (var i = 0 ; i < aid.length ; i++) {
+                if (document.getElementById(aid[i]).value == '') {
+                    alert("「" + afield[i] + "」欄位為必填。");
+                    document.getElementById(aid[i]).focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+        function chgValue() { }
+        function checkDate(did) {
+            var d = $('#' + did).val();
+            if (d == '')
+                return;
+
+            var err = false;
+
+            regex = /\S{9}/;
+            if (!regex.test(d))
+                err = true;
+
+            regex = /\d{3}\/\d{2}\/\d{2}/;
+            if (!regex.test(d))
+                err = true;
+
+            //        regex = /\d{3}([0][13578][0][1-9]|[0][13578][1-2][0-9]|[0][13578][3][0-1])|([0][469][0][1-9]|[0][469][1-2][0-9]|[0][469][3][0])|([1][11][0][1-9]|[1][11][1-2][0-9]|[1][11][3][0])|([1][12][0][1-9]|[1][12][1-2][0-9]|[1][12][3][0-1])|([0][2][0][1-9]|[0][2][1-2][0-9])/;
+            //        if(!regex.test(d))
+            //            err = true;
+
+            if (err) {
+                alert("日期格式錯誤!");
+                $('#' + did).val("");
+                $('#' + did).focus();
+            }
+
+        }
+
+        function checkTime(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /([0-1][0-9]|[2][0-3])[0-5][0-9]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function checkTime2(tid) {
+            var t = $('#' + tid).val();
+            var err = false;
+
+            regex = /\d{4}/;
+            if (!regex.test(t))
+                err = true;
+
+            regex = /(([0-1][0-9]|[2][0-3])[0-5][0-9])|[2][4][0][0]/;
+            if (!regex.test(t))
+                err = true;
+
+            if (err) {
+                alert("時間格式錯誤!");
+                $('#' + tid).val("");
+                $('#' + tid).focus();
+            }
+        }
+
+        function backpage() {
+            $("#<%= btnPrivous.ClientID %>").click();
+        }
+</script>
+</head>
+<body background="../images/background.png">
+    <div id="CalendarDiv" style="position:absolute;visibility:hidden;background-color:white;background-color:white;"></div>
+    <form id="form1" runat="server" >
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div  data-role="page" data-theme="c">
+            <table width="100%" height="50" bgcolor="#3F74D1">
+                
+                <tr>
+                    <td width="20%">
+                        <asp:Button ID="btnPrivous" runat="server" Text="回上頁"  UseSubmitBehavior="False" Visible="False"/></td>
+                    <td align="center">
+                        <asp:Label ID="lblPageTitle" runat="server" Text="" Font-Size="26px" ForeColor="White"></asp:Label></td>
+                    <td width="20%">
+                        &nbsp;</td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

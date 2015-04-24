@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Post_Google_Calendar_Data">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStartTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEndTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSystemFrom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Post_Google_Calendar_DataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Post_Google_Calendar_DataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Google_Calendar_Data">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStartTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEndTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Google_Calendar_DataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Google_Calendar_DataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Post_Google_Calendar_DataSoapIn">
+    <wsdl:part name="parameters" element="tns:Post_Google_Calendar_Data" />
+  </wsdl:message>
+  <wsdl:message name="Post_Google_Calendar_DataSoapOut">
+    <wsdl:part name="parameters" element="tns:Post_Google_Calendar_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Google_Calendar_DataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Google_Calendar_Data" />
+  </wsdl:message>
+  <wsdl:message name="Get_Google_Calendar_DataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Google_Calendar_DataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GoogleAPISoap">
+    <wsdl:operation name="Post_Google_Calendar_Data">
+      <wsdl:input message="tns:Post_Google_Calendar_DataSoapIn" />
+      <wsdl:output message="tns:Post_Google_Calendar_DataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Google_Calendar_Data">
+      <wsdl:input message="tns:Get_Google_Calendar_DataSoapIn" />
+      <wsdl:output message="tns:Get_Google_Calendar_DataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GoogleAPISoap" type="tns:GoogleAPISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Post_Google_Calendar_Data">
+      <soap:operation soapAction="http://tempuri.org/Post_Google_Calendar_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Google_Calendar_Data">
+      <soap:operation soapAction="http://tempuri.org/Get_Google_Calendar_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GoogleAPISoap12" type="tns:GoogleAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Post_Google_Calendar_Data">
+      <soap12:operation soapAction="http://tempuri.org/Post_Google_Calendar_Data" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Google_Calendar_Data">
+      <soap12:operation soapAction="http://tempuri.org/Get_Google_Calendar_Data" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GoogleAPI">
+    <wsdl:port name="GoogleAPISoap" binding="tns:GoogleAPISoap">
+      <soap:address location="http://intra.epa.gov.tw/GetGoogle/GoogleAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GoogleAPISoap12" binding="tns:GoogleAPISoap12">
+      <soap12:address location="http://intra.epa.gov.tw/GetGoogle/GoogleAPI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

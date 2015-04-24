@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/TCCC/!svn/ver/5442/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable
+END
+MemberDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/5442/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/MemberDAO.vb
+END
+OrgDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/5330/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/OrgDAO.vb
+END
+Agent.vb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/TCCC/!svn/ver/3303/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/Agent.vb
+END
+DepartEmp.vb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TCCC/!svn/ver/2251/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/DepartEmp.vb
+END
+AgentDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TCCC/!svn/ver/3303/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/AgentDAO.vb
+END
+DepartEmpDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/2601/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/DepartEmpDAO.vb
+END
+Member.vb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/TCCC/!svn/ver/5442/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/Member.vb
+END
+Org.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/TCCC/!svn/ver/5330/09_SourceCode/IGOM/App_Code/VB/EMP/Common/CommonTable/Org.vb
+END

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PettyCashInsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pettyData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PettyCashInsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PettyCashInsertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PettyCashListInsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pettyData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PettyCashListInsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PettyCashListInsertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertSoapIn">
+    <wsdl:part name="parameters" element="tns:PettyCashInsert" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertSoapOut">
+    <wsdl:part name="parameters" element="tns:PettyCashInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertSoapIn">
+    <wsdl:part name="parameters" element="tns:PettyCashListInsert" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertSoapOut">
+    <wsdl:part name="parameters" element="tns:PettyCashListInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertHttpGetIn">
+    <wsdl:part name="pettyData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertHttpGetIn">
+    <wsdl:part name="pettyData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertHttpPostIn">
+    <wsdl:part name="pettyData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashInsertHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertHttpPostIn">
+    <wsdl:part name="pettyData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PettyCashListInsertHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="PettyCash1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <wsdl:input message="tns:PettyCashInsertSoapIn" />
+      <wsdl:output message="tns:PettyCashInsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <wsdl:input message="tns:PettyCashListInsertSoapIn" />
+      <wsdl:output message="tns:PettyCashListInsertSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PettyCash1HttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <wsdl:input message="tns:PettyCashInsertHttpGetIn" />
+      <wsdl:output message="tns:PettyCashInsertHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <wsdl:input message="tns:PettyCashListInsertHttpGetIn" />
+      <wsdl:output message="tns:PettyCashListInsertHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PettyCash1HttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <wsdl:input message="tns:PettyCashInsertHttpPostIn" />
+      <wsdl:output message="tns:PettyCashInsertHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <wsdl:input message="tns:PettyCashListInsertHttpPostIn" />
+      <wsdl:output message="tns:PettyCashListInsertHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PettyCash1Soap" type="tns:PettyCash1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <soap:operation soapAction="http://tempuri.org/PettyCashInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <soap:operation soapAction="http://tempuri.org/PettyCashListInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PettyCash1Soap12" type="tns:PettyCash1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <soap12:operation soapAction="http://tempuri.org/PettyCashInsert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <soap12:operation soapAction="http://tempuri.org/PettyCashListInsert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PettyCash1HttpGet" type="tns:PettyCash1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <http:operation location="/PettyCashInsert" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <http:operation location="/PettyCashListInsert" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PettyCash1HttpPost" type="tns:PettyCash1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashInsert">
+      <http:operation location="/PettyCashInsert" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PettyCashListInsert">
+      <http:operation location="/PettyCashListInsert" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PettyCash1">
+    <wsdl:port name="PettyCash1Soap" binding="tns:PettyCash1Soap">
+      <soap:address location="http://sam92.epa.gov.tw/PettyCashWebService/PettyCash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PettyCash1Soap12" binding="tns:PettyCash1Soap12">
+      <soap12:address location="http://sam92.epa.gov.tw/PettyCashWebService/PettyCash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PettyCash1HttpGet" binding="tns:PettyCash1HttpGet">
+      <http:address location="http://sam92.epa.gov.tw/PettyCashWebService/PettyCash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PettyCash1HttpPost" binding="tns:PettyCash1HttpPost">
+      <http:address location="http://sam92.epa.gov.tw/PettyCashWebService/PettyCash.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

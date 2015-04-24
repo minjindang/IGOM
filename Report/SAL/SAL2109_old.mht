@@ -1,0 +1,1481 @@
+MIME-Version: 1.0
+X-Document-Type: Workbook
+Content-Type: multipart/related; boundary="----=_NextPart_01CF6F8C.5376C170"
+
+此文件是單一檔案網頁，亦稱為網頁封存檔案。若看到此訊息，表示您的瀏覽器或編輯器不支援網頁封存檔案。請下載支援網頁封存的瀏覽器，例如 Windows? Internet Explorer?。
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=3D"Excel Workbook Frameset">
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link rel=3DFile-List href=3D"SAL2105.files/filelist.xml">
+<![if !supportTabStrip]>
+<link id=3D"shLink" href=3D"SAL2105.files/sheet001.htm">
+<link id=3D"shLink" href=3D"SAL2105.files/sheet002.htm">
+<link id=3D"shLink" href=3D"SAL2105.files/sheet003.htm">
+
+<link id=3D"shLink">
+
+<script language=3D"JavaScript">
+<!--
+ var c_lTabs=3D3;
+
+ var c_rgszSh=3Dnew Array(c_lTabs);
+ c_rgszSh[0] =3D "Sheet1";
+ c_rgszSh[1] =3D "Sheet2";
+ c_rgszSh[2] =3D "Sheet3";
+
+
+
+ var c_rgszClr=3Dnew Array(8);
+ c_rgszClr[0]=3D"window";
+ c_rgszClr[1]=3D"buttonface";
+ c_rgszClr[2]=3D"windowframe";
+ c_rgszClr[3]=3D"windowtext";
+ c_rgszClr[4]=3D"threedlightshadow";
+ c_rgszClr[5]=3D"threedhighlight";
+ c_rgszClr[6]=3D"threeddarkshadow";
+ c_rgszClr[7]=3D"threedshadow";
+
+ var g_iShCur;
+ var g_rglTabX=3Dnew Array(c_lTabs);
+
+function fnGetIEVer()
+{
+ var ua=3Dwindow.navigator.userAgent
+ var msie=3Dua.indexOf("MSIE")
+ if (msie>0 && window.navigator.platform=3D=3D"Win32")
+  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
+ else
+  return 0;
+}
+
+function fnBuildFrameset()
+{
+ var szHTML=3D"<frameset rows=3D\"*,18\" border=3D0 width=3D0 frameborder=
+=3Dno framespacing=3D0>"+
+  "<frame src=3D\""+document.all.item("shLink")[0].href+"\" name=3D\"frShee=
+t\" noresize>"+
+  "<frameset cols=3D\"54,*\" border=3D0 width=3D0 frameborder=3Dno framespa=
+cing=3D0>"+
+  "<frame src=3D\"\" name=3D\"frScroll\" marginwidth=3D0 marginheight=3D0 s=
+crolling=3Dno>"+
+  "<frame src=3D\"\" name=3D\"frTabs\" marginwidth=3D0 marginheight=3D0 scr=
+olling=3Dno>"+
+  "</frameset></frameset><plaintext>";
+
+ with (document) {
+  open("text/html","replace");
+  write(szHTML);
+  close();
+ }
+
+ fnBuildTabStrip();
+}
+
+function fnBuildTabStrip()
+{
+ var szHTML=3D
+  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+=
+";cursor:default;line-height:10pt;}"+
+  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-h=
+eight:11pt;}</style></head>"+
+  "<body onclick=3D\"event.returnValue=3Dfalse;\" ondragstart=3D\"event.ret=
+urnValue=3Dfalse;\" onselectstart=3D\"event.returnValue=3Dfalse;\" bgcolor=
+=3D"+c_rgszClr[4]+" topmargin=3D0 leftmargin=3D0><table cellpadding=3D0 cel=
+lspacing=3D0 width=3D100%>"+
+  "<tr><td colspan=3D6 height=3D1 bgcolor=3D"+c_rgszClr[2]+"></td></tr>"+
+  "<tr><td style=3D\"font:1pt\">&nbsp;<td>"+
+  "<td valign=3Dtop id=3DtdScroll class=3D\"clScroll\" onclick=3D\"parent.f=
+nFastScrollTabs(0);\" onmouseover=3D\"parent.fnMouseOverScroll(0);\" onmous=
+eout=3D\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
+  "<td valign=3Dtop id=3DtdScroll class=3D\"clScroll2\" onclick=3D\"parent.=
+fnScrollTabs(0);\" ondblclick=3D\"parent.fnScrollTabs(0);\" onmouseover=3D\=
+"parent.fnMouseOverScroll(1);\" onmouseout=3D\"parent.fnMouseOutScroll(1);\=
+"><a>&lt</a></td>"+
+  "<td valign=3Dtop id=3DtdScroll class=3D\"clScroll2\" onclick=3D\"parent.=
+fnScrollTabs(1);\" ondblclick=3D\"parent.fnScrollTabs(1);\" onmouseover=3D\=
+"parent.fnMouseOverScroll(2);\" onmouseout=3D\"parent.fnMouseOutScroll(2);\=
+"><a>&gt</a></td>"+
+  "<td valign=3Dtop id=3DtdScroll class=3D\"clScroll\" onclick=3D\"parent.f=
+nFastScrollTabs(1);\" onmouseover=3D\"parent.fnMouseOverScroll(3);\" onmous=
+eout=3D\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
+  "<td style=3D\"font:1pt\">&nbsp;<td></tr></table></body></html>";
+
+ with (frames['frScroll'].document) {
+  open("text/html","replace");
+  write(szHTML);
+  close();
+ }
+
+ szHTML =3D
+  "<html><head>"+
+  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgsz=
+Clr[3]+";}"+
+  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt &#26032;&#32048=
+;&#26126;&#39636;;padding-left:3px;padding-right:3px;text-align:center;}"+
+  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
+  "</style></head><body onload=3D\"parent.fnInit();\" onselectstart=3D\"eve=
+nt.returnValue=3Dfalse;\" ondragstart=3D\"event.returnValue=3Dfalse;\" bgco=
+lor=3D"+c_rgszClr[4]+
+  " topmargin=3D0 leftmargin=3D0><table id=3DtbTabs cellpadding=3D0 cellspa=
+cing=3D0>";
+
+ var iCellCount=3D(c_lTabs+1)*2;
+
+ var i;
+ for (i=3D0;i<iCellCount;i+=3D2)
+  szHTML+=3D"<col width=3D1><col>";
+
+ var iRow;
+ for (iRow=3D0;iRow<6;iRow++) {
+
+  szHTML+=3D"<tr>";
+
+  if (iRow=3D=3D5)
+   szHTML+=3D"<td colspan=3D"+iCellCount+"></td>";
+  else {
+   if (iRow=3D=3D0) {
+    for(i=3D0;i<iCellCount;i++)
+     szHTML+=3D"<td height=3D1 class=3D\"clBorder\"></td>";
+   } else if (iRow=3D=3D1) {
+    for(i=3D0;i<c_lTabs;i++) {
+     szHTML+=3D"<td height=3D1 nowrap class=3D\"clBorder\">&nbsp;</td>";
+     szHTML+=3D
+      "<td id=3DtdTab height=3D1 nowrap class=3D\"clTab\" onmouseover=3D\"p=
+arent.fnMouseOverTab("+i+");\" onmouseout=3D\"parent.fnMouseOutTab("+i+");\=
+">"+
+      "<a href=3D\""+document.all.item("shLink")[i].href+"\" target=3D\"frS=
+heet\" id=3DaTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
+    }
+    szHTML+=3D"<td id=3DtdTab height=3D1 nowrap class=3D\"clBorder\"><a id=
+=3DaTab>&nbsp;</a></td><td width=3D100%></td>";
+   } else if (iRow=3D=3D2) {
+    for (i=3D0;i<c_lTabs;i++)
+     szHTML+=3D"<td height=3D1></td><td height=3D1 class=3D\"clBorder\"></t=
+d>";
+    szHTML+=3D"<td height=3D1></td><td height=3D1></td>";
+   } else if (iRow=3D=3D3) {
+    for (i=3D0;i<iCellCount;i++)
+     szHTML+=3D"<td height=3D1></td>";
+   } else if (iRow=3D=3D4) {
+    for (i=3D0;i<c_lTabs;i++)
+     szHTML+=3D"<td height=3D1 width=3D1></td><td height=3D1></td>";
+    szHTML+=3D"<td height=3D1 width=3D1></td><td></td>";
+   }
+  }
+  szHTML+=3D"</tr>";
+ }
+
+ szHTML+=3D"</table></body></html>";
+ with (frames['frTabs'].document) {
+  open("text/html","replace");
+  charset=3Ddocument.charset;
+  write(szHTML);
+  close();
+ }
+}
+
+function fnInit()
+{
+ g_rglTabX[0]=3D0;
+ var i;
+ for (i=3D1;i<=3Dc_lTabs;i++)
+  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
+   g_rglTabX[i]=3DoffsetLeft+offsetWidth-6;
+}
+
+function fnTabToCol(iTab)
+{
+ return 2*iTab+1;
+}
+
+function fnNextTab(fDir)
+{
+ var iNextTab=3D-1;
+ var i;
+
+ with (frames['frTabs'].document.body) {
+  if (fDir=3D=3D0) {
+   if (scrollLeft>0) {
+    for (i=3D0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
+    if (i<c_lTabs)
+     iNextTab=3Di-1;
+   }
+  } else {
+   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
+    for (i=3D0;i<c_lTabs&&g_rglTabX[i]<=3DscrollLeft;i++);
+    if (i<c_lTabs)
+     iNextTab=3Di;
+   }
+  }
+ }
+ return iNextTab;
+}
+
+function fnScrollTabs(fDir)
+{
+ var iNextTab=3DfnNextTab(fDir);
+
+ if (iNextTab>=3D0) {
+  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
+  return true;
+ } else
+  return false;
+}
+
+function fnFastScrollTabs(fDir)
+{
+ if (c_lTabs>16)
+  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:0],0);
+ else
+  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");"=
+,5);
+}
+
+function fnSetTabProps(iTab,fActive)
+{
+ var iCol=3DfnTabToCol(iTab);
+ var i;
+
+ if (iTab>=3D0) {
+  with (frames['frTabs'].document.all) {
+   with (tbTabs) {
+    for (i=3D0;i<=3D4;i++) {
+     with (rows[i]) {
+      if (i=3D=3D0)
+       cells[iCol].style.background=3Dc_rgszClr[fActive?0:2];
+      else if (i>0 && i<4) {
+       if (fActive) {
+        cells[iCol-1].style.background=3Dc_rgszClr[2];
+        cells[iCol].style.background=3Dc_rgszClr[0];
+        cells[iCol+1].style.background=3Dc_rgszClr[2];
+       } else {
+        if (i=3D=3D1) {
+         cells[iCol-1].style.background=3Dc_rgszClr[2];
+         cells[iCol].style.background=3Dc_rgszClr[1];
+         cells[iCol+1].style.background=3Dc_rgszClr[2];
+        } else {
+         cells[iCol-1].style.background=3Dc_rgszClr[4];
+         cells[iCol].style.background=3Dc_rgszClr[(i=3D=3D2)?2:4];
+         cells[iCol+1].style.background=3Dc_rgszClr[4];
+        }
+       }
+      } else
+       cells[iCol].style.background=3Dc_rgszClr[fActive?2:4];
+     }
+    }
+   }
+   with (aTab[iTab].style) {
+    cursor=3D(fActive?"default":"hand");
+    color=3Dc_rgszClr[3];
+   }
+  }
+ }
+}
+
+function fnMouseOverScroll(iCtl)
+{
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=3Dc_rgszClr[7];
+}
+
+function fnMouseOutScroll(iCtl)
+{
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=3Dc_rgszClr[6];
+}
+
+function fnMouseOverTab(iTab)
+{
+ if (iTab!=3Dg_iShCur) {
+  var iCol=3DfnTabToCol(iTab);
+  with (frames['frTabs'].document.all) {
+   tdTab[iTab].style.background=3Dc_rgszClr[5];
+  }
+ }
+}
+
+function fnMouseOutTab(iTab)
+{
+ if (iTab>=3D0) {
+  var elFrom=3Dframes['frTabs'].event.srcElement;
+  var elTo=3Dframes['frTabs'].event.toElement;
+
+  if ((!elTo) ||
+   (elFrom.tagName=3D=3DelTo.tagName) ||
+   (elTo.tagName=3D=3D"A" && elTo.parentElement!=3DelFrom) ||
+   (elFrom.tagName=3D=3D"A" && elFrom.parentElement!=3DelTo)) {
+
+   if (iTab!=3Dg_iShCur) {
+    with (frames['frTabs'].document.all) {
+     tdTab[iTab].style.background=3Dc_rgszClr[1];
+    }
+   }
+  }
+ }
+}
+
+function fnSetActiveSheet(iSh)
+{
+ if (iSh!=3Dg_iShCur) {
+  fnSetTabProps(g_iShCur,false);
+  fnSetTabProps(iSh,true);
+  g_iShCur=3DiSh;
+ }
+}
+
+ window.g_iIEVer=3DfnGetIEVer();
+ if (window.g_iIEVer>=3D4)
+  fnBuildFrameset();
+//-->
+</script>
+<![endif]><!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetSource HRef=3D"SAL2105.files/sheet001.htm"/>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetSource HRef=3D"SAL2105.files/sheet002.htm"/>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetSource HRef=3D"SAL2105.files/sheet003.htm"/>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:Stylesheet HRef=3D"SAL2105.files/stylesheet.css"/>
+  <x:WindowHeight>11760</x:WindowHeight>
+  <x:WindowWidth>19200</x:WindowWidth>
+  <x:WindowTopX>0</x:WindowTopX>
+  <x:WindowTopY>15</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<frameset rows=3D"*,39" border=3D0 width=3D0 frameborder=3Dno framespacing=
+=3D0>
+ <frame src=3D"SAL2105.files/sheet001.htm" name=3D"frSheet">
+ <frame src=3D"SAL2105.files/tabstrip.htm" name=3D"frTabs" marginwidth=3D0 =
+marginheight=3D0>
+ <noframes>
+  <body>
+   <p>&#27492;&#32178;&#38913;&#20351;&#29992;&#26694;&#26550;&#65292;&#202=
+94;&#26159;&#24744;&#30340;&#28687;&#35261;&#22120;&#19981;&#25903;&#25588;=
+&#26694;&#26550;&#12290;</p>
+  </body>
+ </noframes>
+</frameset>
+</html>
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/stylesheet.css
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/css; charset="us-ascii"
+
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+ruby
+	{ruby-align:left;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\4E00\822C;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl66
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;}
+.xl67
+	{mso-style-parent:style0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl68
+	{mso-style-parent:style0;
+	white-space:normal;}
+.xl69
+	{mso-style-parent:style0;
+	text-align:center;
+	white-space:normal;}
+.xl70
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl71
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl72
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl73
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl74
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl75
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl76
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl77
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl78
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl79
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl80
+	{mso-style-parent:style0;
+	text-align:left;
+	vertical-align:top;}
+.xl81
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl82
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl83
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl84
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl85
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;
+	layout-flow:vertical-ideographic;}
+.xl86
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;
+	layout-flow:vertical-ideographic;}
+.xl87
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl88
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl89
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl90
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl91
+	{mso-style-parent:style0;
+	font-weight:700;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;}
+.xl92
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl93
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl94
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl95
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl96
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl97
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.xl98
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.xl99
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl100
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.xl101
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl102
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl103
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl104
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl105
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;
+	layout-flow:vertical-ideographic;}
+.xl106
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;
+	layout-flow:vertical-ideographic;}
+.xl107
+	{mso-style-parent:style0;
+	font-weight:700;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl108
+	{mso-style-parent:style0;
+	text-align:left;}
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/tabstrip.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link id=3DMain-File rel=3DMain-File href=3D"../SAL2105.htm">
+<![if IE]>
+<base href=3D"file:///C:\46D9CA35\SAL2105.files\tabstrip.htm"
+id=3D"webarch_temp_base_tag">
+<![endif]>
+<script language=3D"JavaScript">
+<!--
+if (window.name!=3D"frTabs")
+ window.location.replace(document.all.item("Main-File").href);
+//-->
+</script>
+<style>
+<!--
+A {
+    text-decoration:none;
+    color:#000000;
+    font-size:9pt;
+}
+-->
+</style>
+</head>
+<body topmargin=3D0 leftmargin=3D0 bgcolor=3D"#808080">
+<PageRepeatArea>
+<table border=3D0 cellspacing=3D1>
+ <tr>
+ <td bgcolor=3D"#FFFFFF" nowrap><b><small><small>&nbsp;<a href=3D"sheet001.=
+htm" target=3D"frSheet"><font face=3D"&#26032;&#32048;&#26126;&#39636;" col=
+or=3D"#000000">Sheet1</font></a>&nbsp;</small></small></b></td>
+ <td bgcolor=3D"#FFFFFF" nowrap><b><small><small>&nbsp;<a href=3D"sheet002.=
+htm" target=3D"frSheet"><font face=3D"&#26032;&#32048;&#26126;&#39636;" col=
+or=3D"#000000">Sheet2</font></a>&nbsp;</small></small></b></td>
+ <td bgcolor=3D"#FFFFFF" nowrap><b><small><small>&nbsp;<a href=3D"sheet003.=
+htm" target=3D"frSheet"><font face=3D"&#26032;&#32048;&#26126;&#39636;" col=
+or=3D"#000000">Sheet3</font></a>&nbsp;</small></small></b></td>
+
+ </tr>
+</table>
+</body>
+</html>
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/sheet001.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link id=3DMain-File rel=3DMain-File href=3D"../SAL2105.htm">
+<link rel=3DFile-List href=3Dfilelist.xml>
+<![if IE]>
+<base href=3D"file:///C:\46D9CA35\SAL2105.files\sheet001.htm"
+id=3D"webarch_temp_base_tag">
+<![endif]>
+<link rel=3DStylesheet href=3Dstylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;
+	mso-page-orientation:landscape;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language=3D"JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=3D4) {
+   if (parent.document.readyState=3D=3D"complete"
+    && parent.frames['frTabs'].document.readyState=3D=3D"complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!=3D"frSheet")
+ window.location.replace("../SAL2105.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1049 style=3D'bor=
+der-collapse:
+ collapse;table-layout:fixed;width:788pt'>
+ <col width=3D72 style=3D'mso-width-source:userset;mso-width-alt:2304;width=
+:54pt'>
+ <col width=3D69 style=3D'mso-width-source:userset;mso-width-alt:2208;width=
+:52pt'>
+ <col width=3D72 style=3D'width:54pt'>
+ <col width=3D24 style=3D'mso-width-source:userset;mso-width-alt:768;width:=
+18pt'>
+ <col width=3D27 style=3D'mso-width-source:userset;mso-width-alt:864;width:=
+20pt'>
+ <col width=3D24 style=3D'mso-width-source:userset;mso-width-alt:768;width:=
+18pt'>
+ <col width=3D23 style=3D'mso-width-source:userset;mso-width-alt:736;width:=
+17pt'>
+ <col width=3D25 style=3D'mso-width-source:userset;mso-width-alt:800;width:=
+19pt'>
+ <col width=3D23 style=3D'mso-width-source:userset;mso-width-alt:736;width:=
+17pt'>
+ <col width=3D24 span=3D2 style=3D'mso-width-source:userset;mso-width-alt:7=
+68;
+ width:18pt'>
+ <col width=3D25 style=3D'mso-width-source:userset;mso-width-alt:800;width:=
+19pt'>
+ <col width=3D0 style=3D'display:none;mso-width-source:userset;mso-width-al=
+t:2304'>
+ <col width=3D30 style=3D'mso-width-source:userset;mso-width-alt:960;width:=
+23pt'>
+ <col width=3D35 style=3D'mso-width-source:userset;mso-width-alt:1120;width=
+:26pt'>
+ <col width=3D30 style=3D'mso-width-source:userset;mso-width-alt:960;width:=
+23pt'>
+ <col width=3D23 style=3D'mso-width-source:userset;mso-width-alt:736;width:=
+17pt'>
+ <col width=3D30 style=3D'mso-width-source:userset;mso-width-alt:960;width:=
+23pt'>
+ <col width=3D29 style=3D'mso-width-source:userset;mso-width-alt:928;width:=
+22pt'>
+ <col width=3D26 style=3D'mso-width-source:userset;mso-width-alt:832;width:=
+20pt'>
+ <col width=3D28 style=3D'mso-width-source:userset;mso-width-alt:896;width:=
+21pt'>
+ <col width=3D36 style=3D'mso-width-source:userset;mso-width-alt:1152;width=
+:27pt'>
+ <col width=3D28 style=3D'mso-width-source:userset;mso-width-alt:896;width:=
+21pt'>
+ <col width=3D23 span=3D2 style=3D'mso-width-source:userset;mso-width-alt:7=
+36;
+ width:17pt'>
+ <col width=3D25 style=3D'mso-width-source:userset;mso-width-alt:800;width:=
+19pt'>
+ <col width=3D23 style=3D'mso-width-source:userset;mso-width-alt:736;width:=
+17pt'>
+ <col width=3D25 style=3D'mso-width-source:userset;mso-width-alt:800;width:=
+19pt'>
+ <col width=3D26 style=3D'mso-width-source:userset;mso-width-alt:832;width:=
+20pt'>
+ <col width=3D23 span=3D2 style=3D'mso-width-source:userset;mso-width-alt:7=
+36;
+ width:17pt'>
+ <col width=3D59 style=3D'mso-width-source:userset;mso-width-alt:1888;width=
+:44pt'>
+ <col width=3D72 style=3D'width:54pt'>
+ <tr height=3D66 style=3D'mso-height-source:userset;height:49.5pt'>
+  <td colspan=3D2 height=3D66 class=3Dxl80 width=3D141 style=3D'height:49.5=
+pt;width:106pt'>&lt;MAT0307&gt;</td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D27 style=3D'width:20pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D0></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D35 style=3D'width:26pt'></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D29 style=3D'width:22pt'></td>
+  <td width=3D26 style=3D'width:20pt'></td>
+  <td width=3D28 style=3D'width:21pt'></td>
+  <td width=3D36 style=3D'width:27pt'></td>
+  <td width=3D28 style=3D'width:21pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D26 style=3D'width:20pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td colspan=3D2 class=3Dxl68 width=3D131 style=3D'width:98pt'>&#35069;&#3=
+4920;&#26085;&#26399;&#65306;##P1##<br>
+    &#35069;&#34920;&#20154;&#65306;##P2##<br>
+    &#38913;&#27425;&#65306;##P3##</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D2 style=3D'height:16.5pt;mso-ignore:colspan'></=
+td>
+  <td colspan=3D6 class=3Dxl107>&#40655;&#36028;&#24977;&#35657;&#29992;&#3=
+2025;</td>
+  <td colspan=3D8 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D17 class=3Dxl91>&#34892;&#25919;&#38498;&#29872;&#22659;&#2=
+0445;&#35703;&#32626;</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 style=3D'height:16.5pt'>&#20659;&#31080;&#34399;&#30908;<=
+/td>
+  <td colspan=3D7 class=3Dxl65></td>
+  <td colspan=3D4 class=3Dxl108>&#25903;&#31080;&#34399;&#30908;</td>
+  <td></td>
+  <td colspan=3D20 style=3D'mso-ignore:colspan'></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl66 style=3D'height:16.5pt'>&#24977;&#35657;&#32=
+232;&#34399;</td>
+  <td colspan=3D2 class=3Dxl67 style=3D'border-left:none'>&#38928;&#31639;&=
+#31185;&#30446;</td>
+  <td colspan=3D8 class=3Dxl67 style=3D'border-left:none'>&#37329;&#38989;<=
+/td>
+  <td colspan=3D4 class=3Dxl67 style=3D'border-left:none'>&#29992;&#36884;&=
+#35498;&#26126;</td>
+  <td></td>
+  <td colspan=3D17 class=3Dxl91>&#20154;&#20107;&#36027;(&#29694;&#37329;&#=
+32102;&#33287;)&#21360;&#38936;&#28165;&#20874;</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl66 style=3D'height:16.5pt;border-top:none'>&#12=
+288;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#25919;&#201=
+07;&#21029;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#21315;</td>
+  <td class=3Dxl67 style=3D'border-top:none;border-left:none'>&#30334;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#21313;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#33836;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#21315;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#30334;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#21313;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#20803;</td>
+  <td colspan=3D4 rowspan=3D3 class=3Dxl96 width=3D90 style=3D'border-right=
+:.5pt solid black;
+  border-bottom:.5pt solid black;width:68pt'>&#34218;&#32102;&#30332;&#2591=
+8;<br>
+    &#28165;&#20874;</td>
+  <td colspan=3D14 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D3 class=3Dxl65>&#30331;&#37636;&#26085;&#26399;&#65306;</td>
+  <td>&#24180;<span style=3D'mso-spacerun:yes'>&nbsp; </span>&#26376;<span
+  style=3D'mso-spacerun:yes'>&nbsp; </span>&#26085;</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td rowspan=3D2 height=3D44 class=3Dxl92 style=3D'border-bottom:.5pt soli=
+d black;
+  height:33.0pt;border-top:none'>&#12288;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#24037;&#203=
+16;&#35336;&#30059;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td rowspan=3D2 class=3Dxl67 style=3D'border-top:none'>&#12288;</td>
+  <td colspan=3D14 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D3 class=3Dxl65>&#21934;&#20301;&#65306;</td>
+  <td></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl66 style=3D'height:16.5pt;border-top:none;borde=
+r-left:
+  none'>&#29992;&#36884;&#21029;</td>
+  <td class=3Dxl66 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td colspan=3D2 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D3 class=3Dxl65>&#20013;&#33775;&#27665;&#22283;</td>
+  <td class=3Dxl65></td>
+  <td>&#24180;</td>
+  <td></td>
+  <td>&#26376;</td>
+  <td></td>
+  <td>&#26085;</td>
+  <td colspan=3D3 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D3 class=3Dxl65></td>
+  <td></td>
+ </tr>
+ <tr height=3D23 style=3D'height:17.25pt'>
+  <td height=3D23 colspan=3D29 style=3D'height:17.25pt;mso-ignore:colspan'>=
+</td>
+  <td colspan=3D3 class=3Dxl65></td>
+  <td></td>
+ </tr>
+ <tr class=3Dxl68 height=3D178 style=3D'mso-height-source:userset;height:13=
+3.5pt'>
+  <td rowspan=3D2 height=3D314 class=3Dxl105 width=3D72 style=3D'border-bot=
+tom:.5pt solid black;
+  height:235.5pt;width:54pt'>&#32887;&#31281;</td>
+  <td rowspan=3D2 class=3Dxl85 width=3D69 style=3D'border-bottom:.5pt solid=
+ black;
+  width:52pt'>&#31561;&#32026;</td>
+  <td rowspan=3D2 class=3Dxl85 width=3D72 style=3D'border-bottom:.5pt solid=
+ black;
+  width:54pt'>&#22995;&#21517;</td>
+  <td rowspan=3D2 class=3Dxl87 width=3D24 style=3D'border-bottom:.5pt solid=
+ black;
+  width:18pt'>&#21407;&#26376;&#25903;&#25976;</td>
+  <td rowspan=3D2 class=3Dxl87 width=3D27 style=3D'border-bottom:.5pt solid=
+ black;
+  width:20pt'>&#35519;&#25972;&#24453;&#36935;&#22686;&#21152;&#28136;&#389=
+89;</td>
+  <td rowspan=3D2 class=3Dxl87 width=3D24 style=3D'border-bottom:.5pt solid=
+ black;
+  width:18pt'>&#21512;&#35336;</td>
+  <td colspan=3D9 class=3Dxl94 width=3D209 style=3D'border-right:1.0pt soli=
+d black;
+  border-left:none;width:157pt'>&#25033;&#30332;&#25976;</td>
+  <td colspan=3D15 class=3Dxl104 width=3D398 style=3D'border-right:1.0pt so=
+lid black;
+  border-left:none;width:300pt'>&#25033;&#25187;&#21508;&#27454;</td>
+  <td rowspan=3D2 class=3Dxl89 width=3D23 style=3D'border-bottom:.5pt solid=
+ black;
+  width:17pt'>&#23526;&#30332;&#20837;&#24115;&#37329;&#38989;</td>
+  <td rowspan=3D2 class=3Dxl87 width=3D59 style=3D'border-bottom:.5pt solid=
+ black;
+  width:44pt'>&#24115;&#34399;</td>
+  <td rowspan=3D2 class=3Dxl81 width=3D72 style=3D'border-bottom:.5pt solid=
+ black;
+  width:54pt'>&#20633;&#35387;</td>
+ </tr>
+ <tr class=3Dxl69 height=3D136 style=3D'mso-height-source:userset;height:10=
+2.0pt'>
+  <td height=3D136 class=3Dxl70 width=3D23 style=3D'height:102.0pt;border-t=
+op:none;
+  border-left:none;width:17pt'>&#26412;&#20472;</td>
+  <td class=3Dxl70 width=3D25 style=3D'border-top:none;border-left:none;wid=
+th:19pt'>&#19968;&#33324;&#23560;&#26989;&#21152;&#32102;</td>
+  <td class=3Dxl70 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#29872;&#20445;&#23560;&#26989;&#21152;&#32102;</td>
+  <td class=3Dxl70 width=3D24 style=3D'border-top:none;border-left:none;wid=
+th:18pt'>&#25216;&#34899;&#21152;&#32102;</td>
+  <td class=3Dxl70 width=3D24 style=3D'border-top:none;border-left:none;wid=
+th:18pt'>&#20027;&#31649;&#32887;&#21209;&#21152;&#32102;</td>
+  <td colspan=3D2 class=3Dxl70 width=3D25 style=3D'border-left:none;width:1=
+9pt'>&#23567;&#35336;</td>
+  <td class=3Dxl70 width=3D30 style=3D'border-top:none;border-left:none;wid=
+th:23pt'>&#20132;&#36890;&#36027;</td>
+  <td class=3Dxl72 width=3D35 style=3D'border-top:none;border-left:none;wid=
+th:26pt'>&#21512;&#35336;</td>
+  <td class=3Dxl78 width=3D30 style=3D'border-top:none;border-left:none;wid=
+th:23pt'>&#25152;&#24471;&#31237;</td>
+  <td class=3Dxl70 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#20844;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D30 style=3D'border-top:none;border-left:none;wid=
+th:23pt'>&#20844;&#20581;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D29 style=3D'border-top:none;border-left:none;wid=
+th:22pt'>&#30519;&#23660;<br>
+    &#20581;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D26 style=3D'border-top:none;border-left:none;wid=
+th:20pt'>&#25424;&#27454;</td>
+  <td class=3Dxl70 width=3D28 style=3D'border-top:none;border-left:none;wid=
+th:21pt'>&#21214;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D36 style=3D'border-top:none;border-left:none;wid=
+th:27pt'>&#21214;&#20581;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D28 style=3D'border-top:none;border-left:none;wid=
+th:21pt'>&#30519;&#23660;<br>
+    &#20581;&#20445;&#36027;</td>
+  <td class=3Dxl70 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#36024;&#27454;</td>
+  <td class=3Dxl70 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#25151;&#31199;&#27941;&#36028;</td>
+  <td class=3Dxl70 width=3D25 style=3D'border-top:none;border-left:none;wid=
+th:19pt'>&#20778;&#24800;&#23384;&#27454;</td>
+  <td class=3Dxl70 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#36864;&#25771;&#37329;</td>
+  <td class=3Dxl70 width=3D25 style=3D'border-top:none;border-left:none;wid=
+th:19pt'>&#36864;&#32887;&#37329;</td>
+  <td class=3Dxl70 width=3D26 style=3D'border-top:none;border-left:none;wid=
+th:20pt'>&#21214;&#24037;<br>
+    &#33258;&#39000;&#25552;&#32371;</td>
+  <td class=3Dxl72 width=3D23 style=3D'border-top:none;border-left:none;wid=
+th:17pt'>&#21512;&#35336;</td>
+ </tr>
+<RepeatArea>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl73 style=3D'height:16.5pt;border-top:none'>##dcode##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##lv##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##PAYO_NAME##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item001##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item002##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item003##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item004##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item005##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item006##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item007##</td>
+  <td class=3Dxl74 style=3D'border-top:none;border-left:none'>##item008##</td>
+  <td class=3Dxl73 style=3D'border-top:none;border-left:none'>##item009##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item010##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item011##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item012##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item013##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item014##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item015##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item016##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item017##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item018##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item019##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item020##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item021##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##item022##</td>
+  <td class=3Dxl74 style=3D'border-top:none;border-left:none'>##item023##</td>
+  <td class=3Dxl73 style=3D'border-top:none;border-left:none'>##item024##</td>
+  <td class=3Dxl71 style=3D'border-top:none;border-left:none'>##bank##</td>
+  <td class=3Dxl74 style=3D'border-top:none;border-left:none'>&#12288;</td>
+ </tr>
+</RepeatArea>
+ <tr height=3D23 style=3D'height:17.25pt'>
+  <td colspan=3D2 height=3D23 class=3Dxl83 style=3D'height:17.25pt'>&#21512=
+;&#35336;</td>
+  <td class=3Dxl75>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl77>&#12288;</td>
+  <td class=3Dxl79 style=3D'border-left:none'>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl77>&#12288;</td>
+  <td class=3Dxl79 style=3D'border-left:none'>&#12288;</td>
+  <td class=3Dxl76>&#12288;</td>
+  <td class=3Dxl77>&#12288;</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl65 style=3D'height:16.5pt'>&#32147;&#36774;&#20=
+154;&#21729;</td>
+  <td colspan=3D2 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D5 class=3Dxl65>&#20027;&#36774;&#20986;&#32013;&#20154;&#21=
+729;</td>
+  <td colspan=3D3 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D5 class=3Dxl65>&#20027;&#36774;&#20154;&#20107;&#20154;&#21=
+729;</td>
+  <td colspan=3D4 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D4 class=3Dxl65>&#20027;&#36774;&#20027;&#35336;&#20154;&#21=
+729;</td>
+  <td colspan=3D4 style=3D'mso-ignore:colspan'></td>
+  <td colspan=3D3 class=3Dxl65>&#27231;&#38364;&#38263;&#23448;</td>
+  <td colspan=3D2 style=3D'mso-ignore:colspan'></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D33 style=3D'height:16.5pt;mso-ignore:colspan'><=
+/td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D14 style=3D'height:16.5pt;mso-ignore:colspan'><=
+/td>
+  <td colspan=3D15 class=3Dxl69 width=3D410 style=3D'width:309pt'></td>
+  <td colspan=3D4 style=3D'mso-ignore:colspan'></td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 colspan=3D29 style=3D'height:16.5pt;mso-ignore:colspan'><=
+/td>
+  <td colspan=3D3 class=3Dxl69 style=3D'mso-ignore:colspan'></td>
+  <td></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D69 style=3D'width:52pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D27 style=3D'width:20pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D24 style=3D'width:18pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D0></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D35 style=3D'width:26pt'></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D30 style=3D'width:23pt'></td>
+  <td width=3D29 style=3D'width:22pt'></td>
+  <td width=3D26 style=3D'width:20pt'></td>
+  <td width=3D28 style=3D'width:21pt'></td>
+  <td width=3D36 style=3D'width:27pt'></td>
+  <td width=3D28 style=3D'width:21pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D25 style=3D'width:19pt'></td>
+  <td width=3D26 style=3D'width:20pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D23 style=3D'width:17pt'></td>
+  <td width=3D59 style=3D'width:44pt'></td>
+  <td width=3D72 style=3D'width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</PageRepeatArea>
+</body>
+
+</html>
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/sheet002.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link id=3DMain-File rel=3DMain-File href=3D"../SAL2105.htm">
+<link rel=3DFile-List href=3Dfilelist.xml>
+<![if IE]>
+<base href=3D"file:///C:\46D9CA35\SAL2105.files\sheet002.htm"
+id=3D"webarch_temp_base_tag">
+<![endif]>
+<link rel=3DStylesheet href=3Dstylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language=3D"JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=3D4) {
+   if (parent.document.readyState=3D=3D"complete"
+    && parent.frames['frTabs'].document.readyState=3D=3D"complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!=3D"frSheet")
+ window.location.replace("../SAL2105.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D72 style=3D'borde=
+r-collapse:
+ collapse;table-layout:fixed;width:54pt'>
+ <col width=3D72 style=3D'width:54pt'>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 width=3D72 style=3D'height:16.5pt;width:54pt'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D72 style=3D'width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/sheet003.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 12">
+<link id=3DMain-File rel=3DMain-File href=3D"../SAL2105.htm">
+<link rel=3DFile-List href=3Dfilelist.xml>
+<![if IE]>
+<base href=3D"file:///C:\46D9CA35\SAL2105.files\sheet003.htm"
+id=3D"webarch_temp_base_tag">
+<![endif]>
+<link rel=3DStylesheet href=3Dstylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:PMingLiU, serif;
+	mso-font-charset:136;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language=3D"JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=3D4) {
+   if (parent.document.readyState=3D=3D"complete"
+    && parent.frames['frTabs'].document.readyState=3D=3D"complete")
+   parent.fnSetActiveSheet(2);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!=3D"frSheet")
+ window.location.replace("../SAL2105.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D72 style=3D'borde=
+r-collapse:
+ collapse;table-layout:fixed;width:54pt'>
+ <col width=3D72 style=3D'width:54pt'>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 width=3D72 style=3D'height:16.5pt;width:54pt'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D72 style=3D'width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
+
+------=_NextPart_01CF6F8C.5376C170
+Content-Location: file:///C:/46D9CA35/SAL2105.files/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../SAL2105.htm"/>
+ <o:File HRef=3D"stylesheet.css"/>
+ <o:File HRef=3D"tabstrip.htm"/>
+ <o:File HRef=3D"sheet001.htm"/>
+ <o:File HRef=3D"sheet002.htm"/>
+ <o:File HRef=3D"sheet003.htm"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01CF6F8C.5376C170--

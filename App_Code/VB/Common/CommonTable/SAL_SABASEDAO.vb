@@ -1,0 +1,195 @@
+Imports Microsoft.VisualBasic
+Imports System
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Namespace FSCPLM.Logic
+    Public Class SAL_SABASEDAO
+        Inherits BaseDAO
+
+        Dim Connection As SqlConnection
+        Dim ConnectionString As String = String.Empty
+
+        Public Sub New()
+            ConnectionString = ConnectDB.GetDBString()
+        End Sub
+
+        Public Sub New(ByVal conn As SqlConnection)
+            Me.Connection = conn
+        End Sub
+
+        'Insert
+        Public Sub Insert(ps() As SqlParameter)
+            Dim StrSQL As New System.Text.StringBuilder
+
+
+            StrSQL.Append(" INSERT INTO SAL_SABASE ( ")
+            StrSQL.Append(" BASE_SEQNO,BASE_IDNO,BASE_STATUS,BASE_TYPE,BASE_ORGID, ")
+            StrSQL.Append(" BASE_NAME,BASE_SEX,BASE_JOB_DATE,BASE_DEP,BASE_BDATE, ")
+            StrSQL.Append(" BASE_EDATE,BASE_JOB,BASE_DCODE,BASE_ORG_L1,BASE_ORG_L2, ")
+            StrSQL.Append(" BASE_ORG_L3,BASE_AGEN,BASE_IN_L1,BASE_IN_L3,BASE_PTB, ")
+            StrSQL.Append(" BASE_PROV,BASE_ADDR,BASE_QUIT_DATE,BASE_QUIT_REZN,BASE_ERMK, ")
+            StrSQL.Append(" BASE_PRONO,BASE_KDB,BASE_KDC,BASE_KDP,BASE_KDO, ")
+            StrSQL.Append(" BASE_POL,BASE_HOUS,BASE_WELG,BASE_WELO,BASE_PRE, ")
+            StrSQL.Append(" BASE_OTHER_SAL,BASE_PRED,BASE_PRIZ,BASE_TAX,BASE_FINS_KIND, ")
+            StrSQL.Append(" BASE_PN_Y30,BASE_FINS_NOQ,BASE_FINS_NOH,BASE_FINS_NOF,BASE_FINS_NOL, ")
+            StrSQL.Append(" BASE_FINS_SELF,BASE_FINS_NO,BASE_DAY_SAL,BASE_HOUR_SAL,BASE_DCT_A, ")
+            StrSQL.Append(" BASE_DCT_B,BASE_DCT_C,BASE_COUNT_REMARK,BASE_MEMO,BASE_MUSER, ")
+            StrSQL.Append(" BASE_MDATE,BASE_KDC_SERIES,BASE_KDP_SERIES,BASE_LABOR_SERIES,BASE_PRTS, ")
+            StrSQL.Append(" BASE_FIN_AMT,BASE_TAX_DCT,BASE_LABOR_STATUS,BASE_SENTMAIL,BASE_EMAIL, ")
+            StrSQL.Append(" BASE_FIN_SUP_AMT,BASE_REPLACE_AMT,BASE_GOVADOF,BASE_LAB_JIF,base_fins_noq_nol, ")
+            StrSQL.Append(" base_fins_noh_nol,BASE_FINS_Y65,BASE_FINS_SERIES,Base_IsMarked,BASE_PEN_RATE, ")
+            StrSQL.Append(" BASE_PEN_TYPE,BASE_PROF,BASE_PEN_SERIES,BASE_NUMERATOR,BASE_DENOMINATOR, ")
+            StrSQL.Append(" BASE_PTB_TYPE,BASE_ALT_AMT,BASE_MEMO1,BASE_MEMO2,BASE_MEMO3, ")
+            StrSQL.Append(" BASE_DCODE_NAME,BASE_SENTMSG,BASE_FINS_HEALTH_SELF,BASE_PROJ_BDATE,BASE_PROJ_EDATE, ")
+            StrSQL.Append(" BASE_LAB1,BASE_LAB2,BASE_LAB3,BASE_PARTTIME,BASE_FINS_SELF_DESC, ")
+            StrSQL.Append(" BASE_FINS_PAR_DESC,BASE_SERVICE_PLACE_DESC ")
+            StrSQL.Append(") VALUES ( ")
+            StrSQL.Append(" @BASE_SEQNO,@BASE_IDNO,@BASE_STATUS,@BASE_TYPE,@BASE_ORGID, ")
+            StrSQL.Append(" @BASE_NAME,@BASE_SEX,@BASE_JOB_DATE,@BASE_DEP,@BASE_BDATE, ")
+            StrSQL.Append(" @BASE_EDATE,@BASE_JOB,@BASE_DCODE,@BASE_ORG_L1,@BASE_ORG_L2, ")
+            StrSQL.Append(" @BASE_ORG_L3,@BASE_AGEN,@BASE_IN_L1,@BASE_IN_L3,@BASE_PTB, ")
+            StrSQL.Append(" @BASE_PROV,@BASE_ADDR,@BASE_QUIT_DATE,@BASE_QUIT_REZN,@BASE_ERMK, ")
+            StrSQL.Append(" @BASE_PRONO,@BASE_KDB,@BASE_KDC,@BASE_KDP,@BASE_KDO, ")
+            StrSQL.Append(" @BASE_POL,@BASE_HOUS,@BASE_WELG,@BASE_WELO,@BASE_PRE, ")
+            StrSQL.Append(" @BASE_OTHER_SAL,@BASE_PRED,@BASE_PRIZ,@BASE_TAX,@BASE_FINS_KIND, ")
+            StrSQL.Append(" @BASE_PN_Y30,@BASE_FINS_NOQ,@BASE_FINS_NOH,@BASE_FINS_NOF,@BASE_FINS_NOL, ")
+            StrSQL.Append(" @BASE_FINS_SELF,@BASE_FINS_NO,@BASE_DAY_SAL,@BASE_HOUR_SAL,@BASE_DCT_A, ")
+            StrSQL.Append(" @BASE_DCT_B,@BASE_DCT_C,@BASE_COUNT_REMARK,@BASE_MEMO,@BASE_MUSER, ")
+            StrSQL.Append(" @BASE_MDATE,@BASE_KDC_SERIES,@BASE_KDP_SERIES,@BASE_LABOR_SERIES,@BASE_PRTS, ")
+            StrSQL.Append(" @BASE_FIN_AMT,@BASE_TAX_DCT,@BASE_LABOR_STATUS,@BASE_SENTMAIL,@BASE_EMAIL, ")
+            StrSQL.Append(" @BASE_FIN_SUP_AMT,@BASE_REPLACE_AMT,@BASE_GOVADOF,@BASE_LAB_JIF,@base_fins_noq_nol, ")
+            StrSQL.Append(" @base_fins_noh_nol,@BASE_FINS_Y65,@BASE_FINS_SERIES,@Base_IsMarked,@BASE_PEN_RATE, ")
+            StrSQL.Append(" @BASE_PEN_TYPE,@BASE_PROF,@BASE_PEN_SERIES,@BASE_NUMERATOR,@BASE_DENOMINATOR, ")
+            StrSQL.Append(" @BASE_PTB_TYPE,@BASE_ALT_AMT,@BASE_MEMO1,@BASE_MEMO2,@BASE_MEMO3, ")
+            StrSQL.Append(" @BASE_DCODE_NAME,@BASE_SENTMSG,@BASE_FINS_HEALTH_SELF,@BASE_PROJ_BDATE,@BASE_PROJ_EDATE, ")
+            StrSQL.Append(" @BASE_LAB1,@BASE_LAB2,@BASE_LAB3,@BASE_PARTTIME,@BASE_FINS_SELF_DESC, ")
+            StrSQL.Append(" @BASE_FINS_PAR_DESC,@BASE_SERVICE_PLACE_DESC ")
+            StrSQL.Append(" ) ")
+
+            Execute(StrSQL.ToString(), ps)
+        End Sub
+
+        'Update
+        Public Sub Update(ps() As SqlParameter)
+            Dim StrSQL As New System.Text.StringBuilder
+
+
+            StrSQL.Append(" UPDATE SAL_SABASE SET  ")
+            StrSQL.Append(" BASE_SEQNO=@BASE_SEQNO,BASE_IDNO=@BASE_IDNO,BASE_STATUS=@BASE_STATUS,BASE_TYPE=@BASE_TYPE,BASE_ORGID=@BASE_ORGID, ")
+            StrSQL.Append(" BASE_NAME=@BASE_NAME,BASE_SEX=@BASE_SEX,BASE_JOB_DATE=@BASE_JOB_DATE,BASE_DEP=@BASE_DEP,BASE_BDATE=@BASE_BDATE, ")
+            StrSQL.Append(" BASE_EDATE=@BASE_EDATE,BASE_JOB=@BASE_JOB,BASE_DCODE=@BASE_DCODE,BASE_ORG_L1=@BASE_ORG_L1,BASE_ORG_L2=@BASE_ORG_L2, ")
+            StrSQL.Append(" BASE_ORG_L3=@BASE_ORG_L3,BASE_AGEN=@BASE_AGEN,BASE_IN_L1=@BASE_IN_L1,BASE_IN_L3=@BASE_IN_L3,BASE_PTB=@BASE_PTB, ")
+            StrSQL.Append(" BASE_PROV=@BASE_PROV,BASE_ADDR=@BASE_ADDR,BASE_QUIT_DATE=@BASE_QUIT_DATE,BASE_QUIT_REZN=@BASE_QUIT_REZN,BASE_ERMK=@BASE_ERMK, ")
+            StrSQL.Append(" BASE_PRONO=@BASE_PRONO,BASE_KDB=@BASE_KDB,BASE_KDC=@BASE_KDC,BASE_KDP=@BASE_KDP,BASE_KDO=@BASE_KDO, ")
+            StrSQL.Append(" BASE_POL=@BASE_POL,BASE_HOUS=@BASE_HOUS,BASE_WELG=@BASE_WELG,BASE_WELO=@BASE_WELO,BASE_PRE=@BASE_PRE, ")
+            StrSQL.Append(" BASE_OTHER_SAL=@BASE_OTHER_SAL,BASE_PRED=@BASE_PRED,BASE_PRIZ=@BASE_PRIZ,BASE_TAX=@BASE_TAX,BASE_FINS_KIND=@BASE_FINS_KIND, ")
+            StrSQL.Append(" BASE_PN_Y30=@BASE_PN_Y30,BASE_FINS_NOQ=@BASE_FINS_NOQ,BASE_FINS_NOH=@BASE_FINS_NOH,BASE_FINS_NOF=@BASE_FINS_NOF,BASE_FINS_NOL=@BASE_FINS_NOL, ")
+            StrSQL.Append(" BASE_FINS_SELF=@BASE_FINS_SELF,BASE_FINS_NO=@BASE_FINS_NO,BASE_DAY_SAL=@BASE_DAY_SAL,BASE_HOUR_SAL=@BASE_HOUR_SAL,BASE_DCT_A=@BASE_DCT_A, ")
+            StrSQL.Append(" BASE_DCT_B=@BASE_DCT_B,BASE_DCT_C=@BASE_DCT_C,BASE_COUNT_REMARK=@BASE_COUNT_REMARK,BASE_MEMO=@BASE_MEMO,BASE_MUSER=@BASE_MUSER, ")
+            StrSQL.Append(" BASE_MDATE=@BASE_MDATE,BASE_KDC_SERIES=@BASE_KDC_SERIES,BASE_KDP_SERIES=@BASE_KDP_SERIES,BASE_LABOR_SERIES=@BASE_LABOR_SERIES,BASE_PRTS=@BASE_PRTS, ")
+            StrSQL.Append(" BASE_FIN_AMT=@BASE_FIN_AMT,BASE_TAX_DCT=@BASE_TAX_DCT,BASE_LABOR_STATUS=@BASE_LABOR_STATUS,BASE_SENTMAIL=@BASE_SENTMAIL,BASE_EMAIL=@BASE_EMAIL, ")
+            StrSQL.Append(" BASE_FIN_SUP_AMT=@BASE_FIN_SUP_AMT,BASE_REPLACE_AMT=@BASE_REPLACE_AMT,BASE_GOVADOF=@BASE_GOVADOF,BASE_LAB_JIF=@BASE_LAB_JIF,base_fins_noq_nol=@base_fins_noq_nol, ")
+            StrSQL.Append(" base_fins_noh_nol=@base_fins_noh_nol,BASE_FINS_Y65=@BASE_FINS_Y65,BASE_FINS_SERIES=@BASE_FINS_SERIES,Base_IsMarked=@Base_IsMarked,BASE_PEN_RATE=@BASE_PEN_RATE, ")
+            StrSQL.Append(" BASE_PEN_TYPE=@BASE_PEN_TYPE,BASE_PROF=@BASE_PROF,BASE_PEN_SERIES=@BASE_PEN_SERIES,BASE_NUMERATOR=@BASE_NUMERATOR,BASE_DENOMINATOR=@BASE_DENOMINATOR, ")
+            StrSQL.Append(" BASE_PTB_TYPE=@BASE_PTB_TYPE,BASE_ALT_AMT=@BASE_ALT_AMT,BASE_MEMO1=@BASE_MEMO1,BASE_MEMO2=@BASE_MEMO2,BASE_MEMO3=@BASE_MEMO3, ")
+            StrSQL.Append(" BASE_DCODE_NAME=@BASE_DCODE_NAME,BASE_SENTMSG=@BASE_SENTMSG,BASE_FINS_HEALTH_SELF=@BASE_FINS_HEALTH_SELF,BASE_PROJ_BDATE=@BASE_PROJ_BDATE,BASE_PROJ_EDATE=@BASE_PROJ_EDATE, ")
+            StrSQL.Append(" BASE_LAB1=@BASE_LAB1,BASE_LAB2=@BASE_LAB2,BASE_LAB3=@BASE_LAB3,BASE_PARTTIME=@BASE_PARTTIME,BASE_FINS_SELF_DESC=@BASE_FINS_SELF_DESC, ")
+            StrSQL.Append(" BASE_FINS_PAR_DESC=@BASE_FINS_PAR_DESC,BASE_SERVICE_PLACE_DESC=@BASE_SERVICE_PLACE_DESC ")
+            StrSQL.Append("  WHERE 1=1  ")
+
+            Execute(StrSQL.ToString(), ps)
+        End Sub
+
+        'SELECT ALL
+        Public Function SelectAll() As DataTable
+            Dim StrSQL As New System.Text.StringBuilder
+
+
+            StrSQL.Append(" SELECT  ")
+            StrSQL.Append(" BASE_SEQNO,BASE_IDNO,BASE_STATUS,BASE_TYPE,BASE_ORGID, ")
+            StrSQL.Append(" BASE_NAME,BASE_SEX,BASE_JOB_DATE,BASE_DEP,BASE_BDATE, ")
+            StrSQL.Append(" BASE_EDATE,BASE_JOB,BASE_DCODE,BASE_ORG_L1,BASE_ORG_L2, ")
+            StrSQL.Append(" BASE_ORG_L3,BASE_AGEN,BASE_IN_L1,BASE_IN_L3,BASE_PTB, ")
+            StrSQL.Append(" BASE_PROV,BASE_ADDR,BASE_QUIT_DATE,BASE_QUIT_REZN,BASE_ERMK, ")
+            StrSQL.Append(" BASE_PRONO,BASE_KDB,BASE_KDC,BASE_KDP,BASE_KDO, ")
+            StrSQL.Append(" BASE_POL,BASE_HOUS,BASE_WELG,BASE_WELO,BASE_PRE, ")
+            StrSQL.Append(" BASE_OTHER_SAL,BASE_PRED,BASE_PRIZ,BASE_TAX,BASE_FINS_KIND, ")
+            StrSQL.Append(" BASE_PN_Y30,BASE_FINS_NOQ,BASE_FINS_NOH,BASE_FINS_NOF,BASE_FINS_NOL, ")
+            StrSQL.Append(" BASE_FINS_SELF,BASE_FINS_NO,BASE_DAY_SAL,BASE_HOUR_SAL,BASE_DCT_A, ")
+            StrSQL.Append(" BASE_DCT_B,BASE_DCT_C,BASE_COUNT_REMARK,BASE_MEMO,BASE_MUSER, ")
+            StrSQL.Append(" BASE_MDATE,BASE_KDC_SERIES,BASE_KDP_SERIES,BASE_LABOR_SERIES,BASE_PRTS, ")
+            StrSQL.Append(" BASE_FIN_AMT,BASE_TAX_DCT,BASE_LABOR_STATUS,BASE_SENTMAIL,BASE_EMAIL, ")
+            StrSQL.Append(" BASE_FIN_SUP_AMT,BASE_REPLACE_AMT,BASE_GOVADOF,BASE_LAB_JIF,base_fins_noq_nol, ")
+            StrSQL.Append(" base_fins_noh_nol,BASE_FINS_Y65,BASE_FINS_SERIES,Base_IsMarked,BASE_PEN_RATE, ")
+            StrSQL.Append(" BASE_PEN_TYPE,BASE_PROF,BASE_PEN_SERIES,BASE_NUMERATOR,BASE_DENOMINATOR, ")
+            StrSQL.Append(" BASE_PTB_TYPE,BASE_ALT_AMT,BASE_MEMO1,BASE_MEMO2,BASE_MEMO3, ")
+            StrSQL.Append(" BASE_DCODE_NAME,BASE_SENTMSG,BASE_FINS_HEALTH_SELF,BASE_PROJ_BDATE,BASE_PROJ_EDATE, ")
+            StrSQL.Append(" BASE_LAB1,BASE_LAB2,BASE_LAB3,BASE_PARTTIME,BASE_FINS_SELF_DESC ")
+            StrSQL.Append(" ,BASE_FINS_PAR_DESC,BASE_SERVICE_PLACE_DESC ")
+            StrSQL.Append("  FROM SAL_SABASE  ")
+            StrSQL.Append("  WHERE 1=1  ")
+
+            Dim ps() As SqlParameter = { _
+         New SqlParameter("@param1", ""), _
+          New SqlParameter("@param2", "")}
+
+            Return Query(StrSQL.ToString(), ps)
+        End Function
+
+        'SELECT ONE
+        Public Function SelectOne(BASE_SEQNO As String) As DataTable
+            Dim StrSQL As New System.Text.StringBuilder
+
+            StrSQL.Append(" SELECT  ")
+            StrSQL.Append(" BASE_SEQNO,BASE_IDNO,BASE_STATUS,BASE_TYPE,BASE_ORGID, ")
+            StrSQL.Append(" BASE_NAME,BASE_SEX,BASE_JOB_DATE,BASE_DEP,BASE_BDATE, ")
+            StrSQL.Append(" BASE_EDATE,BASE_JOB,BASE_DCODE,BASE_ORG_L1,BASE_ORG_L2, ")
+            StrSQL.Append(" BASE_ORG_L3,BASE_AGEN,BASE_IN_L1,BASE_IN_L3,BASE_PTB, ")
+            StrSQL.Append(" BASE_PROV,BASE_ADDR,BASE_QUIT_DATE,BASE_QUIT_REZN,BASE_ERMK, ")
+            StrSQL.Append(" BASE_PRONO,BASE_KDB,BASE_KDC,BASE_KDP,BASE_KDO, ")
+            StrSQL.Append(" BASE_POL,BASE_HOUS,BASE_WELG,BASE_WELO,BASE_PRE, ")
+            StrSQL.Append(" BASE_OTHER_SAL,BASE_PRED,BASE_PRIZ,BASE_TAX,BASE_FINS_KIND, ")
+            StrSQL.Append(" BASE_PN_Y30,BASE_FINS_NOQ,BASE_FINS_NOH,BASE_FINS_NOF,BASE_FINS_NOL, ")
+            StrSQL.Append(" BASE_FINS_SELF,BASE_FINS_NO,BASE_DAY_SAL,BASE_HOUR_SAL,BASE_DCT_A, ")
+            StrSQL.Append(" BASE_DCT_B,BASE_DCT_C,BASE_COUNT_REMARK,BASE_MEMO,BASE_MUSER, ")
+            StrSQL.Append(" BASE_MDATE,BASE_KDC_SERIES,BASE_KDP_SERIES,BASE_LABOR_SERIES,BASE_PRTS, ")
+            StrSQL.Append(" BASE_FIN_AMT,BASE_TAX_DCT,BASE_LABOR_STATUS,BASE_SENTMAIL,BASE_EMAIL, ")
+            StrSQL.Append(" BASE_FIN_SUP_AMT,BASE_REPLACE_AMT,BASE_GOVADOF,BASE_LAB_JIF,base_fins_noq_nol, ")
+            StrSQL.Append(" base_fins_noh_nol,BASE_FINS_Y65,BASE_FINS_SERIES,Base_IsMarked,BASE_PEN_RATE, ")
+            StrSQL.Append(" BASE_PEN_TYPE,BASE_PROF,BASE_PEN_SERIES,BASE_NUMERATOR,BASE_DENOMINATOR, ")
+            StrSQL.Append(" BASE_PTB_TYPE,BASE_ALT_AMT,BASE_MEMO1,BASE_MEMO2,BASE_MEMO3, ")
+            StrSQL.Append(" BASE_DCODE_NAME,BASE_SENTMSG,BASE_FINS_HEALTH_SELF,BASE_PROJ_BDATE,BASE_PROJ_EDATE, ")
+            StrSQL.Append(" BASE_LAB1,BASE_LAB2,BASE_LAB3,BASE_PARTTIME,BASE_FINS_SELF_DESC ")
+            StrSQL.Append(" ,BASE_FINS_PAR_DESC,BASE_SERVICE_PLACE_DESC ")
+            StrSQL.Append("  FROM SAL_SABASE  ")
+            StrSQL.Append("  WHERE BASE_SEQNO=@BASE_SEQNO  ")
+
+            Dim ps() As SqlParameter = { _
+                New SqlParameter("@BASE_SEQNO", BASE_SEQNO)}
+
+            Return Query(StrSQL.ToString(), ps)
+        End Function
+
+        Public Function SelectIDNO(BASE_IDNO As String) As DataTable
+            Dim StrSQL As New System.Text.StringBuilder
+            StrSQL.Append(" SELECT *  FROM SAL_SABASE  ")
+            StrSQL.Append("  WHERE BASE_IDNO=@BASE_IDNO  ")
+            Dim ps() As SqlParameter = { _
+                New SqlParameter("@BASE_IDNO", BASE_IDNO)}
+
+            Return Query(StrSQL.ToString(), ps)
+        End Function
+
+        'DELETE
+        Public Sub Delete()
+            Dim StrSQL As New System.Text.StringBuilder
+            StrSQL.Append(" DELETE FROM SAL_SABASE WHERE  ")
+            Dim ps() As SqlParameter = {}
+
+            Execute(StrSQL.ToString(), ps)
+        End Sub
+
+
+    End Class
+End Namespace

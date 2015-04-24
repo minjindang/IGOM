@@ -1,0 +1,64 @@
+.formcss { border-left:1px solid solid; border-right:1px solid solid; border-top:1px solid #003399; border-bottom:1px solid #003399; font-family: "Verdana"; font-size: 12px; color: #FFFFFF; background-color: #3F7DCA; } 
+.general_text { font-family: "Verdana"; font-size: 13px; color: #993300; text-decoration: none}
+.item { font-family: "Verdana"; font-size: 13px; color: #663399; text-decoration: none} 
+.item:hover { font-family: "Verdana"; font-size: 13px; color: #993300; text-decoration: none; font-weight: bold} 
+.itemMenu { font-family: "Verdana"; font-size: 15px; color: #663399; text-decoration: none} 
+.itemMenu:hover { font-family: "Verdana"; font-size: 15px; color: #663399; text-decoration: none;} 
+.table_1 {  font-family: "Verdana"; font-size: 13px; color: #000000; border=1px none; cellspacing="1"; cellpadding="0"; align="center"; width="98%"; bordercolor="#003399"}
+.table2 {  font-family: "Verdana"; font-size: 13px; border=1px solid #ECF6FD ;width="575"; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid; border-top-color:#ECF6FD; border-right-color:#ECF6FD; border-bottom-color:#ECF6FD; border-left-color:#ECF6FD; cellspacing="1" ;cellpadding="1"}
+.table1 {  font-family: "Verdana"; font-size: 13px; color:"#000080"; border=1px none #ECF6FD; align="center"; width="575"; border-top-color:#ECF6FD; border-right-color:#ECF6FD; border-bottom-color:#ECF6FD; border-left-color:#ECF6FD; border-top-style:none; border-right-style:none; border-bottom-style:none; border-left-style:none}
+.table_2 {  width: 100%; font-family: "Verdana"; font-size: 13px; color: #333333; border: 1px #CCCCCC solid}
+.title {  font-family: "Verdana"; font-size: 15px; font-weight: bold; color: #003399; text-align: center}
+.total {  font-family: "Verdana"; font-size: 13px; font-weight: bold; color: #FF0066; text-align: left}
+.table_item {  font-family: "Verdana"; font-size: 15px; color: #000000; clip:    rect(   ); background-color: #D9EC9A;}
+.table_item_nf {  border-color: #000080; font-family: "Verdana"; font-size: 13px; font-weight: bold; color: #366195; clip:    rect(   ); background-color: #ECF6FD;}
+.table_function {  font-family: "Verdana"; font-size: 13px; font-weight: bold; color: #333333; clip:    rect(   ); background-color: #ECF6FD}
+.table_item_top {  font-family: "Verdana"; font-size: 16px; font-weight: bold; color: #ffffff; clip:    rect(   ); background-color: #6666ff}
+.text_link {  font-family: "Verdana"; font-size: 13px; color: #663399; text-decoration: none}
+.text_link:hover { font-family: "Verdana"; font-size: 13px; color: #993300; text-decoration: none }
+.table_td { font-family: "Verdana"; font-size: 13px; color: #333333; border-color: #ECF6FD; clip: rect( ); border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.table_td_r { font-family: "Verdana"; font-size: 13px; color: #333333; border-color: #FFFFFF #FFFFFF #CCCCCC; clip: rect( ); border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px ; background-color: #FFE1FF}
+.table_td_b { font-family: "Verdana"; font-size: 13px; color: #333333; border-color: #FFFFFF #FFFFFF #CCCCCC; clip: rect( ); border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px ; background-color: #CCFFFF}
+.table_td1 { font-family: "Verdana"; font-size: 13px; color: #333333; border-color: #FFFFFF #FFFFFF #CCCCCC; clip: rect( ); border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px ; background-color: #eeeeee}
+.list_tr { clip: rect( ); }
+.list_tr1 { BACKGROUND-COLOR: #D2EBFA}
+.doc_no { font-family: "Verdana"; font-size: 13px; color: #663399; text-decoration: none} 
+.doc_no:hover { font-family: "Verdana"; font-size: 13px; color: #993300; text-decoration: none} 
+.behindtime { font-weight: bold; color: #ff0000}
+.neartime { font-weight: bold; color: #cccc00}
+.chktext      { color: #000000; background-color: #ffffff;  text-decoration: none; font-size: 12pt; vertical-align: middle; border: 1px solid #ffffff }
+body{ scrollbar-face-color:#FFFFFF; scrollbar-shadow-color:#6096D9; scrollbar-highlight-color:#FFFFFF; scrollbar-3dlight-color:#3261BF; scrollbar-darkshadow-color:#6096D9;scrollbar-track-color:#DDEBFB; scrollbar-arrow-color:#000000; }
+.odtext        { font-size: 13px; background-color: #eeeeee; border: #CC7003; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-family: "Verdana"}
+.odtextNone    { border-left:1px solid solid; border-right:1px solid solid; border-top:1px solid #330099; border-bottom:1px solid #330099; font-size: 13px; background-color: #eeeeee; font-family: "Verdana"; }
+.odtextNone_1    { font-size: 13px; background-color: #A1CE01; border: #CC7003; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-family: "Verdana"}
+.odtextMuQuery { font-size: 13px; background-color: #eeeeee; border: #CC7003; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-family: "Verdana"}
+.odtextMustKey { font-size: 13px; background-color: #eeeeee; border: 1px #330099 solid; font-family: "Verdana"}
+.odb1          { font-size: 13px; background-color: #D2DDFF; border: 1px #CC7003 solid; font-family: "Verdana" }
+.odtextQuery   { font-size: 13px; background-color: #eeeeee; border: 1px #330099 solid; font-family: "Verdana"}
+.odtextDisplay { font-size: 13px; background-color: #eeeeee; border: 1px #330099 solid; font-family: "Verdana"}
+.border_line {    BACKGROUND-COLOR: #6699FF;}
+.dark_textcss {    COLOR: #333333; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;}
+.dark_textcss:hover{    COLOR: red; LINE-HEIGHT: 180%; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;}
+.col_1{    BORDER-RIGHT: 1px;    BORDER-TOP: 1px dotted;    PADDING-BOTTOM: 5px;    BORDER-LEFT: 1px;    PADDING-TOP: 5px;    BORDER-BOTTOM: 1px;    FONT-FAMILY: "Verdana"}
+.col_1a{    BORDER-RIGHT: 1px;    BORDER-TOP: 1px dotted;    PADDING-BOTTOM: 5px;    BORDER-LEFT: 1px;    PADDING-TOP: 5px;    BORDER-BOTTOM: 1px;    FONT-FAMILY: "Verdana"; background-color: #E6EEF8}
+.col_9{    BORDER-BOTTOM: 1px;    BORDER-TOP: 1px dotted;    BORDER-LEFT: 1px dotted;    BORDER-RIGHT: 1px dotted;    PADDING-TOP: 3px;    PADDING-BOTTOM: 3px;    PADDING-LEFT: 5px;    PADDING-RIGHT: 5px;    FONT-FAMILY: "Verdana";	FONT-SIZE: 12px;}
+.function_title1{    FONT-SIZE: 12px;    COLOR: #cc3300;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.function_title1:hover{    FONT-SIZE: 12px;    COLOR: black;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.function_title3{    FONT-WEIGHT: bold;    FONT-SIZE: 24px;    COLOR: #003399;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.function_title3:hover{    FONT-WEIGHT: bold;    FONT-SIZE: 24px;    COLOR: #FF0000;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.table_width1{    BORDER-RIGHT: 0px;    BORDER-TOP: 0px;    FONT-SIZE: 12px;    BORDER-LEFT: 0px;    WIDTH: 93%;    LINE-HEIGHT: 180%;    BORDER-BOTTOM: 0px}
+.general_text{    FONT-SIZE: 12px;    COLOR: #333333;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.general_text:hover{    FONT-SIZE: 12px;    COLOR: #ff0000;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.menu_link{    FONT-SIZE: 12px;    COLOR: #003399;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.formcss_rbutton { BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #003399 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #003399 1px solid; FONT-FAMILY: "Verdana"; BACKGROUND-COLOR: #3F7DCA}
+.function_menu1{    FONT-SIZE: 16px;    COLOR: black;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+.function_menu1:hover{    FONT-SIZE: 16px;    COLOR: #cc3300;    LINE-HEIGHT: 180%;    FONT-FAMILY: "Verdana";    TEXT-DECORATION: none}
+
+.td { font-size: 12px; background-color: #E1ECFB;}
+.td1 { font-size: 12px; background-color: #F5FAFE;}
+.text_red {  font-family: "Verdana"; color: #CC0000; font-size: 12px; font-weight: bold}
+.text_blue { font-family: "Verdana"; color: #003399; font-size: 14px; font-weight: bold }
+.text_black {  font-family: "Verdana"; color: #000000; font-size: 11px}
+a       { font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 13px; color: #003399; text-decoration: none}
+a:link  { color: #003399; text-decoration: none}
+a:hover { color: #FF0066; text-decoration: none}

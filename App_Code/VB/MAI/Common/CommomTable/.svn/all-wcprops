@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/TCCC/!svn/ver/5070/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable
+END
+MaintainServerDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainServerDAO.vb
+END
+AttachmentDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/AttachmentDAO.vb
+END
+MaintainHandle.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/5070/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainHandle.vb
+END
+MaintainEroomDetDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainEroomDetDAO.vb
+END
+MaintainEroomDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainEroomDAO.vb
+END
+MaintainOtherDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainOtherDAO.vb
+END
+MaintainServer.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainServer.vb
+END
+Attachment.vb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TCCC/!svn/ver/4722/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/Attachment.vb
+END
+MaintainMainDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/TCCC/!svn/ver/4286/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainMainDAO.vb
+END
+MaintainDnsDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainDnsDAO.vb
+END
+MaintainNetDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainNetDAO.vb
+END
+MaintainAccDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainAccDAO.vb
+END
+MaintainEroomDet.vb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainEroomDet.vb
+END
+MaintainHandleDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/TCCC/!svn/ver/5070/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainHandleDAO.vb
+END
+MaintainOther.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainOther.vb
+END
+MaintainEroom.vb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainEroom.vb
+END
+MaintainDns.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainDns.vb
+END
+MaintainMain.vb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TCCC/!svn/ver/4286/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainMain.vb
+END
+MaintainNet.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainNet.vb
+END
+MaintainAcc.vb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TCCC/!svn/ver/4229/09_SourceCode/IGOM/App_Code/VB/MAI/Common/CommomTable/MaintainAcc.vb
+END

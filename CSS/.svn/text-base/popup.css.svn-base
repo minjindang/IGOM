@@ -1,0 +1,203 @@
+body {
+	background-color: #FFFFFF;
+	margin: 0px 0px 0px 10px;
+	background-attachment: scroll;
+	background-image:  url(/iso/images/popup/popup_bg.jpg);
+	background-repeat: repeat-x;}
+body,p,td {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	color: #333333;}
+	
+a:link { font-size: 12px; color: #607A27;  line-height: 16px; text-decoration: none;}
+a:visited { font-size: 12px; color: #607A27;  line-height: 16px; text-decoration: none;}
+a:hover { font-size: 12px; color: #FF6600;  line-height: 16px; text-decoration: underline;}
+
+.p1 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FF6600;
+	font-weight: bold;}
+.p2 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #555555;}
+.h1 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #FF3300;
+	font-weight: bold;}
+.h2 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #0A989A;
+	font-weight: bold;}
+
+input {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	height: 17px;
+	color: #555555;}
+input.style1 {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	color: #555555;
+	height: 16px;
+	border: 1px solid #A68E6C;}
+input.style2 {
+	margin: 0px 4px 0px 0px;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	color: #7D4206;
+	height: 22px;
+	background-attachment: scroll;
+	background-image: url(/iso/images/bg_btu.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-top: 1px solid #FF7E28;
+	border-right: 1px outset #EBBC76;
+	border-bottom: 1px outset #EBBC76;
+	border-left: 1px solid #FF7E28;}
+
+.main {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;}
+.main td.mainBG {
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #B6BB2F;
+	border-left: 1px solid #B6BB2F;}
+.main td.mainBG01 {
+	padding: 0px;
+	background-attachment: scroll;
+	background-image: url(/iso/images/popup/popup_top_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;}
+.main td.mainBG02 {
+	padding: 0px;
+	background-attachment: scroll;
+	background-image: url(/iso/images/popup/popup_buttom_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;}
+
+.iconIMG {
+	margin: 0px 5px 0px 5px;}
+	
+.basicTable {
+	margin: 5px 0px 3px 0px;
+	padding: 0px;}
+	
+.contentTable {
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	background-attachment: scroll;
+	background-image: url(/iso/images/bg_contenttable.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	border-top: 1px dotted #77CFD0;
+	text-align: center;}
+	
+.tableStyle1{
+	margin: 8px 0px 5px 0px;
+	background-color: #FFFFFF;
+	border-collapse: collapse;}
+.tableStyle1 th {
+	height: 25px;
+	color: #5D3B22;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	text-align: center;
+	font-weight: normal;
+	background-color: #FBECA4;
+	border: 1px dotted #C87E06;}
+.tableStyle1 tr.color {	
+	background-color: #FAF6E1;}
+.tableStyle1 td {
+	color: #555555;
+	padding: 3px;
+	line-height: 16px;
+	border-bottom: 1px dotted #C5C386;}
+
+.tableStyle2{
+	margin: 5px 0px 5px 0px;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+	border: 1px dotted #B18463;}
+.tableStyle2 td{ 
+    padding: 3px;
+	line-height: 18px}
+.tableStyle2 td.f1 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #5D3B22;
+	line-height: 18px;
+	text-align: right;
+	background-color: #F9F8D9;
+	border-bottom: 1px dotted #F9F8D9;
+	padding: 3px 5px 3px 3px;}
+.tableStyle2 td.f2 {
+	padding: 3px 3px 3px 8px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #555555;
+	line-height: 18px;
+	background-color: #FFFFFF;
+	border-bottom: 1px dotted #C5C386;}
+.tableStyle2 td.f3 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #5D3B22;
+	line-height: 18px;
+	background-color: #F9F8D9;
+	border-bottom: 1px dotted #F9F8D9;
+	padding: 3px 3px 3px 8px;}
+.tableStyle2 td.f4 {
+	padding: 3px 3px 3px 8px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #555555;
+	line-height: 18px;
+	background-color: #FFFFFF;}
+	/* 避免CSS 影響到 Radeditor */	
+.tableStyle8{
+	margin: 0px 0px 0px 0px;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+}
+.tableStyle8 td{ 
+    padding: 0px;
+    font-size:smaller;
+    
+	}
+.tableStyle8 td.f1
+{
+	padding: 0px;
+	border: dotted 1px black;
+	
+}
+
+	.RadEContent, .RadEContentBordered
+{
+        font-family:新細明體;
+     font-size: 12px;
+     line-height:200%;
+     
+
+}
+.mainBG01 {
+	padding: 0px;
+	background-attachment: scroll;
+	background-image: url(images/popup/popup_top_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;}
+.mainBG02 {
+	padding: 0px;
+	background-attachment: scroll;
+	background-image: url(images/popup/popup_buttom_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;}
